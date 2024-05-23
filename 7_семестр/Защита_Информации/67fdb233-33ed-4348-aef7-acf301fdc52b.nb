@@ -1,0 +1,1944 @@
+Notebook[{Cell[
+TextData[{StyleBox[StyleBox["\:041b\:0430\:0431\:043e\:0440\:0430\:0442\:043e\:0440\:043d\:0430\:044f",
+FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[" ",FontSize -> 18],
+FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox["\:0440\:0430\:0431\:043e\:0442\:0430",
+FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[RowBox[{StyleBox[StyleBox[
+" ",FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox["\:2116",FontSize -> 18],
+FontColor -> RGBColor[0,0,0]]}]],StyleBox[StyleBox["1",FontSize -> 18],FontColor -> RGBColor[
+0,0,0]],"\n",StyleBox[StyleBox[StyleBox[StyleBox["\"",FontSize -> 18],FontSize -> 18],
+FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox[StyleBox[
+"\:042d\:043b\:0435\:043c\:0435\:043d\:0442\:044b",FontSize -> 18],FontSize -> 18],
+FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox[StyleBox[
+" ",FontSize -> 18],FontSize -> 18],FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[
+StyleBox[StyleBox[StyleBox["\:043c\:043d\:043e\:0436\:0435\:0441\:0442\:0432",FontSize -> 18],
+FontSize -> 18],FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[RowBox[{StyleBox[
+StyleBox[StyleBox[StyleBox[".",FontSize -> 18],FontSize -> 18],FontSize -> 18],FontColor -> RGBColor[
+0,0,0]],StyleBox[StyleBox[StyleBox[StyleBox[" ",FontSize -> 18],FontSize -> 18],FontSize -> 18],
+FontColor -> RGBColor[0,0,0]]}]],StyleBox[StyleBox[StyleBox[StyleBox["\:041f\:0440\:043e\:0441\:0442\:044b\:0435",
+FontSize -> 18],FontSize -> 18],FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[
+StyleBox[StyleBox[StyleBox[" ",FontSize -> 18],FontSize -> 18],FontSize -> 18],FontColor -> RGBColor[
+0,0,0]],StyleBox[StyleBox[StyleBox[StyleBox["\:0442\:0438\:043f\:044b",FontSize -> 18],
+FontSize -> 18],FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 18],FontSize -> 18],FontSize -> 18],FontColor -> RGBColor[
+0,0,0]],StyleBox[StyleBox[StyleBox[StyleBox["\:0434\:0430\:043d\:043d\:044b\:0445",
+FontSize -> 18],FontSize -> 18],FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[
+StyleBox[StyleBox[StyleBox[" ",FontSize -> 18],FontSize -> 18],FontSize -> 18],FontColor -> RGBColor[
+0,0,0]],StyleBox[StyleBox[StyleBox[StyleBox["\:0432",FontSize -> 18],FontSize -> 18],
+FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox[StyleBox[
+" ",FontSize -> 18],FontSize -> 18],FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[
+StyleBox[StyleBox[StyleBox["\:0441\:0438\:0441\:0442\:0435\:043c\:0435",FontSize -> 18],
+FontSize -> 18],FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 18],FontSize -> 18],FontSize -> 18],FontColor -> RGBColor[
+0,0,0]],StyleBox[StyleBox[StyleBox[StyleBox["Mathematica",FontSize -> 18],FontSize -> 18],
+FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox[StyleBox[
+"\"",FontSize -> 18],FontSize -> 18],FontSize -> 18],FontColor -> RGBColor[0,0,0]],"\n",StyleBox[
+StyleBox["\:043f\:043e",FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[
+" ",FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox["\:043a\:0443\:0440\:0441\:0443",
+FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[RowBox[{StyleBox[StyleBox[
+" ",FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox["\"",FontSize -> 18],
+FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[" ",FontSize -> 18],FontColor -> RGBColor[
+0,0,0]]}]],StyleBox[StyleBox["\:041c\:0435\:0442\:043e\:0434\:044b",FontSize -> 18],
+FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[" ",FontSize -> 18],FontColor -> RGBColor[
+0,0,0]],StyleBox[StyleBox["\:0438",FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[
+StyleBox[" ",FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox["\:0441\:0440\:0435\:0434\:0441\:0442\:0432\:0430",
+FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[" ",FontSize -> 18],
+FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox["\:0437\:0430\:0449\:0438\:0442\:044b",
+FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[" ",FontSize -> 18],
+FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox["\:0438\:043d\:0444\:043e\:0440\:043c\:0430\:0446\:0438\:0438",
+FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox["\"",FontSize -> 18],
+FontColor -> RGBColor[0,0,0]],"\n",StyleBox[StyleBox[StyleBox[StyleBox["\:0410",FontColor -> RGBColor[
+0,0,0]],FontSize -> 18],FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[
+StyleBox[StyleBox["-",FontColor -> RGBColor[0,0,0]],FontSize -> 18],FontSize -> 18],
+FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox[StyleBox["08",FontColor -> RGBColor[
+0,0,0]],FontSize -> 18],FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[
+StyleBox[StyleBox["-",FontColor -> RGBColor[0,0,0]],FontSize -> 18],FontSize -> 18],
+FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox[StyleBox["19",FontColor -> RGBColor[
+0,0,0]],FontSize -> 18],FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox[StyleBox[",",FontColor -> RGBColor[0,0,0]],FontSize -> 18],
+FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox[StyleBox[
+" ",FontColor -> RGBColor[0,0,0]],FontSize -> 18],FontSize -> 18],FontColor -> RGBColor[
+0,0,0]]}]],StyleBox[StyleBox[StyleBox[StyleBox["\:0411\:0430\:043b\:0430\:0448\:043e\:0432",
+FontColor -> RGBColor[0,0,0]],FontSize -> 18],FontSize -> 18],FontColor -> RGBColor[
+0,0,0]],StyleBox[StyleBox[StyleBox[StyleBox[" ",FontColor -> RGBColor[0,0,0]],FontSize -> 18],
+FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox[StyleBox[
+"\:0421",FontColor -> RGBColor[0,0,0]],FontSize -> 18],FontSize -> 18],FontColor -> RGBColor[
+0,0,0]],StyleBox[StyleBox[StyleBox[StyleBox[".",FontColor -> RGBColor[0,0,0]],FontSize -> 18],
+FontSize -> 18],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox[StyleBox[
+"\:0410",FontColor -> RGBColor[0,0,0]],FontSize -> 18],FontSize -> 18],FontColor -> RGBColor[
+0,0,0]],StyleBox[StyleBox[StyleBox[StyleBox[".",FontColor -> RGBColor[0,0,0]],FontSize -> 18],
+FontSize -> 18],FontColor -> RGBColor[0,0,0]]}],"Section",TextAlignment -> Center,
+ExpressionUUID -> "1b89e54a-6249-44e0-b399-59e45fb500af",TextJustification -> 0],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox[StyleBox["1",Background -> RGBColor[1,
+1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[".",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox["\:0421\:043e\:0437\:0434\:0430\:0442\:044c",
+Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox["\:0442\:0440\:0438",
+Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox["\:0441\:043f\:0438\:0441\:043a\:0430",
+Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[1,1,1]],FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox[
+":",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],
+FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[
+1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox[StyleBox["listf",Background -> RGBColor[1,1,1]],FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox[StyleBox[",",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[
+1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox[StyleBox["listn",Background -> RGBColor[1,1,1]],FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox[StyleBox[",",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[
+1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox[StyleBox["listp",Background -> RGBColor[1,1,1]],FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox[StyleBox[",",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[
+1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox[StyleBox["\:044f\:0432\:043b\:044f\:044e\:0449\:0438\:0435\:0441\:044f",
+Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox["\:043e\:0442\:043e\:0431\:0440\:0430\:0436\:0435\:043d\:0438\:0435\:043c",
+Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox["\:0412\:0430\:0448\:0435\:0439",
+Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox["\:0444\:0430\:043c\:0438\:043b\:0438\:0438",
+Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[StyleBox[",",Background -> RGBColor[1,1,1]],FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox[
+" ",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],
+FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox[StyleBox["\:0438\:043c\:0435\:043d\:0438",
+Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox["\:0438",Background -> RGBColor[
+1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox["\:043e\:0442\:0447\:0435\:0441\:0442\:0432\:0430",
+Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[StyleBox[",",Background -> RGBColor[1,1,1]],FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox[
+" ",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],
+FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox[StyleBox["\:0441",Background -> RGBColor[
+1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox["\:0438\:0441\:043f\:043e\:043b\:044c\:0437\:043e\:0432\:0430\:043d\:0438\:0435\:043c",
+Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox["\:0441\:043e\:043e\:0442\:0432\:0435\:0442\:0441\:0442\:0432\:0438\:044f",
+Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox["\:043c\:0435\:0436\:0434\:0443",
+Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox["\:0440\:0443\:0441\:0441\:043a\:0438\:043c",
+Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox["\:0430\:043b\:0444\:0430\:0432\:0438\:0442\:043e\:043c",
+Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox["\:0438",Background -> RGBColor[
+1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox["\:043c\:043d\:043e\:0436\:0435\:0441\:0442\:0432\:043e\:043c",
+Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox["\:0446\:0435\:043b\:044b\:0445",
+Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[1,1,1]],FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox[
+"=",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],
+FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox[" ",Background -> RGBColor[
+1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox["{",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox[StyleBox["0",Background -> RGBColor[
+1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[",",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox["2",Background -> RGBColor[
+1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[",",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox["3",Background -> RGBColor[
+1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[",...,",Background -> RGBColor[1,1,1]],FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox[
+"31",Background -> RGBColor[1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],
+FontWeight -> Bold],StyleBox[StyleBox[StyleBox[StyleBox["}.",Background -> RGBColor[
+1,1,1]],FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}],"Section",
+CellFrame -> 0,ExpressionUUID -> "8b40f7d7-1a6d-43ae-a339-d216f4da1f22"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"listf","=",RowBox[{"{",RowBox[{"1",",","0",",","11",",","0",",","24",",","14",",","2"}],"}"}]}],"\n",RowBox[
+{"listn","=",RowBox[{"{",RowBox[{"17",",","0",",","2",",","2",",","0"}],"}"}]}],"\n",RowBox[
+{"listp","=",RowBox[{"{",RowBox[{"0",",","16",",","17",",","5",",","13",",","26",",","5",",","2",",","8",",","23"}],"}"}]}]}],
+"Input",CellFrame -> 1,CellLabel -> "In[5]:= ",ExpressionUUID -> "57f91659-3948-40b3-9f8e-342ba43b826e"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"1",",","0",",","11",",","0",",","24",",","14",",","2"}],"}"}],
+StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[5]= ",ExpressionUUID -> "c50a6168-9cbd-43c6-8ddf-cc63af3b2c23"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"17",",","0",",","2",",","2",",","0"}],"}"}],StandardForm],"Output",
+CellFrame -> 1,CellLabel -> "Out[6]= ",ExpressionUUID -> "5d3673d9-554b-4dc9-8bb5-ff725e16e8e1"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"0",",","16",",","17",",","5",",","13",",","26",",","5",",","2",",","8",",","23"}],"}"}],
+StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[7]= ",ExpressionUUID -> "a7d4a46a-c591-4ba8-943b-95b2313819c0"]},
+Open],ExpressionUUID -> "2dd89741-a97e-4c74-b1f5-5a0db9cdab62"]},Open],ExpressionUUID -> "cefb165b-2777-4600-b259-42d070982810"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["2",FontWeight -> Bold],FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontWeight -> Bold],
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontSize -> 16],FontColor -> RGBColor[0,0,0]]}]],StyleBox[StyleBox[StyleBox["\:041f\:0440\:0435\:043e\:0431\:0440\:0430\:0437\:043e\:0432\:0430\:0442\:044c",
+FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[0,0,0]],StyleBox[
+StyleBox[StyleBox["\:0441\:043f\:0438\:0441\:043a\:0438",FontWeight -> Bold],FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox["\:0432",
+FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[0,0,0]],StyleBox[
+StyleBox[StyleBox["\:0446\:0435\:043b\:044b\:0435",FontWeight -> Bold],FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:0430",
+FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[0,0,0]],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox[":",FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]]}]],StyleBox[StyleBox[StyleBox["numf",FontWeight -> Bold],FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox["=",FontWeight -> Bold],
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox["AlgebraicNumber",
+FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[
+StyleBox["[",FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[0,0,0]],StyleBox[
+StyleBox[StyleBox["32",FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[",",FontWeight -> Bold],FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontSize -> 16],FontColor -> RGBColor[0,0,0]]}]],StyleBox[StyleBox[StyleBox["listf",
+FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[0,0,0]],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox["],",FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]]}]],StyleBox[StyleBox[StyleBox["numn",FontWeight -> Bold],FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox["=",FontWeight -> Bold],
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox["AlgebraicNumber",
+FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[
+StyleBox["[",FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[0,0,0]],StyleBox[
+StyleBox[StyleBox["32",FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[",",FontWeight -> Bold],FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontSize -> 16],FontColor -> RGBColor[0,0,0]]}]],StyleBox[StyleBox[StyleBox["listn",
+FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[0,0,0]],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox["],",FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]]}]],StyleBox[StyleBox[StyleBox["nump",FontWeight -> Bold],FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox["=",FontWeight -> Bold],
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox["AlgebraicNumber",
+FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[
+StyleBox["[",FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[0,0,0]],StyleBox[
+StyleBox[StyleBox["32",FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[",",FontWeight -> Bold],FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontSize -> 16],FontColor -> RGBColor[0,0,0]]}]],StyleBox[StyleBox[StyleBox["listp",
+FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[0,0,0]],StyleBox[StyleBox[
+StyleBox["].",FontWeight -> Bold],FontSize -> 16],FontColor -> RGBColor[0,0,0]]}],
+"Section",CellDingbat -> None,ExpressionUUID -> "0fe19bfb-6e68-4f0e-aff6-4e519ab7ab7d"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"numf"," ","="," ",RowBox[{"AlgebraicNumber"," ","[",RowBox[
+{"32",","," ","listf"}],"]"}]}],"\n",RowBox[{"numn"," ","="," ",RowBox[{"AlgebraicNumber"," ","[",RowBox[
+{"32",","," ","listn"}],"]"}]}],"\n",RowBox[{"nump"," ","="," ",RowBox[{"AlgebraicNumber"," ","[",RowBox[
+{"32",","," ","listp"}],"]"}]}]}],"Input",CellFrame -> 1,CellLabel -> "In[8]:= ",
+ExpressionUUID -> "2c7c3d42-9c5f-4853-85ba-4101f545d15a"],Cell[
+BoxData["2642422785",
+StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[8]= ",ExpressionUUID -> "a0ea8825-448f-4ff8-add7-6f9aa0d8e3a9"],Cell[
+BoxData[
+"67601",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[9]= ",ExpressionUUID -> "e5ec809e-7d9d-46d8-be5f-4e19a65cb298"],Cell[
+BoxData[
+"818111625479680",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[10]= ",
+ExpressionUUID -> "1ac18f60-3818-42f4-861d-05dfc3b8b8d6"]},Open],ExpressionUUID -> "52a7d414-d6c1-4974-8e05-5b6850c1d487"]},
+Open],ExpressionUUID -> "dab08973-65f2-479f-afaf-5871369d1459"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["3",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16]}]],StyleBox[StyleBox[StyleBox["\:041f\:0435\:0440\:0435\:0432\:0435\:0441\:0442\:0438",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:043e",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["-",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["\:0444\:0430\:043c\:0438\:043b\:0438\:044e",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0432",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0434\:0432\:043e\:0438\:0447\:043d\:0443\:044e",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox[",",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16]}]],StyleBox[
+StyleBox[StyleBox["\:0432\:043e\:0441\:044c\:043c\:0435\:0440\:0438\:0447\:043d\:0443\:044e",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0438",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0448\:0435\:0441\:0442\:043d\:0430\:0434\:0446\:0430\:0442\:0435\:0440\:0438\:0447\:043d\:0443\:044e",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0444\:043e\:0440\:043c\:044b",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16]}]],StyleBox[StyleBox[StyleBox["\:0418\:0441\:043f\:043e\:043b\:044c\:0437\:043e\:0432\:0430\:0442\:044c",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0444\:0443\:043d\:043a\:0446\:0438\:044e",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["BaseForm",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox["[",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["expr",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox[",",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["n",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox["],",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16]}]],StyleBox[StyleBox[StyleBox["\:043e\:043d\:0430",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["\:0432\:043e\:0437\:0432\:0440\:0430\:0449\:0430\:0435\:0442",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0432\:044b\:0440\:0430\:0436\:0435\:043d\:0438\:0435",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["expr",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["\:0432",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0444\:043e\:0440\:043c\:0435",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:0430",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0441",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:043e\:0441\:043d\:043e\:0432\:0430\:043d\:0438\:0435\:043c",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["n",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[",",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16]}]],StyleBox[StyleBox[StyleBox["\:043a\:043e\:0442\:043e\:0440\:043e\:0435",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0443\:043a\:0430\:0437\:044b\:0432\:0430\:0435\:0442\:0441\:044f",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:043a\:0430\:043a",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["\:043f\:043e\:0434\:0441\:0442\:0440\:043e\:0447\:043d\:044b\:0439",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0438\:043d\:0434\:0435\:043a\:0441",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[".",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16]}],"Section",ExpressionUUID -> "2fb01c8e-e2cd-4034-9313-2250951c2e38"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"BaseForm"," ","[",RowBox[{"numf",","," ","2"}],"]"}],"\n",RowBox[
+{"BaseForm"," ","[",RowBox[{"numf",","," ","8"}],"]"}],"\n",RowBox[{"BaseForm"," ","[",RowBox[
+{"numf",","," ","16"}],"]"}]}],"Input",CellFrame -> 1,CellLabel -> "In[11]:= ",ExpressionUUID -> "469877e2-8ef5-4940-ba56-f179367bcec5"],Cell[
+BoxData[
+TagBox[InterpretationBox[StyleBox[SubscriptBox["\"10011101100000000010110000000001\"",
+"\"2\""],ShowStringCharacters -> False],2642422785,Editable -> False],Function[BaseForm[
+Slot[1],2]]],StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[11]//BaseForm= ",
+ExpressionUUID -> "9499bc18-ff72-4180-8f6c-9f7fb4df6df8"],Cell[
+BoxData[TagBox[InterpretationBox[
+StyleBox[SubscriptBox["\"23540026001\"","\"8\""],ShowStringCharacters -> False],2642422785,
+Editable -> False],Function[BaseForm[Slot[1],8]]],StandardForm],"Output",CellFrame -> 1,
+CellLabel -> "Out[12]//BaseForm= ",ExpressionUUID -> "a6a28b7f-7b4a-44be-b496-f4389ead1408"],Cell[
+BoxData[
+TagBox[InterpretationBox[StyleBox[SubscriptBox["\"9d802c01\"","\"16\""],ShowStringCharacters -> False],
+2642422785,Editable -> False],Function[BaseForm[Slot[1],16]]],StandardForm],"Output",
+CellFrame -> 1,CellLabel -> "Out[13]//BaseForm= ",ExpressionUUID -> "56542048-5e07-4791-950a-6104008b6797"]},
+Open],ExpressionUUID -> "da66c22b-907d-41bc-b03f-0de9b67384cf"]},Open],ExpressionUUID -> "6bab83e6-f1ce-48cd-908e-1779367031b6"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["4",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16]}]],StyleBox[StyleBox[StyleBox["\:041f\:043e\:043b\:0443\:0447\:0438\:0442\:044c",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0441\:043f\:0438\:0441\:043a\:0438",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["\:0446\:0438\:0444\:0440",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["(",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16]}]],StyleBox[
+StyleBox[StyleBox["\:0441\:0438\:043c\:0432\:043e\:043b\:043e\:0432",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox["),",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16]}]],StyleBox[
+StyleBox[StyleBox["\:0441\:043e\:0441\:0442\:0430\:0432\:043b\:044f\:044e\:0449\:0438\:0445",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:043e",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["-",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["\:0438\:043c\:044f",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["\:0432",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0434\:0435\:0441\:044f\:0442\:0438\:0447\:043d\:043e\:0439",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox[",",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],
+FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16]}]],StyleBox[StyleBox[StyleBox["\:0434\:0432\:043e\:0438\:0447\:043d\:043e\:0439",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox[",",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],
+FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16]}]],StyleBox[StyleBox[StyleBox["\:0438",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["\:0448\:0435\:0441\:0442\:043d\:0430\:0434\:0446\:0430\:0442\:0435\:0440\:0438\:0447\:043d\:043e\:0439",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0444\:043e\:0440\:043c\:0430\:0445",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16]}]],StyleBox[StyleBox[StyleBox["\:0418\:0441\:043f\:043e\:043b\:044c\:0437\:043e\:0432\:0430\:0442\:044c",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0444\:0443\:043d\:043a\:0446\:0438\:044e",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox["\[NonBreakingSpace]",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],
+FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16]}]],StyleBox[StyleBox[StyleBox["IntegerDigits",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["[",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["n",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[",",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["b",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox["]:",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16]}]],StyleBox[
+StyleBox[StyleBox["n",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox["-",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16]}]],StyleBox[StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:043e",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox[",",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],
+FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16]}]],StyleBox[StyleBox[StyleBox["b",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox["-",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16]}]],StyleBox[StyleBox[StyleBox["\:043e\:0441\:043d\:043e\:0432\:0430\:043d\:0438\:0435",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[".",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16]}],
+"Section",ExpressionUUID -> "f15e11d4-54b4-498f-8872-9036a7d10995"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"IntegerDigits"," ","[",RowBox[{"numn",","," ","10"}],"]"}],"\n",RowBox[
+{"IntegerDigits"," ","[",RowBox[{"numn",","," ","2"}],"]"}],"\n",RowBox[{"IntegerDigits"," ","[",RowBox[
+{"numn",","," ","16"}],"]"}]}],"Input",CellFrame -> 1,CellLabel -> "In[14]:= ",ExpressionUUID -> "cab1916d-e493-4707-b0a8-716928927f41"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"6",",","7",",","6",",","0",",","1"}],"}"}],StandardForm],"Output",
+CellFrame -> 1,CellLabel -> "Out[14]= ",ExpressionUUID -> "62d33dd6-c36d-4c53-a98b-d1506bc252f1"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"1",",","0",",","0",",","0",",","0",",","1",",","0",",","0",",","0",",","0",",","0",",","0",",","1",",","0",",","0",",","0",",","1"}],"}"}],
+StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[15]= ",ExpressionUUID -> "8b678f2b-bbac-4203-9e7a-fd3a9da6559f"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"1",",","0",",","8",",","1",",","1"}],"}"}],StandardForm],"Output",
+CellFrame -> 1,CellLabel -> "Out[16]= ",ExpressionUUID -> "e8606d87-a11e-4fd8-9cc9-136ed65e46d8"]},
+Open],ExpressionUUID -> "5e9bb35c-171d-4577-948a-5c70804637a5"]},Open],ExpressionUUID -> "26220d85-5928-4dca-b3ce-738d954f3ac6"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["5",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16]}]],StyleBox[StyleBox[StyleBox["\:041f\:0440\:043e\:0432\:0435\:0441\:0442\:0438",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:043e\:043f\:0435\:0440\:0430\:0446\:0438\:044e",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["\:0434\:0435\:043b\:0435\:043d\:0438\:044f",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0431\:043e\:043b\:044c\:0448\:0435\:0433\:043e",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["\:0438\:0437",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],
+FontSize -> 16],StyleBox[StyleBox[StyleBox["\"",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16]}]],StyleBox[StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:0430",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox["-",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0444\:0430\:043c\:0438\:043b\:0438\:0438",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox["\"",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16]}]],StyleBox[
+StyleBox[StyleBox["\:0438",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["\"",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16]}]],StyleBox[StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:0430",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox["-",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0438\:043c\:0435\:043d\:0438",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox["\"",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16]}]],StyleBox[StyleBox[StyleBox["\:043d\:0430",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:043c\:0435\:043d\:044c\:0448\:0435\:0435",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox[".",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16]}]],StyleBox[
+StyleBox[StyleBox["\:0420\:0435\:0437\:0443\:043b\:044c\:0442\:0430\:0442",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["\:0446\:0435\:043b\:043e\:0447\:0438\:0441\:043b\:0435\:043d\:043d\:043e\:0433\:043e",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0434\:0435\:043b\:0435\:043d\:0438\:044f",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["\:043f\:0435\:0440\:0435\:0432\:0435\:0441\:0442\:0438",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0432",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0432\:0435\:0449\:0435\:0441\:0442\:0432\:0435\:043d\:043d\:0443\:044e",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0444\:043e\:0440\:043c\:0443",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["\:0441",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[
+0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["\:043f\:043e\:043c\:043e\:0449\:044c\:044e",
+FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[
+StyleBox[" ",FontWeight -> Bold],FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[
+StyleBox[StyleBox["\:0444\:0443\:043d\:043a\:0446\:0438\:0438",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["N",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["[",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["expr",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16],StyleBox[StyleBox[StyleBox["].",FontWeight -> Bold],
+FontColor -> RGBColor[0,0,0]],FontSize -> 16]}],"Section",ExpressionUUID -> "e1ef78f4-d2a8-405a-a42c-21b438c65b08"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"N"," ","[",RowBox[{"31"," ","/"," ","1"}],"]"}],"\n",RowBox[
+{"N","[",RowBox[{"17"," ","/"," ","2"}],"]"}]}],"Input",CellFrame -> 1,CellLabel -> "In[19]:= ",
+ExpressionUUID -> "80000e52-b36e-4448-8e0d-a68efb1f14dd"],Cell[
+BoxData["31.`",StandardForm],
+"Output",CellFrame -> 1,CellLabel -> "Out[19]= ",ExpressionUUID -> "56c20fef-c23a-46a2-975e-ccd6665c0015"],Cell[
+BoxData[
+"8.5`",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[20]= ",ExpressionUUID -> "e1eff333-8849-49d8-a76b-660ca6d3e4de"]},
+Open],ExpressionUUID -> "8641ffd3-0bdd-4988-b50b-49380f43d1fc"]},Open],ExpressionUUID -> "2c562df5-63ac-4c78-b455-52e2fe46446d"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["6",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:041d\:0430\:0439\:0442\:0438",FontSize -> 16],FontColor -> RGBColor[0,
+0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0446\:0435\:043b\:0443\:044e",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0438",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0434\:0440\:043e\:0431\:043d\:0443\:044e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0447\:0430\:0441\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043f\:043e\:043b\:0443\:0447\:0435\:043d\:043d\:043e\:0433\:043e",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0432",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043f",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[".",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["5",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox["\[NonBreakingSpace]",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:0432\:0435\:0449\:0435\:0441\:0442\:0432\:0435\:043d\:043d\:043e\:0433\:043e",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:0430",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:0418\:0441\:043f\:043e\:043b\:044c\:0437\:043e\:0432\:0430\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0441\:043e\:043e\:0442\:0432\:0435\:0442\:0441\:0442\:0432\:0435\:043d\:043d\:043e",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0444\:0443\:043d\:043a\:0446\:0438\:0438",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox["\[NonBreakingSpace]",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["IntegerPart",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["[",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["x",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox["],",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["FractionalPart",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["[",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["x",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["].",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}],
+"Section",ExpressionUUID -> "2845eec3-647b-4fe2-bb7f-6a41ce50c1a4"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"IntegerPart"," ","[",RowBox[{"31"," ","/"," ","1"}],"]"}],"\n",RowBox[
+{"FractionalPart"," ","[",RowBox[{"31"," ","/"," ","1"}],"]"}],"\n",RowBox[{"IntegerPart"," ","[",RowBox[
+{"17"," ","/"," ","2"}],"]"}],"\n",RowBox[{"FractionalPart"," ","[",RowBox[{"17"," ","/"," ","2"}],"]"}]}],
+"Input",CellFrame -> 1,CellLabel -> "In[21]:= ",ExpressionUUID -> "e01c98c0-1a61-4cfb-b360-a000ecd9be40"],Cell[
+BoxData[
+"31",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[21]= ",ExpressionUUID -> "44e5f59e-0c47-4c9f-b22f-34d28df930be"],Cell[
+BoxData[
+"0",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[22]= ",ExpressionUUID -> "878c6c28-fc4c-44f0-9416-5f14edc05dc6"],Cell[
+BoxData[
+"8",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[23]= ",ExpressionUUID -> "806c2148-4f06-450e-a314-e8ee33724ab9"],Cell[
+BoxData[
+FractionBox["1","2"],StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[24]= ",
+ExpressionUUID -> "7b2ba999-9ccd-4d3f-a05e-58a9ac4da674"]},Open],ExpressionUUID -> "13ee4bf9-b759-4328-84e6-fbb291592c0d"]},
+Open],ExpressionUUID -> "a0b799c8-b33b-498c-8547-ef9e468b62d7"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["7",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:041f\:0440\:043e\:0432\:0435\:0441\:0442\:0438",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043f\:0440\:0438\:0432\:0435\:0434\:0435\:043d\:0438\:0435",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0432\:0435\:0449\:0435\:0441\:0442\:0432\:0435\:043d\:043d\:043e\:0433\:043e",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:0430",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["(",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:0441\:043c",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:043f",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[".",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["5",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[")",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:043a",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0431\:043b\:0438\:0436\:0430\:0439\:0448\:0438\:043c",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0446\:0435\:043b\:044b\:043c",FontSize -> 16],FontColor -> RGBColor[0,
+0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0441",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043f\:043e\:043c\:043e\:0449\:044c\:044e",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0441\:043b\:0435\:0434\:0443\:044e\:0449\:0438\:0445",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0444\:0443\:043d\:043a\:0446\:0438\:0439",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[":",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["Floor",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["[",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["x",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox["]-",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:0432\:043e\:0437\:0432\:0440\:0430\:0449\:0430\:0435\:0442",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043d\:0430\:0438\:0431\:043e\:043b\:044c\:0448\:0435\:0435",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0446\:0435\:043b\:043e\:0435",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:043e",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:043d\:0435",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043f\:0440\:0435\:0432\:044b\:0448\:0430\:044e\:0449\:0435\:0435",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0434\:0430\:043d\:043d\:043e\:0433\:043e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["x",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[";",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\[NonBreakingSpace]",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["Ceiling",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["[",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["x",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox["]-",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:0432\:043e\:0437\:0432\:0440\:0430\:0449\:0430\:0435\:0442",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0437\:043d\:0430\:0447\:0435\:043d\:0438\:0435",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:043d\:0430\:0438\:043c\:0435\:043d\:044c\:0448\:0435\:0433\:043e",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0446\:0435\:043b\:043e\:0433\:043e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:0430",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:0431\:043e\:043b\:044c\:0448\:0435\:0433\:043e",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0438\:043b\:0438",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox["\[NonBreakingSpace]",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:0440\:0430\:0432\:043d\:043e\:0433\:043e",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["x",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]]}],"Section",ExpressionUUID -> "be278c7c-142d-435c-8a70-23adb27c9331"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"Floor","[",RowBox[{"31"," ","/"," ","1"}],"]"}],"\n",RowBox[
+{"Ceiling"," ","[",RowBox[{"31"," ","/"," ","1"}],"]"}],"\n",RowBox[{"Floor","[",RowBox[
+{"17"," ","/"," ","2"}],"]"}],"\n",RowBox[{"Ceiling"," ","[",RowBox[{"17"," ","/"," ","2"}],"]"}]}],
+"Input",CellFrame -> 1,CellLabel -> "In[25]:= ",ExpressionUUID -> "f264c5c6-fa84-4a8d-98a4-9b593addb7c9"],Cell[
+BoxData[
+"31",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[25]= ",ExpressionUUID -> "04e396dc-9434-4c8d-9bd7-38e7fb2ef4ce"],Cell[
+BoxData[
+"31",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[26]= ",ExpressionUUID -> "17719ce2-28d7-4339-b9ed-547351076062"],Cell[
+BoxData[
+"8",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[27]= ",ExpressionUUID -> "28b60815-f849-4b86-8f38-8be77edbe65e"],Cell[
+BoxData[
+"9",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[28]= ",ExpressionUUID -> "48ccf6f1-5acc-4165-9479-647abba3725f"]},
+Open],ExpressionUUID -> "f3327a65-65cb-4b44-a0ed-02c33dcae171"]},Open],ExpressionUUID -> "d515be21-8f9c-469c-a85b-b29650a94e9a"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["8",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:041e\:043f\:0440\:0435\:0434\:0435\:043b\:0438\:0442\:044c",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0437\:043d\:0430\:0447\:0435\:043d\:0438\:044f",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043c\:0430\:043a\:0441\:0438\:043c\:0430\:043b\:044c\:043d\:043e",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0438",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043c\:0438\:043d\:0438\:043c\:0430\:043b\:044c\:043d\:043e",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0432\:043e\:0437\:043c\:043e\:0436\:043d\:044b\:0445",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0437\:043d\:0430\:0447\:0435\:043d\:0438\:0439",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0447\:0438\:0441\:0435\:043b",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:0441",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043a\:043e\:0442\:043e\:0440\:044b\:043c\:0438",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:043e\:043f\:0435\:0440\:0438\:0440\:0443\:0435\:0442",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0441\:0438\:0441\:0442\:0435\:043c\:0430",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["Mathematica",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["9",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:0418\:0441\:043f\:043e\:043b\:044c\:0437\:043e\:0432\:0430\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0444\:0443\:043d\:043a\:0446\:0438\:0438",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["$",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["MaxMachineNumber",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0438",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["$",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["MinMachineNumber",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[".",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}],"Section",ExpressionUUID -> "0b95efb7-181b-469d-a553-cb183de8d70e"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{"$MaxMachineNumber","\n","$MinMachineNumber"}],"Input",CellFrame -> 1,
+CellLabel -> "In[29]:= ",ExpressionUUID -> "71cca814-8324-43ad-8ce4-8e57eb692cd7"],Cell[
+BoxData[
+"1.7976931348623157`*^308",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[29]= ",
+ExpressionUUID -> "e4802408-6b64-4247-9ed3-1a748d34c6ee"],Cell[
+BoxData["2.2250738585072014`*^-308",
+StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[30]= ",ExpressionUUID -> "7523bb04-7fb1-434b-98b8-14853803f2ad"]},
+Open],ExpressionUUID -> "b30fee14-02c8-473e-8e94-d864d5b2d689"]},Open],ExpressionUUID -> "5823a627-13d0-44a5-93ac-6b26493bf91c"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["9",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:041f\:043e\:043b\:0443\:0447\:0438\:0442\:044c",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox["\[NonBreakingSpace]",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:0442\:0440\:0438",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043f\:0440\:043e\:0441\:0442\:044b\:0445",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:0430",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[",",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:043d\:043e\:043c\:0435\:0440\:0430",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043a\:043e\:0442\:043e\:0440\:044b\:0445",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043e\:043f\:0440\:0435\:0434\:0435\:043b\:044f\:044e\:0442\:0441\:044f",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:0430\:043c\:0438",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["numf",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[",",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["numn",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["nump",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox[".",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:0418\:0441\:043f\:043e\:043b\:044c\:0437\:043e\:0432\:0430\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0444\:0443\:043d\:043a\:0446\:0438\:044e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["Prime",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["[",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["n",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox["]",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\[Dash]",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:0432\:043e\:0437\:0432\:0440\:0430\:0449\:0430\:0435\:0442",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["n",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\[Dash]",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:043e\:0435",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\[NonBreakingSpace]",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:043f\:0440\:043e\:0441\:0442\:043e\:0435",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:043e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]]}],"Section",
+ExpressionUUID -> "ebf30a65-f84a-4934-8a06-6fe6e709b0ab"],Cell[
+CellGroupData[{Cell[
+BoxData[
+{RowBox[{"Prime","[","numf","]"}],"\n",RowBox[{"primen"," ","="," ",RowBox[{"Prime","[","numn","]"}]}],"\n",RowBox[
+{"Prime","[","nump","]"}]}],"Input",CellFrame -> 1,CellLabel -> "In[31]:= ",ExpressionUUID -> "1d85a301-0e43-4f22-9e29-0a731a9a4b80"],Cell[
+BoxData[
+"62940927383",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[31]= ",ExpressionUUID -> "bcd7fb6d-8752-43d8-bbaa-cf8404301ca6"],Cell[
+BoxData[
+"849763",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[32]= ",ExpressionUUID -> "25aff54c-4e13-4a8d-9be3-11fb801e1ee0"],Cell[
+BoxData[
+"30203048093143901",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[33]= ",
+ExpressionUUID -> "282f4c7f-c0a0-4e23-9bbb-6b51a343a583"]},Open],ExpressionUUID -> "98fc0d96-04e4-4e38-bf6b-8b893c511da8"]},
+Open],ExpressionUUID -> "46ccb2ad-40bd-48c2-9d13-4a4e8d06126d"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["10",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:041d\:0430\:0439\:0442\:0438",FontSize -> 16],FontColor -> RGBColor[0,
+0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043f\:0440\:043e\:0441\:0442\:044b\:0435",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:0430",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0441",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043d\:043e\:043c\:0435\:0440\:0430\:043c\:0438",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["99",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[";",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["100",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[";",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["101",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[".",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}],
+"Section",ExpressionUUID -> "c64ac538-b9ed-4fc2-b54e-739d6d184938"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"Prime","[","99","]"}],"\n",RowBox[{"Prime","[","100","]"}],"\n",RowBox[
+{"Prime","[","101","]"}]}],"Input",CellFrame -> 1,CellLabel -> "In[34]:= ",ExpressionUUID -> "088a0a14-b375-4bff-a4c3-afc311ca333b"],Cell[
+BoxData[
+"523",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[34]= ",ExpressionUUID -> "f2775c49-b6c8-4963-b2d6-d9f81e711351"],Cell[
+BoxData[
+"541",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[35]= ",ExpressionUUID -> "359063aa-51fc-4c70-9867-4fc553a2e870"],Cell[
+BoxData[
+"547",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[36]= ",ExpressionUUID -> "7ece8238-ef6d-4af0-aed0-f6e7ec2e3e04"]},
+Open],ExpressionUUID -> "cf9669b7-e76b-40a8-872b-f7e3752dbecf"]},Open],ExpressionUUID -> "0f09cff0-0ba4-48eb-b29d-4793538a5fd8"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["11",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:041e\:0442\:043d\:043e\:0441\:0438\:0442\:0435\:043b\:044c\:043d\:043e",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:0430",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["539",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043d\:0430\:0439\:0442\:0438",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043f\:0440\:0435\:0434\:044b\:0434\:0443\:0449\:0435\:0435",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0438",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0434\:0432\:0430",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043f\:043e\:0441\:043b\:0435\:0434\:0443\:044e\:0449\:0438\:0445",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043f\:0440\:043e\:0441\:0442\:044b\:0445",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:0430",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:0418\:0441\:043f\:043e\:043b\:044c\:0437\:043e\:0432\:0430\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0444\:0443\:043d\:043a\:0446\:0438\:044e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\[NonBreakingSpace]",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["NextPrime",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["[",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["x",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["k",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox["]-",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:0432\:043e\:0437\:0432\:0440\:0430\:0449\:0430\:0435\:0442",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0441\:043b\:0435\:0434\:0443\:044e\:0449\:0435\:0435",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0437\:0430",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0437\:0430\:0434\:0430\:043d\:043d\:044b\:043c",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0447\:0438\:0441\:043b\:043e\:043c",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043f\:0440\:043e\:0441\:0442\:043e\:0435",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:043e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[";",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:043f\:0430\:0440\:0430\:043c\:0435\:0442\:0440",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\[LeftGuillemet]",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["k",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox["\[RightGuillemet]",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:043c\:043e\:0436\:0435\:0442",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0431\:044b\:0442\:044c",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043e\:0442\:0440\:0438\:0446\:0430\:0442\:0435\:043b\:044c\:043d\:044b\:043c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]]}],
+"Section",ExpressionUUID -> "cd9eb0cc-81ef-424f-a162-34ba65a99127"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"NextPrime"," ","[",RowBox[{"539",","," ","1"}],"]"}],"\n",RowBox[
+{"NextPrime"," ","[",RowBox[{"539",","," ",RowBox[{"-"," ","1"}]}],"]"}]}],"Input",
+CellFrame -> 1,CellLabel -> "In[37]:= ",ExpressionUUID -> "d71599bc-4321-4853-9e0c-da691ec5d4b6"],Cell[
+BoxData[
+"541",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[37]= ",ExpressionUUID -> "23442fae-4c59-4356-a4bf-cc13a5771883"],Cell[
+BoxData[
+"523",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[38]= ",ExpressionUUID -> "1264bc0b-3e67-4da5-89c6-16ead1582fe6"]},
+Open],ExpressionUUID -> "0c0b5d36-e887-4ca5-afb8-d06eac15b324"]},Open],ExpressionUUID -> "fbd586a1-e89f-439d-ad81-876b68d159ec"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["12",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:041d\:0430\:0439\:0442\:0438",FontSize -> 16],FontColor -> RGBColor[0,
+0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043a\:043e\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043f\:0440\:043e\:0441\:0442\:044b\:0445",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0447\:0438\:0441\:0435\:043b",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:043d\:0435",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043f\:0440\:0435\:0432\:044b\:0448\:0430\:044e\:0449\:0438\:0445",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[".",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:0418\:0441\:043f\:043e\:043b\:044c\:0437\:043e\:0432\:0430\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0444\:0443\:043d\:043a\:0446\:0438\:044e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox["\[NonBreakingSpace]",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["PrimePi",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["[",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["x",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["].",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}],
+"Section",ExpressionUUID -> "45623c11-8eef-4c9a-a5e7-432ac2750923"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"PrimePi"," ","[","539","]"}]],"Input",CellFrame -> 1,CellLabel -> "In[39]:= ",
+ExpressionUUID -> "76bfc068-7adc-4788-aa58-a3141acbea42"],Cell[
+BoxData["99",StandardForm],
+"Output",CellFrame -> 1,CellLabel -> "Out[39]= ",ExpressionUUID -> "a7e537fb-7442-4336-8e5c-0f4ebd12f633"]},
+Open],ExpressionUUID -> "e9c80e38-b210-4d7a-90b2-e2619564cb56"]},Open],ExpressionUUID -> "15677ae0-e52f-4d81-bd81-ca86ca982b29"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["13",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:041e\:0442\:043d\:043e\:0441\:0438\:0442\:0435\:043b\:044c\:043d\:043e",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\"",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:0430",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["-",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0438\:043c\:0435\:043d\:0438",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox["\"",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:043d\:0430\:0439\:0442\:0438",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["1",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["-",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043e\:0435",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["10",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["-",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043e\:0435",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["100",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["-",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043e\:0435",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:043f\:043e\:0441\:043b\:0435\:0434\:0443\:044e\:0449\:0438\:0435",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:043f\:0440\:043e\:0441\:0442\:044b\:0435",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:0430",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[".",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}],
+"Section",ExpressionUUID -> "d2ba486e-f8be-4f97-8043-f71301f1f494"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"NextPrime"," ","[",RowBox[{"primen"," ",","," ","1"}],"]"}],"\n",RowBox[
+{"NextPrime"," ","[",RowBox[{"primen"," ",","," ","10"}],"]"}],"\n",RowBox[{"NextPrime"," ","[",RowBox[
+{"primen"," ",","," ","100"}],"]"}]}],"Input",CellFrame -> 1,CellLabel -> "In[40]:= ",
+ExpressionUUID -> "7597b890-5de1-4238-a41e-a12984d9331d"],Cell[
+BoxData["849767",
+StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[40]= ",ExpressionUUID -> "a115e144-0c27-4ba6-a6f8-93d9ae44af6a"],Cell[
+BoxData[
+"849923",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[41]= ",ExpressionUUID -> "75cc9886-1d77-43d8-a7ad-61d34cb4deaa"],Cell[
+BoxData[
+"851171",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[42]= ",ExpressionUUID -> "96d33db7-bcec-493a-b0bb-74cdd09de9f4"]},
+Open],ExpressionUUID -> "6a20828a-1117-406f-923d-d5f9b3f9da1b"]},Open],ExpressionUUID -> "e9f5ff9d-0a13-487f-bc8f-da13b7beff87"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["14",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:041e\:043f\:0440\:0435\:0434\:0435\:043b\:0438\:0442\:044c",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:043c\:0430\:043a\:0441\:0438\:043c\:0430\:043b\:044c\:043d\:043e\:0435",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043f\:0440\:043e\:0441\:0442\:043e\:0435",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:043e",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["(\"",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["maxPrime",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox["\")",FontSize -> 16],FontColor -> RGBColor[0,
+0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:0432",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0441\:0438\:0441\:0442\:0435\:043c\:0435",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["Mathematica",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["9",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[".",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}],
+"Section",ExpressionUUID -> "95304591-1197-463b-84a1-c67c6bf965fc"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"maxPrime"," ","="," ",RowBox[{"NextPrime"," ","[",RowBox[
+{"$MaxMachineNumber"," ",","," ",RowBox[{"-"," ","1"}]}],"]"}]}]],"Input",CellFrame -> 1,
+CellLabel -> "In[43]:= ",ExpressionUUID -> "fc57d236-c347-43ea-aba1-4dc156234cb1"],Cell[
+BoxData[
+"179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858283",
+StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[43]= ",ExpressionUUID -> "16db8c8b-7789-4fc5-a5b7-09dcd54831cd"]},
+Open],ExpressionUUID -> "9a59b66e-c2fa-436f-b010-122d0414de10"]},Open],ExpressionUUID -> "adfa8926-730d-46b2-bece-4477ad10d073"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["15",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:041d\:0430\:0439\:0442\:0438",FontSize -> 16],FontColor -> RGBColor[0,
+0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:043e",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0440\:0430\:0437\:0440\:044f\:0434\:043e\:0432",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:0441\:043e\:0441\:0442\:0430\:0432\:043b\:044f\:044e\:0449\:0438\:0445",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\"",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["maxPrime",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox["\"",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:0432",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0434\:0435\:0441\:044f\:0442\:0438\:0447\:043d\:043e\:043c",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:0434\:0432\:043e\:0438\:0447\:043d\:043e\:043c",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0438",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0448\:0435\:0441\:0442\:043d\:0430\:0434\:0446\:0430\:0442\:0435\:0440\:0438\:0447\:043d\:043e\:043c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043f\:0440\:0435\:0441\:0442\:0430\:0432\:043b\:0435\:043d\:0438\:0438",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:0418\:0441\:043f\:043e\:043b\:044c\:0437\:043e\:0432\:0430\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0444\:0443\:043d\:043a\:0446\:0438\:044e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["IntegerLength",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["[",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["n",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["b",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["].",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}],
+"Section",ExpressionUUID -> "e84baea1-c8f2-4001-912f-400189522436"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"IntegerLength"," ","[",RowBox[{"maxPrime"," ",","," ","2"}],"]"}],"\n",RowBox[
+{"IntegerLength"," ","[",RowBox[{"maxPrime"," ",","," ","10"}],"]"}],"\n",RowBox[
+{"IntegerLength"," ","[",RowBox[{"maxPrime"," ",","," ","16"}],"]"}]}],"Input",CellFrame -> 1,
+CellLabel -> "In[44]:= ",ExpressionUUID -> "526cdf09-e116-40b7-8680-7b6eb090a3c2"],Cell[
+BoxData[
+"1024",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[44]= ",ExpressionUUID -> "0f956b64-fb5a-4225-b155-246b59ab0d85"],Cell[
+BoxData[
+"309",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[45]= ",ExpressionUUID -> "3c38d05c-1394-4a4b-978b-c4bb559bfd63"],Cell[
+BoxData[
+"256",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[46]= ",ExpressionUUID -> "c7ea0908-b1ec-4144-acfe-33b851e64225"]},
+Open],ExpressionUUID -> "5599983a-20e3-4f0c-9eef-914dfe07d8f6"]},Open],ExpressionUUID -> "a352a9dd-7c08-4e6d-bb9e-ff74dff64b0c"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["16",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:041f\:043e\:043b\:0443\:0447\:0438\:0442\:044c",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0442\:0440\:0438",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0441\:043b\:0443\:0447\:0430\:0439\:043d\:044b\:0445",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0446\:0435\:043b\:044b\:0445",FontSize -> 16],FontColor -> RGBColor[0,
+0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:0430",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0432",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0434\:0438\:0430\:043f\:0430\:0437\:043e\:043d\:0435",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["(",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["range",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[")",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:043e\:0442",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["imin",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["=",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["0",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0434\:043e",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["imax",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["=",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["255",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[",",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:043f\:0440\:0438\:043c\:0435\:043d\:044f\:044f",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0444\:0443\:043d\:043a\:0446\:0438\:044e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox["\[NonBreakingSpace]",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["RandomInteger",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["[",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["range",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["n",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["].",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}],
+"Section",ExpressionUUID -> "3e3ec42f-a3aa-4654-8bdf-f368ceb7463d"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"RandomInteger"," ","[",RowBox[{"225",","," ","3"}],"]"}]],
+"Input",CellFrame -> 1,CellLabel -> "In[47]:= ",ExpressionUUID -> "6a6be572-e2ee-43ad-9435-ec2fd427e984"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"24",",","145",",","54"}],"}"}],StandardForm],"Output",CellFrame -> 1,
+CellLabel -> "Out[47]= ",ExpressionUUID -> "fa8f72cd-7543-470d-a4b9-4aef2e5fddaf"]},
+Open],ExpressionUUID -> "2da062dd-3f79-4c18-a28d-dca6daab3282"]},Open],ExpressionUUID -> "0d18c4f1-8e03-4e0c-be88-4be40e1fa19a"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["17",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:0423\:0441\:0442\:0430\:043d\:043e\:0432\:0438\:0442\:044c",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0433\:0435\:043d\:0435\:0440\:0430\:0442\:043e\:0440",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:043f\:0441\:0435\:0432\:0434\:043e\:0441\:043b\:0443\:0447\:0430\:0439\:043d\:044b\:0445",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0447\:0438\:0441\:0435\:043b",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0432",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043d\:0430\:0447\:0430\:043b\:044c\:043d\:043e\:0435",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0441\:043e\:0441\:0442\:043e\:044f\:043d\:0438\:0435",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:043a\:043e\:0442\:043e\:0440\:043e\:0435",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043e\:043f\:0440\:0435\:0434\:0435\:043b\:044f\:0435\:0442\:0441\:044f",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\"",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:043e\:043c",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["-",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0444\:0430\:043c\:0438\:043b\:0438\:0435\:0439",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox["\".",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:0418\:0441\:043f\:043e\:043b\:044c\:0437\:043e\:0432\:0430\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0444\:0443\:043d\:043a\:0446\:0438\:044e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox["\[NonBreakingSpace]",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["SeedRandom",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["[",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["n",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox["]-",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:043f\:0435\:0440\:0435\:0432\:043e\:0434\:0438\:0442",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox["\[NonBreakingSpace]",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:0433\:0435\:043d\:0435\:0440\:0430\:0442\:043e\:0440",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043f\:0441\:0435\:0432\:0434\:043e\:0441\:043b\:0443\:0447\:0430\:0439\:043d\:044b\:0445",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0447\:0438\:0441\:0435\:043b",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0432",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043d\:0430\:0447\:0430\:043b\:044c\:043d\:043e\:0435",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0441\:043e\:0441\:0442\:043e\:044f\:043d\:0438\:0435",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:043e\:043f\:0440\:0435\:0434\:0435\:043b\:044f\:0435\:043c\:043e\:0435",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043f\:0430\:0440\:0430\:043c\:0435\:0442\:0440\:043e\:043c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["n",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[".",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}],
+"Section",ExpressionUUID -> "b76153bb-2a1a-4ac1-9a39-5cd46689704d"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"SeedRandom"," ","[","numf","]"}]],"Input",CellFrame -> 1,
+CellLabel -> "In[48]:= ",ExpressionUUID -> "92b4b705-47b5-400f-a8f7-def3401ac377"],Cell[
+BoxData[
+InterpretationBox[RowBox[{TagBox["RandomGeneratorState","SummaryHead"],"[",DynamicModuleBox[
+{Set[Typeset`open$$,False],Set[Typeset`embedState$$,"Ready"]},TemplateBox[{PaneSelectorBox[
+{False -> GridBox[{{GridBox[{{RowBox[{TagBox["\"Method: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[
+"\"ExtendedCA\"","SummaryItem"]}]},{RowBox[{TagBox["\"State hash: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[
+RowBox[{"-","6443686421575727505"}],"SummaryItem"]}]}},GridBoxAlignment -> {"Columns" -> {{Left}},"Rows" -> {{Automatic}}},
+AutoDelete -> False,GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},
+GridBoxSpacings -> {"Columns" -> {{2}},"Rows" -> {{Automatic}}},BaseStyle -> {ShowStringCharacters -> False,NumberMarks -> False,PrintPrecision -> 3,ShowSyntaxStyles -> False}]}},
+GridBoxAlignment -> {"Columns" -> {{Left}},"Rows" -> {{Top}}},AutoDelete -> False,
+GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},BaselinePosition -> {1,1}],True -> GridBox[
+{{GridBox[{{RowBox[{TagBox["\"Method: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[
+"\"ExtendedCA\"","SummaryItem"]}]},{RowBox[{TagBox["\"State hash: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[
+RowBox[{"-","6443686421575727505"}],"SummaryItem"]}]}},GridBoxAlignment -> {"Columns" -> {{Left}},"Rows" -> {{Automatic}}},
+AutoDelete -> False,GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},
+GridBoxSpacings -> {"Columns" -> {{2}},"Rows" -> {{Automatic}}},BaseStyle -> {ShowStringCharacters -> False,NumberMarks -> False,PrintPrecision -> 3,ShowSyntaxStyles -> False}]}},
+GridBoxAlignment -> {"Columns" -> {{Left}},"Rows" -> {{Top}}},AutoDelete -> False,
+GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},BaselinePosition -> {1,1}]},
+Dynamic[Typeset`open$$],ImageSize -> Automatic]},"SummaryPanel"],RuleDelayed[DynamicModuleValues,
+{}],ExpressionUUID -> "bf467d70-b20b-46aa-8ead-41b5bd254eab"],"]"}],RandomGeneratorState[
+{"ExtendedCA",{80,4,0}},{{RawArray["UnsignedInteger64",{13069452,11515198609905919633,17254007562668446277,11098578379242006917,6229663704316488810,8091996191731097084,4637022247104799757,17251114184351228027,649809892888844473,6214527319142260884,10536582387164809366,10377268041375786227,8701165315957983654,483424143771199094,9457854476134056620,1092426238651481870,1391850277444012958,14260794439994412062,6053683383837152402,417017193289998075}],0,20,20},{RawArray[
+"UnsignedInteger64",{2460608082617501491,11207376898144566805,8654571222952796330,14991503139638481584,11501526770774969446,9428234969415789021,3005578481859111566,11849526053242545113,11383139071546952853,5775023568270632428,16978251277960629027,9699541708168458173,10805364579590440076,13494131400116793900,14330848056247883916,9643014354779687609,8844879890317443054,641604629477608657,7404487279136788656,688092740903260960,16575596002417895078,1654831428820909725,13776700846114466840,12690513076915770057,303562027496205587,12113900757978656252,4293287263739147845,738540784886567884,3931635277750574955,15384085389769568650,15316536343287178898,17898479907523045770,8743416122137778771,311595230006231416,11701452414802163413,17474550815669557533,3356611080191324769,17689430978190915162,502480942966457707,9466855318907723665,6866954755961995491,3231312244220360529,4044659279125372269,4187973152412875608,10620008488944539798,14169276315751733130,5948774538562306461,10558636433579928823,9416525916832632010,13049762937566227769,8863505865476566193,1321384428344005852,13785463826904376368,3226493961122246429,474798286914231177,293729713360746689,6828912004469448219,16366311392908488921,9253421023109702349,14145660403558121329,18292755434338812282,8230289636087086024,15591187272148446879,916656926944409938,12646257472832966355,1456355334875921305,7982551908918047939,7221067866495155167,4898321151940606974,7855542167900360900,10862421895736036554,15254376227342796832,13491343054295396539,884868567866097215,8701630958725128240,14741190654809729720,6423093386388999956,8855296495108367957,5753234450555903605,8640459303383703729}],4,0}},
+RawArray["UnsignedInteger64",{12003057652133824111,0}]],Selectable -> False,Editable -> False,
+SelectWithContents -> True],StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[48]= ",
+ExpressionUUID -> "2f9cfaa1-9a41-46ce-8dc9-480235a77310"]},Open],ExpressionUUID -> "bf79bc9c-3b01-47d6-bee4-f5f99af0304d"]},
+Open],ExpressionUUID -> "fbd13305-db19-4821-ab24-285d15e8b120"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["18",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:041f\:043e\:043b\:0443\:0447\:0438\:0442\:044c",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0442\:0440\:0438",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0441\:043b\:0443\:0447\:0430\:0439\:043d\:044b\:0445",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0446\:0435\:043b\:044b\:0445",FontSize -> 16],FontColor -> RGBColor[0,
+0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:0430",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0432",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0434\:0438\:0430\:043f\:0430\:0437\:043e\:043d\:0435",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:043e\:0442",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["0",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0434\:043e",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["imax",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["=",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["1000",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[".",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}],"Section",ExpressionUUID -> "fc8c21d2-ec0d-4a8d-9ad2-9f94d4572317"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"RandomInteger"," ","[",RowBox[{"1000",","," ","3"}],"]"}]],
+"Input",CellFrame -> 1,CellLabel -> "In[49]:= ",ExpressionUUID -> "fe592e6d-6653-4284-a006-87bd21099838"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"643",",","802",",","496"}],"}"}],StandardForm],"Output",CellFrame -> 1,
+CellLabel -> "Out[49]= ",ExpressionUUID -> "402519e6-3051-42af-95ea-c408c7a91fcb"]},
+Open],ExpressionUUID -> "0c22240d-9371-462d-9a38-65c0f666cde8"]},Open],ExpressionUUID -> "2fdc0ea2-28d4-4eb8-b2fb-337784f04bf1"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["19",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:041f\:043e\:0432\:0442\:043e\:0440\:043d\:043e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043f\:043e\:043b\:0443\:0447\:0438\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0442\:0430\:043a\:0443\:044e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0436\:0435",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:043f\:043e\:0441\:043b\:0435\:0434\:043e\:0432\:0430\:0442\:0435\:043b\:044c\:043d\:043e\:0441\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0438\:0437",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0442\:0440\:0435\:0445",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0447\:0438\:0441\:0435\:043b",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043f",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[".",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["18",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[".",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}],
+"Section",ExpressionUUID -> "d6f7396f-676c-4418-b11d-ed637a325b2f"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"SeedRandom"," ","[","numf","]"}],"\n",RowBox[{"RandomInteger"," ","[",RowBox[
+{"1000",","," ","3"}],"]"}]}],"Input",CellFrame -> 1,CellLabel -> "In[50]:= ",ExpressionUUID -> "a6cbd8d4-68e5-411b-95c1-f1b73c7a80bf"],Cell[
+BoxData[
+InterpretationBox[RowBox[{TagBox["RandomGeneratorState","SummaryHead"],"[",DynamicModuleBox[
+{Set[Typeset`open$$,False],Set[Typeset`embedState$$,"Ready"]},TemplateBox[{PaneSelectorBox[
+{False -> GridBox[{{GridBox[{{RowBox[{TagBox["\"Method: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[
+"\"ExtendedCA\"","SummaryItem"]}]},{RowBox[{TagBox["\"State hash: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[
+"1736703677306105995","SummaryItem"]}]}},GridBoxAlignment -> {"Columns" -> {{Left}},"Rows" -> {{Automatic}}},
+AutoDelete -> False,GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},
+GridBoxSpacings -> {"Columns" -> {{2}},"Rows" -> {{Automatic}}},BaseStyle -> {ShowStringCharacters -> False,NumberMarks -> False,PrintPrecision -> 3,ShowSyntaxStyles -> False}]}},
+GridBoxAlignment -> {"Columns" -> {{Left}},"Rows" -> {{Top}}},AutoDelete -> False,
+GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},BaselinePosition -> {1,1}],True -> GridBox[
+{{GridBox[{{RowBox[{TagBox["\"Method: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[
+"\"ExtendedCA\"","SummaryItem"]}]},{RowBox[{TagBox["\"State hash: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[
+"1736703677306105995","SummaryItem"]}]}},GridBoxAlignment -> {"Columns" -> {{Left}},"Rows" -> {{Automatic}}},
+AutoDelete -> False,GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},
+GridBoxSpacings -> {"Columns" -> {{2}},"Rows" -> {{Automatic}}},BaseStyle -> {ShowStringCharacters -> False,NumberMarks -> False,PrintPrecision -> 3,ShowSyntaxStyles -> False}]}},
+GridBoxAlignment -> {"Columns" -> {{Left}},"Rows" -> {{Top}}},AutoDelete -> False,
+GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},BaselinePosition -> {1,1}]},
+Dynamic[Typeset`open$$],ImageSize -> Automatic]},"SummaryPanel"],RuleDelayed[DynamicModuleValues,
+{}],ExpressionUUID -> "5ff893ed-c356-46aa-8ae9-03084a4facb4"],"]"}],RandomGeneratorState[
+{"ExtendedCA",{80,4,0}},{{RawArray["UnsignedInteger64",{16394396847,5672323852227029386,2792163254110647992,14779458653422471281,7226154306634269043,5662260754794924894,5855022739626433563,3624548058908155667,10136337684881041449,4774723954706089268,11240759594192442731,2772980438646224303,12568409422330852183,2048323300561376745,13615225604738770387,17143769210679900899,4814618275588279863,5736997087768471000,134738798348293358,17164296340403312447}],0,20,20},{RawArray[
+"UnsignedInteger64",{2460608082617501491,11207376898144566805,8654571222952796330,14991503139638481584,11501526770774969446,9428234969415789021,3005578481859111566,11849526053242545113,11383139071546952853,5775023568270632428,16978251277960629027,9699541708168458173,10805364579590440076,13494131400116793900,14330848056247883916,9643014354779687609,8844879890317443054,641604629477608657,7404487279136788656,688092740903260960,16575596002417895078,1654831428820909725,13776700846114466840,12690513076915770057,303562027496205587,12113900757978656252,4293287263739147845,738540784886567884,3931635277750574955,15384085389769568650,15316536343287178898,17898479907523045770,8743416122137778771,311595230006231416,11701452414802163413,17474550815669557533,3356611080191324769,17689430978190915162,502480942966457707,9466855318907723665,6866954755961995491,3231312244220360529,4044659279125372269,4187973152412875608,10620008488944539798,14169276315751733130,5948774538562306461,10558636433579928823,9416525916832632010,13049762937566227769,8863505865476566193,1321384428344005852,13785463826904376368,3226493961122246429,474798286914231177,293729713360746689,6828912004469448219,16366311392908488921,9253421023109702349,14145660403558121329,18292755434338812282,8230289636087086024,15591187272148446879,916656926944409938,12646257472832966355,1456355334875921305,7982551908918047939,7221067866495155167,4898321151940606974,7855542167900360900,10862421895736036554,15254376227342796832,13491343054295396539,884868567866097215,8701630958725128240,14741190654809729720,6423093386388999956,8855296495108367957,5753234450555903605,8640459303383703729}],4,0}},
+RawArray["UnsignedInteger64",{1736703677306105995,0}]],Selectable -> False,Editable -> False,
+SelectWithContents -> True],StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[50]= ",
+ExpressionUUID -> "ee8f77e6-b85a-4d50-8af3-16636da3e344"],Cell[
+BoxData[RowBox[{"{",RowBox[
+{"643",",","802",",","496"}],"}"}],StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[51]= ",
+ExpressionUUID -> "b0158098-92ef-482b-9bdd-be3d8f961771"]},Open],ExpressionUUID -> "2f67e4c7-4978-480c-be05-2dcd1b719cd5"]},
+Open],ExpressionUUID -> "984150fe-6ad9-4b85-b6ab-aab396921563"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["20",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:041d\:0430\:0439\:0442\:0438",FontSize -> 16],FontColor -> RGBColor[0,
+0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0441\:043b\:0443\:0447\:0430\:0439\:043d\:043e\:0435",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:043e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[",",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:043a\:043e\:0442\:043e\:0440\:043e\:0435",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043d\:0430\:0445\:043e\:0434\:0438\:0442\:0441\:044f",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0432",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0434\:0438\:0430\:043f\:0430\:0437\:043e\:043d\:0435",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\"",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:043e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["-",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0438\:043c\:044f",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox["\"",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\[PlusMinus]",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["10",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["*",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["N",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:0433\:0434\:0435",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["N",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\[Dash]",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:043d\:043e\:043c\:0435\:0440",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043f\:043e",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0441\:043f\:0438\:0441\:043a\:0443",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0432",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0433\:0440\:0443\:043f\:043f\:0435",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:0418\:0441\:043f\:043e\:043b\:044c\:0437\:043e\:0432\:0430\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0444\:0443\:043d\:043a\:0446\:0438\:044e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["RandomInteger",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["[{",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["imin",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["imax",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["}].",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}],
+"Section",ExpressionUUID -> "ab2506a0-9cca-4b27-a772-67c32820d6d5"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"RandomInteger"," ","[",RowBox[{"{",RowBox[{RowBox[{"numn"," ","-"," ",RowBox[
+{"10"," ","*"," ","4"}]}],","," ",RowBox[{"numn"," ","+"," ",RowBox[{"10"," ","*"," ","4"}]}]}],"}"}],"]"}]],
+"Input",CellFrame -> 1,CellLabel -> "In[53]:= ",ExpressionUUID -> "2ca08b4d-47b9-439e-8a52-25ba4de66d15"],Cell[
+BoxData[
+"67584",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[53]= ",ExpressionUUID -> "341903b2-ed25-4e4c-9b51-25263916d252"]},
+Open],ExpressionUUID -> "0163058a-dcce-4d21-bef5-2d996d0242f7"]},Open],ExpressionUUID -> "5146b65a-9537-4cc1-b9cf-bb8afed5084c"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["21",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:0421\:0444\:043e\:0440\:043c\:0438\:0440\:043e\:0432\:0430\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043f\:043e\:0441\:043b\:0435\:0434\:043e\:0432\:0430\:0442\:0435\:043b\:044c\:043d\:043e\:0441\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0438\:0437",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["40",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["-",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["N",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0441\:043b\:0443\:0447\:0430\:0439\:043d\:044b\:0445",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0447\:0438\:0441\:0435\:043b",FontSize -> 16],FontColor -> RGBColor[0,
+0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[",",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:043d\:0430\:0445\:043e\:0434\:044f\:0449\:0438\:0445\:0441\:044f",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0432",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0434\:0438\:0430\:043f\:0430\:0437\:043e\:043d\:0435",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:043e\:0442",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["0",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0434\:043e",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["128",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:0418\:0441\:043f\:043e\:043b\:044c\:0437\:043e\:0432\:0430\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0444\:0443\:043d\:043a\:0446\:0438\:044e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["RandomInteger",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["[",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["range",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["n",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["].",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}],"Section",ExpressionUUID -> "7db4f81b-ce1b-46d4-88f8-e2796c71b581"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"RandomInteger"," ","[",RowBox[{"128",","," ",RowBox[{"40","-","4"}]}],"]"}]],
+"Input",CellFrame -> 1,CellLabel -> "In[55]:= ",ExpressionUUID -> "f86cf098-792e-404d-850e-5dbc649fc9f3"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"47",",","78",",","53",",","54",",","61",",","121",",","127",",","115",",","93",",","113",",","104",",","122",",","6",",","27",",","58",",","74",",","0",",","88",",","28",",","119",",","119",",","25",",","74",",","102",",","107",",","4",",","60",",","6",",","35",",","71",",","115",",","84",",","124",",","38",",","71",",","40"}],"}"}],
+StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[55]= ",ExpressionUUID -> "91ff7e33-8146-4abf-9207-9ef7c5d9251c"]},
+Open],ExpressionUUID -> "d69094e6-4329-4135-80c4-53c87c2f26cf"]},Open],ExpressionUUID -> "dc96feb2-4d9e-4099-849d-bac4fd5813dc"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["22",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:041f\:043e\:043b\:0443\:0447\:0438\:0442\:044c",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0442\:0440\:0438",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:043f\:0440\:043e\:0441\:0442\:044b\:0445",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0441\:043b\:0443\:0447\:0430\:0439\:043d\:044b\:0445",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0446\:0435\:043b\:044b\:0445",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:0430",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0432",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0434\:0438\:0430\:043f\:0430\:0437\:043e\:043d\:0435",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:043e\:0442",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["2",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0434\:043e",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["imax",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["=",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["512",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:0418\:0441\:043f\:043e\:043b\:044c\:0437\:043e\:0432\:0430\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0444\:0443\:043d\:043a\:0446\:0438\:044e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["RandomPrime",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["[",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["range",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["n",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["].",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}],
+"Section",ExpressionUUID -> "b61430be-0c96-46b8-89c9-8ec3f99cc988"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"SeedRandom"," ","[","numf","]"}],"\n",RowBox[{"RandomPrime"," ","[",RowBox[
+{RowBox[{"{",RowBox[{"2",","," ","512"}],"}"}],","," ","3"}],"]"}]}],"Input",CellFrame -> 1,
+CellLabel -> "In[56]:= ",ExpressionUUID -> "7b52b986-e797-4bce-8bb3-a666c6cebbef"],Cell[
+BoxData[
+InterpretationBox[RowBox[{TagBox["RandomGeneratorState","SummaryHead"],"[",DynamicModuleBox[
+{Set[Typeset`open$$,False],Set[Typeset`embedState$$,"Ready"]},TemplateBox[{PaneSelectorBox[
+{False -> GridBox[{{GridBox[{{RowBox[{TagBox["\"Method: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[
+"\"ExtendedCA\"","SummaryItem"]}]},{RowBox[{TagBox["\"State hash: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[
+"3055290225635294970","SummaryItem"]}]}},GridBoxAlignment -> {"Columns" -> {{Left}},"Rows" -> {{Automatic}}},
+AutoDelete -> False,GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},
+GridBoxSpacings -> {"Columns" -> {{2}},"Rows" -> {{Automatic}}},BaseStyle -> {ShowStringCharacters -> False,NumberMarks -> False,PrintPrecision -> 3,ShowSyntaxStyles -> False}]}},
+GridBoxAlignment -> {"Columns" -> {{Left}},"Rows" -> {{Top}}},AutoDelete -> False,
+GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},BaselinePosition -> {1,1}],True -> GridBox[
+{{GridBox[{{RowBox[{TagBox["\"Method: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[
+"\"ExtendedCA\"","SummaryItem"]}]},{RowBox[{TagBox["\"State hash: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[
+"3055290225635294970","SummaryItem"]}]}},GridBoxAlignment -> {"Columns" -> {{Left}},"Rows" -> {{Automatic}}},
+AutoDelete -> False,GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},
+GridBoxSpacings -> {"Columns" -> {{2}},"Rows" -> {{Automatic}}},BaseStyle -> {ShowStringCharacters -> False,NumberMarks -> False,PrintPrecision -> 3,ShowSyntaxStyles -> False}]}},
+GridBoxAlignment -> {"Columns" -> {{Left}},"Rows" -> {{Top}}},AutoDelete -> False,
+GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},BaselinePosition -> {1,1}]},
+Dynamic[Typeset`open$$],ImageSize -> Automatic]},"SummaryPanel"],RuleDelayed[DynamicModuleValues,
+{}],ExpressionUUID -> "abf3d863-8f82-417c-be17-66ee139c2355"],"]"}],RandomGeneratorState[
+{"ExtendedCA",{80,4,0}},{{RawArray["UnsignedInteger64",{15934700397744482163,5942854910906633958,38,18080390364609931160,14520594112948210091,8216276560994861328,8565162548825111364,1650229261536885696,131514323144049498,3250109517608575824,4633225075398091328,1583710746259659551,649480980593474181,4483278852294919109,9242189520628755417,12628926905871862962,6203402151540874839,10096185629732423154,12359232041168386027,9811488355565862536}],0,20,20},{RawArray[
+"UnsignedInteger64",{2460608082617501491,11207376898144566805,8654571222952796330,14991503139638481584,11501526770774969446,9428234969415789021,3005578481859111566,11849526053242545113,11383139071546952853,5775023568270632428,16978251277960629027,9699541708168458173,10805364579590440076,13494131400116793900,14330848056247883916,9643014354779687609,8844879890317443054,641604629477608657,7404487279136788656,688092740903260960,16575596002417895078,1654831428820909725,13776700846114466840,12690513076915770057,303562027496205587,12113900757978656252,4293287263739147845,738540784886567884,3931635277750574955,15384085389769568650,15316536343287178898,17898479907523045770,8743416122137778771,311595230006231416,11701452414802163413,17474550815669557533,3356611080191324769,17689430978190915162,502480942966457707,9466855318907723665,6866954755961995491,3231312244220360529,4044659279125372269,4187973152412875608,10620008488944539798,14169276315751733130,5948774538562306461,10558636433579928823,9416525916832632010,13049762937566227769,8863505865476566193,1321384428344005852,13785463826904376368,3226493961122246429,474798286914231177,293729713360746689,6828912004469448219,16366311392908488921,9253421023109702349,14145660403558121329,18292755434338812282,8230289636087086024,15591187272148446879,916656926944409938,12646257472832966355,1456355334875921305,7982551908918047939,7221067866495155167,4898321151940606974,7855542167900360900,10862421895736036554,15254376227342796832,13491343054295396539,884868567866097215,8701630958725128240,14741190654809729720,6423093386388999956,8855296495108367957,5753234450555903605,8640459303383703729}],4,0}},
+RawArray["UnsignedInteger64",{3055290225635294970,0}]],Selectable -> False,Editable -> False,
+SelectWithContents -> True],StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[56]= ",
+ExpressionUUID -> "a058e72a-33e8-410e-be7a-b670ab17e75f"],Cell[
+BoxData[RowBox[{"{",RowBox[
+{"419",",","283",",","347"}],"}"}],StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[57]= ",
+ExpressionUUID -> "8f108b32-fcbb-4b85-bbfa-f4596c2996af"]},Open],ExpressionUUID -> "c02d6b2a-a9dc-4a0e-882d-23eac31356db"]},
+Open],ExpressionUUID -> "47cb67d2-83a4-46c1-8af0-40128948fb44"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["23",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:041f\:043e\:0432\:0442\:043e\:0440\:043d\:043e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043f\:043e\:043b\:0443\:0447\:0438\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043f\:043e\:0441\:043b\:0435\:0434\:043e\:0432\:0430\:0442\:0435\:043b\:044c\:043d\:043e\:0441\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0438\:0437",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0442\:0440\:0435\:0445",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043f\:0440\:043e\:0441\:0442\:044b\:0445",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0447\:0438\:0441\:0435\:043b",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043f",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[".",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["22",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[".",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}],"Section",ExpressionUUID -> "82fe65db-ed9f-44ac-acb8-f01dfd3ff21a"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"SeedRandom"," ","[","numf","]"}],"\n",RowBox[{"RandomPrime"," ","[",RowBox[
+{RowBox[{"{",RowBox[{"2",","," ","512"}],"}"}],","," ","3"}],"]"}]}],"Input",CellFrame -> 1,
+CellLabel -> "In[58]:= ",ExpressionUUID -> "7b82fe71-f343-43db-8664-ea06ba109e9c"],Cell[
+BoxData[
+InterpretationBox[RowBox[{TagBox["RandomGeneratorState","SummaryHead"],"[",DynamicModuleBox[
+{Set[Typeset`open$$,False],Set[Typeset`embedState$$,"Ready"]},TemplateBox[{PaneSelectorBox[
+{False -> GridBox[{{GridBox[{{RowBox[{TagBox["\"Method: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[
+"\"ExtendedCA\"","SummaryItem"]}]},{RowBox[{TagBox["\"State hash: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[
+"995644931452124784","SummaryItem"]}]}},GridBoxAlignment -> {"Columns" -> {{Left}},"Rows" -> {{Automatic}}},
+AutoDelete -> False,GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},
+GridBoxSpacings -> {"Columns" -> {{2}},"Rows" -> {{Automatic}}},BaseStyle -> {ShowStringCharacters -> False,NumberMarks -> False,PrintPrecision -> 3,ShowSyntaxStyles -> False}]}},
+GridBoxAlignment -> {"Columns" -> {{Left}},"Rows" -> {{Top}}},AutoDelete -> False,
+GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},BaselinePosition -> {1,1}],True -> GridBox[
+{{GridBox[{{RowBox[{TagBox["\"Method: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[
+"\"ExtendedCA\"","SummaryItem"]}]},{RowBox[{TagBox["\"State hash: \"","SummaryItemAnnotation"],"\[InvisibleSpace]",TagBox[
+"995644931452124784","SummaryItem"]}]}},GridBoxAlignment -> {"Columns" -> {{Left}},"Rows" -> {{Automatic}}},
+AutoDelete -> False,GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},
+GridBoxSpacings -> {"Columns" -> {{2}},"Rows" -> {{Automatic}}},BaseStyle -> {ShowStringCharacters -> False,NumberMarks -> False,PrintPrecision -> 3,ShowSyntaxStyles -> False}]}},
+GridBoxAlignment -> {"Columns" -> {{Left}},"Rows" -> {{Top}}},AutoDelete -> False,
+GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},BaselinePosition -> {1,1}]},
+Dynamic[Typeset`open$$],ImageSize -> Automatic]},"SummaryPanel"],RuleDelayed[DynamicModuleValues,
+{}],ExpressionUUID -> "8b828054-8e86-451a-9f94-31ba5505f9eb"],"]"}],RandomGeneratorState[
+{"ExtendedCA",{80,4,0}},{{RawArray["UnsignedInteger64",{8537609512111,5672323852227029386,2792163254110647992,14779458653422471281,7226154306634269043,5662260754794924894,5855022739626433563,3624548058908155667,10136337684881041449,4774723954706089268,11240759594192442731,2772980438646224303,12568409422330852183,2048323300561376745,13615225604738770387,17143769210679900899,4814618275588279863,5736997087768471000,134738798348293358,17164296340403312447}],0,20,20},{RawArray[
+"UnsignedInteger64",{2460608082617501491,11207376898144566805,8654571222952796330,14991503139638481584,11501526770774969446,9428234969415789021,3005578481859111566,11849526053242545113,11383139071546952853,5775023568270632428,16978251277960629027,9699541708168458173,10805364579590440076,13494131400116793900,14330848056247883916,9643014354779687609,8844879890317443054,641604629477608657,7404487279136788656,688092740903260960,16575596002417895078,1654831428820909725,13776700846114466840,12690513076915770057,303562027496205587,12113900757978656252,4293287263739147845,738540784886567884,3931635277750574955,15384085389769568650,15316536343287178898,17898479907523045770,8743416122137778771,311595230006231416,11701452414802163413,17474550815669557533,3356611080191324769,17689430978190915162,502480942966457707,9466855318907723665,6866954755961995491,3231312244220360529,4044659279125372269,4187973152412875608,10620008488944539798,14169276315751733130,5948774538562306461,10558636433579928823,9416525916832632010,13049762937566227769,8863505865476566193,1321384428344005852,13785463826904376368,3226493961122246429,474798286914231177,293729713360746689,6828912004469448219,16366311392908488921,9253421023109702349,14145660403558121329,18292755434338812282,8230289636087086024,15591187272148446879,916656926944409938,12646257472832966355,1456355334875921305,7982551908918047939,7221067866495155167,4898321151940606974,7855542167900360900,10862421895736036554,15254376227342796832,13491343054295396539,884868567866097215,8701630958725128240,14741190654809729720,6423093386388999956,8855296495108367957,5753234450555903605,8640459303383703729}],4,0}},
+RawArray["UnsignedInteger64",{995644931452124784,0}]],Selectable -> False,Editable -> False,
+SelectWithContents -> True],StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[58]= ",
+ExpressionUUID -> "0ea960d3-597a-416f-a831-1808f9df0b01"],Cell[
+BoxData[RowBox[{"{",RowBox[
+{"419",",","283",",","347"}],"}"}],StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[59]= ",
+ExpressionUUID -> "638041f7-47f0-45a9-a093-8d01274f3ba8"]},Open],ExpressionUUID -> "f72ec953-7cef-43bb-b827-6941f28a3192"]},
+Open],ExpressionUUID -> "2fc3b0b9-674a-415d-943d-22d1e0c68a18"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["24",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:041d\:0430\:0439\:0442\:0438",FontSize -> 16],FontColor -> RGBColor[0,
+0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043f\:0440\:043e\:0441\:0442\:043e\:0435",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0441\:043b\:0443\:0447\:0430\:0439\:043d\:043e\:0435",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0447\:0438\:0441\:043b\:043e",FontSize -> 16],FontColor -> RGBColor[0,
+0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[",",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:043a\:043e\:0442\:043e\:0440\:043e\:0435",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:043d\:0430\:0445\:043e\:0434\:0438\:0442\:0441\:044f",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0432",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0434\:0438\:0430\:043f\:0430\:0437\:043e\:043d\:0435",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\"",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:0447\:0438\:0441\:043b\:043e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["-",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0438\:043c\:044f",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox["\"",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\[PlusMinus]",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["10",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["*",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["N",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:0433\:0434\:0435",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["N",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\[Dash]",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:043d\:043e\:043c\:0435\:0440",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043f\:043e",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0441\:043f\:0438\:0441\:043a\:0443",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0432",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0433\:0440\:0443\:043f\:043f\:0435",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[
+{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["\:0418\:0441\:043f\:043e\:043b\:044c\:0437\:043e\:0432\:0430\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0444\:0443\:043d\:043a\:0446\:0438\:044e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["RandomPrime",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["[{",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["imin",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["imax",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["}].",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}],
+"Section",ExpressionUUID -> "af6cf7d5-0128-44b9-93a9-a5454bc0882d"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"RandomPrime"," ","[",RowBox[{"{",RowBox[{RowBox[{"numn"," ","-"," ",RowBox[
+{"10"," ","*"," ","4"}]}],","," ",RowBox[{"numn"," ","+"," ",RowBox[{"10"," ","*"," ","4"}]}]}],"}"}],"]"}]],
+"Input",CellFrame -> 1,CellLabel -> "In[60]:= ",ExpressionUUID -> "b3a4249a-0eea-4557-ab57-5abbcc0d6efc"],Cell[
+BoxData[
+"67631",StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[60]= ",ExpressionUUID -> "e6da61e7-bf06-48c0-9eeb-f558cd0d2d3b"]},
+Open],ExpressionUUID -> "8edc1af6-d4cf-400e-ae3f-5db09b4c035a"]},Open],ExpressionUUID -> "361be3cf-6318-461a-98e3-612f0413d569"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["25",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:0421\:0444\:043e\:0440\:043c\:0438\:0440\:043e\:0432\:0430\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043f\:043e\:0441\:043b\:0435\:0434\:043e\:0432\:0430\:0442\:0435\:043b\:044c\:043d\:043e\:0441\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0438\:0437",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["40",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["-",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["N",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:043f\:0440\:043e\:0441\:0442\:044b\:0445",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["\:0441\:043b\:0443\:0447\:0430\:0439\:043d\:044b\:0445",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0447\:0438\:0441\:0435\:043b",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[StyleBox[",",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[
+StyleBox["\:043d\:0430\:0445\:043e\:0434\:044f\:0449\:0438\:0445\:0441\:044f",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:0432",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0434\:0438\:0430\:043f\:0430\:0437\:043e\:043d\:0435",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox["\:043e\:0442",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["0",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0434\:043e",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["1024",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[".",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["\:0418\:0441\:043f\:043e\:043b\:044c\:0437\:043e\:0432\:0430\:0442\:044c",
+FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["\:0444\:0443\:043d\:043a\:0446\:0438\:044e",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["RandomPrime",FontSize -> 16],
+FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox["[",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox["range",FontSize -> 16],FontColor -> RGBColor[0,0,0]],FontWeight -> Bold],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[",",FontSize -> 16],FontColor -> RGBColor[0,0,
+0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox[" ",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}]],StyleBox[StyleBox[StyleBox["n",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold],StyleBox[StyleBox[StyleBox["]",FontSize -> 16],FontColor -> RGBColor[
+0,0,0]],FontWeight -> Bold]}],"Section",ExpressionUUID -> "75f33a1b-d0e5-4972-986c-2678f7a9b637"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"RandomPrime"," ","[",RowBox[{"1024",","," ","40"}],"]"}]],
+"Input",CellFrame -> 1,ExpressionUUID -> "4cc48a67-1a65-4d40-9045-28a5b0b7cc41"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"211",",","977",",","401",",","157",",","701",",","761",",","1013",",","797",",","167",",","977",",","181",",","107",",","223",",","457",",","139",",","619",",","547",",","367",",","647",",","47",",","479",",","97",",","317",",","641",",","401",",","859",",","547",",","179",",","71",",","223",",","499",",","421",",","317",",","269",",","181",",","71"}],"}"}],
+StandardForm],"Output",CellFrame -> 1,CellLabel -> "Out[61]= ",ExpressionUUID -> "e85903da-0d37-4278-ad0f-832008ef2263"]},
+Open],ExpressionUUID -> "fa240aa4-44d4-45db-bd76-9b14f9789e2e"]},Open],ExpressionUUID -> "ff604a69-8d49-47eb-8452-e943e8d6ca05"]},
+StyleDefinitions -> "Default.nb",FrontEndVersion -> "13.1 for Wolfram Cloud 1.63.0.1 (July 14, 2022)"]

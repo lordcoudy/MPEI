@@ -1,0 +1,20 @@
+/****************************************************************************
+
+
+thrd.rc
+
+produced by Borland Resource Workshop
+
+
+*****************************************************************************/
+
+DIALOG1 DIALOG 100, 100, 130, 130
+STYLE WS_OVERLAPPED | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | DS_MODALFRAME
+CAPTION "LR8_Gorbacheva_A-08-18"
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+{
+DEFPUSHBUTTON "Запуск", 1, 20, 108, 40, 14
+PUSHBUTTON "Выход", 2, 70, 108, 40, 14
+EDITTEXT 3, 20, 10, 90, 90, ES_READONLY | ES_WANTRETURN | ES_MULTILINE
+} 
+

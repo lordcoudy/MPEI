@@ -1,0 +1,308 @@
+-386P ;paspemenue uactpyKuym 386
+-MODEL large
+
+;CUPyKTypa ANIA ONMCaHMA YeECKPMNTOpOB cermMenToB
+descr STRUC
+
+limit
+base_1
+base 2
+attr
+lim_atr
+base _ 3
+ENDS
+
+GGG ESS
+
+;Makpoc MHMWMaIMsalyuM WeCKpuntTopoB
+load_descr MACRO des, seg_addr, seg _ size
+
+mov des.limit, seg size
+
+xOor eax, eax
+
+mov ax, seg_addr
+
+shl eax, 4
+
+mov des.base_1, ax
+
+rol eax, 16
+
+mov des.base 2, al
+
+ENDM
+
+atr MACRO descr, bitl, bit2, bit3
+
+7MCNONbSOBAHMe YCJIOBHHX YQMpeKTMB WIA NpOBepKM HanMuMa NapamMeTpoB
+atr_&descr=constp or bitl or bit2 or bit3
+ENDM
+
+;CTpykTypa ANA onmucaHua nceByoF,eckpuntopa gdtr
+point STRUC
+lim dw O
+adr dd 0
+ENDS
+
+jarpu6yTEH Js ONMCAaHNA FecKpMNTOpOB cermMeHTOB
+;NOCTOAHHAS wacrh GamTa AR gana BCex cermeHTos - Guts 0, 4, 5, 6, 7
+
+constp equ 10010000b
+
+;6u7 1
+
+code rn equ 00010000b ;KOROBEM cermMeHT: uwreHwMe SampeleHo;
+code ry equ 00000010b 7KOQOBHM CerMenT: wreHne paspelleHo
+data_wmn equ 00000000b ;CeErMeHT aHHEHX: MOZMbuKAaAWMA BanpemweHa
+data_wmy equ 00000010b ;Ce@rMeHT aHHEX: MOQNOouKaAUMA paspemwena;
+;6uT 2
+
+code _n equ 00000000b ;OGBMUHEM CerMeHT Koza
+
+code _p equ 00000100b ;NORUMHEHHEIM CerMeHT Koza
+
+data_ equ 00000000b ;HIs cermentTa faHHEx
+
+stack_ equ 00000000b ;WuIa cermentra crexa
+
+;6u7 3
+
+code_ equ 00001000b ;cermMeHT Koza
+
+data_stk equ 00000000b ;CerMeHT JAaHHEIX MJIN cTeka
+
+stk segment stack 'stack' usel6é
+db 256 dup (0)
+stk ends
+
+;Ta6smya rnuoGanbHHx ReCKpunTOpoB
+gdt_seg segment para public 'data' usel6é
+
+gdt_0 descr <0, 0, 0, 0, 0, O> ;HMkorga He MUCNONLSyeTCa
+atr gdt_gdt_ 8, data_wm_y, data_, data_stk
+
+;Hiume onvuciiBaem camy gdt
+
+gdt_gdt 8 descr <0, 0, 0, atr_gdt_gdt_8, 0, O>
+;He McnOoNDSyem
+gdt_ldt 10 descr <0, 0, 0, 0, 0, O>
+atr gdt_ds 18, data_wm_y, data_, data_stk
+gdt_ds 18 descr <0, 0, 0, atr_gdt_ds 18, 0, 0> ;cerment
+; HAHHEIX
+
+atr gdt_vbf 20, data_wm_y, data_, data_stk
+gdt_es vbf 20 descr <0, 0, 0, atr_gdt_vbf 20, 0, O> ;suygeo6ybep
+atr gdt_ss 28, data_wm_y, stack_, data_stk
+
+gdt_ss 28 descr <0, 0, 0, atr_gdt_ss_ 28, 0, 0> ;cermenr creka
+atr gdt_cs 30, code r y, code_n, code_
+gdt_cs_ 30 deser <0, 0, 0, atr_gdt_cs 30, 0, 0> ;cermenr koa
+
+gdt_size=$-gdt_0-1 ;pasmep GDT munyc 1
+GDT_SEG ENDS
+
+data segment para public 'data' usel16
+point_gdt point <gdt_size,0>
+
+hello db "Protected mode"
+hel_size=$-hello
+data_size=$-point_gdt-1
+
+data ends
+
+code segment byte public 'code' usel6
+;CcermenT Koya c 16-paSpaqHIM pexumom aypecalnmm
+assume cs:code,ss:stk
+main proc
+mov ax, stk
+mov ss, ax
+;BanomnHsem rTa6mmiuy rncGanbHHx BeEckpunTopoB
+assume ds:gdt_seg
+mov ax, gdt_seg
+mov ds, ax
+load_desecr gdt_gdt_8, GDTI_SEG, gdt_size
+load_descr gdt_ds 18, DATA, data_size
+load_descr gdt_es_vbf_20, Ob800h, 3999
+load _deser gdt_ss 28, STK, 255
+load_deser gdt_cs_30, CODE, Offffh ;code size
+assume ds:data
+mov ax, data
+mov ds, ax
+;3arpymaem gdtr
+xOr e@ax, eax
+mov ax, gdt_seg
+shl eax, 4
+mov point _gdt.adr, eax
+lgdt point_gdt
+eli
+mov al, 80h
+out 70h, al
+;M@peKIWYaAeMCA B SalmMieHHI pexum
+mov eax, cr0
+or al, 1
+mov cr0O, eax
+;HacrTpamBaem perucrps
+db Oeah ;MammHHEM Koy KOMAaHZH jmp
+dw offset protect ;cmemenne mMeTku Nepexoya B cermMeHTe KOMaHZ
+
+;cemekrop cermentra Koya B Ta6mmuuye GDT
+
+C@NEKTOPH WIS OCTANBHHK TeCKPMNTOpOB
+
+18h
+ax
+20h
+ax
+28h
+ax
+
+7B SalpmjeHHOM pemumMe: BHBOJMM CTpoKy B BuAeobydep
+
+dw 30h
+
+protect:
+
+7; 3arpy3uTb
+mov ax,
+mov ds,
+mov ax,
+mov es,
+mov ax,
+mov ss,
+Mov cx,
+mov si,
+mov di,
+mov ah,
+
+outstri:
+mov al,
+mov es:[
+inc si
+inc di
+inc di
+loop outs
+
+hel_size ;aymna coo6menna
+
+offset hello jaypec crpoxn cooémexnus
+
+1640 ;HauanpHEm anpec Bugeobybepa BNA BEBORA
+O7h ;arpu6yT BHBODIMEIX CMMBOJIOB
+
+[si]
+di], ax
+
+trl
+
+;dopmmpoBanne JECKPMNTOpOB WIA peaubHOTO pexuma
+assume ds:gdt_seg
+
+mov
+mov
+mov
+mov
+mov
+mov
+
+assume ds:
+
+ax,
+ds,
+
+8h
+ax
+
+gdt_ds 18.limit, Offffh
+gdt_es vbf 20.limit, Offffh
+gdt_ss 28.limit, Offffh
+gdt_cs 30.limit, Offffh
+
+data
+
+;Sarpyska TeHeBHX FeckpunToOpoB
+
+mov
+mov
+mov
+mov
+mov
+mov
+db
+dw
+dw
+
+jump:
+mov
+and
+mov
+
+dw
+dw
+r_mode:
+mov
+mov
+mov
+mov
+
+ax,
+ds,
+ax,
+es,
+ax,
+ss,
+Oeah
+offs
+30h
+
+eax,
+al,
+
+erQd,
+Oeah
+offs
+code
+
+ax,
+ds,
+ax,
+ss,
+
+18h
+ax
+20h
+ax
+28h
+ax
+
+et jump
+
+er0
+Ofeh
+eax
+
+et r_mode
+
+data
+ax
+stk
+ax
+main
+code
+
+sti
+xor
+out
+mov
+int
+endp
+ends
+end
+
+al, al
+70h, al
+ax, 4c00h
+21h
+
+main
+

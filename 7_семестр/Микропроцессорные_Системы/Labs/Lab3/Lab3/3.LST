@@ -1,0 +1,317 @@
+A51 MACRO ASSEMBLER  3                                                                    11/18/2022 15:50:39 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02
+OBJECT MODULE PLACED IN 3.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE 3.a51 SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ; A-08-19 - Brigada 4 - Pozdniakov Kretov Balashov
+----                   2     dseg at 30h
+                       3     
+0030                   4     Counter: DS 2
+0032                   5     CurrentDutyR : DS 2
+0034                   6     CurrentDutyG : DS 2
+0036                   7     CurrentDutyB : DS 2
+  000A                 8     StructsCount EQU 10
+0038                   9     StructsI : DS 2
+                      10     
+----                  11     cseg at 8000h
+8000 2114             12     jmp start
+                      13     
+                      14     ; ============ ARRAY ==================
+8002 57686974         15     SUPER_MAS: DB 57h, 68h, 69h, 74h, 65h, 0h, 255h, 255h, 255h, 52h, 65h, 64h, 0h, 255h, 0h, 0
+                             h, 4fh, 72h, 61h, 6eh, 67h, 65h, 0h, 255h, 128h, 0h, 59h, 65h, 6ch, 6ch, 6fh, 77h, 0h, 255h
+                             , 255h, 0h, 47h, 72h, 65h, 65h, 6eh, 0h, 0h, 255h, 0h, 43h, 79h, 61h, 6eh, 0h, 0h, 128h, 12
+                             8h, 42h, 6ch, 75h, 65h, 0h, 0h, 0h, 255h, 50h, 75h, 72h, 70h, 6ch, 65h, 0h, 128h, 0h, 32h, 
+                             4ch, 69h, 6ch, 61h, 63h, 0h, 220h, 208h, 255h, 50h, 69h, 6eh, 6bh, 0h, 255h, 230h, 255h
+8006 65005555                
+800A 55526564                
+800E 00550000                
+8012 4F72616E                
+8016 67650055                
+801A 28005965                
+801E 6C6C6F77                
+8022 00555500                
+8026 47726565                
+802A 6E000055                
+802E 00437961                
+8032 6E000028                
+8036 28426C75                
+803A 65000000                
+803E 55507572                
+8042 706C6500                
+8046 2800324C                
+804A 696C6163                
+804E 00200855                
+8052 50696E6B                
+8056 00553055                
+*** ____________________________________________________________________^
+*** __________________________________________________________________________^
+*** ________________________________________________________________________________^
+*** _________________________________________________________________________________________________________^
+*** _________________________________________________________________________________________________________________________________________________________^
+*** WARNING #A52 IN 15 (3.a51, LINE 15): VALUE HAS BEEN TRUNCATED TO 8 BITS
+*** WARNING #A52 IN 15 (3.a51, LINE 15): VALUE HAS BEEN TRUNCATED TO 8 BITS
+*** WARNING #A52 IN 15 (3.a51, LINE 15): VALUE HAS BEEN TRUNCATED TO 8 BITS
+*** WARNING #A52 IN 15 (3.a51, LINE 15): VALUE HAS BEEN TRUNCATED TO 8 BITS
+*** WARNING #A52 IN 15 (3.a51, LINE 15): VALUE HAS BEEN TRUNCATED TO 8 BITS
+*** MORE ERRORS DETECTED, NOT REPORTED                      16     
+805A 57686974         17     white_mas: DB 57h, 68h, 69h, 74h, 65h, 0h
+805E 6500                    
+8060 52656400         18     red_mas: DB 52h, 65h, 64h, 0h
+8064 4F72616E         19     orange_mas: DB 4fh, 72h, 61h, 6eh, 67h, 65h, 0h
+8068 676500                  
+806B 59656C6C         20     yellow_mas: DB 59h, 65h, 6ch, 6ch, 6fh, 77h, 0h
+A51 MACRO ASSEMBLER  3                                                                    11/18/2022 15:50:39 PAGE     2
+
+806F 6F7700                  
+8072 47726565         21     green_mas: DB 47h, 72h, 65h, 65h, 6eh, 0h
+8076 6E00                    
+8078 4379616E         22     cyan_mas: DB 43h, 79h, 61h, 6eh, 0h
+807C 00                      
+807D 426C7565         23     blue_mas: DB 42h, 6ch, 75h, 65h, 0h
+8081 00                      
+8082 50757270         24     purple_mas: DB 50h, 75h, 72h, 70h, 6ch, 65h, 0h
+8086 6C6500                  
+8089 4C696C61         25     lilac_mas: DB 4ch, 69h, 6ch, 61h, 63h, 0h
+808D 6300                    
+808F 50696E6B         26     pink_mas: DB 50h, 69h, 6eh, 6bh, 0h
+8093 00                      
+                      27     
+8094                  28     wait_bf:                    ; opros bita zanitosti bf               
+8094 C0E0             29             push acc                ; sochranili accum
+8096                  30     wait_ll:
+8096 7590F4           31             mov p1,#11110100b           ; C/D=0, R/W=1,E=0  
+8099 D290             32             setb p1.0               ; E=1
+809B E590             33             mov a,p1                ; chteniye starshey tetrady registra IR
+809D C290             34             clr p1.0                ; E=0
+809F F5F0             35             mov b,a                     ; buferisuem starshey tetrady
+80A1 D290             36             setb p1.0                               ; E=1
+80A3 E590             37             mov a,p1                    ; chteniye mladshey tetrady
+80A5 C290             38             clr p1.0                        ; E=0
+80A7 E5F0             39             mov a,b                 ; buferisuem mladshuu tetrady
+80A9 20E7EA           40             jb acc.7,wait_ll                ; proverka bita zanyatosti BF
+80AC D0E0             41             pop acc
+80AE 22               42             ret
+                      43     
+80AF                  44     write_command:                          ; prinimaet na vhod Acum. 
+80AF 1194             45             call wait_bf                    ; opros bita zanitosti bf  
+80B1 F9               46             mov r1, A                               ; save acuma
+80B2 54F0             47             ANL A, #0F0h                    ; and 11110000
+80B4 F590             48             mov P1, A                               ; janisenie v port pervoi tetradi
+80B6 D290             49             setb P1.0                               ; E=1
+80B8 00               50             nop                             
+80B9 C290             51             clr P1.0                                ; E=0
+80BB E9               52             mov A, r1                               ; vosstanovlenie acuma
+80BC 540F             53             ANL A, #0Fh                             ; and 00001111
+80BE C4               54             SWAP A                                  ; obmen tetradami vnutri akkumulyatora
+80BF F590             55             mov P1, A                               ; janisenie v port vtoroi tetradi
+80C1 D290             56             setb P1.0                               ; E=1
+80C3 00               57             nop
+80C4 C290             58             clr P1.0                                ; E=0
+80C6 7590F0           59             mov P1, #0F0h                   ; tak nado
+80C9 7F00             60             mov r7,#0
+80CB DFFE             61             djnz r7,$ 
+80CD 22               62             ret
+                      63     
+80CE                  64     write_data:                                     ; zapisi dannykh
+80CE 1194             65             call wait_bf                    ; opros bita zanitosti bf
+80D0 F9               66             mov r1, A                               ; save acuma
+80D1 54F0             67             ANL A, #0F0h                    ; and 1111 0000
+80D3 4402             68             ORL A, #02h                             ; or 0000 0010
+80D5 F590             69             mov P1, A                               ; janisenie v port pervoi tetradi
+80D7 D290             70             setb P1.0                               ; E=1
+80D9 00               71             nop
+80DA C290             72             clr P1.0                                ; E=0
+80DC E9               73             mov A, r1                               ; vosstanovlenie acuma
+80DD 540F             74             ANL A, #0Fh                             ; and 0000 1111
+80DF C4               75             SWAP A                                  ; obmen tetradami vnutri akkumulyatora
+80E0 4402             76             ORL A, #02h                             ; or 00000001
+80E2 F590             77             mov P1, A                               ; janisenie v port vtoroi tetradi
+80E4 D290             78             setb P1.0                               ; E=1
+80E6 00               79             nop                             
+A51 MACRO ASSEMBLER  3                                                                    11/18/2022 15:50:39 PAGE     3
+
+80E7 C290             80             clr P1.0                                ; E=0
+80E9 7590F0           81             mov P1, #0f0h                   ; tak nado
+80EC 7F00             82             mov r7,#0
+80EE DFFE             83             djnz r7,$ 
+80F0 22               84             ret
+                      85     
+80F1                  86     lcdini:                                         ; inichializachia
+80F1 C290             87             clr p1.0
+80F3 7F00             88             mov r7,#0
+80F5 DFFE             89             djnz r7,$
+80F7 7428             90             mov     A, #28h                         ; 0010 1000 
+                      91                                                             ; razryadnost' vkhoda bufera dannykh. 0 – 4 razryada
+                      92                                                             ; dve stroki
+                      93                                                             ; razmer matritsy simvolov: 0 – 5 kh 8 tochek
+80F9 11AF             94             call    write_command
+80FB 7F00             95             mov r7,#0
+80FD DFFE             96             djnz r7,$
+80FF 7418             97             mov a,#18h
+8101 11AF             98             call    write_command   
+8103 740E             99             mov     A, #0eh                         ; 0000 1110
+                     100                                                             ; Vybor rezhima otobrazheniya
+                     101                                                             ; otobrazheniye simvolov vklyucheno
+                     102                                                             ; kursor otobrazhayetsya v vide chertochki
+                     103                                                             ; kursor ne viden
+8105 11AF            104             call    write_command   
+8107 7406            105             mov     A, #06h                         ; 0000 0110
+                     106                                                             ; Zadayetsya napravleniye sdviga kursora ili simvolov (ekrana)
+                     107                                                             ; I\D=1 – sdvig ekrana vlevo
+8109 11AF            108             call    write_command
+810B 7402            109             mov a,#02h
+810D 11AF            110             call    write_command
+810F 7401            111             mov a,#1h
+8111 11AF            112             call    write_command   
+8113 22              113             ret
+                     114     
+                     115     
+8114                 116     start:
+                     117             ; ========== Reset & Init ==========
+8114 11F1            118             call lcdini
+8116 D2B2            119             setb P3.2
+8118 D2B3            120             setb P3.3
+811A D2B4            121             setb P3.4
+811C 908002          122             mov dptr, #SUPER_MAS
+811F 75380A          123             mov StructsI, #StructsCount
+                     124     
+                     125             ; ========== Iteration of Cycle ==========
+8122                 126             iteration:
+8122 E4              127             clr A
+8123 93              128             movc A, @a+dptr
+8124 FB              129             mov r3, A
+8125 E538            130             mov A, StructsI
+8127 604F            131             jz stop_cycle
+8129 E4              132             clr A
+812A EB              133             mov A, r3
+                     134             
+                     135     
+                     136     
+                     137     
+                     138             ; === Output Text ===
+812B 6005            139             jz output_complete
+812D A3              140             inc dptr
+812E 11CE            141             call write_data
+8130 80F0            142             jmp iteration
+8132                 143             output_complete:
+                     144     
+                     145             
+A51 MACRO ASSEMBLER  3                                                                    11/18/2022 15:50:39 PAGE     4
+
+                     146             
+                     147     
+                     148             ; === Load Color ===
+8132 A3              149             inc dptr
+8133 E4              150             clr A
+8134 93              151             movc A, @a+dptr
+8135 F532            152             mov CurrentDutyR, A
+8137 A3              153             inc dptr
+8138 E4              154             clr A
+8139 93              155             movc A, @a+dptr
+813A F534            156             mov CurrentDutyG, A
+813C A3              157             inc dptr
+813D E4              158             clr A
+813E 93              159             movc A, @a+dptr
+813F F536            160             mov CurrentDutyB, A
+                     161     
+8141 A3              162             inc dptr
+                     163     
+                     164             ; === Output Color ===
+8142                 165             loop:
+8142 7530FF          166             mov Counter, #255
+8145 AF30            167             mov r7, Counter
+8147                 168             iteration_color:
+8147 EF              169             mov A, r7
+8148 9532            170             subb A, CurrentDutyR
+814A 4004            171             jc OnR
+814C D2B2            172             setb P3.2
+814E 8002            173             jmp nextG
+8150                 174             OnR:
+8150 C2B2            175             clr P3.2
+8152                 176             nextG:
+8152 EF              177             mov A, r7
+8153 9534            178             subb A, CurrentDutyG
+8155 4004            179             jc OnG
+8157 D2B3            180             setb P3.3
+8159 8002            181             jmp nextB
+815B                 182             OnG:
+815B C2B3            183             clr P3.3
+815D                 184             nextB:
+815D EF              185             mov A, r7
+815E 9536            186             subb A, CurrentDutyB
+8160 4004            187             jc OnB
+8162 D2B4            188             setb P3.4
+8164 8002            189             jmp endd
+8166                 190             OnB:
+8166 C2B4            191             clr P3.4
+8168                 192             endd:   
+8168 DFDD            193             djnz r7, iteration_color
+816A DED6            194             djnz r6, loop
+                     195     
+816C D2B2            196             setb P3.2
+816E D2B3            197             setb P3.3
+8170 D2B4            198             setb P3.4
+                     199     
+8172 11F1            200             call lcdini
+                     201     
+8174 1538            202             Dec StructsI
+8176 80AA            203             jmp iteration
+8178                 204             stop_cycle:
+8178 80FE            205             jmp stop_cycle
+                     206     end
+A51 MACRO ASSEMBLER  3                                                                    11/18/2022 15:50:39 PAGE     5
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+ACC. . . . . . . .  D ADDR   00E0H   A   
+B. . . . . . . . .  D ADDR   00F0H   A   
+BLUE_MAS . . . . .  C ADDR   807DH   A   
+COUNTER. . . . . .  D ADDR   0030H   A   
+CURRENTDUTYB . . .  D ADDR   0036H   A   
+CURRENTDUTYG . . .  D ADDR   0034H   A   
+CURRENTDUTYR . . .  D ADDR   0032H   A   
+CYAN_MAS . . . . .  C ADDR   8078H   A   
+ENDD . . . . . . .  C ADDR   8168H   A   
+GREEN_MAS. . . . .  C ADDR   8072H   A   
+ITERATION. . . . .  C ADDR   8122H   A   
+ITERATION_COLOR. .  C ADDR   8147H   A   
+LCDINI . . . . . .  C ADDR   80F1H   A   
+LILAC_MAS. . . . .  C ADDR   8089H   A   
+LOOP . . . . . . .  C ADDR   8142H   A   
+NEXTB. . . . . . .  C ADDR   815DH   A   
+NEXTG. . . . . . .  C ADDR   8152H   A   
+ONB. . . . . . . .  C ADDR   8166H   A   
+ONG. . . . . . . .  C ADDR   815BH   A   
+ONR. . . . . . . .  C ADDR   8150H   A   
+ORANGE_MAS . . . .  C ADDR   8064H   A   
+OUTPUT_COMPLETE. .  C ADDR   8132H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P3 . . . . . . . .  D ADDR   00B0H   A   
+PINK_MAS . . . . .  C ADDR   808FH   A   
+PURPLE_MAS . . . .  C ADDR   8082H   A   
+RED_MAS. . . . . .  C ADDR   8060H   A   
+START. . . . . . .  C ADDR   8114H   A   
+STOP_CYCLE . . . .  C ADDR   8178H   A   
+STRUCTSCOUNT . . .  N NUMB   000AH   A   
+STRUCTSI . . . . .  D ADDR   0038H   A   
+SUPER_MAS. . . . .  C ADDR   8002H   A   
+WAIT_BF. . . . . .  C ADDR   8094H   A   
+WAIT_LL. . . . . .  C ADDR   8096H   A   
+WHITE_MAS. . . . .  C ADDR   805AH   A   
+WRITE_COMMAND. . .  C ADDR   80AFH   A   
+WRITE_DATA . . . .  C ADDR   80CEH   A   
+YELLOW_MAS . . . .  C ADDR   806BH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  19 WARNING(S), 0 ERROR(S)

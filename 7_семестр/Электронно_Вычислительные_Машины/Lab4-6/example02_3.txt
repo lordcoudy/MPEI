@@ -1,0 +1,1914 @@
+﻿IDEAL
+
+RADIX 1 6
+P2 8 6
+MODEL LARGE
+include 'tiny-os.inc'
+STACK STACK_SIZE
+DATASEG
+DSEG_BEG = THIS WORD
+real_ss dw ?
+real_sp dw ?
+real_es dw ?
+GDT_BEG = $
+LABEL gdtr WORD
+gdt_O desc_struc <0 , 0 , 0 , 0 , 0>
+gdt_gdt desc_struc <GDT_SIZE-1 , , ,DATA_ACC , 0>
+gdt_idt desc_struc <IDT_SIZE-1 , , , IDT_ACC , 0>
+gdt_ds desc_struc <DSEG_SIZE-1 , , ,DATA_ACC , 0>
+gdt_cs desc_s truc <CSEG_SIZE-1 , , , CODE_ACC , 0>
+gdt_ss desc_struc <STACK_SIZE-1 , , ,DATA_ACC , 0>
+gdt_bio desc_s truc <B_DATA_SIZE-1 , B_DATA_ADDR, 0 , DATA_ACC , 0>
+gdt_crt desc_s truc <CRT_SIZE-1 , CRT_LOW, CRT_SEG , DATA_ACC , 0>
+gdt_mda desc_s truc <MONO_SIZE-1 , MONO_LOW, CRT_SEG , DATA_ACC , 0>
+GDT_SIZE = ($ - GDT_BEG)
+
+; Область памяти для загрузки регистра IDTR
+idtr idtr_struc <IDT_SIZE , , , 0>
+
+; Таблица дескрипторов прерываний
+хвт_вЕе = $
+; ---------------------- Вентили исключений
+
+idt
+
+idt_s truc
+idt_s truc
+idt_s truc
+idt_s truc
+idt_s truc
+idt_s truc
+idt_s truc
+idt_s truc
+idt_s truc
+idt_s truc
+idt_s truc
+idt_s truc
+idt_s truc
+idt_s truc
+idt_s truc
+idt_s truc
+idt_s truc
+idt_s truc
+idt_s truc
+idt_s truc
+idt_s truc
+idt_s truc
+idt_s truc
+
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+
+exc_00,CS_DESCR,0,TRAB;ACC,0>
+exc_Ol , CS_DESCR, 0 , TRAP_ACC , 0>
+exq_02,CS_DESCR,0,TRAB;ACC,0>
+exc_03,CS_DESCR,0,TRAB;ACC,0>
+exc_04 , CS_DESCR, 0 , TRAP_ACC , 0>
+exc_05,CS_DESCR,0,TRAB;ACC,0>
+exc_06,CS_DESCR,0,TRAB;ACC,0>
+exc_07 , CS_DESCR, 0 , TRAP_ACC , 0>
+exc_08,CS_DESCR,0,TRAB;ACC,0>
+exc_09 , CS_DESCR , 0 , TRAP_ACC , 0>
+exc_OA, CS_DESCR, 0 , TRAP_ACC , 0>
+exc_OB,CS_DESCR,0,TRAB;ACC,0>
+exc_OC , CS_DESCR, 0 , TRAP_ACC , 0>
+exc_OD,CS_DESCR,0,TRA24ACC,0>
+exc_OE,CS_DESCR,0,TRAB;ACC,0>
+exc_OF , CS_DESCR, 0 , TRAP_ACC , 0>
+exc_10,CS_DESCR,0,TRAB;ACC,0>
+exc_11,CS_DESCR,0,TRAB;ACC,0>
+exq_12,CS_DESCR,0,TRAR;ACC,0>
+exc_13,CS_DESCR,0,TRAB;ACC,0>
+exq_14,CS_DESCR,0,TRAB;ACC,0>
+exc_15 , CS_DESCR, 0 , TRAP_ACC , 0>
+exq_16,CS_DESCR,0,TRAR;ACC,0>
+
+; int 20
+
+; int 21
+
+idt_struc
+idt_struc
+idt_struc
+idt_struc
+idt_struc
+idt_struc
+idt_struc
+idt_struc
+idt_struc
+
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+<OFFSET
+
+exc_17,CS_DESCR,0,TRAB;ACC,0>
+exc_18,CS_DESCR,0,TRAB;ACC,0>
+exq_19,CS_DESCR,0,TRAR;ACC,0>
+exc_1A,CS_DESCR,0,TRAB;ACC,0>
+exq_1B,CS_DESCR,0,TRAB;ACC,O>
+exq_1C,CS_DESCR,0,TRAB;ACC,0>
+exc_1D,CS_DESCR,0,TRAB;ACC,0>
+exq_1E,CS_DESCR,0,TRAB;ACC,0>
+exq_1F,CS_DESCR,O,TRAB;ACC,0>
+
+--------- Вентили аппаратных прерываний -----—-————————
+h-IRQO
+
+idt_struc <OFFSET Timer_int,CS_DESCR,0,INI;ACC,0>
+h-IRQl
+
+idt_struc
+
+<OFFSET
+
+; int 22h, 23h, 24h, 25h,
+idt_struc 6 dup (<OFFSET dummy_iret0,CS_DESCR,0,INI;ACC,O>)
+; int 28h, 29h, 2ah, 2bh, 2ch, 2dh, 2eh, 2fh-IRQ8-IRQ15
+
+idt_struc 8 dup (<OFFSET dummy_iret1,CS_DESCR,0,INT_ACC,0>)
+; -------------------- Вентиль прерывания --------------------
+
+; int 30
+
+idt_struc
+
+h
+
+Keyb_int,CS_DESCR,0,1N14ACC,0>
+26h, 27h-IRQ2-IRQ7
+
+<OFFSET Int_30h_Entry,CS_DESCR,0,INI_ACC,0>
+
+IDT_SIZE = ($ - IDT_BEG)
+CODESEG
+PROC start
+mov ax,DGROUP
+mov ds,ax
+call set_grt_base
+mov bh, 77h
+call clrscr
+; Устанавливаем защищённый режим
+call set_pmode
+call write_hello_msg
+
+; Размаскируем прерывания от таймера и клавиатуры
+
+1n
+and
+out
+
+a1,INT_MASK_pORT
+al,0fch
+INT_MASK_£ORT,al
+
+; Ожидаем нажатия на клавишу <Е$С>
+
+charin:
+
+int 30h ; ожидаем нажатия на клавишу
+; AX - скан-код клавиши,
+; BX - состояние переключающих клавиш
+cmp al, 1 ; если <ESC> - выход из цикла
+jz continue
+push bx ; выводим скан-код на экран
+mov bx, 0301h ; координаты вывода
+са11 Рхіпц;Иока
+рор Ьх
+mov ax, bx ; выводим состояние
+push bx ; переключающих клавиш
+mov bx, 0306h
+call Print4Word
+pop bx
+jmp charin
+
+; Следующий байт находится в сегменте кода. Он используется для
+
+‚' демонстрации ВОЗНИКНОВЭНИЯ исключения при попытке записи В сегмент
+
+; кода.
+wrongl db ?
+
+continue:
+
+; После нажатия на клавишу <Е$С> выходим в это место программы.
+; Следующие несколько строк демонстрируют команды, которые вызывают
+; исключение.
+
+; Попытка записи за конец сегмента данных. метка wrong находится в
+; самом конце программы.
+
+mov [wrong], a1
+; Попытка записи в сегмент кода.
+; mov [wrongl], al
+; Попытка извлечения из пустого стека.
+; рор ах
+; Загрузка в сегментный регистр неправильного селектора.
+; mov ax, 1280h
+; mov ds, ax
+; Прямой вызов исключения при помощи команды прерывания.
+; int 1
+call set_;mode ; установка реального режима
+mov bh, 07h ; стираем экран и
+са11 clrscr ; выходим в DOS
+mov ah,4c
+int 21h
+ENDP start
+
+MACRO setgdtentry
+mov [(desc_struc bx).base_l],ax
+mov [(desq_struc bx).base_h],d1
+
+; Установка защищённого режима
+
+PROC set_pmode NEAR
+mov ax,DGROUP
+mov dl,ah
+shr dl,4
+shl ax,4
+mov si,ax
+mov di,dx
+add ax,DFFSET gdtr
+adc dl,0
+mov bx,OFFSET gdt_gdt
+setgdtentry
+
+; Заполняем дескриптор в GDT, указывающий на дескрипторную таблицу
+; прерываний
+
+mov ax,si ; загружаем 24-битовый адрес сегмента
+
+mov dx,di ; данных
+
+add ax,OFFSET idt ; адрес дескриптора для IDT
+
+adc d1,0
+mov bx,OFFSET gdt_idt
+setgdtentry
+
+; Заполняем структуру для загрузки регистра IDTR
+
+mov bx,OFFSET idtr
+
+mov [(idtr_struc bx).idt_l],ax
+mov [(idtr_struc bx).idt_h],dl
+mov bx,OFFSET gdt_ds
+
+mov ax,si
+
+mov dx,di
+
+setgdtentry
+
+mov bx,OFFSET gdt_cs
+
+mov ax,cs
+
+mov dl,ah
+
+shr dl,4
+
+shl ax,4
+
+setgdtentry
+
+mov bx,OFFSET gdt_ss
+
+mov ax,ss
+
+mov dl,ah
+
+shr dl,4
+
+shl ax,4
+
+setgdtentry
+
+,' готовим возврат В реальный режим
+
+push ds
+mov ax,40
+mov ds,ax
+mov [WORD 67],OFFSET shutdown_;eturn
+mov [WORD 69],cs
+pop ds
+cli
+mov al,8f
+out CMDS_?ORT,al
+jmp dell
+dell:
+mov al,5
+out CMDS_PORT+1,al
+mov ax,[rl_grt] ; сегмент видеопамяти
+mov es,ax
+call enablg_a20 ; открываем линию А20
+mov [real_ss],ss ; сохраняем сегментные
+mov [real_§s],es ; регистры
+
+; -------- Перепрограммируем контроллер прерываний ————————
+; Устанавливаем для IRQO-IRQ7 номера прерываний 20h-27h
+mov dx,MASTER8259A
+mov ah,20h
+
+са11 set_;nt_ptrlr
+
+; Устанавливаем для IRQ8-IRQ15 номера прерываний 28h-2Fh
+
+mov dx,SLAVE8259A
+mov ah,28h
+call set_int_gtrlr
+
+; Загружаем регистры IDTR и GDTR
+lidt [FWORD idtr]
+lgdt [QWORD gdt_gdt]
+
+; Переключаемся в защищённый режим
+
+mov ax,VIRTUAL_MDDE
+lmsw ax
+
+; jmp far flush
+db Oea
+dw OFFSET flush
+dw CS_DESCR
+
+LABEL flush FAR
+
+; Загружаем селекторы в сегментные регистры
+
+mov ax,SS_DESCR
+mov ss,ax
+mov ax,DS_DESCR
+mov ds,ax
+sti
+ret
+
+ENDP set_pmode
+
+DATASEG
+
+; Пустой дескриптор для выполнения возврата процессора в реальный
+; режим через перевод его в состояние отключения.
+
+null_idt idt_struc <>
+
+CODESEG
+PROC set_;mode NEAR
+
+mov [real_sp],sp
+; Переводим процессор в состояние отключения, это эквивалентно
+; аппаратному сбросу, но выполняется быстрее. Сначала мы загружаем
+; IDTR нулями, затем выдаём команду прерывания.
+
+lidt [FWORD null_idt]
+
+int 3
+
+; Это старый способ сброса процессора через контроллер клавиатуры.
+
+; mov al,SHUT_DOWN
+; out STATUS_PORT,al
+rwait:
+
+hlt
+
+jmp rwait
+
+LABEL shutdown_;eturn FAR
+
+in a1 , INT_MASK_PORT
+and a1,0
+
+out INT_MASK_PORT , a1
+mov ax,DGROUP
+
+mov ds,ax
+
+assume dszDGROUP
+
+cli
+mov ss,[real_ss]
+mov sp,[real_sp]
+mov ax,000dh
+out CMDS_?ORT,al
+sti
+mov es,[real_9s]
+call disable_a20
+ret
+
+ENDP set_;mode
+
+; Обработчики исключений. Записываем в AX номер исключения и
+; передаём управление процедуре shutdown
+
+LABEL exq_00 WORD
+
+mov ах,0
+
+jmp shutdown
+LABEL exq_01 WORD
+
+mov ах,1
+
+jmp shutdown
+LABEL exc_02 WORD
+
+mov ax,2
+
+jmp shutdown
+LABEL exq_03 WORD
+
+mov ax,3
+
+jmp shutdown
+LABEL exq_04 WORD
+
+mov ax,4
+
+jmp shutdown
+LABEL exq_05 WORD
+
+mov ax,5
+
+jmp shutdown
+LABEL exq_06 WORD
+
+mov ax,6
+
+jmp shutdown
+LABEL exq_07 WORD
+
+mov ax,7
+
+jmp shutdown
+LABEL exq_08 WORD
+
+mov ax,8
+
+jmp shutdown
+LABEL exq_09 WORD
+
+mov ax,9
+
+jmp shutdown
+
+LABEL
+
+LABEL
+
+LABEL
+
+LABEL
+
+LABEL
+
+LABEL
+
+LABEL
+
+LABEL
+
+LABEL
+
+LABEL
+
+LABEL
+
+LABEL
+
+LABEL
+
+LABEL
+
+LABEL
+
+LABEL
+
+LABEL
+
+LABEL
+
+LABEL
+
+exc_OA
+mov
+jmp
+exq_0B
+mov
+jmp
+exc_OC
+mov
+jmp
+exc_OD
+mov
+jmp
+exq_0E
+mov
+jmp
+exq_OF
+mov
+jmp
+exq_10
+mov
+jmp
+exc_ll
+mov
+jmp
+exq_12
+mov
+jmp
+exq_13
+mov
+jmp
+exq_14
+mov
+jmp
+exc_15
+mov
+jmp
+exq_16
+mov
+jmp
+exq_l7
+mov
+jmp
+exq_18
+mov
+jmp
+exq_19
+mov
+jmp
+exc_lA
+mov
+jmp
+exq_1B
+mov
+jmp
+exq_1C
+mov
+
+jmp
+
+WORD
+ax,0ah
+shutdown
+WORD
+ax,0bh
+shutdown
+WORD
+ax,0ch
+shutdown
+WORD
+ax,0dh
+shutdown
+WORD
+ax,0eh
+shutdown
+WORD
+ax,0fh
+shutdown
+WORD
+ax,10h
+shutdown
+WORD
+ax,11h
+shutdown
+WORD
+ax,12h
+shutdown
+WORD
+ax,13h
+shutdown
+WORD
+ax,14h
+shutdown
+WORD
+ax,15h
+shutdown
+WORD
+ax,16h
+shutdown
+WORD
+ax,17h
+shutdown
+WORD
+ax,18h
+shutdown
+WORD
+ax,19h
+shutdown
+WORD
+ax,1ah
+shutdown
+WORD
+ax,1bh
+shutdown
+WORD
+ax,1ah
+shutdown
+
+LABEL exc_1D
+mov
+jmp
+
+LABEL exc_1E
+mov
+jmp
+
+LABEL exc_1F
+mov
+
+jmp
+
+DATASEG
+
+WORD
+ax,1dh
+shutdown
+WORD
+ax,1eh
+shutdown
+WORD
+ax,1fh
+shutdown
+
+exc_msg db "Exception
+
+CODESEG
+
+....:.... code ..... Press any key... "
+
+,' Вывод на экран номера исключения, кода ОЦМбКИ, дампа регистров И
+
+; возврат в реальный режим.
+
+PROC shutdown NEAR
+call rdump ; дамп регистров процессора
+push ax
+
+; Выводим сообщение об исключении
+
+mov
+mov
+mov
+mov
+mov
+mov
+mov
+call
+
+POP
+
+mov
+call
+
+POP
+mov
+call
+
+P0P
+mov
+call
+
+POP
+mov
+call
+
+call
+
+mov
+int
+
+mov
+call
+
+ax,[vir_prt]
+
+es,ax
+bx,1d
+ax,4
+
+si,OFFSET exc_msg
+
+dh,74h
+
+сх, SIZE exc_msg
+
+writexy
+ax
+
+bx, 040bh
+Print_Word
+
+ax
+bx, 0420h
+Print4Word
+
+ax
+bx, 0416h
+Print_Wbrd
+
+ax
+bx, 0411h
+Print_Word
+
+set_;mode
+
+‚' Honep исключения
+
+; код ошибки
+
+‚' смещение
+
+; селектор
+
+; возвращаемся в реальный режим
+
+ax, О ‚' ожидаем нажатия на клавишу
+
+16h
+
+bh, 07h
+clrscr
+
+mov ah,4Ch
+int 21h
+
+ENDP shutdown
+
+; Перепрограммирование контроллера прерываний
+; На входе: DX - порт контроллера прерывания
+
+; AH - начальный номер прерывания
+PROC set_int_ptrlr NEAR
+mov а1,11
+out dx,al
+jmp SHORT $+2
+mov al,ah
+inc dx
+out dx,al
+jmp SHORT $+2
+mov al,4
+out dx,al
+jmp SHORT $+2
+mov а1,1
+out dx,al
+jmp SHORT $+2
+mov a1,0ff
+out dx,al
+dec dx
+ret
+ENDP set_;nt_gtrlr
+
+PROC enable_a20 NEAR
+mov al,A20_PORT
+out STATUS_BORT,a1
+mov a1,A20_pN
+out квв_вовт_А,а1
+ret
+
+ENDP enable_a20
+
+PROC disable_a20 NEAR
+mov al,A20_PORT
+out STATUS_£ORT,a1
+mov a1,A20_pFF
+out квв_вовт_А,а1
+ret
+
+ENDP disable_a20
+
+, ---------- Обработчик аппаратных прерываний IRQ2-IRQ7
+PROC dummy_iret0 NEAR
+push ax
+
+; Посылаем сигнал конца прерывания в первый контроллер 8259А
+
+mov a1,EOI
+out MASTER8259A,al
+pop ax
+iret
+ENDP dummy_iret0
+
+, ---------- Обработчик аппаратных прерываний IRQ8-IRQ15
+PROC dummy_iret1 NEAR
+push ax
+
+; Посылаем сигнал конца прерывания в первый и второй контроллеры
+; 8259А
+
+mov al,EOI
+out MASTER8259A,al
+out SLAVE8259A,al
+pop ax
+iret
+
+ENDP dummy_iret1
+
+; Процедура задерживает выполнение программы на некоторое время,
+; зависящее от быстродействия процессора.
+
+PROC pause NEAR
+push сх
+mov cx,10
+
+р1оор0
+push сх
+xor cx,cx
+
+р1оор1
+1оор р1оор1
+рор сх
+loop р1оор0
+рор сх
+ret
+
+ENDP pause
+
+DATASEG
+
+key_flag db 0
+key_code dw 0
+ext_scan db О
+keyb_status dw 0
+
+CODESEG
+
+; Обработчик аппаратного прерывания клавиатуры
+
+PROC Keyb_int NEAR
+push ax
+mov a1, [ext_scan] ; расширенный скан-код
+cmp a1, О ; или обычный ?
+
+jz normal_scan1
+
+; --------- обработка расширенного скан-кода -------------
+
+cmp
+jz
+
+in
+
+cmp
+jz
+
+cmp
+jz
+
+mov
+call
+
+mov
+mov
+
+jmp
+pause_key:
+
+in
+cmp
+jz
+cmp
+jz
+jmp
+
+pause_key1:
+mov
+call
+
+mov
+mov
+
+jmp
+
+a1, Oelh
+pause_key
+
+a1, 60h
+
+a1, 2ah
+intkeyb_exit_1
+
+a1, Oaah
+intkeyb_exit_1
+
+ah, [ext_scan]
+Keyb_Pth
+
+al, 0
+[ext_scan], a1
+intkeyb_exit
+
+a1, 60h
+
+a1, 0c5h
+pause_key1
+a1, 45h
+pause_key1
+intkeyb_exit
+
+ah, [ext_scan]
+Keyb_Pth
+
+a1, 0
+[ext_scan], a1
+intkeyb_exit
+
+.
+I
+
+; это клавиша <Pause>?
+
+вводим скан-код
+
+игнорируем префикс 2Ah
+
+; игнорируем отпускание
+клавиш
+
+записываем скан-код и
+; расширенный скан-код
+в "очередь", состоящую
+; из одного слова
+
+сбрасываем признак
+получения расширенного
+скан-кода
+
+обработка клавиши <Pause>
+
+вводим скан-код
+
+; если это код <Pause>,
+записываем его в очередь,
+иначе игнорируем
+
+запись в очередь
+; кода клавиши <Pause>
+
+сбрасываем признак
+получения расширенного
+скан-кода
+
+; --------- обработка обычного скан-кода -------------
+
+normal scanl:
+
+in
+cmp
+32
+cmp
+32
+cmp
+jnz
+
+ext_key:
+mov
+jmp
+
+a1, 60h
+
+a1, Ofeh
+intkeyb_exit
+
+a1, Oelh
+ext_key
+a1, OeOh
+
+normal scan
+
+[ext_scan], a1
+intkeyb_§xit
+
+вводим скан-код
+; игнорируем FEh
+; расширенный скан-код?
+
+если да, то на обработку
+; расширенного скан—кода
+
+устанавливаем признак
+расширенного скан-кода
+
+; Сброс признака расширенного скан-кода и выход
+
+intkeyb_exit_1:
+mov
+mov
+
+jmp
+
+a1, 0
+[ext_scan], a1
+intkeyb_exit
+
+; Запись нормального скан-кода в очередь и выход
+
+normal scan:
+
+mov ah, О
+са11 Keyb_Pth
+intkeyb_exit:
+in a1, 61h ;
+mov ah, a1
+or al, 80h
+out 61h, a1
+xchg ah, a1
+out 61h, a1
+mov al,EOI ;
+out MASTER8259A,al ;
+pop ax
+sti
+iret
+ENDP Keyb_int
+
+,' Запись скан-кода И расширенного
+
+; одного слова.
+
+PROC Keyb_Pth NEAR
+
+push
+mov
+
+ax
+[key_code], ax ;
+
+разблокируем клавиатуру
+
+посылаем сигнал конца
+прерывания
+
+записываемый код
+
+; ------- обрабатываем переключающие клавиши ---------
+
+cmp
+jnz
+mov
+or
+mov
+jmp
+@@kbl:
+стр
+jnz
+mov
+and
+mov
+jmp
+@@kb2:
+стр
+jnz
+mov
+or
+mov
+jmp
+@@kb3:
+cmp
+
+ax, 002ah
+
+@@kbl
+
+ax, [keyb_status]
+ax, L_SHIFT
+[keyb_status], ax
+keyb;putq;exit
+
+ax, OOaah
+
+@@kb2
+
+ax, [keyb_status]
+ax, NL_SHIFT
+[keyb_status], ax
+keyb;putq;exit
+
+ax, 0036h
+
+@@kb3
+
+ax, [keyb_status]
+ax, R;SHIFT
+[keyb_status], ax
+keyb_putq_exit
+
+ax, 00b6h
+
+; L_SHIFT down
+
+; L_SHIFT up
+
+; R_SHIFT down
+
+; R;SHIFT up
+
+@@kb4:
+
+@@kb5:
+
+@@kb6:
+
+@@kb7:
+
+@@kb8:
+
+@@kb9:
+
+@@kb10:
+
+@@kb11:
+
+jnz
+mov
+and
+mov
+
+jmp
+
+cmp
+jnz
+mov
+or
+
+mov
+
+jmp
+
+стр
+jnz
+mov
+and
+mov
+
+jmp
+
+cmp
+jnz
+mov
+or
+
+mov
+
+jmp
+
+cmp
+jnz
+mov
+and
+mov
+
+jmp
+
+cmp
+jnz
+mov
+or
+
+mov
+
+jmp
+
+стр
+jnz
+mov
+and
+mov
+
+jmp
+
+стр
+jnz
+mov
+or
+
+mov
+
+jmp
+
+cmp
+jnz
+
+@@kb4
+
+ax, [keyb_status]
+ax, NR;SHIFT
+[keyb_status], ax
+keyb_putq_exit
+
+ax, 001dh
+
+@@kb5
+
+ax, [keyb_status]
+ax, L_CTRL
+[keyb_status], ax
+keyb_putq_exit
+
+ax, 009dh
+
+@@kb6
+
+ax, [keyb_status]
+ax, NL_CTRL
+[keyb_status], ax
+keyb_putq_exit
+
+ax, 0e01dh ;
+@@kb7
+
+ax, [keyb_status]
+ax, R_CTRL
+[keyb_status], ax
+keyb_putq;exit
+
+ax, 0e09dh ;
+@@kb8
+
+ax, [keyb_status]
+ax, NR_CTRL
+[keyb_status], ax
+keyb_putq_exit
+
+ax, 0038h
+
+@@kb9
+
+ax, [keyb_status]
+ax, L_ALT
+[keyb_status], ax
+keyb‘putq_exit
+
+ax, 00b8h
+
+@@kblo
+
+ax, [keyb_status]
+ax, NL_ALT
+[keyb_status], ax
+keyb_putq_exit
+
+ax, 0e038h ;
+@@kbll
+
+ax, [keyb_status]
+ax, R;ALT
+[keyb_status], ax
+keyb;putq;exit
+
+ax, 0e0b8h ;
+@@kb12
+
+; L_pTRL down
+
+; L_CTRL up
+
+R;CTRL down
+
+R_CTRL up
+
+; L_ALT down
+
+; L_ALT up
+
+R ALT down
+
+R;ALT up
+
+@@kb12:
+
+@@kb13:
+
+@@kb14:
+
+@@kb15:
+
+@@kb16:
+
+@@kb17:
+
+@@kb18:
+
+@@kb19:
+
+@@kb20:
+
+keyb_putq_exit:
+
+mov
+and
+mov
+
+jmp
+
+cmp
+jnz
+mov
+xor
+mov
+
+jmp
+
+cmp
+jnz
+jmp
+
+cmp
+jnz
+mov
+xor
+mov
+
+jmp
+
+cmp
+jnz
+jmp
+
+стр
+jnz
+mov
+xor
+mov
+
+jmp
+
+cmp
+jnz
+jmp
+
+стр
+jnz
+mov
+xor
+mov
+
+jmp
+
+cmp
+jnz
+jmp
+
+test
+jnz
+mov
+mov
+
+POP
+ret
+
+ax, [keyb_status]
+ax, NR;ALT
+[keyb_status], ax
+keyb;putq;exit
+ax, 003ah
+
+@@kb13
+
+ax, [keyb_status]
+
+ax, CAPS_LOCK
+[keyb_status], ax
+keyb_putq_exit
+
+ax, OObah
+@@kb14
+keyb‘putq_exit
+
+ax, 0046h
+
+@@kb15
+
+ax, [keyb_status]
+ax, SCR_LOCK
+[keyb_status], ax
+keyb_putq_exit
+
+ax, 00c6h
+@@kb16
+keyb_putq;exit
+
+ax, 0045h
+
+@@kb17
+
+ax, [keyb_status]
+ax, NUM_LOCK
+[keyb_status], ax
+keyb_putq_exit
+
+ax, 00c5h
+@@kb18
+keyb_putq_exit
+
+ax, 0e052h ;
+@@kb19
+
+ax, [keyb_status]
+ax, INSERT
+[keyb_status], ax
+keyb_putq_exit
+
+ax, 0e0d2h ;
+@@kb20
+keyb;putq;exit
+
+ax, 0080h
+keyb_putq;exit
+a1, Offh
+[key_flag], a1 ;
+
+ax
+
+; CAPS_LOCK up
+
+; CAPS_LOCK down
+
+; SCR_LOCK up
+
+; SCR_LOCK down
+
+; NUM_LOCK up
+
+; NUMLLOCK down
+
+INSERT up
+
+INSERT down
+
+,‘ фильтруем отжатия клавиш
+
+; устанавиваем признак
+готовности для чтения
+; символа из "буфера"
+
+ENDP Keyb_Pth
+
+; Программное прерывание, предназначенное для чтения символа из
+; буфера клавиатуры. По своим функциям напоминает прерывание INT 16h
+; реального режима. В AX возвращается скан-код нажатой клавиши,
+
+; в BX - состояние переключающих клавиш.
+
+PROC Int_30h_Entry NEAR
+push dx ; sanpemaeM прерывания и
+с1і ; сбрасываем признак
+mov a1, 0 ; готовности скан-кода
+mov [key_ﬁlag], a1 ; B буфере клавиатуры
+
+; Ожидаем прихода прерывания от клавиатуры. Процедура клавиатурного
+
+; прерывания установит признак в переменной key_flag.
+keyb_int_wait:
+
+sti ; разрешаем прерывания
+
+nop ; ждём прерывание
+
+nop
+
+cli ; sanpemaeM прерывания
+
+mov a1, [key_flag] ; и спрашиваем флаг
+
+cmp a1, 0 ; готовности скан-кода
+
+jz keyb_int_wait
+
+mov a1, 0 ; сбрасываем флаг
+
+mov [key_flag], a1 ; готовности
+
+mov ax, [key_code] ; записываем скан-код
+
+mov bx, [keyb_status] ; и состояние переключающих
+; клавиш
+
+sti ; разрешаем прерывания
+
+рор dx
+
+iret
+
+ENDP Int_30h_Entry
+
+DATASEG
+timer_cnt dw О
+
+CODESEG
+
+PROC Timer_int NEAR
+cli
+push ax
+
+; Увеличиваем содержимое счётчика времени
+
+mov ax, [timer_cnt]
+inc ax
+mov [timer_cnt], ax
+
+timer_exit:
+
+; Посылаем команду конца прерывания
+mov al,EOI
+out MASTER8259A,a1
+
+рор ах
+sti
+iret
+
+ENDP Timer_int
+
+DATASEG
+
+columns db 80d
+
+rows db 25d
+
+rl_crt dw COLOR;SEG
+
+vir_grt dw CRT_DESCR
+
+curr_line dw 0d
+
+text_buf db " "
+
+CODESEG
+
+I
+
+; Определение адреса видеопамяти
+
+PROC set_prt_base NEAR
+mov ax,40
+mov es,ax
+mov bx,[WORD esz4a]
+mov [columns],bl
+mov bl,[BYTE es:84]
+inc bl
+mov [rows],bl
+mov bx,[WORD es:PORT_6845]
+стр Ьх,СОЪОВ;РОВТ
+je color_crt
+mov [rl_grt],MONQ_SEG
+mov [vir_grt],MDA;pESCR
+color_crt:
+ret
+ENDP set_prt_base
+
+PROC writexy NEAR
+push si
+push di
+mov dl,[columns]
+mul d1
+add ax,bx
+shl ax,1
+mov di,ax
+mov ah,dh
+write_loop:
+lodsb
+stosw
+loop write_loop
+pop di
+pop si
+
+ret
+
+; Стирание экрана (в реальном режиме)
+
+PROC clrscr NEAR
+xor cx,cx
+mov dl,[columns]
+mov dh,[rows]
+mov ax,0600
+int 10
+ret
+
+ENDP clrscr
+
+DATASEG
+
+hello_msg db " Protected mode monitor *TINY/OS*, for CPU 80286"
+
+CODESEG
+
+I
+
+,' ВЫВОД начального сообщения B защищённом режиме
+
+PROC write_hello_msg NEAR
+mov ax,[vir_crt]
+mov es,ax
+mov si,OFFSET hello_msg
+mov bx,0
+mov ax,[curr_line]
+inc [curr_line]
+mov cx,SIZE hello_msg
+mov dh,30h
+call writexy
+ret
+ENDP write_hello_msg
+
+; Процедура выводит на экран содержимое АХ
+; (x,y) = (bh, bl)
+PROC Print_Word near
+
+push ax
+
+push bx
+
+push dx
+
+push ax
+
+mov cl,8
+
+rol ax,cl
+
+call Byte_tq_hex
+
+mov [text_buf], dh
+
+mov [text_buf+1], d1
+pop ax
+
+call Byte_to_hex
+
+mov [text_buf+2], dh
+mov [text_buf+3], dl
+mov si, OFFSET text_buf
+
+mov dh, 70h
+
+mov сх, 4
+
+mov a1, bh
+mov ah, О
+mov bh, О
+са11 writexy
+pop dx
+
+pop bx
+
+pop ax
+
+ret
+
+ENDP Print_Word
+
+DATASEG
+tabl db '0123456789ABCDEF'
+
+CODESEG
+
+; Преобразование байта в шестнадцатеричный символьный формат
+; а1 - входной байт
+
+; dx - выходное слово
+
+PROC Byte_to_hex near
+
+push cx
+push bx
+mov bx, OFFSET tabl
+push ax
+and al,0fh
+xlat
+
+mov dl,al
+pop ax
+mov c1,4
+shr а1,с1
+xlat
+
+mov dh,al
+pop bx
+
+pop сх
+
+ret
+
+ENDP Bytg_tq_hex
+
+DATASEG
+reg_title db " CS IP AX BX СХ DX SP BP SI DI"
+
+sreg_title db " DS ES SS FLAGS "
+
+I
+
+CODESEG
+
+; Вывод на экран содержимого регистров процессора
+
+PROC rdump NEAR
+pushf
+
+pusha
+mov
+
+mov
+mov
+mov
+mov
+mov
+mov
+mov
+call
+
+di, es
+
+ax,[vir_grt]
+
+es,ax
+
+si,OFFSET reg_title
+
+bx,1
+ax,6
+
+cx,SIZE reg_title
+
+dh,1fh
+writexy
+
+,' Выводим СОДЭРЖИМОЭ всех регистров
+
+mov
+mov
+call
+
+mov
+
+mov
+mov
+call
+
+mov
+mov
+call
+
+mov
+mov
+call
+
+mov
+mov
+call
+
+mov
+mov
+call
+
+mov
+add
+mov
+call
+
+mov
+mov
+call
+
+mov
+mov
+call
+
+mov
+mov
+call
+
+ax,cs
+bx, 0702h
+Print_Wbrd
+
+bp, Sp
+
+ax, [bp+18d]
+
+bx, 0708h
+Print;Word
+
+bx, 070eh
+ax,[bp+14d]
+Print_Word
+
+bx, 0714h
+ax,[bp+8d]
+Print_Word
+
+bx, 071ah
+ax,[bp+12d]
+Print;Word
+
+bx, 0720h
+ax,[bp+10d]
+Print_Wbrd
+
+ax,bp
+
+ax,20d
+
+bx, 0726h
+Print_Word
+
+ax,[bp+4d]
+bx, 072ch
+Print;Word
+
+bx, 0732h
+ax,[bp+2]
+Print;Word
+
+bx, 0738h
+ax, [bP]
+Print_Word
+
+'CS
+
+ip
+
+'ах
+
+' Ьх
+
+CX
+
+$Р
+
+. bp
+
+si
+
+° di
+
+; (XIY) = (AXIBX)
+
+; чёрный на голубом фоне
+
+mov si,OFFSET sreg_title
+mov bx,1
+
+mov ax,8
+
+mov cx,SIZE sreg_title
+mov dh,1fh
+
+call writexy
+
+mov bx, 0902h
+
+mov ax, ds ; ds
+
+call Print;Word
+
+mov bx, 0908h
+mov ax, di ; es
+call Print_Wbrd
+
+mov bx, 090eh
+mov ax,ss ; ss
+call Print;Word
+
+mov bx, 0914h
+mov ax, [bp+16d] ; flags
+call Print_Word
+
+; Восстанавливаем содержимое регистров
+
+рора
+popf
+ret
+ENDP rdump
+CSEG_SIZE = ($ - start)
+DATASEG
+DSEG_SIZE = ($ - DSEG_BEG)
+wrong db ?
+
+END start
+

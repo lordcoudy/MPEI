@@ -1,0 +1,163 @@
+program lab3;
+
+uses windows,messages; {интерфейс к системным DLL и константы-сообщения}
+
+function WndProc(hWnd: THandle; Msg: integer;
+                 wParam: longint; lParam: longint): longint;
+                 stdcall; forward;
+
+function WndProcToolbar(hWnd: THandle; Msg: integer;
+                 wParam: longint; lParam: longint): longint;
+                 stdcall; forward;
+
+procedure WinMain;
+  const szClassName='mainWindow';
+        szClassNameChild='childWindow';  
+  var   wndClass:TWndClassEx;
+        msg:TMsg;
+        hWnd, hWndChild1, hWndChild2: THandle;
+begin
+
+  fillchar(wndClass,sizeof(wndClass),0);
+  wndClass.cbSize:=sizeof(wndClass);
+  wndClass.style:=cs_hredraw or cs_vredraw;
+  wndClass.lpfnWndProc:=@WndProc;
+  wndClass.cbClsExtra:=0;
+  wndClass.cbWndExtra:=0;
+  wndClass.hInstance:=hInstance;
+  wndClass.hIcon:=loadIcon(0, idi_Application);
+  wndClass.hCursor:=loadCursor(0, idc_Arrow);
+  wndClass.hbrBackground:=GetStockObject(white_Brush);
+  wndClass.lpszMenuName:=nil;
+  wndClass.lpszClassName:=szClassName;
+  wndClass.hIconSm:=loadIcon(0, idi_Application);
+
+  RegisterClassEx(wndClass); {регистрация оконного класса}
+
+  fillchar(wndClass,sizeof(wndClass),0);
+  wndClass.cbSize:=sizeof(wndClass);
+  wndClass.style:=cs_hredraw or cs_vredraw or cs_parentdc;
+  wndClass.lpfnWndProc:=@WndProcToolbar;
+  wndClass.cbClsExtra:=0;
+  wndClass.cbWndExtra:=0;
+  wndClass.hInstance:=hInstance;
+  wndClass.hIcon:=loadIcon(0, idi_Application);
+  wndClass.hCursor:=loadCursor(0, idc_Arrow);
+  wndClass.hbrBackground:=GetStockObject(white_Brush);
+  wndClass.lpszMenuName:=nil;
+  wndClass.lpszClassName:=szClassNameChild;
+  wndClass.hIconSm:=loadIcon(0, idi_Application);
+
+  RegisterClassEx(wndClass); {регистрация оконного класса}
+
+  hwnd:=CreateWindow(
+         szClassName, {имя класса окна}
+         'Заголовок окна',    {заголовок окна}
+         ws_overlappedWindow,     {стиль окна}
+         cw_useDefault,           {Left CW_USEDEFAULT = $80000000}
+         cw_useDefault,           {Top}
+         600,           {Width}
+         300,           {Height}
+         0,                       {хэндл родительского окна}
+         0,                       {хэндл оконного меню}
+         hInstance,               {хэндл экземпляра приложения}
+         nil);                    {параметры создания окна}
+
+  ShowWindow(hwnd,sw_Show);  {отобразить окно}
+
+  hWndChild1:=CreateWindow(
+        szClassNameChild, {имя класса окна}
+        'Toolbal 1',    {заголовок окна}
+        ws_child or ws_caption or ws_sysmenu,     {стиль окна}
+        15,           {Left CW_USEDEFAULT = $80000000}
+        15,           {Top}
+        200,           {Width}
+        50,           {Height}
+        hWnd,                       {хэндл родительского окна}
+        0,                       {хэндл оконного меню}
+        hInstance,               {хэндл экземпляра приложения}
+        nil);                    {параметры создания окна}
+
+  ShowWindow(hWndChild1,sw_Show);  {отобразить окно}
+
+  hWndChild2:=CreateWindow(
+        szClassNameChild, {имя класса окна}
+        'Toolbal 2',    {заголовок окна}
+        ws_child or ws_caption or ws_sysmenu,     {стиль окна}
+        315,           {Left CW_USEDEFAULT = $80000000}
+        15,           {Top}
+        200,           {Width}
+        50,           {Height}
+        hWnd,                       {хэндл родительского окна}
+        0,                       {хэндл оконного меню}
+        hInstance,               {хэндл экземпляра приложения}
+        nil);                    {параметры создания окна}
+
+  ShowWindow(hWndChild2,sw_Show);  {отобразить окно}
+
+
+
+  while GetMessage(msg,0,0,0)=true do begin {получить очередное сообщение}
+
+        TranslateMessage(msg);   {Windows транслирует сообщения от клавиатуры}
+        DispatchMessage(msg);    {Windows вызовет оконную процедуру}
+      end; {выход по wm_quit, на которое GetMessage вернет FALSE}
+end;
+
+
+function WndProc(hWnd: THandle; Msg: integer;
+                 wParam: longint; lParam: longint): longint; stdcall;
+  var ps:TPaintStruct;
+      hdc:THandle;
+      rect:TRect;
+begin
+  result:=0;
+  case Msg of
+    wm_paint:
+      begin
+        hdc:=BeginPaint(hwnd,ps);
+        GetClientRect(hwnd,rect);
+
+        //Рисование в клиентской области
+        DrawText(hdc,'Клиентская область',-1,rect,
+                 DT_SINGLELINE or DT_VCENTER or DT_CENTER);
+
+        endPaint(hwnd,ps);
+      end;
+    wm_destroy:
+        PostQuitMessage(0);
+    else
+      result:=DefWindowProc(hwnd,msg,wparam,lparam);
+  end;
+end;
+
+function WndProcToolbar(hWnd: THandle; Msg: integer;
+                 wParam: longint; lParam: longint): longint; stdcall;
+  var ps:TPaintStruct;
+      hdc:THandle;
+      rect:TRect;
+begin
+  result:=0;
+  case Msg of
+    wm_paint:
+      begin
+        hdc:=BeginPaint(hwnd,ps);
+        GetClientRect(hwnd,rect);
+
+        //Рисование в клиентской области
+        DrawText(hdc,'Меню',-1,rect,
+                 DT_SINGLELINE or DT_VCENTER or DT_CENTER);
+
+        endPaint(hwnd,ps);
+      end;
+      wm_close:
+        DestroyWindow(hWnd);
+    else
+      result:=DefWindowProc(hwnd,msg,wparam,lparam);
+  end;
+end;
+
+
+begin
+  WinMain;
+end.

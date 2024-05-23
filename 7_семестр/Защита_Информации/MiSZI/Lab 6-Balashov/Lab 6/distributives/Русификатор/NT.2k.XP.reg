@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\CodePage]
+"1252"="c_1251.nls"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontSubstitutes]
+"Arial,0"="Arial,204"
+"Comic Sans MS,0"="Comic Sans MS,204"
+"Courier,0"="Courier New,204"
+"Microsoft Sans Serif,0"="Microsoft Sans Serif,204"
+"Tahoma,0"="Tahoma,204"
+"Times New Roman,0"="Times New Roman,204"
+"Verdana,0"="Verdana,204"

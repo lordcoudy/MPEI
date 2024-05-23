@@ -1,0 +1,248 @@
+; Определения структур данных и констант
+
+STRUC 	desc_struc 		; структура дескриптора
+		limit 	dw 	0 	; Mpezer
+		base_l 	dw 	0 	; MII. CNOBO OmMBMUeCKOTO anpeca
+		base_h 	db 	0 	; cv. G6GamT QOu3SuueCKOrO anpeca
+		access 	db 	0 	; Gam, yocryna
+		rsrv 	dw 	0 	; BapesepBNpoOBaHO
+ENDS 	desc_struc
+
+STRUC 	idt_struc ; BeHTMIb IpepiBaHna
+		destoff dw 	0 ; cMemenve o6pasoTunKka
+		destsel dw 	0 ; cenexrop o6pa6orunka
+		nparams db 	0 ; KOJI-BO NapamMeTpoB
+		assess 	db 	0 ; 6amT noctryna
+		rsrv 	dw 	0 ; BapesepBNpoOBaHO
+ENDS 	idt_struc
+
+STRUC 	idtr_struc ; perucrp IDTR
+		idt_lim dw 	0 ; mpegen IDT
+		idt_l 	dw 	0 ; MII. GJIOBO OuMSMUeCKOTO anpeca
+		idt_h 	db 	0 ; ev. 6anT gOuSNUeCKOrO anpeca
+		rsrv 	db 	0 ; BapesepBNpoBaHo
+ENDS 	idtr_struc
+
+; Bute GamtTa yocryna
+ACC_PRESENT 	EQU	 	10000000b ; cerment ecrh B namaTM
+ACC_CSEG 		EQU 	00011000b ; cermentT xoza
+ACC_DSEG 		EQU 	00010000b ; cermenT yaHHix
+ACC_EXPDOWN 	EQU 	00000100b ; cermenT pacumpsxetca BHUS
+ACC_CONFORM 	EQU 	00000100b ; cornacoBaHHEmM cermeHT
+ACC_DATAWR 		EQU 	00000010b ; paspemena sannuch
+ACC_INT_GATE 	EQU 	00000110b ; BeHTK“nB npepHBaAHNx
+ACC_TRAP_GAET	EQU 	00000111b ; BenTMNS ucknnpWeHuA
+
+; Tune cermentTos
+
+; CermMeHT JaHHBx
+
+DATA_ACC 	= 	ACC_PRESENT OR ACC_DSEG OR ACC_DATAWR
+
+; cermenT Koga
+
+CODE_ACC 	= 	ACC_PRESENT OR ACC_CSEG OR ACC_CONFORM
+
+; cermenT creka
+
+STACK_ACC 	= 	ACC_PRESENT OR ACC_DSEG OR ACC_DATAWR OR ACC_EXPDOWN
+; Gaur yocryna cermenta tTaGmumun IDT
+
+IDT_ACC 	= 	DATA_ACC
+
+; Gamv yocTyna BeHTUNIA NpepiBaHna
+
+INT_ACC 	= 	ACC_PRESENT OR ACC_INT GATE
+; Gaur yocTyna BeHTMNA NUCKNINYeHNA
+
+TRAP_ACC 	= 	ACC_PRESENT OR ACC_TRAP GATE
+
+; Kouncrvanvsl
+STACK_SIZE EQU 0400 j; PpasMep cTeka
+B_ DATA SIZE EQU 0300 ; PasmMep o6macTmu yaHHx BIOS
+B_ DATA_ADDR EQU 0400 7 agpec o6macrm yannnx BIOS
+MONO_SEG EQU Ob000 ; cermeHT BuzeonamatTu
+
+; MOHOXPOMHOTO BuyecaranTepa
+COLOR_SEG EQU 0b800 ; cermMeHT BuTZeEonaMaTu
+
+; UBeTHOTO BuAecamanTepa
+CRT_SIZE EQU 4000 ; PpasMep cermenTa BuZeonamMaTK
+MONO SIZE
+
+CRT_LOW
+MONO _LOW
+CRT_SEG
+CMOS PORT
+
+PORT 6845
+
+COLOR_PORT
+MONO_PORT
+
+STATUS _PORT
+
+SHUT_DOWN
+
+VIRTUAL MODE
+
+A20_ PORT
+A20_ ON
+
+A20_ OFF
+KBD PORT A
+KBD PORT B
+
+INT MASK PORT
+
+EOI
+
+MASTER8259A
+
+r
+
+EQU
+
+EQU
+
+EQU
+
+EQU
+
+EQU
+EQU
+
+EQU
+EQU
+EQU
+EQU
+EQU
+EQU
+EQU
+EQU
+EQU
+EQU
+EQU
+EQU
+EQU
+EQU
+
+, UBeETHOTO BURZecagzantTepa
+
+1000 ; PasMep cermenra BugeonamMaTn
+; MOHOXpOMHOTO BNyecaranrepa
+8000 ; Ma. GamT OumSHueCKOrO aynpeca
+
+; cermenta BuzeonamatTn
+; UBeTHOrTO BuZecazantepa
+
+0000 ; MI. GamT QOm3SHNUeCKOrO anpeca
+
+, C@ETMEHTA BUTZCONAMATK
+
+, MOHOXPOMHOTO BUZecazantepa
+
+OBh ; cv. Gaur musuueckoro ayzpeca
+
+; CermMenTa BuzeonamaTu
+70h ; NopT gyya gocryna x CMOS-namatn
+0063h ; agpec o6macrTmu yanHux BIOS,
+
+, Tye BanmcaHo BHaYeHNe agzpeca
+
+; NTopra KontTposmepa 6845
+
+03d4h ; NopT WBeTHOTO BuUzecKoHTpossepa
+03b4h 7; MOpPT MOHOXPOMHOTO BNTEOKONTpossepa
+64h ; NOpT COcTOSHMA KIaBMaTyPpH
+
+Ofeh ; KoMangza c6poca mpoveccopa
+
+o00lh ; 6uT nepexoza B SalpméHHEmM pexmm
+Odih ; KOMaHZa ynpaBmrenua mmunen A20
+Odfh ; oTxKpirTn A20
+
+Oddh 7; BaxpErrs A20
+
+60h ; aypeca kiaBuaTypHEx
+
+61h ; TNOpTos
+
+21h ; NOpr ANA MackmpoBaHua NpepHBaHMM
+20 ; KOMAaHZa KOHUA NpepHBaHua
+
+20 ; NepBEM KOHTpomNep npeprBaHM
+
+0ad ; BYOpOM KOHTpomnep npeprBaHnm
+
+; Cenertrops, onpeyenéuHie B Ta6nuye GDT
+
+DS_DESCR
+CS_DESCR
+SS_DESCR
+BIOS_DESCR
+CRT_DESCR
+A_DESCR
+
+r
+
+(gdt_ds - gdt_0)
+(gdt_ecs - gdt_0)
+(gdt_ss - gdt_0)
+(gdt_bio - gdt_0)
+(gdt_ert - gdt_0)
+(gdt_mda - gdt_0)
+
+; Mackxmu u UHBEPCHHe MAaACKU VINA KABUL
+
+L_SHIFT
+NL_SHIFT
+R_SHIFT
+NR_SHIFT
+L_CTRL
+NL_CTRL
+R_CTRL
+NR_CTRL
+L_ALT
+NL_ALT
+R_ALT
+NR_ALT
+CAPS LOCK
+SCR_LOCK
+NUM_LOCK
+INSERT
+
+equ
+equ
+equ
+equ
+equ
+equ
+equ
+equ
+equ
+equ
+equ
+equ
+equ
+equ
+equ
+equ
+
+0000000000000001b
+1111111111111110b
+0000000000000010b
+1111111111111101b
+0000000000000100b
+1111111111111011b
+0000000000001000b
+1111111111110111b
+0000000000010000b
+1111111111101111b
+0000000000100000b
+1111111111011111b
+0000000001000000b
+0000000010000000b
+0000000100000000b
+0000001000000000b
+

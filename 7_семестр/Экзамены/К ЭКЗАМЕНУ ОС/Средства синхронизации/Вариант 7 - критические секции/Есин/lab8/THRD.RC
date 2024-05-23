@@ -1,0 +1,24 @@
+/****************************************************************************
+
+
+thrd.rc
+
+produced by Borland Resource Workshop
+
+
+*****************************************************************************/
+
+
+DIALOG1 DIALOG 120, 166, 394, 86
+STYLE WS_POPUP | WS_CAPTION
+CAPTION "Multithreading: пробуйте нажимать кнопки и двигать окно"
+FONT 8, "MS Sans Serif"
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+{
+ DEFPUSHBUTTON "OK", 1, 221, 10, 50, 14
+ PUSHBUTTON "Cancel", 2, 221, 35, 50, 14
+ PUSHBUTTON "Без обработки сообщений", 101, 13, 8, 120, 17
+ PUSHBUTTON "С обработкой сообщений", 102, 13, 32, 121, 17
+ PUSHBUTTON "Многопоточный вариант", 103, 13, 57, 122, 17
+}
+

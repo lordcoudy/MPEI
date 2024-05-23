@@ -1,0 +1,21 @@
+/****************************************************************************
+
+
+thrd.rc
+
+produced by Borland Resource Workshop
+
+
+*****************************************************************************/
+
+
+MAINDIALOG DIALOG 100, 100, 330, 130
+STYLE WS_POPUP
+CAPTION "IT JUST WORKS!"
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+{
+DEFPUSHBUTTON "Start", 1, 270, 10, 50, 14
+PUSHBUTTON "Exit", 2, 270, 35, 50, 14
+EDITTEXT 3, 10, 10, 240, 110, ES_READONLY | ES_WANTRETURN | ES_MULTILINE
+} 
+

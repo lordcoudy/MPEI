@@ -1,0 +1,215 @@
+program as_lab8;//СТРОКИ 47 И 51 ЗАКОММЕНТИРОВАНЫ ДЛЯ НАРУШЕНИЯ СИНХРОНИЗАЦИИ ПО ЗАДАНИЮ ПРИ ПОКАЗЕ
+
+uses windows,messages;
+
+var
+  hMutex: THandle;
+  hThread2,hThread3:THandle;
+  idThread2,idThread3: dword;
+  Massive:array [1..10] of string =
+  ('11111111111111111111',
+    '22222222222222222222',
+    '33333333333333333333',
+    '44444444444444444444',
+    '55555555555555555555',
+    '66666666666666666666',
+    '77777777777777777777',
+    '88888888888888888888',
+    '99999999999999999999',
+    'AAAAAAAAAAAAAAAAAAAA');
+   buf: string; // Для построчного отображения массива
+   count:integer;
+   flag: boolean;
+
+function proc2(a:integer):integer; stdcall;
+var s: string;
+    i: integer;
+begin
+  repeat
+  WaitForSingleObject(hMutex,infinite);
+    s := Massive[1];
+    for i:=1 to 9 do
+       Massive[i]:= Massive[i+1];
+    Massive [10]:= s;
+  ReleaseMutex(hMutex);
+  ExitThread(0);
+  until flag ;
+
+end;
+
+function proc3(a:integer):integer; stdcall;
+ var i,j:byte;
+     s:string;
+begin
+  repeat
+    i:=random(10)+1;  // от 0 до 9
+    j:=random(10)+1;
+  // WaitForSingleObject(hMutex,infinite); // вход в критическую секцию
+    s := Massive[i];
+    Massive[i]:=Massive[j];
+    Massive[j]:=s;
+  //ReleaseMutex(hMutex);  // выход из критической секции
+  until flag;
+  ExitThread(0);
+end;
+
+
+function WndProc(hWnd: THandle; Msg: integer; wParam: longint; lParam: longint): longint; stdcall;
+  const
+      start=5;
+      text=6;
+      exit=7;
+  var rect:TRect;
+      i,j:integer;
+      status2,status3: dword;
+
+begin
+  result:=1;
+  case Msg of
+    wm_create: 
+      begin
+        GetClientRect(hwnd,rect);
+
+        // Создание контролов
+        // Кнопка Пуск
+        CreateWindow('button',
+                  'Запуск',
+                  ws_visible or ws_child or bs_defpushbutton,
+                  40,20,
+                  80,40,
+                  hWnd,
+                  start,
+                  hInstance,
+                  nil);
+
+        // Кнопка Выход
+        CreateWindow('button',
+                  'Выход',
+                  ws_visible or ws_child or bs_defpushbutton,
+                  130,20,
+                  80,40,
+                  hWnd,
+                  exit,
+                  hInstance,
+                  nil);
+
+        // Окно вывода
+        CreateWindowEx(WS_EX_CLIENTEDGE, // Утопленная рамка
+                   'edit',
+                   '',
+                   ws_visible or ws_child or ws_border or ES_READONLY or ES_MULTILINE or ES_WANTRETURN,
+                   40,90,
+                   170,170,
+                   hwnd,
+                   text,
+                   hInstance,
+                   nil);
+
+
+      end;
+
+    //Обработка таймера
+    wm_timer:
+      begin
+        WaitForSingleObject(hMutex,infinite);
+          buf:='';
+          for i:=1 to 10 do
+            buf:= buf+Massive[i]+#13#10 ;
+          SendMessage(GetDlgItem(hwnd,text),wm_settext,0,integer(@buf[1]));
+          ReleaseMutex(hMutex);
+      end;
+
+    wm_command:
+      case hiword(wParam) of
+         BN_CLICKED:
+          case loword(wparam) of
+            start:
+             begin
+             if count=0 then begin
+               SetTimer(hWnd,0,1000,nil);
+               hThread2:=CreateThread(nil,8000,@proc2,nil,0,idThread2);
+               hThread3:=CreateThread(nil,8000,@proc3,nil,0,idThread3);
+               count:=count+1;
+               end;
+             end;
+            exit:
+               sendmessage(hwnd,wm_close,0,0);
+          end;
+      end;
+
+  wm_close:
+      begin
+      flag:=true;
+        repeat
+        GetExitCodeThread(hThread2,status2);
+        GetExitCodeThread(hThread3,status3);
+      until (status2<>STILL_ACTIVE) and (status3<>STILL_ACTIVE);
+        CloseHandle(hThread2);
+        CloseHandle(hThread3);
+        CloseHandle(hMutex);
+        killTimer(hwnd,0);
+        DestroyWindow(hWnd);
+      end;
+
+  wm_destroy:
+      PostQuitMessage(0);
+
+    else
+      result:=DefDlgProc(hwnd,msg,wparam,lparam);
+  end;
+end;
+
+
+procedure WinMain; {Основной цикл обработки сообщений}
+  const szClassName='Controls demo';
+  var   wndClass:TWndClassEx;
+        msg:TMsg;
+        hwnd1,hwnd2:THandle;
+begin
+  wndClass.cbSize:=sizeof(wndClass);
+  wndClass.style:=0;
+  wndClass.lpfnWndProc:=@WndProc;
+  wndClass.cbClsExtra:=0;
+  wndClass.cbWndExtra:=DLGWINDOWEXTRA;
+  wndClass.hInstance:=hInstance;
+  wndClass.hIcon:=loadIcon(0, idi_Application);
+  wndClass.hCursor:=loadCursor(0, idc_Arrow);
+  wndClass.hbrBackground:=GetStockObject(WHITE_BRUSH);
+  wndClass.lpszMenuName:=nil;
+  wndClass.lpszClassName:=szClassName;
+  wndClass.hIconSm:=loadIcon(0, idi_Application);
+
+  RegisterClassEx(wndClass);
+
+  hwnd1:=CreateWindowEx(0,
+         szClassName,
+         'Лабораторная работа №8',    {заголовок окна}
+         ws_popupwindow or ws_sysmenu or ws_caption or ws_border or ws_visible,       {стили}
+         100,           {Left}
+         100,           {Top}
+         250,                     {Width}
+         320,                     {Height}
+         0,                       {хэндл родительского окна}
+         0,                       {хэндл оконного меню}
+         hInstance,               {хэндл экземпляра приложения}
+         nil);                    {параметры создания окна}
+
+  // Создание мьютекса       
+  hMutex:=CreateMutex(
+                  nil, // атрибуты защиты
+                  false, // создать свободным, иначе- захваченный мной
+                  'MyMutex' // Имя
+ );
+  flag:=false;
+
+  while GetMessage(msg,0,0,0) do begin {Получить очередное сообщение}
+      TranslateMessage(msg);   {Windows транслирует сообщение от клавиатуры}
+      DispatchMessage(msg);    {Windows вызовет оконную процедуру}
+  end; {выход по wm_quit, на которое GetMessage вернет FALSE}
+
+end;
+
+
+begin
+  WinMain;
+end.

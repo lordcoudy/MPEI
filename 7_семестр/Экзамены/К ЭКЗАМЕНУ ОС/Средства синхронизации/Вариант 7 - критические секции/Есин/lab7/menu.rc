@@ -1,0 +1,43 @@
+
+icon1 ICON icon1.ico
+cursor1 CURSOR cursor1.cur
+backgroundBMP BITMAP background.bmp
+
+Lab7Menu MENU
+{
+  POPUP "Лабораторные работы"
+  {
+    MENUITEM "Номер 4", 204
+    MENUITEM "Номер 6", 206
+  }
+  POPUP "Работа с DLL"
+  {
+    MENUITEM "proc7 | a: pchar; b: pchar; | char | C | статический", 207
+  }
+  MENUITEM "&Выход", 100, HELP
+}
+
+LAB6 DIALOG LOADONCALL IMPURE 20, 20, 270, 350
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Лабораторная работа №6"
+FONT 9, "Arial"
+{
+  CTEXT "Введите текст:", 101, 10, 10, 250, 10
+  EDITTEXT 102, 10, 20, 250, 150, WS_VISIBLE | WS_CHILD | WS_BORDER | WS_TABSTOP | ES_MULTILINE | WS_VSCROLL
+  CTEXT "Транслитерированный текст:", 103, 10, 180, 250, 10
+  EDITTEXT 104, 10, 190, 250, 150, WS_VISIBLE | WS_CHILD | WS_BORDER | WS_TABSTOP | ES_MULTILINE | WS_VSCROLL | ES_READONLY
+}
+
+STRINGTABLE
+{
+  007, "Лабораторная работа №7"
+  004, "Лабораторная работа №4"
+  777, "А-07-18, Есин Алексей, Вариант 7"
+}
+
+ACC ACCELERATORS
+{
+  "4", 204, ALT
+  "6", 206, ALT
+  "^Q", 100
+}

@@ -1,0 +1,192 @@
+program lab8server;
+
+uses windows,messages, Math, SysUtils; {интерфейсы к системным DLL}
+
+var
+  msgBroadcast: THandle;
+  msgAccept: THandle;
+  msgLeave: THandle;
+  n:integer; //Количество подключений
+  t:integer; //Имя клиента
+
+  hFile: THandle;
+  hMapping: THandle;
+  pData: pointer;
+  hEvent: THandle;
+
+
+function WndProc(hWnd: THandle; Msg: integer;
+                 wParam: longint; lParam: longint): longint;
+                 stdcall; forward;
+
+procedure WinMain; {Основной цикл обработки сообщений}
+  const szClassName='Shablon';
+  var   wndClass:TWndClassEx;
+        hWnd: THandle;
+        msg:TMsg;
+begin
+  msgBroadcast := RegisterWindowMessage('Ау, тут есть сервер?');
+  msgAccept := RegisterWindowMessage('Да');
+  msgLeave := RegisterWindowMessage('Сервер я пошел');
+
+  hEvent := CreateEvent(nil, false, true, 'MyEvent');
+
+  wndClass.cbSize:=sizeof(wndClass);
+  wndClass.style:=cs_hredraw or cs_vredraw;
+  wndClass.lpfnWndProc:=@WndProc;
+  wndClass.cbClsExtra:=0;
+  wndClass.cbWndExtra:=0;
+  //wndClass.hInstance:=hPrevInst;
+  wndClass.hInstance:=hInstance;
+  wndClass.hIcon:=loadIcon(0, idi_Application);
+  wndClass.hCursor:=loadCursor(0, idc_Arrow);
+  wndClass.hbrBackground:=GetStockObject(white_Brush);
+  wndClass.lpszMenuName:=nil;
+  wndClass.lpszClassName:=szClassName;
+  wndClass.hIconSm:=loadIcon(0, idi_Application);
+
+  RegisterClassEx(wndClass);
+
+  hwnd:=CreateWindowEx(
+         0,
+         szClassName, {имя класса окна}
+         'Сервер',    {заголовок окна}
+         ws_overlappedWindow,     {стиль окна}
+         cw_useDefault,           {Left}
+         cw_useDefault,           {Top}
+         500,           {Width}
+         400,           {Height}
+         0,                       {хэндл родительского окна}
+         0,                       {хэндл оконного меню}
+         hInstance,               {хэндл экземпляра приложения}
+         nil);                    {параметры создания окна}
+
+  ShowWindow(hwnd,sw_Show);  {отобразить окно}
+  updateWindow(hwnd);   {послать wm_paint оконной процедуре, прорисовав
+                         окно минуя очередь сообщений (необязательно)}
+
+  while GetMessage(msg,0,0,0) do begin {получить очередное сообщение}
+    TranslateMessage(msg);   {Windows транслирует сообщения от клавиатуры}
+    DispatchMessage(msg);    {Windows вызовет оконную процедуру}
+  end; {выход по wm_quit, на которое GetMessage вернет FALSE}
+end;
+
+function WndProc(hWnd: THandle; Msg: integer; wParam: longint; lParam: longint): longint; stdcall;
+  var ps:TPaintStruct;
+      hdc:THandle;
+      rect:TRect;
+
+      lf:TLogFont;
+      hf:THandle;
+      i:integer;
+
+      outStr: ShortString;
+      hOpponentsMas: array [0..255] of THandle;
+
+      th:DWORD;
+
+begin
+  result:=0;
+  case Msg of
+    wm_create:
+      begin
+
+        n := 0;
+        t := 1;
+
+        for i := 0 to 255 do hOpponentsMas[i] := 0;
+
+        hFile := CreateFile(
+          'myfile.map', // имя файла
+          GENERIC_READ or GENERIC_WRITE, // доступ на чтение-запись
+          0, // эксклюзивный доступ
+          0, // атрибуты защиты, не поддерживается Windows 95, только NT
+          CREATE_ALWAYS, // создавать заново
+          FILE_ATTRIBUTE_NORMAL,
+          0);
+
+        hMapping := CreateFileMapping(
+          hFile, // хэндл открытого файла
+          0, // атрибуты защиты, не поддерживается Windows 95, только NT
+          PAGE_READWRITE,
+          0, 4096, // 4096 байт, если 0 - размер равен размеру файла
+          'MyMapping'); // имя-идентификатор объекта
+
+        pData := MapViewOfFile(
+          hMapping, // хэндл отображающего объекта
+          FILE_MAP_ALL_ACCESS, // доступ на чтение-запись
+          0,0,0); // доступ ко всему отображению (можно задать часть)
+          
+      end;
+
+
+    wm_paint:
+      begin
+
+
+        hdc:=BeginPaint(hwnd,ps); //Удалить WM_PAINT из очереди и начать рисование
+        GetClientRect(hwnd,rect);
+
+        //Выбор шрифта для вывода текста
+        fillchar(lf,sizeof(lf),0);
+        lf.lfQuality := 5;
+        with lf do begin
+          lfHeight:=35;
+          lfFaceName:='Arial Cyr';
+        end;
+        hf:=SelectObject(hdc,createFontIndirect(lf));
+
+        DrawText(hdc, PChar('Всего подключений: ' + IntToStr(n)), -1, rect, DT_SINGLELINE or DT_CENTER or DT_VCENTER);
+
+        //Убираем шрифт, который использовали для вывода текста
+        DeleteObject(SelectObject(hdc,hf));
+
+        endPaint(hwnd,ps);
+      end;
+
+    wm_keydown:
+      if (wParam = VK_ESCAPE) then
+      begin
+        th := GetCurrentThreadId();
+         if (MessageBox(hwnd, 'Вы хотите закрыть окно?', 'Запрос на закрытие окна', MB_YESNO or MB_ICONWARNING) = IDYES) then
+         begin
+          DestroyWindow(hwnd);
+         end;
+      end;
+
+    wm_destroy:
+      begin
+        UnmapViewOfFile(pData);
+        CloseHandle(hMapping);
+        CloseHandle(hFile);
+        PostQuitMessage(0);
+      end;
+
+    else
+        if Msg = msgBroadcast then
+        begin
+          outStr := 'пользователь ';
+          outStr := outStr + IntToStr(t);
+          t := t + 1;
+          Move(outStr, pData^, 256);
+
+          SendMessage(wParam, msgAccept, hWnd, 0); //Отправляем свой хендл
+          n := n + 1; //Количество подкючений увеличиваем на 1
+          InvalidateRect(hWnd, nil, True);
+        end
+        else if Msg = msgLeave then
+        begin
+          //Уменьшаем количество подключений на 1
+          n := n - 1;
+          InvalidateRect(hWnd, nil, True);
+        end
+        else
+          result:=DefWindowProc(hwnd,msg,wparam,lparam);
+  end;
+end;
+
+
+
+begin
+  WinMain;
+end.

@@ -1,0 +1,446 @@
+A51 MACRO ASSEMBLER  LAB1                                                                 11/30/2022 10:49:18 PAGE     1
+
+
+MACRO ASSEMBLER A51 V7.01
+OBJECT MODULE PLACED IN lab1.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE lab1.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ; Var 4, Balashov A-08-19
+                       2     ; Q2i = N5i/4 - N6i
+                       3     ; For(int i = 0; i <=10; ++i); N5, N6 = [-2000; 2000]; K - rand
+                       4     
+                       5     ; Data segment
+  000A                 6     N equ 10
+  0005                 7     K equ 5 
+  0080                 8     cmpMask equ 10000000b                           ; Mask for negatives
+----                   9             dseg at 30h                                     
+0030                  10             vecN5:  ds      N*2                     
+0044                  11             vecN6:  ds      N*2                     
+----                  12     xseg
+0000                  13             result: ds      2                               
+                      14     
+                      15     ; Code segment
+                      16     ; r0 - address, r2 - cx, r4 - high, r5 - low, r7 - sign, r1, r3, r6
+----                  17     cseg
+                      18     
+0000 2100             19     jmp start
+0100                  20             org 0100h                                       
+0100                  21             start:                                          
+0100 31C8             22                     call    NMem                            ; Put numbers to memory
+                      23                                                                             ; Prepare to summ a
+                             ll the N5 and N6
+0102 7A14             24                     mov     r2, #N*2                        ; Cycle (CX in 8086) = 10
+0104 7830             25                     mov     r0, #vecN5                      ; Get vecN5 adress to start
+0106 E4               26                     clr     a       
+0107 C3               27                     clr     c       
+0108 7900             28                     mov     r1, #0          
+010A 7B00             29                     mov     r3, #0
+010C 7C00             30                     mov     r4, #0
+010E 7D00             31                     mov     r5, #0
+0110 7E00             32                     mov     r6, #0
+0112 7C00             33                     mov     r4, #0                          ; High part
+0114 7F00             34                     mov             r7, #0
+                      35             
+0116                  36             sumN5:                                                  ; Loop for N5              
+                                  
+0116 EC               37                     mov     a, r4                           ; High sum
+0117 26               38                     add     a, @r0                          ; r0h + ah
+0118 FC               39                     mov     r4, a                           ; Save
+                      40                     
+0119 08               41                     inc     r0                                      ; Go to r0l
+                      42                     
+011A ED               43                     mov     a, r5                           ; Low summ
+011B 26               44                     add     a, @r0                          ; r0l + al
+011C FD               45                     mov     r5, a
+011D 5001             46                     jnc     carryPoint5                     ; carry == 1 : inc sum ? carryPoint
+                      47     
+011F 0C               48                     inc     r4
+                      49                     
+0120                  50             carryPoint5:                                    
+                      51                     
+0120 1A               52                     dec     r2                                      ; cx--
+0121 08               53                     inc     r0                                      ; r0h next
+0122 DAF2             54             djnz            r2, sumN5                       ; cx != 0 : sumN5 ? skip
+                      55     
+                      56     
+A51 MACRO ASSEMBLER  LAB1                                                                 11/30/2022 10:49:18 PAGE     2
+
+0124 7A14             57             mov     r2, #N*2                                ; 10 numbers to add
+0126 EC               58             mov             a, r4
+0127 7B00             59             mov     r3, #0                                  ; 0 if positive
+0129 5480             60             anl             a, #cmpMask
+012B 6002             61             jz              sumN6
+012D 7BFF             62             mov     r3, #11111111b                  ; 1 if negative
+                      63     
+012F                  64             sumN6:                                                  ; Loop for N6   
+012F 7F00             65                     mov             r7, #0
+0131 08               66                     inc             r0
+                      67     
+0132 ED               68                     mov     a, r5                           ; Low summ
+0133 26               69                     add     a, @r0                          ; r0l + al
+0134 FD               70                     mov     r5, a                           ; Save
+0135 E4               71                     clr     a
+0136 3400             72                     addc    a, #0
+0138 FF               73                     mov             r7, a
+                      74                     
+0139 18               75                     dec     r0                                      ; Go to r0h
+                      76                     
+013A EC               77                     mov     a, r4                           ; High summ
+013B 2F               78                     add     a, r7   
+013C 7F00             79                     mov             r7, #0                          
+013E 5002             80                     jnc             carryPoint6
+0140 7F01             81                     mov             r7, #1
+                      82             
+0142                  83             carryPoint6:
+0142 26               84                     add     a, @r0                          ; r0h + ah
+0143 FC               85                     mov     r4, a
+                      86     
+0144 EF               87                     mov             a, r7
+0145 3400             88                     addc    a, #0
+0147 FF               89                     mov             r7, a
+                      90     
+0148 E6               91                     mov             a, @r0
+0149 5480             92                     anl             a, #cmpMask
+014B 6004             93                     jz              negPoint
+014D EB               94                     mov             a, r3
+014E 24FF             95                     add             a, #11111111b
+0150 FB               96                     mov             r3, a
+                      97                     
+0151                  98             negPoint:
+0151 EB               99                     mov             a, r3
+0152 2F              100                     add             a, r7
+0153 FB              101                     mov             r3, a
+                     102     
+0154 1A              103                     dec     r2                                      ; cx--
+0155 08              104                     inc     r0                                      ; r0h next
+0156 08              105                     inc     r0
+0157 DAD6            106             djnz    r2, sumN6                               ; cx != 0 : sumN5 ? skip
+                     107             ; Conversion
+0159 7F00            108                     mov     r7, #0                  
+015B EC              109                     mov     a, r4                           ; High summ
+015C 5480            110                     anl     a, #cmpMask                     ; Check for '1' in highest bit
+015E 6004            111                     jz              PrepareDiv                      
+                     112                                                                             
+0160 5139            113                     call    convertToAdd
+0162 7F80            114                     mov     r7, #10000000b                          
+                     115     
+0164                 116             PrepareDiv:
+0164 E4              117                     clr     a                                       
+0165 7A00            118                     mov     r2, #0                          ; High
+0167 7900            119                     mov     r1, #0                          ; Low
+                     120                     
+0169                 121             divide:
+0169 C3              122                     clr     c                                       
+A51 MACRO ASSEMBLER  LAB1                                                                 11/30/2022 10:49:18 PAGE     3
+
+                     123                     
+016A ED              124                     mov     a, r5                           ; al
+016B 940A            125                     subb    a, #N                           ; al - N
+016D FD              126                     mov     r5, a                           ; Save
+                     127                     
+016E EC              128                     mov     a, r4                           ; ah
+016F 9400            129                     subb    a, #0                           ; For carry
+0171 FC              130                     mov     r4, a                           ; Save
+                     131                     
+0172 5480            132                     anl     a, #cmpMask                     ; Check if negative
+0174 700A            133                     jnz     LeaveDivision                   
+                     134                                                                             
+0176 EA              135                     mov             a, r2                           ; al + 1
+0177 2401            136                     add             a, #1
+0179 FA              137                     mov             r2, a
+017A E9              138                     mov     a, r1                           
+017B 3400            139                     addc    a, #0                           ; High + C
+017D F9              140                     mov     r1, a
+017E 80E9            141                     jmp     divide                          
+                     142             
+0180                 143             LeaveDivision:                                  
+0180 EA              144                     mov     a, r2
+0181 FD              145                     mov     r5, a
+0182 E9              146                     mov     a, r1
+0183 FC              147                     mov     r4, a
+0184 EF              148                     mov             a, r7                           ; '-' to a
+0185 5480            149                     anl     a, #10000000b                   
+                     150     
+0187 6006            151                     jz              AddK                            ; a == 0000 0001 : skip ? c
+                             onvert
+0189 5139            152                     call    convertToAdd
+                     153     
+018B ED              154                     mov     a, r5
+018C FA              155                     mov     r2, a
+018D EC              156                     mov     a, r4
+018E F9              157                     mov     r1, a           
+                     158                     
+018F                 159             AddK:                                                   
+018F EA              160                     mov     a, r2                           ; al
+0190 2405            161                     add     a, #K                           ; al + K
+0192 FA              162                     mov     r2, a                           ; Save
+0193 E9              163                     mov     a, r1                           ; ah
+0194 3400            164                     addc    a, #0                           ; ah + C
+0196 F9              165                     mov     r1, a                           ; Save
+                     166             
+                     167                     ; Final save
+0197 900000          168                     mov     dptr, #result           ; Get address
+                     169                     ;mov    a, r7                           ; '+/-'
+                     170                     ;movx   @dptr,a                         ; Save to mem
+                     171                     ;inc    dptr                            ; Next cell
+019A E9              172                     mov     a, r1                           ; ah
+019B F0              173                     movx    @dptr,a                         ; Save to mem
+019C A3              174                     inc     dptr                            ; Next cell
+019D EA              175                     mov     a, r2                           ; al
+019E F0              176                     movx    @dptr,a                         ; Save to mem
+                     177             
+019F 00              178             nop                                                             ; As in example
+                     179     
+                     180     ; Const
+                     181     
+01A0 FFFF            182             N5: dw -1,-2,-3,-4,-6,5,-2000,-2000,0,1                                 
+01A2 FFFE                    
+01A4 FFFD                    
+01A6 FFFC                    
+01A8 FFFA                    
+01AA 0005                    
+A51 MACRO ASSEMBLER  LAB1                                                                 11/30/2022 10:49:18 PAGE     4
+
+01AC F830                    
+01AE F830                    
+01B0 0000                    
+01B2 0001                    
+01B4 0001            183             N6: dw 1,0,0,0,0,0,0,0,0,2000                                           
+01B6 0000                    
+01B8 0000                    
+01BA 0000                    
+01BC 0000                    
+01BE 0000                    
+01C0 0000                    
+01C2 0000                    
+01C4 0000                    
+01C6 07D0                    
+                     184     
+                     185     ; Procedures
+                     186             ; NMem - save N5 or N6 to memory
+                     187             ; Changes r0, r2, dptr
+01C8                 188             NMem:                                   
+01C8 7830            189                     mov     r0, #vecN5                      ; Memory address
+01CA 7A14            190                     mov     r2, #N*2                        ; CX
+01CC 9001A0          191                     mov     dptr, #N5                       ; Set pointer to start
+01CF 7900            192                     mov     r1, #0          
+01D1 7B00            193                     mov     r3, #0
+01D3 7C00            194                     mov     r4, #0
+01D5 7D00            195                     mov     r5, #0
+01D7 7E00            196                     mov     r6, #0
+01D9 7F00            197                     mov     r7, #0
+01DB                 198                     N5Loop:
+01DB E4              199                             clr     a
+01DC C3              200                             clr     c
+01DD 93              201                             movc    a, @a+dptr
+                     202     
+                     203                             ; Сначала проверить знак
+                     204                             ; Поместить его в кэрри
+                     205                             ; Прибавить 3 с переносом, если -1, -2, -3
+                     206                             ; Сдвиг обеих ячеек
+                     207                             ; Сдвиг обеих ячеек
+                     208     
+                     209                             ; save high part to r3
+01DE FB              210                             mov r3, a
+                     211     
+01DF A3              212                             inc     dptr
+01E0 08              213                             inc             r0
+                     214     
+                     215                             ; save low part to r7
+01E1 E4              216                             clr             a
+01E2 93              217                             movc    a, @a+dptr
+01E3 FF              218                             mov r7, a
+                     219     
+01E4 EB              220                             mov a, r3
+                     221     
+01E5 A2E7            222                             mov c, acc.7                    ; Carry = 1 if negative
+01E7 501C            223                             jnc positive
+                     224                             ; check if -1 | -2 | -3
+                     225                             ; mov a, r7
+                     226                             ; subb a, #255
+                     227                             ; jz add3
+                     228     
+                     229                             ; mov a, r7
+                     230                             ; subb a, #254
+                     231                             ; jz add3
+                     232     
+                     233                             ; mov a, r7
+                     234                             ; subb a, #253
+                     235                             ; jz add3
+A51 MACRO ASSEMBLER  LAB1                                                                 11/30/2022 10:49:18 PAGE     5
+
+                     236     
+                     237                             ; ; skip addition if false
+                     238                             ; jmp division4
+                     239     
+                     240                             ; add 3
+01E9                 241                             add3:
+01E9 C3              242                             clr c
+                     243     
+01EA EF              244                             mov a, r7
+01EB 2403            245                             add a, #3
+01ED FF              246                             mov r7, a
+                     247     
+01EE EB              248                             mov a, r3
+01EF 3400            249                             addc a, #0
+01F1 FB              250                             mov r3, a
+                     251     
+01F2                 252                             division4:
+                     253                             ; !!!!!!!!!!!!!
+01F2 C3              254                             clr c
+                     255                             
+01F3 EB              256                             mov a, r3
+01F4 A2E7            257                             mov c, acc.7
+01F6 13              258                             rrc     a
+01F7 FB              259                             mov r3, a
+                     260     
+01F8 EF              261                             mov a, r7
+01F9 13              262                             rrc     a
+01FA FF              263                             mov r7, a
+                     264     
+01FB EB              265                             mov a, r3
+01FC A2E7            266                             mov c, acc.7
+01FE 13              267                             rrc     a
+01FF FB              268                             mov r3, a
+                     269     
+0200 EF              270                             mov a, r7
+0201 13              271                             rrc     a
+0202 FF              272                             mov r7, a
+                     273     
+0203 800D            274                             jmp save
+                     275     
+                     276     
+0205                 277                             positive:
+0205 EB              278                             mov a, r3
+0206 13              279                             rrc     a
+0207 FB              280                             mov r3, a
+                     281     
+0208 EF              282                             mov a, r7
+0209 13              283                             rrc     a
+020A FF              284                             mov r7, a
+                     285     
+020B C3              286                             clr c
+                     287                             
+020C EB              288                             mov a, r3
+020D 13              289                             rrc     a
+020E FB              290                             mov r3, a
+                     291     
+020F EF              292                             mov a, r7
+0210 13              293                             rrc     a
+0211 FF              294                             mov r7, a
+                     295     
+0212                 296                             save:
+0212 18              297                             dec             r0
+0213 EB              298                             mov             a, r3
+0214 F6              299                             mov             @r0, a
+                     300     
+0215 08              301                             inc     r0
+A51 MACRO ASSEMBLER  LAB1                                                                 11/30/2022 10:49:18 PAGE     6
+
+0216 EF              302                             mov             a, r7
+0217 F6              303                             mov             @r0, a
+                     304     
+0218 A3              305                             inc             dptr
+0219 08              306                             inc             r0
+                     307     
+021A DABF            308                             djnz    r2, N5Loop
+021C 7844            309                             mov     r0, #vecN6              
+021E 7A14            310                             mov     r2, #N*2        
+0220 9001B4          311                             mov     dptr, #N6
+                     312     
+0223                 313                     N6Loop:
+0223 E4              314                             clr     a       
+0224 C3              315                             clr     c                       
+0225 93              316                             movc    a, @a+dptr                      ; Get 1 bite
+                     317                     
+                     318                             ; Save
+0226 FC              319                             mov     r4, a                   ; High part
+0227 A3              320                             inc     dptr
+0228 08              321                             inc             r0
+                     322     
+0229 E4              323                             clr             a
+022A 93              324                             movc    a, @a+dptr
+                     325                             
+                     326                             ; Save
+022B FD              327                             mov             r5, a                   ; Low part
+                     328     
+022C 5139            329                             call    convertToAdd
+                     330                             ; Final save
+022E 18              331                             dec             r0
+022F EC              332                             mov             a, r4
+0230 F6              333                             mov             @r0, a
+                     334     
+0231 08              335                             inc     r0
+0232 ED              336                             mov             a, r5
+0233 F6              337                             mov             @r0, a
+                     338     
+0234 A3              339                             inc             dptr
+0235 08              340                             inc             r0                      
+0236 DAEB            341                             djnz    r2, N6Loop                      ; cx == 0 : skip ? repeat
+                     342                                                                             
+0238 22              343             ret                                                             ; Return from proce
+                             dure
+                     344             
+                     345             
+                     346             ; Convert to additional code
+                     347             ; Change r4, r5
+                     348             ; Result = r4:r5
+0239                 349             convertToAdd:                           
+0239 ED              350                     mov     a, r5                           ; al
+023A F4              351                     cpl     a                                       ; Invert
+023B C3              352                     clr     c                                       
+023C 2401            353                     add     a, #1                           ; al + 1 (w/ carry)
+023E FD              354                     mov     r5, a                           ; Save
+                     355                     
+023F EC              356                     mov     a, r4                           ; ah
+0240 F4              357                     cpl     a                                       ; Invert
+0241 3400            358                     addc    a, #0                           ; +C
+0243 FC              359                     mov     r4, a                           ; Save
+0244 22              360             ret                                                             ; Return from proce
+                             dure
+                     361             
+                     362     end
+                                                     
+A51 MACRO ASSEMBLER  LAB1                                                                 11/30/2022 10:49:18 PAGE     7
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+ACC. . . . . . . .  D ADDR   00E0H   A   
+ADD3 . . . . . . .  C ADDR   01E9H   A   
+ADDK . . . . . . .  C ADDR   018FH   A   
+CARRYPOINT5. . . .  C ADDR   0120H   A   
+CARRYPOINT6. . . .  C ADDR   0142H   A   
+CMPMASK. . . . . .  N NUMB   0080H   A   
+CONVERTTOADD . . .  C ADDR   0239H   A   
+DIVIDE . . . . . .  C ADDR   0169H   A   
+DIVISION4. . . . .  C ADDR   01F2H   A   
+K. . . . . . . . .  N NUMB   0005H   A   
+LEAVEDIVISION. . .  C ADDR   0180H   A   
+N. . . . . . . . .  N NUMB   000AH   A   
+N5 . . . . . . . .  C ADDR   01A0H   A   
+N5LOOP . . . . . .  C ADDR   01DBH   A   
+N6 . . . . . . . .  C ADDR   01B4H   A   
+N6LOOP . . . . . .  C ADDR   0223H   A   
+NEGPOINT . . . . .  C ADDR   0151H   A   
+NMEM . . . . . . .  C ADDR   01C8H   A   
+POSITIVE . . . . .  C ADDR   0205H   A   
+PREPAREDIV . . . .  C ADDR   0164H   A   
+RESULT . . . . . .  X ADDR   0000H   A   
+SAVE . . . . . . .  C ADDR   0212H   A   
+START. . . . . . .  C ADDR   0100H   A   
+SUMN5. . . . . . .  C ADDR   0116H   A   
+SUMN6. . . . . . .  C ADDR   012FH   A   
+VECN5. . . . . . .  D ADDR   0030H   A   
+VECN6. . . . . . .  D ADDR   0044H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
