@@ -1,0 +1,140 @@
+******* DMC8 Project File *******
+* If you read this message, you need to install the last version of Deeds! *
+FVR 2
+DMC 1
+ROM 5
+RAM 5
+POH 7
+POG 6
+POF 5
+POE 4
+POD 3
+POC 2
+POB 1
+POA 0
+PIH 7
+PIG 6
+PIF 5
+PIE 4
+PID 3
+PIC 2
+PIB 1
+PIA 0
+******* DMC8 Project File *******
+portA EQU 00
+portB EQU 01 
+portC EQU 02
+portD EQU 03
+
+IntEnable EQU 00000010b
+IntAndRead EQU 00000011b
+IntReset EQU 00000000b
+
+JP START
+
+ORG 38h
+JP INTERRUPT
+
+ORG 100h
+START:
+
+  LD B, 0
+
+  LD A, IntEnable
+  OUT (portA), A
+
+EI
+
+INF:
+JP INF
+
+INTERRUPT:
+  LD A, IntAndRead
+  OUT (portA), A
+
+  IN A, (portA)
+
+  CP 0
+  JP Z, INT0
+  CP 1
+  JP Z, INT1
+  CP 2
+  JP Z, INT2
+  CP 3
+  JP Z, INT3
+
+  JP INT_Exit
+
+INT0:
+  IN A, (portB)
+  AND 10101010b
+  OUT (portD), A
+  JP INT_Exit
+
+INT1:
+  LD A, B
+  CP 0
+  JP Z, init
+  JP NZ, comp
+  init:
+    IN A, (portB)
+    LD B, A
+    JP exit
+  comp:
+    IN A, (portB)
+    CP B
+    JP Z, equal
+    JP C, smaller
+    LD A, 1
+    out (portC), A
+    JP exit
+
+  equal:
+    LD A, 0
+    out (portC), A
+    JP exit
+  
+  smaller:
+    LD A, 2
+    out (portC), A
+    JP exit
+
+  exit:
+    JP INT_Exit
+
+INT2:
+  LD A, L
+  CP 4
+  JP Z, INT_Exit
+  IN A, (portC)
+  LD H, 80h
+  LD (HL), A
+  inc L
+  
+  JP INT_Exit
+
+INT3:
+  LD H, 80h
+  LD L, 0h
+  rep:
+  LD A, (HL)
+  out (portB), A
+  inc L
+  LD A, L
+  CP 4
+  JP Z, end
+  JP rep
+end:
+  LD A, 11110000b
+  out (portA), A
+  JP INT_Exit
+
+INT_Exit:
+  LD A, IntReset
+  OUT (portA), A
+
+  LD A, IntEnable
+  OUT (portA), A
+
+EI
+RET

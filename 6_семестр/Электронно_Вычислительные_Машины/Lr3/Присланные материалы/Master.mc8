@@ -1,0 +1,112 @@
+******* DMC8 Project File *******
+* If you read this message, you need to install the last version of Deeds! *
+FVR 2
+DMC 1
+ROM 3
+RAM 3
+POH 7
+POG 6
+POF 5
+POE 4
+POD 3
+POC 2
+POB 1
+POA 0
+PIH 7
+PIG 6
+PIF 5
+PIE 4
+PID 3
+PIC 2
+PIB 1
+PIA 0
+******* DMC8 Project File *******
+PortA EQU 00
+PortB EQU 01
+PortC EQU 02
+PortD EQU 03
+
+ORG 0
+JP START
+ORG 38h
+JP INT
+
+ORG 100h
+START:
+EI
+
+INF:
+JP INF
+
+INT:
+IN A, (PortB) ; Принимаем номер прерывания
+
+CP 0
+JP Z, INT_0 ; Прерывание 0 - Отправка данных
+CP 1
+JP Z, INT_1 ; Прерывание 1 - Выполнение выбранной операции
+CP 2
+JP Z, INT_2 ; Прерывание 2 - Получение первого числа
+CP 3
+JP Z, INT_3 ; Прерывание 3 - Получение второго числа
+
+INT_0: ; Прерывание 0 - Отправка данных
+
+LD A, 00001111b ; Загружаем адрес Master
+OUT (PortD), A ; Отправляем в порт нужный адрес
+LD A, D ; Загружаем данные для отправки
+OUT (PortD), A ; Отправляем на порт данные для отправки
+
+JP INT_EXIT
+
+INT_1: ; Прерывание 1 - Выполнение выбранной операции
+
+IN A, (PortA) ; Читаем порт A с операцией
+OUT (PortC), A ; Показываем, какая операция выполняется
+
+CP 0
+JP Z, ACTION_0 ; Операция +
+CP 1
+JP Z, ACTION_1 ; Операция -
+CP 2
+JP Z, ACTION_2 ; Операция *
+
+ACTION_0:
+LD A, B
+ADD A, C
+LD D, A
+JP INT_0
+
+ACTION_1:
+LD A, B
+SUB C
+LD D, A
+JP INT_0
+
+ACTION_2:
+;MUL A, B
+JP INT_0
+
+JP INT_EXIT
+
+INT_2: ; Прерывание 2 - Получение первого числа
+
+IN A, (PortD) ; Ввод первого числа с порта
+LD B, A ; Перемещаем в нужный регистр
+OUT (PortA), A ; Отображаем число 1 на экране
+
+JP INT_EXIT
+
+INT_3: ; Прерывание 3 - Получение второго числа
+
+IN A, (PortC) ; Ввод второго числа с порта
+LD C, A ; Перемещаем в нужный регистр
+OUT (PortB), A ; Отображаем число 1 на экране
+
+JP INT_EXIT
+
+INT_EXIT: ; Окончание прерываний
+IN A, (PortB) ; Говорим контроллеру прерываний, что готовы принять следующиее
+EI
+RET
+

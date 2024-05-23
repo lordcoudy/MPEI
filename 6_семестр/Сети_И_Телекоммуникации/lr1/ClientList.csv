@@ -1,0 +1,15 @@
+Internet access state,Device Type,Client Name,Client IP address,IP Method,Clients MAC Address,Interface,Tx Rate,Rx Rate,Access time
+Allow Internet access,XIAOMI ElectronicsCO., LTD.,ESP_D1399E,192.168.1.7,Automatic IP,40:31:3C:D1:39:9E,2.4 GHz,72.2,6,201:09:51
+Allow Internet access,CLOUD NETWORK TECHNOLOGY SINGAPORE PTE. LTD.,DESKTOP-VDON7PP,192.168.1.37,Automatic IP,5C:61:99:4D:F7:B7,2.4 GHz,144.4,144.4,01:42:47
+Allow Internet access,ASUS,WORLD,192.168.1.58,Automatic IP,0C:9D:92:8A:BD:36,Wired,-,-,-
+Allow Internet access,Espressif Inc.,ESP_50FF48,192.168.1.74,Automatic IP,F4:CF:A2:50:FF:48,2.4 GHz,52,6,190:16:40
+Allow Internet access,Apple Inc.,MacBook-Air,192.168.1.85,Automatic IP,B0:BE:83:11:D9:43,5 GHz,866.7,866.7,65:14:34
+Allow Internet access,Apple,Apple,192.168.1.88,Automatic IP,D0:E1:40:8C:14:E4,5 GHz,6,6,143:53:36
+Allow Internet access,SAMSUNG,adb,192.168.1.113,Automatic IP,08:C5:E1:78:55:6B,2.4 GHz,1,86.5,14:58:28
+Allow Internet access,AMPAK Technology Inc.,YandexStationMini_8794,192.168.1.118,Automatic IP,C0:84:7D:C7:87:94,2.4 GHz,72.2,24,165:28:08
+Allow Internet access,HTC,HTC,192.168.1.128,Automatic IP,AC:37:43:52:E5:84,5 GHz,866.7,6,20:45:27
+Allow Internet access,CyberTAN Technology Inc.,LAPTOP-3FD0B8EE,192.168.1.145,Automatic IP,28:39:26:AF:5B:CF,2.4 GHz,72.2,1,02:58:22
+Allow Internet access,Tuya Smart Inc.,Tuya Smart Inc,192.168.1.178,Automatic IP,68:57:2D:35:4C:36,2.4 GHz,72.2,6,201:09:25
+Allow Internet access,Positivo Androi,Pixel-3-XL,192.168.1.195,Automatic IP,8E:4A:D0:C9:66:01,5 GHz,866.7,6,00:15:54
+Allow Internet access,Espressif Inc.,ESP_51353F,192.168.1.238,Automatic IP,F4:CF:A2:51:35:3F,2.4 GHz,72.2,6,190:16:40
+Allow Internet access,Samsung,Samsung,192.168.1.245,Automatic IP,64:E7:D8:D1:88:78,2.4 GHz,1,117,00:08:25

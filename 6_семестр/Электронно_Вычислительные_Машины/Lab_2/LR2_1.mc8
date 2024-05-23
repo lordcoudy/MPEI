@@ -1,0 +1,58 @@
+******* DMC8 Project File *******
+* If you read this message, you need to install the last version of Deeds! *
+FVR 2
+DMC 1
+ROM 3
+RAM 3
+POH 7
+POG 6
+POF 5
+POE 4
+POD 3
+POC 2
+POB 1
+POA 0
+PIH 7
+PIG 6
+PIF 5
+PIE 4
+PID 3
+PIC 2
+PIB 1
+PIA 0
+******* DMC8 Project File *******
+portA EQU 00
+portB EQU 01
+portC EQU 02
+portD EQU 03
+
+ORG 0000h
+JP START
+ORG 0038h
+JP EXECUTE
+
+ORG 100h
+START:
+
+EI
+
+IN A, (portD)
+OUT (portD), A
+IN A, (portA)
+OUT (portA), A
+IN A, (portB)
+OUT (portB), A
+IN A, (portC)
+OUT (portC), A
+
+
+
+inf:
+JP inf
+
+EXECUTE:
+IN A, (portD)
+OUT (portD), A
+
+EI
+RET

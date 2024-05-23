@@ -1,0 +1,54 @@
+******* DMC8 Project File *******
+* If you read this message, you need to install the last version of Deeds! *
+FVR 2
+DMC 1
+ROM 3
+RAM 3
+POH 7
+POG 6
+POF 5
+POE 4
+POD 3
+POC 2
+POB 1
+POA 0
+PIH 7
+PIG 6
+PIF 5
+PIE 4
+PID 3
+PIC 2
+PIB 1
+PIA 0
+******* DMC8 Project File *******
+ORG 0000h
+JP START
+ORG 0038h
+JP EXECUTE
+
+ORG 100h
+START:
+LD A, 00000000b
+OUT (03), A ;OD
+LD A, 11000001b
+OUT (02), A ;OC
+
+EI
+
+INF_LOOP:
+JP INF_LOOP
+
+EXECUTE:
+;Enter Data
+IN A, (00) ; Read from IA
+OUT (03), A ; Write to OD
+;Enter Others
+IN A, (01) ; Read from IB
+; OUTPUT OC = C_R_WR/!RD_A0_A1_A2_1_1
+AND 11111110b
+OUT (02), A ; Write to OC
+
+IN A, (01) ; Read from IB
+OUT (02), A ; Write to OC
+EI
+RET

@@ -1,0 +1,125 @@
+******* DMC8 Project File *******
+* If you read this message, you need to install the last version of Deeds! *
+FVR 2
+DMC 1
+ROM 3
+RAM 3
+POH 7
+POG 6
+POF 5
+POE 4
+POD 3
+POC 2
+POB 1
+POA 0
+PIH 7
+PIG 6
+PIF 5
+PIE 4
+PID 3
+PIC 2
+PIB 1
+PIA 0
+******* DMC8 Project File *******
+portA EQU 00
+portB EQU 01 
+portC EQU 02
+portD EQU 03
+
+IntEnable EQU 00000010b
+IntAndRead EQU 00000011b
+IntReset EQU 00000000b
+
+JP START
+
+ORG 38h
+JP INTERRUPT
+
+ORG 100h
+START:
+
+  ;Инициализируем начальные значения
+  LD B, 0
+
+  ;Разрешаем прерывания
+  LD A, IntEnable
+  OUT (portB), A
+
+EI
+
+INF:
+JP INF
+
+INTERRUPT:
+  ;Поднимаем сигнал READ
+  LD A, IntAndRead
+  OUT (portB), A
+
+  ;Считываем номер прерывания
+  IN A, (portC)
+  
+  ;Выбираем действие
+  CP 0
+  JP Z, INT0
+  CP 1
+  JP Z, INT1
+  CP 2
+  JP Z, INT2
+  CP 3
+  JP Z, INT3
+
+  JP INT_Exit
+
+  ;Инкримент регистра B
+INT0:
+  LD A, 0
+  OUT (portD), A
+
+  INC B
+  LD A, B
+  OUT (portC), A
+  
+  JP INT_Exit
+
+  ;Декримент регистра B
+INT1:
+  LD A, 1
+  OUT (portD), A
+
+  DEC B
+  LD A, B
+  OUT (portC), A
+  JP INT_Exit
+
+  ;Сдвиг регистра B влево
+INT2:
+  LD A, 2
+  OUT (portD), A
+
+  LD A, B
+  RLCA
+  LD B, A
+  OUT (portC), A
+  JP INT_Exit
+
+  ;Сдвиг регистра B вправо
+INT3:
+  LD A, 3
+  OUT (portD), A
+
+  LD A, B
+  RRCA
+  LD B, A
+  OUT (portC), A
+INT_Exit:
+
+  ;Сбрасываем состояние контроллера прерываний
+  LD A, IntReset
+  OUT (portB), A
+
+  ;Разрешаем прерывания
+  LD A, IntEnable
+  OUT (portB), A
+
+EI
+RET

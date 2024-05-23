@@ -1,0 +1,11 @@
+
+ Start  Stop   Length Name               Class
+
+ 00000H 000FFH 00100H STK                
+ 00100H 0F31BH 0F21CH DATA               DATA
+ 0F320H 1F31EH 0FFFFH MEMORYBUF          DATA
+ 1F320H 2F31EH 0FFFFH BITMAP             DATA
+ 2F320H 2F694H 00375H CODE               CODE
+
+Program entry point at 2F32:0000
+
