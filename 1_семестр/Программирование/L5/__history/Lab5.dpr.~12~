@@ -1,0 +1,51 @@
+program Lab5;
+
+{$APPTYPE CONSOLE}
+
+uses windows;
+
+var
+n, i: Integer;
+S, M : Integer;
+Q : array [1..20] of Integer;
+fin, fout: TextFile;
+//Variant №2
+
+begin
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+    if ParamCount<2 then begin writeln('CritError: Не заданы параметры программы'); readln; exit end;
+    AssignFile(fin, ParamStr(1));
+    AssignFile(fout, ParamStr(2));
+	  Reset(fin);
+ 	  Rewrite(fout);
+    writeln(fout, 'Lab.5' :40);
+    readln(fin, n);
+    if (n<2) then writeln(fout,'Введено n меньше 2')
+    else if n>20 then writeln(fout,'Введено n больше 20')
+    else
+    begin
+      for i := 1 to n do readln(fin, Q[i]);
+      i := 2;
+      S := (Q[2] - Q[1]);
+
+      M := abs(S);
+      repeat
+        S := Q[i] - Q[i-1];
+        if abs(S) > M then M := abs(S);
+        i := i + 1;
+      until (i = n+1);
+
+      writeln(fout,'n = ', n:2);
+      for i := 1 to n do
+        begin
+          writeln(fout, 'Q[ ',i,' ] = ', Q[i]:4);
+        end;
+      writeln(fout,'Максимальная разность равна ', M:4);
+    end;
+    CloseFile(fin);
+    CloseFile(fout);
+    writeln('Press ENTER...');
+    readln;
+end.
+

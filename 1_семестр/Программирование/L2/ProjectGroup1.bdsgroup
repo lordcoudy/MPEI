@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality">Default.Personality</Option>
+      <Option Name="ProjectType"></Option>
+      <Option Name="Version">1.0</Option>
+      <Option Name="GUID">{650DBA50-13E3-411E-9997-22173C20BBDF}</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    
+    <Projects>
+      <Projects Name="Lab2.exe">Lab2.bdsproj</Projects>
+      <Projects Name="Lab3.exe">..\L3\Lab3.bdsproj</Projects>
+      <Projects Name="Targets">Lab2.exe Lab3.exe</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

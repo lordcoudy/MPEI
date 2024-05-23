@@ -1,0 +1,45 @@
+program Lab2;
+
+{$APPTYPE CONSOLE}
+var
+n, i, M1, M2 : Integer;
+C1, C2 : Real;
+Q : array [1..20] of Real;
+
+begin
+    C1 = 0;
+    C2 = 0;
+    M1 = 0;
+    M2 = 0;
+    writeln('Enter n');
+    readln(n);
+    if (n<0) or (n>20) then writeln('WRONG') else
+    begin
+      writeln('Enter array');
+      for i := 1 to n do
+        begin
+          writeln('i = ',i,'   ');
+          readln(Q[i]);
+        end;
+      for i := 1 to n do
+        begin
+           readln(Q[i]);
+           if Q[i] > 0 then
+           begin
+            C2 = C2 + Q[i];
+            M2 = M2 + 1;
+           end
+           else
+           begin
+             C1 = C1 + Q[i];
+             M1 = M1 + 1;
+           end;
+        end;
+    end;
+    if C1 = 0 then
+    writeln('No negative elements, sum of positive is ',C2:5:1,' and number of them is ',M2)
+    else if C2 = 0 then
+    writeln('No positive elements, sum of negative is ',C1:5:1,' and number of them is ',M1)
+    else
+    writeln('Sum of positive elements is ',C2:5:1,' and negative is ',C1:5:1,'. Number of positive el is ',M2, ' and negative is ',M1);
+end.

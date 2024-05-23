@@ -1,0 +1,65 @@
+program Lab4;
+
+{$APPTYPE CONSOLE}
+var
+n, i, M1, M2 : Integer;
+C1, C2 : Integer;
+Q : array [1..20] of Integer;
+dat, res: TextFile;
+//Variant ¹2
+
+begin
+    AssignFile (dat, 'task4_dat1.txt'); Reset (dat);
+    AssignFile (res, 'task4_res1.txt'); Rewrite (res);
+    C1 := 0;
+    C2 := 0;
+    M1 := 0;
+    M2 := 0;
+    //writeln('Enter n');
+    readln(dat, n);
+    if (n<=0) or (n>20) then writeln('WRONG') else
+    begin
+      //writeln('Enter array');
+      i:=1;
+      repeat
+
+
+          write('Q[ ',i,' ] = ');
+          readln(dat, Q[i]);
+
+                if Q[i] > 0 then
+                begin
+                  C2 := C2 + Q[i];
+                  M2 := M2 + 1;
+                end
+                else if Q[i] < 0 then
+                begin
+                  C1 := C1 + Q[i];
+                  M1 := M1 + 1;
+                end;
+
+          i := i + 1;
+
+
+      until i = n + 1;
+
+      writeln(res, 'n = ', n);
+      for i := 1 to n do
+        begin
+          writeln(res, 'Q[ ',i,' ] = ', Q[i]:4);
+        end;
+      if (C1 = 0) and (C2 = 0) then
+              writeln(res, 'No positive and negative elements, absolute zero!')
+              else if C2 = 0 then
+              writeln(res, 'No positive elements, sum of negative is ',C1:5,' and number of them is ',M1:2)
+              else if C1 = 0 then
+              writeln(res, 'No negative elements, sum of positive is ',C2:5,' and number of them is ',M2:2)
+              else
+              writeln(res, 'Sum of positive elements is ',C2:5,' and negative is ',C1:5,'. Number of positive el is ',M2:2, ' and negative is ',M1:2);
+
+    end;
+    CloseFile(dat);
+    CloseFile(res);
+    writeln('Press ENTER...');
+    readln;
+end.

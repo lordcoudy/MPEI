@@ -1,0 +1,51 @@
+program Ty;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils,
+  windows,
+  USolve;
+
+var
+  n : Byte;
+  C, P : Mass;
+  X : MassX;
+  fin, fout: TextFile;
+
+begin
+  SetConsoleCP(1251);
+  SetConsoleOutputCP(1251);
+  if ParamCount<2 then begin writeln('CritError: Не заданы параметры программы'); readln; exit end;
+  AssignFile(fin, ParamStr(1));
+  AssignFile(fout, ParamStr(2));
+  Reset(fin);
+  Rewrite(fout);
+  writeln(fout, 'Типовой расчет':40);
+  readln(fin, n);
+  if (n<1) then writeln(fout,'Введено n меньше 1')
+  else if (n>20) then writeln(fout, 'Введено n больше 20')
+  else
+  begin
+    writeln(fout, 'Массив C:');
+    RW(n, C, fin, fout);
+    writeln(fout, 'Массив P:');
+    RW(n, P, fin, fout);
+    if Max(n, C) < Min(n, P) then
+    begin
+//      n := 2 * n;
+      writeln(fout, 'Массив X:');
+      Put(n, C, P, X, fout);
+    end
+    else
+    writeln(fout, 'Макс. эл-т С не меньше мин. эл-та Р');
+  end;
+  CloseFile(fin);
+  CloseFile(fout);
+  writeln('Press ENTER...');
+  readln;
+end.
+
+

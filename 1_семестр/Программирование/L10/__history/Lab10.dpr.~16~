@@ -1,0 +1,98 @@
+program Lab10;
+
+{$APPTYPE CONSOLE}
+
+uses
+  windows;
+
+Type Mass = array [1..20] of real;
+
+Procedure RW( n: byte; var A: Mass; var fin: Textfile; var fout: TextFile; var B : real);
+var i : byte;
+begin
+  for i := 1 to n do
+    readln(fin, A[i]);
+    readln(fin, B);
+  writeln(fout, 'n = ', n:2);
+  for i := 1 to n do
+    writeln(fout, 'A[',i,'] = ', A[i]:5:1);
+end;
+
+Procedure More1 ( n : byte; var A : Mass; var k : byte; var B : real);
+var i : byte;
+    F : bool;
+begin
+  i := 1;
+  F := False;
+  while (i <= n) and (F = false) do
+  begin
+  if A[i]>B then
+      begin
+        k := i;
+        F := True;
+      end;
+   inc(i);
+  end;
+end;
+
+Procedure More2 ( n : byte; var A : Mass; var k2 : byte);
+var i : byte;
+    F : bool;
+begin
+  F := False;
+  i := n;
+  k2 := n;
+  while (i >= 1) and (F = false) do
+  begin
+  if A[i]>A[1] then
+      begin
+        k2 := i;
+        F := True;
+      end;
+   dec(i);
+  end;
+end;
+
+Procedure FindMin ( n : byte; var A : Mass; var k : byte; var k2 : byte; var Min : real);
+var i : byte;
+begin
+  Min := A[k];
+  for i := k to k2 do
+  begin
+  if A[i]<Min then
+      begin
+        Min:=A[i];
+      end;
+  end;
+end;
+
+var
+  n, i, k, k2 : Byte;
+  B, Min :Real;
+  A : Mass;
+  fin, fout: TextFile;
+begin
+  SetConsoleCP(1251);
+  SetConsoleOutputCP(1251);
+  if ParamCount<2 then begin writeln('CritError: Не заданы параметры программы'); readln; exit end;
+  AssignFile(fin, ParamStr(1));
+  AssignFile(fout, ParamStr(2));
+  Reset(fin);
+  Rewrite(fout);
+  writeln(fout, 'Lab.10':40);
+  readln(fin, n);
+  if (n<2) then writeln(fout,'Введено n меньше 2')
+  else if (n>20) then writeln(fout, 'Введено n больше 20')
+  else
+  begin
+    RW(n, A, fin, fout, B);
+    More1(n, A, k, B);
+    More2(n, A, k2);
+    FindMin(n, A, k, k2, Min);
+    writeln(fout, Min);
+  end;
+  CloseFile(fin);
+  CloseFile(fout);
+  writeln('Press ENTER...');
+  readln;
+end.

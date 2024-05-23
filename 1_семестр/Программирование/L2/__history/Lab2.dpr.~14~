@@ -1,0 +1,58 @@
+program Lab2;
+
+{$APPTYPE CONSOLE}
+var
+n, i, M1, M2 : Integer;
+C1, C2 : Integer;
+Q : array [1..20] of Integer;
+//Variant ¹2
+
+begin
+    C1 := 0;
+    C2 := 0;
+    M1 := 0;
+    M2 := 0;
+    writeln('Enter n');
+    readln(n);
+    if (n<=0) or (n>20) then writeln('WRONG') else
+    begin
+      writeln('Enter array, -100<=Q[i]<=100');
+      i:=1;
+      repeat
+
+          write('Q[ ',i,' ] = ');
+          readln(Q[i]);
+          if (Q[i]<-100) or (Q[i]>100) then
+          begin
+            writeln('Wrong');
+            readln;
+          end
+          else
+
+
+        i := i+1;
+      until i = n+1;;
+
+
+    writeln('n = ',n);
+    for i := 1 to n do
+    begin
+      writeln('Q[ ',i,' ] = ',Q[i]:4);
+    end;
+      C2 := 15; C1 := -6; M1 := 2; M2 := 3;
+      //C2 := 2000; C1 := 0; M1 := 0; M2 := 20;
+      //C1 := 2000; C2 := 0; M2 := 0; M1 := 20;
+      //C1 := 0; C2 := 0;
+      //C1 := -1000; C2 := 1000; M1 := 10; M2 := 10;
+      if (C1 = 0) and (C2 = 0) then
+              writeln('No positive and negative elements, absolute zero!')
+              else if C2 = 0 then
+              writeln('No positive elements, sum of negative is ',C1:5,' and number of them is ',M1:2)
+              else if C1 = 0 then
+              writeln('No negative elements, sum of positive is ',C2:5,' and number of them is ',M2:2)
+              else
+              writeln('Sum of positive elements is ',C2:5,' and negative is ',C1:5,'. Number of positive el is ',M2:2, ' and negative is ',M1:2);
+    end;
+    writeln('Press ENTER...');
+    readln;
+end.
