@@ -1,0 +1,27 @@
+* C:\KP_2021\Schematic1.sch
+
+* Schematics Version 9.2
+* Sun Jun 13 21:06:45 2021
+
+
+.PARAM         R7=5k Ampl=100m 
+
+** Analysis setup **
+.ac DEC 101 10 10Meg
+.STEP DEC PARAM R7 1 10k 10 
+.OP 
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+.lib "C:\KP_2021\bipolar.lib"
+.lib "C:\KP_2021\Diodes.lib"
+.lib "C:\KP_2021\RUS_Q.LIB"
+
+.INC "Schematic1.net"
+
+
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END

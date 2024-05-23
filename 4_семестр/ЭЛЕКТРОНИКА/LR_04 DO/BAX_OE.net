@@ -1,0 +1,7 @@
+* Schematics Netlist *
+
+
+
+I_I1         1 0 DC 0A  
+V_V1         0 2 5v
+Q_Q1         2 1 0 KT814V 

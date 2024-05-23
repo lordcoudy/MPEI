@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/SAVVA/STUDY/MPEI/4_Sem/Math/c++/Lab3_math/main.cpp
+iostream
+-
+cstdio
+-
+chrono
+-
+cmath
+-
+iomanip
+-
+

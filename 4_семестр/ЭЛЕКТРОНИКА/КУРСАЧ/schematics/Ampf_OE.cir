@@ -1,0 +1,28 @@
+* C:\KP_2021\Ampf_OE.sch
+
+* Schematics Version 9.2
+* Thu Jun 10 12:20:51 2021
+
+
+.PARAM         Ampl=100m R7=2k 
+
+** Analysis setup **
+.OP 
+.LIB "C:\KP_2021\bipolar.lib"
+.LIB "C:\KP_2021\RUS_Q.LIB"
+.LIB "C:\KP_2021\Diodes.lib"
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+.lib "C:\KP_2021\bipolar.lib"
+.lib "C:\KP_2021\Diodes.lib"
+.lib "C:\KP_2021\RUS_Q.LIB"
+
+.INC "Ampf_OE.net"
+
+
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END

@@ -1,0 +1,17 @@
+* Schematics Netlist *
+
+
+
+Q_Q         $N_0002 $N_0001 $N_0003 KT814V 
+V_VG         1 0 DC 0V AC 0V 
+R_RG         1 $N_0004  200  
+R_R2         0 $N_0001  6.2k  
+R_RE         0 $N_0003  100  
+R_RK         $N_0002 $N_0005  400  
+R_R1         $N_0001 $N_0005  30000  
+C_CP1         $N_0004 $N_0001  5u  
+C_CE         0 $N_0003  50u  
+V_VPit         0 $N_0005 15V
+R_RH         0 2  1200  
+C_CP2         2 $N_0002  5u  
+C_C4         0 2  1n  

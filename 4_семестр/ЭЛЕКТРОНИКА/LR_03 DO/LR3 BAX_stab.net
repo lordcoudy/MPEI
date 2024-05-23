@@ -1,0 +1,6 @@
+* Schematics Netlist *
+
+
+
+I_I1         0 $N_0001 DC 0A  
+D_D1         $N_0001 0 KS147 

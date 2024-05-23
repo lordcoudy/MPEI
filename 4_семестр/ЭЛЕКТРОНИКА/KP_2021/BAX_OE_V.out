@@ -1,0 +1,97 @@
+
+**** 05/03/21 14:52:30 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * C:\KP_2021\BAX_OE_V.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Mon May 03 14:52:26 2021
+
+
+
+** Analysis setup **
+.DC LIN I_I1 0 500u 10n 
+.LIB "C:\KP_2021\bipolar.lib"
+.LIB "C:\KP_2021\RUS_Q.LIB"
+.LIB "C:\Diodes.lib"
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "BAX_OE_V.net"
+
+
+
+**** INCLUDING BAX_OE_V.net ****
+* Schematics Netlist *
+
+
+
+I_I1         1 0 DC 0A  
+Q_Q         2 1 0 KT814V 
+V_V1         0 2 60
+
+**** RESUMING BAX_OE_V.cir ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+**** 05/03/21 14:52:30 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * C:\KP_2021\BAX_OE_V.sch
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               KT814V          
+               PNP             
+          IS   11.450000E-15 
+          BF  102.8          
+          NF    1            
+         VAF  100            
+         IKF     .2157       
+         ISE   97.570000E-15 
+          NE    1.421        
+          BR    1.928        
+          NR    1            
+         IKR     .5927       
+         ISC  637.600000E-15 
+          NC    1.41         
+          NK     .4096       
+          RB    4            
+          RC     .2979       
+         CJE   71.140000E-12 
+         MJE     .3333       
+         CJC   88.730000E-12 
+         MJC     .3333       
+          TF   26.360000E-09 
+         XTF    5            
+         VTF   10            
+         ITF    3            
+          TR    2.046000E-06 
+         XTB    1.5          
+          CN    2.2          
+           D     .52         
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .59
+

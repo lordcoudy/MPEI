@@ -1,0 +1,8 @@
+* Schematics Netlist *
+
+
+
+D_D2         1 2 Dbreak 
+R_R1         0 2  1040  
+V_V1         1 0  
++SIN 0 25 1250 0 0 0

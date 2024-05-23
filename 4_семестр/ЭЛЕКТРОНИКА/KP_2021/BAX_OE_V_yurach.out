@@ -1,0 +1,95 @@
+
+**** 04/27/21 19:17:45 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * C:\KP_2021\BAX_OE_V_yurach.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Tue Apr 27 19:17:41 2021
+
+
+
+** Analysis setup **
+.DC LIN I_I1 0 500u 10n 
+.LIB "C:\KP_2021\bipolar.lib"
+.LIB "C:\KP_2021\RUS_Q.LIB"
+.LIB "C:\Diodes.lib"
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "BAX_OE_V_yurach.net"
+
+
+
+**** INCLUDING BAX_OE_V_yurach.net ****
+* Schematics Netlist *
+
+
+
+I_I1         1 0 DC 0A  
+Q_Q         2 1 0 KT361g 
+V_V1         0 2 35
+
+**** RESUMING BAX_OE_V_yurach.cir ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+**** 04/27/21 19:17:45 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * C:\KP_2021\BAX_OE_V_yurach.sch
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               KT361g          
+               PNP             
+          IS   31.080000E-15 
+          BF  203.3          
+          NF    1            
+         VAF   75            
+         IKF     .2072       
+         ISE  325.300000E-15 
+          NE    1.534        
+          BR    1            
+          NR    1            
+         IKR    3.163        
+         ISC   34.360000E-15 
+          NC    1.022        
+          NK     .5155       
+          RB   70            
+          RC    3.748        
+         CJE   18.500000E-12 
+         CJC   10.930000E-12 
+          TF   91.320000E-12 
+         XTF    1.762        
+         VTF   40            
+         ITF     .1303       
+          TR  275.600000E-09 
+         XTB    1.5          
+          CN    2.2          
+           D     .52         
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .66
+

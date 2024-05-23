@@ -1,0 +1,24 @@
+* C:\KP_2021\WorkRegime.sch
+
+* Schematics Version 9.2
+* Mon May 03 16:58:35 2021
+
+
+
+** Analysis setup **
+.OP 
+.LIB "C:\KP_2021\RUS_Q.LIB"
+.LIB "C:\KP_2021\Diodes.lib"
+.LIB "C:\KP_2021\bipolar.lib"
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "WorkRegime.net"
+
+
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END

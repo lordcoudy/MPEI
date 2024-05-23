@@ -1,0 +1,62 @@
+
+**** 05/03/21 16:58:39 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * C:\KP_2021\WorkRegime.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Mon May 03 16:58:35 2021
+
+
+
+** Analysis setup **
+.OP 
+.LIB "C:\KP_2021\RUS_Q.LIB"
+.LIB "C:\KP_2021\Diodes.lib"
+.LIB "C:\KP_2021\bipolar.lib"
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "WorkRegime.net"
+
+
+
+**** INCLUDING WorkRegime.net ****
+* Schematics Netlist *
+
+
+
+V_E         0 $N_0001 36V
+R_R         $N_0001   1600  
+----------------------------$
+ERROR -- Missing model
+R_R         0 $N_0002  540  
+$
+ERROR -- Name "R_R" is defined more than once
+R_R         $N_0003   560  
+$
+ERROR -- Name "R_R" is defined more than once
+V_E         0 $N_0003 36V
+$
+ERROR -- Name "V_E" is defined more than once
+Q_Q           $N_0002 KT814V 
+----------------------$
+ERROR -- Expecting keyword STIMULUS, saw KT814V.
+
+
+**** RESUMING WorkRegime.cir ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+

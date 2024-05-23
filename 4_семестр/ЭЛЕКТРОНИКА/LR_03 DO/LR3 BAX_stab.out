@@ -1,0 +1,78 @@
+
+**** 03/22/21 16:32:58 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * \\vmware-host\Shared Folders\\LR_03 DO\LR3 BAX_stab.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Mon Mar 22 16:32:54 2021
+
+
+
+** Analysis setup **
+.DC LIN I_I1 -20m 20m 50u 
+.LIB "C:\Diodes.lib"
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "LR3 BAX_stab.net"
+
+
+
+**** INCLUDING "LR3 BAX_stab.net" ****
+* Schematics Netlist *
+
+
+
+I_I1         0 $N_0001 DC 0A  
+D_D1         $N_0001 0 KS147 
+
+**** RESUMING "LR3 BAX_stab.cir" ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+**** 03/22/21 16:32:58 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * \\vmware-host\Shared Folders\\LR_03 DO\LR3 BAX_stab.sch
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               KS147           
+          IS  880.500000E-18 
+         ISR    1.859000E-09 
+          BV    4.7          
+         IBV     .020245     
+         NBV    1.6989       
+        IBVL    1.955600E-03 
+        NBVL   14.976        
+          RS     .25         
+         CJO  175.000000E-12 
+          VJ     .75         
+           M     .5516       
+        TBV1  -21.277000E-06 
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

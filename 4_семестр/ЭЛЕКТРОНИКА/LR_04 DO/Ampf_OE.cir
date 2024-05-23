@@ -1,0 +1,23 @@
+* \\vmware-host\Shared Folders\›À≈ “–ŒÕ» ¿\LR_04 DO\Ampf_OE.sch
+
+* Schematics Version 9.2
+* Tue Apr 13 16:59:39 2021
+
+
+
+** Analysis setup **
+.OP 
+.LIB "C:\KP_2021\bipolar.lib"
+.LIB "C:\KP_2021\RUS_Q.LIB"
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Ampf_OE.net"
+
+
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END

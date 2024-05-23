@@ -1,0 +1,24 @@
+* C:\KP_2021\BAX_OE_V.sch
+
+* Schematics Version 9.2
+* Mon May 03 16:28:28 2021
+
+
+
+** Analysis setup **
+.DC LIN I_I1 0 500u 10n 
+.LIB "C:\KP_2021\Diodes.lib"
+.LIB "C:\KP_2021\bipolar.lib"
+.LIB "C:\KP_2021\RUS_Q.LIB"
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "BAX_OE_V.net"
+
+
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
