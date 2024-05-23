@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ShowAllFiles>true</ShowAllFiles>
+    <_LastSelectedProfileId>E:\SAVVA\STUDY\MPEI\DB\MAIN\SHARP\SchoolControl\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="REG_FORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="STUDENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TUTOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="app.config">
+      <SubType>Form</SubType>
+    </None>
+  </ItemGroup>
+</Project>

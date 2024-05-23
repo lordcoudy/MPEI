@@ -1,0 +1,12 @@
+E:\SAVVA\STUDY\MPEI\DB\MAIN\SHARP\SchoolControl\bin\Release\net5.0-windows\publish\SchoolControl.exe
+E:\SAVVA\STUDY\MPEI\DB\MAIN\SHARP\SchoolControl\bin\Release\net5.0-windows\publish\SchoolControl.dll
+E:\SAVVA\STUDY\MPEI\DB\MAIN\SHARP\SchoolControl\bin\Release\net5.0-windows\publish\SchoolControl.deps.json
+E:\SAVVA\STUDY\MPEI\DB\MAIN\SHARP\SchoolControl\bin\Release\net5.0-windows\publish\SchoolControl.runtimeconfig.json
+E:\SAVVA\STUDY\MPEI\DB\MAIN\SHARP\SchoolControl\bin\Release\net5.0-windows\publish\SchoolControl.dll.config
+E:\SAVVA\STUDY\MPEI\DB\MAIN\SHARP\SchoolControl\bin\Release\net5.0-windows\publish\SchoolControl.pdb
+E:\SAVVA\STUDY\MPEI\DB\MAIN\SHARP\SchoolControl\bin\Release\net5.0-windows\publish\System.Data.SqlClient.dll
+E:\SAVVA\STUDY\MPEI\DB\MAIN\SHARP\SchoolControl\bin\Release\net5.0-windows\publish\runtimes\win-arm64\native\sni.dll
+E:\SAVVA\STUDY\MPEI\DB\MAIN\SHARP\SchoolControl\bin\Release\net5.0-windows\publish\runtimes\win-x64\native\sni.dll
+E:\SAVVA\STUDY\MPEI\DB\MAIN\SHARP\SchoolControl\bin\Release\net5.0-windows\publish\runtimes\win-x86\native\sni.dll
+E:\SAVVA\STUDY\MPEI\DB\MAIN\SHARP\SchoolControl\bin\Release\net5.0-windows\publish\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\SAVVA\STUDY\MPEI\DB\MAIN\SHARP\SchoolControl\bin\Release\net5.0-windows\publish\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
