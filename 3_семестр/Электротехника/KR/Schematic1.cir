@@ -1,0 +1,21 @@
+* E:\SAVVA\STUDY\MPEI\3_Sem\Electrotech\KR\Schematic1.sch
+
+* Schematics Version 9.2
+* Thu Oct 29 15:11:53 2020
+
+
+
+** Analysis setup **
+.ac LIN 2 318.31 1500
+
+
+* From [PSPICE NETLIST] section of d:\OrCad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Schematic1.net"
+
+
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/SAVVA/STUDY/MPEI/3_Sem/Programming/Labs/Lab2-3/company.h
+string
+-
+
+E:/SAVVA/STUDY/MPEI/3_Sem/Programming/Labs/Lab2-3/main.cpp
+iostream
+-
+vector
+-
+post.h
+E:/SAVVA/STUDY/MPEI/3_Sem/Programming/Labs/Lab2-3/post.h
+
+E:/SAVVA/STUDY/MPEI/3_Sem/Programming/Labs/Lab2-3/post.h
+string
+-
+company.h
+E:/SAVVA/STUDY/MPEI/3_Sem/Programming/Labs/Lab2-3/company.h
+

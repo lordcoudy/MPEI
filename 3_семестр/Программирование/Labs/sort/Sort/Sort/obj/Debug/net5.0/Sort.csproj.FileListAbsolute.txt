@@ -1,0 +1,16 @@
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\sort\Sort\Sort\bin\Debug\net5.0\Sort.exe
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\sort\Sort\Sort\bin\Debug\net5.0\Sort.deps.json
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\sort\Sort\Sort\bin\Debug\net5.0\Sort.runtimeconfig.json
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\sort\Sort\Sort\bin\Debug\net5.0\Sort.runtimeconfig.dev.json
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\sort\Sort\Sort\bin\Debug\net5.0\Sort.dll
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\sort\Sort\Sort\bin\Debug\net5.0\ref\Sort.dll
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\sort\Sort\Sort\bin\Debug\net5.0\Sort.pdb
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\sort\Sort\Sort\obj\Debug\net5.0\Sort.csprojAssemblyReference.cache
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\sort\Sort\Sort\obj\Debug\net5.0\Sort.GeneratedMSBuildEditorConfig.editorconfig
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\sort\Sort\Sort\obj\Debug\net5.0\Sort.AssemblyInfoInputs.cache
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\sort\Sort\Sort\obj\Debug\net5.0\Sort.AssemblyInfo.cs
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\sort\Sort\Sort\obj\Debug\net5.0\Sort.csproj.CoreCompileInputs.cache
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\sort\Sort\Sort\obj\Debug\net5.0\Sort.dll
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\sort\Sort\Sort\obj\Debug\net5.0\ref\Sort.dll
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\sort\Sort\Sort\obj\Debug\net5.0\Sort.pdb
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\sort\Sort\Sort\obj\Debug\net5.0\Sort.genruntimeconfig.cache

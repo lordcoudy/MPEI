@@ -1,0 +1,4 @@
+﻿  MyForm.cpp
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\Lab1\Lab1\Lab1\MyForm.h(153,8): warning C4101: 'size': unreferenced local variable
+  MyForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  Lab1.vcxproj -> E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\Lab1\Lab1\Debug\Lab1.exe

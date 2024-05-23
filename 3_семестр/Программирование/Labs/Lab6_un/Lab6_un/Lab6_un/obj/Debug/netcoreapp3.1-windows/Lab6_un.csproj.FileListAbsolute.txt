@@ -1,0 +1,15 @@
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\Lab6_un\Lab6_un\Lab6_un\bin\Debug\netcoreapp3.1-windows\Lab6_un.exe
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\Lab6_un\Lab6_un\Lab6_un\bin\Debug\netcoreapp3.1-windows\Lab6_un.deps.json
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\Lab6_un\Lab6_un\Lab6_un\bin\Debug\netcoreapp3.1-windows\Lab6_un.runtimeconfig.json
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\Lab6_un\Lab6_un\Lab6_un\bin\Debug\netcoreapp3.1-windows\Lab6_un.runtimeconfig.dev.json
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\Lab6_un\Lab6_un\Lab6_un\bin\Debug\netcoreapp3.1-windows\Lab6_un.dll
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\Lab6_un\Lab6_un\Lab6_un\bin\Debug\netcoreapp3.1-windows\Lab6_un.pdb
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\Lab6_un\Lab6_un\Lab6_un\obj\Debug\netcoreapp3.1-windows\Lab6_un.csprojAssemblyReference.cache
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\Lab6_un\Lab6_un\Lab6_un\obj\Debug\netcoreapp3.1-windows\Lab6_un.AssemblyInfoInputs.cache
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\Lab6_un\Lab6_un\Lab6_un\obj\Debug\netcoreapp3.1-windows\Lab6_un.AssemblyInfo.cs
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\Lab6_un\Lab6_un\Lab6_un\obj\Debug\netcoreapp3.1-windows\Lab6_un.csproj.CoreCompileInputs.cache
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\Lab6_un\Lab6_un\Lab6_un\obj\Debug\netcoreapp3.1-windows\Lab6_un.dll
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\Lab6_un\Lab6_un\Lab6_un\obj\Debug\netcoreapp3.1-windows\Lab6_un.pdb
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\Lab6_un\Lab6_un\Lab6_un\obj\Debug\netcoreapp3.1-windows\Lab6_un.genruntimeconfig.cache
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\Lab6_un\Lab6_un\Lab6_un\obj\Debug\netcoreapp3.1-windows\Lab6_un.Form1.resources
+E:\SAVVA\STUDY\MPEI\3_Sem\Programming\Labs\Lab6_un\Lab6_un\Lab6_un\obj\Debug\netcoreapp3.1-windows\Lab6_un.csproj.GenerateResource.cache

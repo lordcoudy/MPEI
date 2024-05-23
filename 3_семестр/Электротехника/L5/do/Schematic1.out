@@ -1,0 +1,79 @@
+
+**** 10/30/20 12:05:09 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * E:\SAVVA\STUDY\MPEI\3_Sem\Electrotech\L5\do\Schematic1.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Fri Oct 30 12:05:05 2020
+
+
+
+** Analysis setup **
+.ac LIN 2000 100 389k
+
+
+* From [PSPICE NETLIST] section of d:\OrCad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Schematic1.net"
+
+
+
+**** INCLUDING Schematic1.net ****
+* Schematics Netlist *
+
+
+
+R_R1         $N_0001 3  1150  
+C_C1         0 3  5.6n  
+V_V1         $N_0001 0 DC 0V AC 1V 
+R_R2         0 3  2k  
+
+**** RESUMING Schematic1.cir ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+**** 10/30/20 12:05:09 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * E:\SAVVA\STUDY\MPEI\3_Sem\Electrotech\L5\do\Schematic1.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    3)    0.0000  ($N_0001)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+
