@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/lordcoudy/Documents/LabsCPP/Pr/main.cpp
+iostream
+-
+ctime
+-
+methods.h
+/Users/lordcoudy/Documents/LabsCPP/Pr/methods.h
+
+/Users/lordcoudy/Documents/LabsCPP/Pr/methods.h
+algorithm
+-
+

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/lordcoudy/Documents/LabsCPP/CLab10/func.h
+stack.h
+/Users/lordcoudy/Documents/LabsCPP/CLab10/stack.h
+cstdio
+-
+
+/Users/lordcoudy/Documents/LabsCPP/CLab10/main.cpp
+func.h
+/Users/lordcoudy/Documents/LabsCPP/CLab10/func.h
+cctype
+-
+
+/Users/lordcoudy/Documents/LabsCPP/CLab10/stack.h
+cstdlib
+-
+

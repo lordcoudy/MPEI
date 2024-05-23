@@ -1,0 +1,11 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+begin
+  writeln(ord(' '));
+  readln;
+end.

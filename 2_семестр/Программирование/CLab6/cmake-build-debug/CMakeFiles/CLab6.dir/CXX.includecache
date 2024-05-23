@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/lordcoudy/Documents/LabsCPP/CLab6/func.h
+cstdio
+-
+
+/Users/lordcoudy/Documents/LabsCPP/CLab6/main.cpp
+cstdio
+-
+func.h
+/Users/lordcoudy/Documents/LabsCPP/CLab6/func.h
+

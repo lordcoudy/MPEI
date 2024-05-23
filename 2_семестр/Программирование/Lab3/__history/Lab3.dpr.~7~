@@ -1,0 +1,168 @@
+program Lab3;  // один параметр - имя текстового файла
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils,
+  Windows,
+  UnList,
+  UnVar {/ добавить элемент со значением R в соответствии с заданным порядком в список};
+
+// добавить элемент со значением R в соответствии с заданным порядком в список
+procedure AddR(var ListN, ListK: PElem; r: TInfo); // адреса начала и конца списка и R
+var ListC: PElem;  // текущий элемент списка
+begin
+  if ListN = nil then CreateList(ListN, ListK, r)  // если список пуст
+  else
+    if r >= ListN^.info then AddFirst(ListN, ListK, r)  // добавить в начало
+    else
+       if r <= ListK^.info then AddLast(ListN, ListK, r)  // добавить в конец
+       else
+         begin // найти после какого
+           ListC:=ListN; // с начала списка
+           while ListC^.next^.info >= r do
+             ListC := ListC^.next;
+           AddMedium(ListN, ListC, ListK, r)  // добавить после текущего
+         end;
+end;
+
+//  "Добавить псевдослучайные N элементов" в текущий список
+procedure AddN;
+var n,i: integer; s:string; r: TInfo;
+begin
+  write('Сколько N=?'); readln(s);
+  if not TryStrToInt(s,n) then n:=1;
+  for i:=1 to n do
+  begin
+    r:= (-199 + Random(599+199+1))/10;
+    AddR(NachaloSpiska, KonecSpiska, r);
+  end;
+end;
+
+// Добавление всех данных из текстового файла в текущий список
+procedure AddFromTextFile;
+var
+  f: TextFile;
+  r: TInfo;
+begin
+  if ParamCount=1 then writeln('Введите элементы и Ctrl+Z') ;
+
+  AssignFile(f, ParamStr(1));
+  try
+    Reset(f);
+    try
+      try
+          while not eof(f) do
+          begin
+            readln(f, r);
+            AddR(NachaloSpiska, KonecSpiska,r);
+          end;
+          writeln('Список создан');
+      except
+       writeln('Некорректные данные в текстовом файле '+ ParamStr(1));
+      end;
+    finally
+      CloseFile(f);
+    end;
+  except
+    writeln('Не удалось открыть текстовый файл '+ ParamStr(1));
+  end;
+end;
+
+// Добавить один элемент  в текущий список
+procedure Add1;
+var
+  r: TInfo;
+begin
+ try
+  write('введите вещ.число R=?'); readln(r);
+  AddR(NachaloSpiska, KonecSpiska, r);
+ except
+    writeln('Некорректное число или ошибка добавления');
+ end;
+end;
+
+// "Найти в списке"
+procedure SearchIt;
+var
+  ListC: PElem;
+  Last : real;
+begin
+         // сами - поиск и вывод результата
+         // для перебора элементов списка используйте цикл
+  ListC:=NachaloSpiska;
+  while ListC<>nil do   // или while (ListC<>nil) and not flag do
+  begin
+    if ListC.info <> 0 then Last := ListC.info;         // Здесь доступен текущий элемент и информация в нем ListC^.info
+    ListC:=ListC^.next;
+  end;
+  writeln('Искоиое число = ', Last: 5: 2);
+
+end;
+
+//  "Что сейчас в списке?" - вывод на экран консоли
+procedure ViewList;
+var
+  ListC: PElem;
+begin
+  writeln('Список:');
+  ListC:=NachaloSpiska;
+  if ListC=nil then writeln('Пустой');
+  while ListC<>nil do
+  begin
+    writeln(ListC^.info:5:1);
+    ListC:=ListC^.next;
+  end;
+end;
+
+//--------------------главная программа-------------------------
+var
+  ch: char;
+begin
+  SetConsoleCP(1251);      // из модуля Windows
+  SetConsoleOutputCP(1251);
+
+{ Для того, чтобы каждый раз при запуске программы генерировалась
+  НОВАЯ последовательность псевдослучайных чисел.
+  Одна и та же последовательность удобна для отладки программы. }
+  Randomize;
+
+  repeat
+    writeln('--------------------------------------');
+    writeln('Q - добавить в список из текстового файла; ');
+    writeln('W - сгенерировать и добавить в список; ');
+    writeln('E - добавить в список; ');
+    writeln('R - найти в списке;');
+    writeln('T - удалить(очистить) список;');
+    writeln('Y - просмотр;');
+    writeln('U - конец.');
+    write('Ваш выбор?'); readln(ch);
+    writeln('--------------------------------------');
+
+    ch:= UpCase(ch);
+    case ch of
+//----------создать список из текстового файла------------------
+    'Q': AddFromTextFile;
+//----------сгенерировать список -------------------------------
+    'W': AddN;
+//----------добавить в список ----------------------------------
+    'E': Add1;
+//-----------поиск----------------------------------------------
+    'R': SearchIt;
+//-----------освобождение памяти--------------------------------
+    'T': FreeList(NachaloSpiska, KonecSpiska);
+//-----------просмотр----------------------------------------------
+    'Y': ViewList;
+//-----------выход----------------------------------------------
+    'U': exit;
+//--------------------------------------------------------------
+      else
+        begin
+          writeln('Нет такой команды');
+          write('Press ENTER'); readln;
+        end;
+    end;
+
+  until ch='U';
+end.
+

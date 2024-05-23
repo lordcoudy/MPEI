@@ -1,0 +1,91 @@
+unit UnList;
+interface
+
+type
+  TInfo = real;
+
+  PElem = ^TElem;
+  TElem = record
+      info: TInfo;
+      next: PElem;
+      prev: PElem;  //--------EXAMINE-------------------------------------------------
+  end;
+
+// создать список из одного элемента
+procedure CreateList(var ListN, ListK: PElem; r: TInfo);
+// добавить новый элемент перед первым
+procedure AddFirst(var ListN: PElem; ListK: PElem; r: TInfo);
+// добавить новый элемент в конец списка
+procedure AddLast(ListN: PElem; var ListK: PElem; r: TInfo);
+// добавить новый элемент в середину после ListC (не в конец)
+procedure AddMedium(ListN,ListC,ListK: PElem; r: TInfo);
+// очистить список
+procedure FreeList(var ListN, ListK: PElem);
+
+implementation
+
+// создать список из одного элемента
+procedure CreateList(var ListN, ListK: PElem; r: TInfo);
+begin
+  New(ListN);
+  ListK:=ListN; // конец и начало совпадают
+  ListN^.info:=r;
+  ListN^.next:=nil;
+  ListN^.prev:=nil;
+end;
+
+// добавить новый элемент перед первым
+procedure AddFirst(var ListN: PElem; ListK: PElem; r: TInfo);
+var Elem: PElem;
+begin
+  new(Elem);
+  Elem^.info:=r;
+  Elem^.next:=ListN;
+  Elem^.prev:=nil;
+  ListN^.prev:=Elem;
+  ListN:=Elem; // теперь он 1-ый
+          //
+end;
+
+
+
+
+// добавить новый элемент в конец
+procedure AddLast(ListN: PElem; var ListK: PElem; r: TInfo);
+var ListT : PElem;
+begin
+  new(ListT);
+  ListT^.info:=r;
+  ListT^.next:=nil;
+  ListT^.prev:=ListK;
+  ListK:= ListT^.next;
+end;
+
+
+// добавить новый элемент в середину после ListC (не в конец)
+procedure AddMedium(ListN,ListC,ListK: PElem; r: TInfo);
+var Elem: PElem;
+begin
+  new(Elem);
+  Elem^.info:=r;
+  Elem^.next:=ListC^.next; // после него то, что было после ListC
+  Elem^.prev:=ListC;
+  ListC^.next:=Elem; // а он сам после ListC
+end;
+
+// очистить список
+procedure FreeList(var ListN, ListK: PElem);
+var Elem: PElem;
+begin
+  Elem:=ListN;
+  while Elem<>nil do
+  begin
+    ListN:=ListN^.next;
+    Dispose(Elem);
+    Elem:=ListN;
+  end;
+  ListK:=nil;
+end;
+
+end.
+

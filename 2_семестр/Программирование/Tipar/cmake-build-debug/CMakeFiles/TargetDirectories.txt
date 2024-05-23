@@ -1,0 +1,3 @@
+E:/SAVVA/STUDY/MPEI/2_Sem/PrLab/Tipar/cmake-build-debug/CMakeFiles/Tipar.dir
+E:/SAVVA/STUDY/MPEI/2_Sem/PrLab/Tipar/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/SAVVA/STUDY/MPEI/2_Sem/PrLab/Tipar/cmake-build-debug/CMakeFiles/rebuild_cache.dir

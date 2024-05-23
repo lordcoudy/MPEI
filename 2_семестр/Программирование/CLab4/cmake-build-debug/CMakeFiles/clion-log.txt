@@ -1,0 +1,4 @@
+C:\Users\savva\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\201.7223.86\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" E:\SAVVA\STUDY\MPEI\2_Sem\PrLab\CLab4
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/SAVVA/STUDY/MPEI/2_Sem/PrLab/CLab4/cmake-build-debug

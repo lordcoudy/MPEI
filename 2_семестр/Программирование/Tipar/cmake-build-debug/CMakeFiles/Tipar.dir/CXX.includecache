@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/SAVVA/STUDY/MPEI/2_Sem/PrLab/Tipar/func.h
+cstdlib
+-
+cstring
+-
+listMake.h
+E:/SAVVA/STUDY/MPEI/2_Sem/PrLab/Tipar/listMake.h
+
+E:/SAVVA/STUDY/MPEI/2_Sem/PrLab/Tipar/listMake.h
+cstdio
+-
+
+E:/SAVVA/STUDY/MPEI/2_Sem/PrLab/Tipar/main.cpp
+iostream
+-
+func.h
+E:/SAVVA/STUDY/MPEI/2_Sem/PrLab/Tipar/func.h
+

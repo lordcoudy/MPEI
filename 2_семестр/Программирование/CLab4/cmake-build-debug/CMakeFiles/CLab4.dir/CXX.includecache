@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/SAVVA/STUDY/MPEI/2_Sem/PrLab/CLab4/main.cpp
+cmath
+-
+clocale
+-
+cstdio
+-
+

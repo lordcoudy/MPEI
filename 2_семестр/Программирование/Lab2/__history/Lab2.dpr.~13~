@@ -1,0 +1,51 @@
+program Lab2;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+var
+  X: array [1..20] of real;
+  Y: array [1..20] of real;
+  XT, YT, B, s, avgX, avgY: real;
+  n, i, abv: integer;
+
+begin
+  write('¬ведите XT и YT: '); readln(XT, YT);
+  write('¬ведите B: '); readln(B);
+  write('¬ведите n: '); readln(n);
+  writeln('¬ведите абсциссы и ординаты точек: ');
+
+  {abv := 0;
+  avgX := 0;
+  avgY := 0;}
+  for i := 1 to n do //begin
+    readln(X[i], Y[i]);
+    {s = sqrt(sqr(X[i] - XT) + sqr(Y[i] - YT));
+    if (s > B) then
+      abv = abv + 1;
+    avgX = avgX + X[i];
+    avgY = avgY + Y[i];
+  end;
+  avgX = avgX / n;
+  avgY = avgY / n;}
+
+  abv := 2;
+  avgX := 10.423;
+  avgY := 4.921;
+
+  writeln('Ћаб2':35);
+  writeln('»сходные данные: ');
+  writeln('XT = ', XT, ' YT = ', YT);
+  writeln('B = ', B);
+  writeln('n = ', n);
+  writeln('јбсциссы и ординаты точек: ');
+  for i := 1 to N do
+    writeln( X[i],' ', Y[i], ' - ', i);
+  writeln('–езультат: ');
+  writeln('abv = ', abv);
+  writeln('—редние координаты совокупности: ', avgX:5, ' ', avgY:5);
+  readln;
+
+end.

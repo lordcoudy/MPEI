@@ -1,0 +1,203 @@
+﻿Unit  UnLab2;   // файл  UnLab2.pas
+Interface
+
+Uses
+  SysUtils;     // ANSIUpperCase и др. -  смена регистра и обработка исключений
+
+Type
+  TTrans = (Bus, Tram, Troll);
+  TRoute = record
+    Trans: TTrans;
+    Tour: String[5];
+    Stops: integer;
+  end;
+//----------первая часть: создание типизированного файла в диалоге
+Procedure CreateTypedFile1();
+
+//----------вторая часть: создание типизированного файла из текстового
+Procedure CreateTypedFile2();
+
+//-------------- третья часть: поиск в типизированном файле ----
+Procedure FindIVAN();
+
+//-------------- просмотр типизированного файла ----
+Procedure ViewFile();
+
+Implementation // -----------реализационная часть-----------------
+
+//----------первая часть: создание типизированного файла в диалоге
+Procedure CreateTypedFile1();
+var
+  Route: TRoute;
+  fr: file of TRoute; // типизированный файл - файл записей
+  n, kol: integer;
+  ch: char;
+  FileName:string[80];
+begin
+  if ParamCount<1 then
+  begin
+    writeln('Мало параметров '#13#10'Press enter');
+    readln;  exit
+  end;
+  FileName := ParamStr(1);
+// или простой диалог или через параметры программы при её вызове ParamStr(1)
+// writeln('Введите имя типизированного файла');
+// readln(FileName);
+
+  AssignFile(fr, FileName);
+  Try  ReWrite(fr);    //  или  {$I-} ReWrite(fr); {$I+} и if IOResult<>0 then <ошибка>
+  Except
+    writeln('Error: не удалось создать типизированный файл ',FileName);
+    write('Press ENTER'); readln;  exit
+  end;
+
+  kol:=0;
+  repeat
+    write('Вид транспорта (1-Автобус, 2-Трамвай, 3-Троллейбус) =?'); readln(n); Route.Trans:=TTrans(n-1);
+// ввод значения перечисляемого типа (TKurs) через доп.переменную n целого типа
+    write('Маршрут =?'); readln(Route.Tour);  // 1-6  0-5
+    write('Остановок до метро: '); readln(Route.Stops);
+
+    write(fr, Route);   // запись записи целиком в файл
+    inc(kol);
+
+    write('Ещё? (y/n)');
+    readln(ch)
+  until UpCase(ch)='N';
+
+  CloseFile(fr);
+
+  writeln('Создан типизированный файл из ',kol,' записей');
+  write('Press ENTER');
+  readln;
+end;
+
+//---------------------------------------------------------------------------------------
+//----------вторая часть: создание типизированного файла из текстового
+Procedure CreateTypedFile2();
+var
+  Route: TRoute;
+  ft: TextFile; // текстовый файл
+  fr: file of TRoute; // типизированный файл - файл записей
+  n, kol: integer;
+  ch: char;
+  FileName:string[80];
+begin
+  if ParamCount<2 then
+  begin
+    writeln('Мало параметров '#13#10'Press enter');
+    readln;  exit
+  end;
+
+FileName:= Paramstr(2);
+ // или простой диалог или через параметры программы при её вызове ParamStr(2)
+// writeln('Введите имя текстового файла');
+// readln(FileName); 
+
+ AssignFile(ft, FileName);
+  Try  Reset(ft);
+  Except
+    writeln('Error: не удалось открыть текстовый файл ',Paramstr(2));
+    write('Press ENTER'); readln;  exit
+  end;
+  //----------------- ЗАГЛУШКА --------------------
+  //------------ Напишите код сами, а пока в диалоге: ----------------
+              CreateTypedFile1; // заглушка - создание в диалоге –  заменить на свой код
+
+  CloseFile(ft);
+
+  write('Press ENTER');
+  readln;
+end;
+
+//--------------------------------------------------------------
+//-------------- третья часть: поиск в типизированном файле ----
+Procedure FindTOUR();
+var
+  Route: TRoute;
+  fr: file of TRoute;
+  n, kol: integer;
+  FileName:string[80];
+begin
+  if ParamCount<1 then
+  begin
+    writeln('Мало параметров '#13#10'Press enter');
+    readln;  exit
+  end;
+
+  FileName := ParamStr(1);
+// или простой диалог или через параметры программы при её вызове ParamStr(1)
+// writeln('Введите имя типизированного файла');
+// readln(FileName); 
+
+  AssignFile(fr, FileName);
+  Try  ReSet(fr);    //  или  {$I-} ReSet(fr); {$I+} if IOResult<>0 then
+  Except
+    writeln('Error: не удалось открыть типизированный файл ',FileName);
+    write('Press ENTER'); readln;  exit
+  end;
+
+  kol:=0;
+  while not eof(fr) and (kol=0) do
+  begin
+    read(fr, Route); // считывание
+
+  end;
+
+  if kol=0 then
+    writeln('Данные, соответствующие запросу, не найдены');
+
+  CloseFile(fr);
+
+  write('Press ENTER');  readln;
+end;
+//--------------------------------------------------------------
+//-------------- просмотр типизированного файла ----
+Procedure ViewFile();
+var
+  Route: TRoute;
+  fr: file of TRoute;
+  n, kol: integer;
+  FileName:string[80];
+begin
+  if ParamCount<1 then
+  begin
+    writeln('Мало параметров '#13#10'Press enter');
+    readln;  exit
+  end;
+
+  FileName := ParamStr(1);
+// или простой диалог или через параметры программы при её вызове ParamStr(1)
+// writeln('Введите имя типизированного файла');
+// readln(FileName); 
+
+  AssignFile(fr, FileName);
+  Try  ReSet(fr);    //  или  {$I-} ReSet(fr); {$I+} if IOResult<>0 then
+  Except
+    writeln('Error: не удалось открыть типизированный файл ',FileName);
+    write('Press ENTER'); readln;  exit
+  end;
+
+  kol:=0;
+while not eof(fr) do
+  begin
+    read(fr, Route); // считывание
+
+      writeln('Найден ',' ',' ',
+      ' курс ',
+      ' оценки ' );
+      inc(kol);
+  end;
+
+  if kol=0 then
+    writeln('Данные не найдены')
+  else
+    writeln('Найдено ',kol, ' записей');
+
+  CloseFile(fr);
+
+  write('Press ENTER');  readln;
+end;
+
+End.
+
