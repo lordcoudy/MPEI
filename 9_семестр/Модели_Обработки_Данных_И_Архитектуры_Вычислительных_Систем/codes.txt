@@ -1,0 +1,139 @@
+// Команда условного перехода на метку, если значения регистров равны
+BRAN
+
+// Команда обнуления регистра
+ZERO
+
+// Команда увеличения значения регистра на единицу
+INCR
+
+// Команда выхода из программы
+STOP
+
+// Команда безусловного перехода на метку
+JMP ad:
+	(l + 0) BRAN Rsource, Rsource, ad
+
+// Команда копирования значения регистра в регистр
+MOV Rsource, Rdest:
+	(l + 0) BRAN Rsource, Rdest, l + 5
+	(l + 1) ZERO Rdest
+	(l + 2) BRAN Rsource, Rdest, l + 5
+	(l + 3) INCR Rdest
+	(l + 4) JMP l + 2
+	(l + 5) RET
+
+// Команда сложения регистров
+ADD Rsource, Rdest, Rmem:
+	(l + 0) MOV Rmem, Rdest
+	(l + 1) ZERO Ra
+	(l + 2) BRAN Rsource, Ra, l + 6
+	(l + 3) INCR Ra
+	(l + 4) INCR Rmem
+	(l + 5) JMP l + 2
+	(l + 6) RET
+
+// Команда условного перехода на метку, если значения регистров не равны
+BRNE Ri, Rj, ad:
+(l + 0) BRAN Ri, Rj, l + 2
+(l + 1) JMP ad
+(l + 2) RET
+
+// Команда условного перехода на метку, если значение регистра слева больше значения регистра справа
+BRGT Rsource, Rdest, ad:
+	(l + 0) BRAN Rsource, Rdest, l + 6
+	(l + 1) ZERO Ra
+	(l + 2) BRAN Rdest, Ra, ad
+	(l + 3) INCR Ra
+	(l + 4) BRAN Rsource, Ra, l + 6
+	(l + 5) JMP l + 2
+	(l + 6) RET
+
+// Команда условного перехода на метку, если значение регистра слева меньше значения регистра справа
+BRLT Rsource, Rdest, ad:
+	(l + 0) BRAN Rsource, Rdest, l + 6
+	(l + 1) ZERO Ra
+	(l + 2) BRAN Rsource, Ra, ad
+	(l + 3) BRAN Rdest, Ra, l + 6
+	(l + 4) INCR Ra
+	(l + 5) JMP l + 2
+	(l + 6) RET
+
+// Команда условного перехода на метку, если значение регистра слева меньше либо равно значению регистра справа
+BRNLT Rsource, Rdest, ad:
+	(l + 0) BRAN Rsource, Rdest, ad
+	(l + 1) ZERO Ra
+	(l + 2) BRAN Rsource, Ra, l + 6
+	(l + 3) BRAN Rdest, Ra, ad
+	(l + 4) INCR Ra
+	(l + 5) JMP l + 2
+	(l + 6) RET
+
+// Команда условного перехода на метку, если значение регистра слева больше либо равно значению регистра справа
+BRNGT Rsource, Rdest, ad:
+	(l + 0) BRAN Rsource, Rdest, ad
+	(l + 1) ZERO Ra
+	(l + 2) BRAN Rsource, Ra, ad
+	(l + 3) BRAN Rdest, Ra, l + 6
+	(l + 4) INCR Ra
+	(l + 5) JMP l + 2
+	(l + 6) RET
+
+// Команда уменьшения значения регистра на единицу
+DECR Rsource:
+	(l + 0) ZERO Ra
+	(l + 1) BRAN Rsource, Ra, l + 8
+	(l + 2) ZERO Rb
+	(l + 3) INCR Ra
+	(l + 4) BRAN Rsource, Ra, l + 7
+	(l + 5) INCR Rb
+	(l + 6) JMP l + 3
+	(l + 7) MOV Rsource, Rb
+	(l + 7) RET
+
+// Команда разности значений регистров
+SUB Rsource, Rdest, Rmem:
+	(l + 0) MOV Rmem, Rdest
+	(l + 1) ZERO Ra
+	(l + 2) MOV Rb, Rdest
+	(l + 3) BRAN Rb, Ra, l + 7
+	(l + 4) DECR Rmem
+	(l + 5) DECR Rb
+	(l + 6) JMP l + 3
+	(l + 7) RET
+
+// Команда умножения регистров
+MUL Rsource, Rdest, Rmem:
+	(l + 0) ZERO Rmem
+	(l + 1) ZERO Ra
+	(l + 2) BRAN Rdest, Ra, l + 6
+	(l + 3) ADD Rmem, Rsource, Rmem
+	(l + 4) INCR Ra
+	(l + 5) JMP l + 2
+	(l + 6) RET
+
+// Команда деления регистров
+DIV Rsource, Rdest, Rmem:
+	(l + 0) ZERO Ra
+	(l + 1) BRAN Rdest, Ra, l + 10
+	(l + 2) ZERO Rb
+	(l + 3) ZERO Rc
+	(l + 4) ADD Rb, Rdest, Rc
+	(l + 5) MOV Rb, Rc
+	(l + 6) BRLT Ri, Rb, l + 9
+	(l + 7) INCR Ra
+	(l + 8) JMP l + 4
+	(l + 9) MOV Rmem, Ra
+	(l + 10) RET
+
+// Команда вычисления остатка от деления
+REMAIN Rsource, Rdest, Rmem:
+	(l + 0) ZERO Ra
+	(l + 1) BRAN Rdest, Ra, l + 8
+	(l + 2) ZERO Rb
+	(l + 3) ADD Ra, Rdest, Rb
+	(l + 4) MOV Ra, Rb
+	(l + 5) BRLT Rsource, Ra, l + 7
+	(l + 6) JMP l + 3
+	(l + 7) SUB Rsource, Ra, Rmem
+	(l + 8) RET

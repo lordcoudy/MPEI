@@ -1,0 +1,4 @@
+/opt/homebrew/Cellar/open-mpi/4.1.5/bin/mpic++ -o
+mpirun -np 8 ./
+
+#include "/opt/homebrew/Cellar/open-mpi/4.1.5/include/mpi.h"

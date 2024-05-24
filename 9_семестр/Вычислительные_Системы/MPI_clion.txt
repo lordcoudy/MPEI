@@ -1,0 +1,13 @@
+-I/opt/homebrew/Cellar/open-mpi/4.1.2/include -L/opt/homebrew/Cellar/open-mpi/4.1.2/lib -L/opt/homebrew/opt/libevent/lib -lmpi /Users/mihailplesa/Documents/Doctorat/Experiments/MPI2/main.c -o /Users/mihailplesa/Documents/Doctorat/Experiments/MPI2/main.o
+
+
+[
+{
+  "directory": "/Users/milord/Documents/STUDY/9_sem/ВС/Lab1/cmake-build-debug",
+  "command": "clang++ -I/opt/homebrew/Cellar/open-mpi/4.1.5/include -L/opt/homebrew/Cellar/open-mpi/4.1.5/lib -L/opt/homebrew/opt/libevent/lib -lmpi -o CMakeFiles/Lab1.dir/main.cpp.o -c /Users/milord/Documents/STUDY/9_sem/ВС/Lab1/main.cpp",
+  "file": "/Users/milord/Documents/STUDY/9_sem/ВС/Lab1/main.cpp",
+  "output": "CMakeFiles/Lab1.dir/main.cpp.o"
+}
+]
+
+-I/opt/homebrew/Cellar/open-mpi/4.1.5/include -L/opt/homebrew/Cellar/open-mpi/4.1.5/lib -L/opt/homebrew/opt/libevent/lib -lmpi /Users/milord/Documents/STUDY/9_sem/ВС/Lab1/main.cpp -o /Users/milord/Documents/STUDY/9_sem/ВС/Lab1/main.o

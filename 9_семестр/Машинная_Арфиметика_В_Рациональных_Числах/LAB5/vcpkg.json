@@ -1,0 +1,9 @@
+{
+  "name" : "lab5",
+  "version-string" : "1.0.0",
+  "builtin-baseline" : "ac2a14f35fcd57d7a38f09af75dd5258e96dd6ac",
+  "dependencies" : [ {
+    "name" : "boost-multiprecision",
+    "version>=" : "1.83.0"
+  } ]
+}

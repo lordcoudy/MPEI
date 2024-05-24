@@ -1,0 +1,65 @@
+<svg viewBox="1050 10 650 595" width="512" height="512" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<style>.vertex { font-family: Consolas } .edge { font-family: Consolas } .text { font-family: Consolas }</style>
+    <path d="M 1380 40L 1218.1741333007812 159.2401123046875" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1218.1741333007812 159.2401123046875) rotate(143.61564818416412)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <path d="M 1380 40L 1333.7860107421875 147.8326416015625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1333.7860107421875 147.8326416015625) rotate(113.1985905136482)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <path d="M 1380 40L 1442.63427734375 149.6099853515625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1442.63427734375 149.6099853515625) rotate(60.25511870305778)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <path d="M 1380 40L 1560.8724975585938 160.5816650390625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1560.8724975585938 160.5816650390625) rotate(33.690067525979785)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <path d="M 1190 180L 1102.6089477539062 283.28033447265625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1102.6089477539062 283.28033447265625) rotate(130.2363583092738)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <path d="M 1190 180L 1227.4343872070312 277.32940673828125" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1227.4343872070312 277.32940673828125) rotate(68.96248897457818)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <path d="M 1320 180L 1365.3314208984375 278.21807861328125" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1365.3314208984375 278.21807861328125) rotate(65.22485943116808)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <path d="M 1460 180L 1505.3314208984375 278.21807861328125" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1505.3314208984375 278.21807861328125) rotate(65.22485943116808)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <path d="M 1590 180L 1272.8018188476562 297.81646728515625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1272.8018188476562 297.81646728515625) rotate(159.62356478616363)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <path d="M 1590 180L 1651.65771484375 280.19378662109375" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1651.65771484375 280.19378662109375) rotate(58.3924977537511)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <path d="M 1080 310L 1216.0107421875 454.51141357421875" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1216.0107421875 454.51141357421875) rotate(46.735704588928385)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <path d="M 1240 310L 1240 444.99664306640625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1240 444.99664306640625) rotate(90)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <path d="M 1380 310L 1262.2467041015625 452.98614501953125" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1262.2467041015625 452.98614501953125) rotate(129.47245984834382)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <path d="M 1380 310L 1497.7532958984375 452.98614501953125" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1497.7532958984375 452.98614501953125) rotate(50.52754015165617)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <path d="M 1520 310L 1520 444.99664306640625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1520 444.99664306640625) rotate(90)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <path d="M 1670 310L 1543.1582641601562 453.75396728515625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1543.1582641601562 453.75396728515625) rotate(131.42366562500266)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <path d="M 1240 480L 1355.5914306640625 562.5653076171875" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1355.5914306640625 562.5653076171875) rotate(35.53767779197438)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <path d="M 1520 480L 1404.4085693359375 562.5653076171875" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1404.4085693359375 562.5653076171875) rotate(144.46232220802563)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <circle cx="1380" cy="40" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1380" y="40" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">1</text>
+    <circle cx="1190" cy="180" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1190" y="180" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">2</text>
+    <circle cx="1320" cy="180" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1320" y="180" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">3</text>
+    <circle cx="1460" cy="180" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1460" y="180" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">4</text>
+    <circle cx="1590" cy="180" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1590" y="180" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">5</text>
+    <circle cx="1080" cy="310" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1080" y="310" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">6</text>
+    <circle cx="1240" cy="310" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1240" y="310" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">7</text>
+    <circle cx="1380" cy="310" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1380" y="310" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">8</text>
+    <circle cx="1520" cy="310" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1520" y="310" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">9</text>
+    <circle cx="1670" cy="310" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1670" y="310" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">10</text>
+    <circle cx="1240" cy="480" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1240" y="480" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">11</text>
+    <circle cx="1520" cy="480" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1520" y="480" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">12</text>
+    <circle cx="1380" cy="580" r="15" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1380" y="580" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">13</text>
+</svg>

@@ -1,0 +1,2560 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    159856,       2550]
+NotebookOptionsPosition[    154318,       2453]
+NotebookOutlinePosition[    154756,       2470]
+CellTagsIndexPosition[    154713,       2467]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+1. \:041f\:043e\:0434\:0433\:043e\:0442\:043e\:0432\:0438\:0442\:044c \:043f\
+\:0440\:043e\:0433\:0440\:0430\:043c\:043c\:043d\:044b\:0435 \:043c\:043e\
+\:0434\:0443\:043b\:0438 \:0434\:043b\:044f \:043e\:043f\:0440\:0435\:0434\
+\:0435\:043b\:0435\:043d\:0438\:044f \:0447\:0438\:0441\:043b\:043e\:0432\
+\:044b\:0445 \:044d\:043a\:0432\:0438\:0432\:0430\:043b\:0435\:043d\:0442\
+\:043e\:0432 \:0431\:0443\:043a\:0432 \:0448\:0438\:0444\:0440\:0443\:0435\
+\:043c\:043e\:0433\:043e (plaintext0) \:0442\:0435\:043a\:0441\:0442\:0430 (\
+\[OpenCurlyDoubleQuote]\:043f\:0440\:0438\:043b\:0435\:0442\:0430\:044e\:0441\
+\:0435\:0434\:044c\:043c\:043e\:0433\:043e\[CloseCurlyDoubleQuote]) \:0438 \
+\:0431\:0443\:043a\:0432 \:043a\:043b\:044e\:0447\:0435\:0432\:043e\:0433\
+\:043e (key) \:0441\:043b\:043e\:0432\:0430 - \[OpenCurlyDoubleQuote]\:0430\
+\:043c\:0431\:0440\:043e\:0437\:0438\:044f\[CloseCurlyDoubleQuote].\
+\>", "Text",
+ CellChangeTimes->{
+  3.887011514813662*^9},ExpressionUUID->"e53d9a22-de42-4d9f-a714-\
+f1d16abee8c3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"plaintext0", "=", 
+  "\"\<\:043f\:0440\:0438\:043b\:0435\:0442\:0430\:044e\:0441\:0435\:0434\
+\:044c\:043c\:043e\:0433\:043e\>\""}], "\[IndentingNewLine]", 
+ RowBox[{"key", "=", 
+  "\"\<\:0430\:043c\:0431\:0440\:043e\:0437\:0438\:044f\>\""}]}], "Input",
+ CellChangeTimes->{{3.887011540724565*^9, 3.887011540924303*^9}, {
+  3.887011572788414*^9, 3.8870115730705833`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"95375016-8650-4245-a4b3-8effe23d9a48"],
+
+Cell[BoxData["\<\"\:043f\:0440\:0438\:043b\:0435\:0442\:0430\:044e\:0441\:0435\
+\:0434\:044c\:043c\:043e\:0433\:043e\"\>"], "Output",
+ CellChangeTimes->{3.8870115414093647`*^9, 3.887011582845742*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"dae19cbe-0ad7-47c4-b67c-4340de14b2d2"],
+
+Cell[BoxData["\<\"\:0430\:043c\:0431\:0440\:043e\:0437\:0438\:044f\"\>"], \
+"Output",
+ CellChangeTimes->{3.8870115414093647`*^9, 3.8870115828466997`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"ef4d6e32-a78e-4372-9a34-ef3e6ebcbcdb"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"charToNum", "[", "text_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"ToCharacterCode", "[", "text", "]"}], "-", "1071"}]}]], "Input",
+ CellChangeTimes->{{3.8870115743806562`*^9, 3.887011589926959*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"923e4bb2-26a7-4b7b-be2d-6fb8431b0b19"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"charToNum", "[", "plaintext0", "]"}], " "}], "\[IndentingNewLine]", 
+ RowBox[{"charToNum", "[", "key", "]"}]}], "Input",
+ CellLabel->"In[4]:=",ExpressionUUID->"29dee926-f2a6-4fa0-817c-e685c6fc1e29"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "16", ",", "17", ",", "9", ",", "12", ",", "6", ",", "19", ",", "1", ",", 
+   "31", ",", "18", ",", "6", ",", "5", ",", "29", ",", "13", ",", "15", ",", 
+   "4", ",", "15"}], "}"}]], "Output",
+ CellChangeTimes->{3.8870115926347237`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"687bd118-e4db-46c8-ac62-38b534c821b3"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "13", ",", "2", ",", "17", ",", "15", ",", "8", ",", "9", ",", 
+   "32"}], "}"}]], "Output",
+ CellChangeTimes->{3.8870115926363773`*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"a5e77e0e-4bba-4794-adfc-05e0d283599c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringLength", "[", "key", "]"}]], "Input",
+ CellChangeTimes->{{3.8870116122710752`*^9, 3.887011612273962*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"cc7a3a8c-2d81-4d62-9823-03b99ac7b622"],
+
+Cell[BoxData["8"], "Output",
+ CellChangeTimes->{3.8870116132192583`*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"4980ae2a-d8d2-4c53-8a30-6b2d39e08c72"]
+}, Open  ]],
+
+Cell["\<\
+2. \:0417\:0430\:0433\:0440\:0443\:0437\:0438\:0442\:044c \:0431\:0430\:0437\
+\:043e\:0432\:0443\:044e \:0442\:0430\:0431\:043b\:0438\:0446\:0443 \:0448\
+\:0438\:0444\:0440\:0430 \:0412\:0438\:0436\:0438\:043d\:0435\:0440\:0430 \
+(distributions\\\:0422\:0430\:0431\:043b\:0438\:0446\:0430 \:0448\:0438\:0444\
+\:0440\:0430 \:0412\:0438\:0436\:0438\:043d\:0435\:0440\:0430 \:0431\:0430\
+\:0437\:043e\:0432\:0430\:044f).\
+\>", "Text",
+ CellChangeTimes->{{3.887011618777924*^9, 
+  3.887011620396654*^9}},ExpressionUUID->"c8de9dcc-995e-42ab-9109-\
+e194153f0879"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"tableVG", "=", 
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]"}
+     }], "\[NoBreak]", ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"alf", "=", 
+   RowBox[{"CharacterRange", "[", 
+    RowBox[{"\"\<\:0430\>\"", ",", "\"\<\:044f\>\""}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Do", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"tableVG", "\[LeftDoubleBracket]", 
+      RowBox[{
+       RowBox[{"i", "+", "1"}], ",", "All"}], "\[RightDoubleBracket]"}], "=", 
+     
+     RowBox[{"RotateLeft", "[", 
+      RowBox[{"alf", ",", "i"}], "]"}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "0", ",", "31"}], "}"}]}], "]"}], 
+  " "}], "\[IndentingNewLine]", 
+ RowBox[{"Grid", "[", 
+  RowBox[{"tableVG", ",", 
+   RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8870116517993317`*^9, 3.88701166135594*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"db153eca-3b23-477b-8275-0d6cb27a101b"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", \
+"\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\
+\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", \
+"\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\
+\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", \
+"\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\
+\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", \
+"\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>"},
+    {"\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", \
+"\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\
+\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", \
+"\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\
+\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", \
+"\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\
+\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", \
+"\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>"},
+    {"\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", \
+"\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\
+\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", \
+"\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\
+\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", \
+"\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\
+\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", \
+"\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>"},
+    {"\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", \
+"\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\
+\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", \
+"\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\
+\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", \
+"\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\
+\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", \
+"\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>"},
+    {"\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", \
+"\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\
+\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", \
+"\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\
+\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", \
+"\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\
+\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", \
+"\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>"},
+    {"\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", \
+"\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\
+\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", \
+"\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\
+\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", \
+"\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\
+\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", \
+"\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>"},
+    {"\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", \
+"\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\
+\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", \
+"\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\
+\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", \
+"\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\
+\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", \
+"\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>"},
+    {"\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", \
+"\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\
+\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", \
+"\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\
+\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", \
+"\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\
+\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", \
+"\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>"},
+    {"\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", \
+"\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\
+\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", \
+"\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\
+\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", \
+"\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\
+\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", \
+"\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>"},
+    {"\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", \
+"\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\
+\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", \
+"\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\
+\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", \
+"\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\
+\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", \
+"\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>"},
+    {"\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", \
+"\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\
+\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", \
+"\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\
+\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", \
+"\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\
+\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", \
+"\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>"},
+    {"\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", \
+"\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\
+\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", \
+"\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\
+\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", \
+"\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\
+\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", \
+"\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>"},
+    {"\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", \
+"\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\
+\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", \
+"\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\
+\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", \
+"\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\
+\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", \
+"\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>"},
+    {"\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", \
+"\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\
+\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", \
+"\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\
+\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", \
+"\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\
+\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", \
+"\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>"},
+    {"\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", \
+"\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\
+\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", \
+"\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\
+\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", \
+"\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\
+\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", \
+"\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>"},
+    {"\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", \
+"\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\
+\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", \
+"\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\
+\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", \
+"\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\
+\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", \
+"\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>"},
+    {"\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", \
+"\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\
+\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", \
+"\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\
+\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", \
+"\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\
+\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", \
+"\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>"},
+    {"\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", \
+"\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\
+\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", \
+"\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\
+\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", \
+"\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\
+\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", \
+"\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>"},
+    {"\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", \
+"\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\
+\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", \
+"\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\
+\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", \
+"\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\
+\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", \
+"\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>"},
+    {"\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", \
+"\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\
+\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", \
+"\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\
+\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", \
+"\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\
+\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", \
+"\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>"},
+    {"\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", \
+"\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\
+\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", \
+"\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\
+\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", \
+"\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\
+\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", \
+"\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>"},
+    {"\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", \
+"\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\
+\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", \
+"\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\
+\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", \
+"\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\
+\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", \
+"\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>"},
+    {"\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", \
+"\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\
+\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", \
+"\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\
+\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", \
+"\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\
+\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", \
+"\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>"},
+    {"\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", \
+"\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\
+\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", \
+"\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\
+\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", \
+"\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\
+\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", \
+"\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>"},
+    {"\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", \
+"\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\
+\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", \
+"\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\
+\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", \
+"\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\
+\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", \
+"\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>"},
+    {"\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", \
+"\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\
+\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", \
+"\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\
+\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", \
+"\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\
+\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", \
+"\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>"},
+    {"\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", \
+"\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\
+\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", \
+"\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\
+\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", \
+"\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\
+\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", \
+"\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>"},
+    {"\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", \
+"\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\
+\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", \
+"\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\
+\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", \
+"\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\
+\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", \
+"\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>"},
+    {"\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", \
+"\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\
+\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", \
+"\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\
+\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", \
+"\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\
+\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", \
+"\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>"},
+    {"\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", \
+"\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\
+\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", \
+"\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\
+\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", \
+"\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\
+\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", \
+"\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>"},
+    {"\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", \
+"\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\
+\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", \
+"\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\
+\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", \
+"\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\
+\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", \
+"\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>"},
+    {"\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", \
+"\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\
+\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", \
+"\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\
+\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", \
+"\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\
+\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", \
+"\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>"}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{3.887011668670631*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"972bd01d-4918-4ff1-b084-b956649c4399"]
+}, Open  ]],
+
+Cell["\<\
+3. \:0420\:0430\:0437\:0440\:0430\:0431\:043e\:0442\:0430\:0442\:044c \:043c\
+\:043e\:0434\:0443\:043b\:044c \:0448\:0438\:0444\:0440\:043e\:0432\:0430\
+\:043d\:0438\:044f \:043f\:043e \:0442\:0430\:0431\:043b\:0438\:0446\:0435 \
+\:0412\:0438\:0436\:0438\:043d\:0435\:0440\:0430 \:0438 \:0437\:0430\:0448\
+\:0438\:0444\:0440\:043e\:0432\:0430\:0442\:044c plaintext0 \:043d\:0430 \
+\:043a\:043b\:044e\:0447\:0435 \:043f.1.\
+\>", "Text",
+ CellChangeTimes->{
+  3.887011675134343*^9},ExpressionUUID->"2613734c-6c40-4e35-9c8d-\
+2a02274156f2"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"toViginer", "[", 
+   RowBox[{"text0_", ",", "key0_", ",", "tableVG0_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", " ", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"txt", "=", "text0"}], ",", 
+      RowBox[{"key", "=", "key0"}], ",", 
+      RowBox[{"tableVG", "=", "tableVG0"}]}], "}"}], ",", 
+    RowBox[{
+     RowBox[{"txt", "=", 
+      RowBox[{"charToNum", "[", "txt", "]"}]}], ";", "\n", 
+     RowBox[{"key", "=", 
+      RowBox[{"charToNum", "[", "key", "]"}]}], ";", "\n", 
+     RowBox[{"source", "=", "text0"}], ";", "\n", 
+     RowBox[{"shifrStr", "=", 
+      RowBox[{"{", "}"}]}], ";", "\n", 
+     RowBox[{"j", "=", "0"}], ";", "\n", 
+     RowBox[{"Do", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"j", "\[Equal]", 
+           RowBox[{"Length", "[", "key", "]"}]}], ",", 
+          RowBox[{"j", "=", "1"}], ",", 
+          RowBox[{"j", "++"}]}], "]"}], ";", "\[IndentingNewLine]", 
+        RowBox[{"shifrStr", "=", 
+         RowBox[{"AppendTo", "[", 
+          RowBox[{"shifrStr", ",", 
+           RowBox[{"tableVG", "\[LeftDoubleBracket]", 
+            RowBox[{
+             RowBox[{
+             "key", "\[LeftDoubleBracket]", "j", "\[RightDoubleBracket]"}], 
+             ",", 
+             RowBox[{
+             "txt", "\[LeftDoubleBracket]", "i", "\[RightDoubleBracket]"}]}], 
+            "\[RightDoubleBracket]"}]}], "]"}]}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "1", ",", 
+         RowBox[{"Length", "[", "txt", "]"}]}], "}"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Grid", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+          "\"\<\:0418\:0441\:0445\:043e\:0434\:043d\:044b\:0438\:0306 \:0442\
+\:0435\:043a\:0441\:0442\>\"", ",", "source"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+          "\"\<\:0417\:0430\:0448\:0438\:0444\:0440\:043e\:0432\:0430\:043d\
+\:043d\:044b\:0438\:0306 \:0442\:0435\:043a\:0441\:0442\>\"", ",", 
+           RowBox[{"StringJoin", "[", "shifrStr", "]"}]}], "}"}]}], "}"}], 
+       ",", 
+       RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.887011694393629*^9, 3.887011711510715*^9}, {
+  3.887011742703556*^9, 3.887011789981924*^9}, {3.8870118233980913`*^9, 
+  3.8870118504302387`*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"b0610b0e-2ecc-414d-a8d0-609253091964"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"toViginer", "[", 
+  RowBox[{"plaintext0", ",", "key", ",", "tableVG"}], "]"}]], "Input",
+ CellChangeTimes->{{3.887011860889543*^9, 3.8870118609025927`*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"9aa498e6-adc7-4d7b-82b9-ec589e6cff4f"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"\:0418\:0441\:0445\:043e\:0434\:043d\:044b\:0438\:0306 \:0442\:0435\
+\:043a\:0441\:0442\"\>", \
+"\<\"\:043f\:0440\:0438\:043b\:0435\:0442\:0430\:044e\:0441\:0435\:0434\:044c\
+\:043c\:043e\:0433\:043e\"\>"},
+    {"\<\"\:0417\:0430\:0448\:0438\:0444\:0440\:043e\:0432\:0430\:043d\:043d\
+\:044b\:0438\:0306 \:0442\:0435\:043a\:0441\:0442\"\>", "\<\"\:043f\:044c\
+\:0439\:044b\:0443\:0449\:0438\:044d\:0441\:0441\:0435\:043c\:044a\:0445\:043b\
+\:043d\"\>"}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{3.887011863254836*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"f34d4055-fd06-4fda-ba27-b62f078f47d2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"myVG", "=", 
+  RowBox[{
+  "Characters", "[", 
+   "\"\<\:043f\:044c\:0439\:044b\:0443\:0449\:0438\:044d\:0441\:0441\:0435\
+\:043c\:044a\:0445\:043b\:043d\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.887011884218975*^9, 3.887011916838728*^9}, 
+   3.887012004993689*^9},
+ CellLabel->"In[16]:=",ExpressionUUID->"5798bfe5-096e-492b-bb44-3320552a1215"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"\:043f\"\>", ",", "\<\"\:044c\"\>", ",", "\<\"\:0439\"\>", 
+   ",", "\<\"\:044b\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:0449\"\>", 
+   ",", "\<\"\:0438\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:043c\"\>", 
+   ",", "\<\"\:044a\"\>", ",", "\<\"\:0445\"\>", ",", "\<\"\:043b\"\>", 
+   ",", "\<\"\:043d\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.887011885020611*^9, 3.887011917486909*^9}},
+ CellLabel->"Out[16]=",ExpressionUUID->"3e28b2a7-eecb-4aa6-a32d-13c18f6438c4"]
+}, Open  ]],
+
+Cell["\<\
+4. \:041f\:0440\:043e\:0432\:0435\:0441\:0442\:0438 \:0448\:0438\:0444\:0440\
+\:043e\:0432\:0430\:043d\:0438\:0435 plaintext0 \:043d\:0430 \:043e\:0441\
+\:043d\:043e\:0432\:0435 \:0441\:043b\:0435\:0434\:0443\:044e\:0449\:0435\
+\:0438\:0306 \:0440\:0435\:0430\:043b\:0438\:0437\:0430\:0446\:0438\:0438 \
+\:0448\:0438\:0444\:0440\:0430 \:0412\:0438\:0436\:0438\:043d\:0435\:0440\
+\:0430: yi=(xi+key(imodr))modm, \:0433\:0434\:0435
+yi - \:0441\:0438\:043c\:0432\:043e\:043b \
+\:0448\:0438\:0444\:0440\:0442\:0435\:043a\:0441\:0442\:0430,
+xi - \:0441\:0438\:043c\:0432\:043e\:043b \
+\:043e\:0442\:043a\:0440\:044b\:0442\:043e\:0433\:043e \:0442\:0435\:043a\
+\:0441\:0442\:0430,
+key(i mod r) - \:0441\:0438\:043c\:0432\:043e\:043b \:043a\:043b\:044e\:0447\
+\:0430, r - \:0434\:043b\:0438\:043d\:0430 \:043a\:043b\:044e\:0447\:0430, m \
+- \:0434\:043b\:0438\:043d\:0430 \:0430\:043b\:0444\:0430\:0432\:0438\:0442\
+\:0430.\
+\>", "Text",
+ CellChangeTimes->{
+  3.887011925742483*^9},ExpressionUUID->"9a16ea78-1896-40f3-a0d3-\
+d0383a2df647"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"givViginer", "[", 
+   RowBox[{"text0_", ",", "key0_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", " ", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"txt1", "=", "text0"}], ",", 
+      RowBox[{"key1", "=", "key0"}]}], "}"}], ",", 
+    RowBox[{
+     RowBox[{"txt1", "=", 
+      RowBox[{"charToNum", "[", "txt1", "]"}]}], ";", "\n", 
+     RowBox[{"key1", "=", 
+      RowBox[{"charToNum", "[", "key1", "]"}]}], ";", "\n", 
+     RowBox[{"source1", "=", "text0"}], ";", "\n", 
+     RowBox[{"alf", "=", 
+      RowBox[{"CharacterRange", "[", 
+       RowBox[{"\"\<\:0430\>\"", ",", "\"\<\:044f\>\""}], "]"}]}], ";", "\n", 
+     
+     RowBox[{"testList", "=", 
+      RowBox[{"{", "}"}]}], ";", "\n", 
+     RowBox[{"testList1", "=", 
+      RowBox[{"{", "}"}]}], ";", "\n", 
+     RowBox[{"Do", "[", 
+      RowBox[{
+       RowBox[{"AppendTo", "[", 
+        RowBox[{"testList", ",", 
+         RowBox[{"Mod", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{
+            "txt1", "\[LeftDoubleBracket]", "i", "\[RightDoubleBracket]"}], 
+            "+", 
+            RowBox[{"key1", "\[LeftDoubleBracket]", 
+             RowBox[{"Mod", "[", 
+              RowBox[{"i", ",", 
+               RowBox[{"Length", "[", "key1", "]"}], ",", "1"}], "]"}], 
+             "\[RightDoubleBracket]"}], "-", "1"}], ",", 
+           RowBox[{"Length", "[", "alf", "]"}]}], "]"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "1", ",", 
+         RowBox[{"Length", "[", "txt1", "]"}]}], "}"}]}], "]"}], ";", 
+     RowBox[{"Do", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+           "testList", "\[LeftDoubleBracket]", "i", "\[RightDoubleBracket]"}],
+            "\[Equal]", "0"}], ",", 
+          RowBox[{
+           RowBox[{
+           "testList", "\[LeftDoubleBracket]", "i", "\[RightDoubleBracket]"}],
+            "=", "32"}], ",", 
+          RowBox[{
+          "testList", "\[LeftDoubleBracket]", "i", 
+           "\[RightDoubleBracket]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+        RowBox[{"AppendTo", "[", 
+         RowBox[{"testList1", ",", 
+          RowBox[{"FromCharacterCode", "[", 
+           RowBox[{
+            RowBox[{
+            "testList", "\[LeftDoubleBracket]", "i", 
+             "\[RightDoubleBracket]"}], "+", "1071"}], "]"}]}], "]"}]}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{"i", ",", "1", ",", 
+         RowBox[{"Length", "[", "txt1", "]"}]}], "}"}]}], "]"}], ";", 
+     RowBox[{"Grid", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+          "\"\<\:0418\:0441\:0445\:043e\:0434\:043d\:044b\:0438\:0306 \:0442\
+\:0435\:043a\:0441\:0442\>\"", ",", "source1"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+          "\"\<\:0417\:0430\:0448\:0438\:0444\:0440\:043e\:0432\:0430\:043d\
+\:043d\:044b\:0438\:0306 \:0442\:0435\:043a\:0441\:0442\>\"", ",", 
+           RowBox[{"StringJoin", "[", "testList1", "]"}]}], "}"}]}], "}"}], 
+       ",", 
+       RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8870119371701193`*^9, 3.887011975461598*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"892cc1c3-2e17-49df-a9a2-5268c87e9d9d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"givViginer", "[", 
+  RowBox[{"plaintext0", ",", "key"}], "]"}]], "Input",
+ CellChangeTimes->{{3.887011983168223*^9, 3.887011983171294*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"03720dfc-e4a6-4541-a6d5-bfce94f01315"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"\:0418\:0441\:0445\:043e\:0434\:043d\:044b\:0438\:0306 \:0442\:0435\
+\:043a\:0441\:0442\"\>", \
+"\<\"\:043f\:0440\:0438\:043b\:0435\:0442\:0430\:044e\:0441\:0435\:0434\:044c\
+\:043c\:043e\:0433\:043e\"\>"},
+    {"\<\"\:0417\:0430\:0448\:0438\:0444\:0440\:043e\:0432\:0430\:043d\:043d\
+\:044b\:0438\:0306 \:0442\:0435\:043a\:0441\:0442\"\>", "\<\"\:043f\:044c\
+\:0439\:044b\:0443\:0449\:0438\:044d\:0441\:0441\:0435\:043c\:044a\:0445\:043b\
+\:043d\"\>"}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{3.88701198398505*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"2459e5ab-1205-4c1b-9e7e-74c77a6cbb49"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"givVG", "=", 
+  RowBox[{
+  "Characters", "[", 
+   "\"\<\:043f\:044c\:0439\:044b\:0443\:0449\:0438\:044d\:0441\:0441\:0435\
+\:043c\:044a\:0445\:043b\:043d\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.8870120094341917`*^9, 3.8870120105504847`*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"5d818511-95fb-42fd-ae54-62809756903c"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"\:043f\"\>", ",", "\<\"\:044c\"\>", ",", "\<\"\:0439\"\>", 
+   ",", "\<\"\:044b\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:0449\"\>", 
+   ",", "\<\"\:0438\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:043c\"\>", 
+   ",", "\<\"\:044a\"\>", ",", "\<\"\:0445\"\>", ",", "\<\"\:043b\"\>", 
+   ",", "\<\"\:043d\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.887012010789917*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"449f403a-844e-4d5f-b066-099c1eae4a40"]
+}, Open  ]],
+
+Cell["\<\
+5. \:0417\:0430\:0448\:0438\:0444\:0440\:043e\:0432\:0430\:0442\:044c \
+plaintext0 \:043d\:0430 \:043a\:043b\:044e\:0447\:0435 \:043f.1 \:0441 \:043f\
+\:043e\:043c\:043e\:0449\:044c\:044e \:043f\:0440\:043e\:0433\:0440\:0430\
+\:043c\:043c\:044b alfavit12.exe (distributions).\
+\>", "Text",
+ CellChangeTimes->{{3.8870120181794767`*^9, 
+  3.8870120209497423`*^9}},ExpressionUUID->"55ae1276-ca17-45b4-9c97-\
+affa5ea32a7c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"alf12VG", "=", 
+  RowBox[{
+  "Characters", "[", 
+   "\"\<\:043f\:044c\:0439\:044b\:0443\:0449\:0438\:044d\:0441\:0441\:0435\
+\:043c\:044a\:0445\:043b\:043d\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.887012033548153*^9, 3.887012045114718*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"22e972c1-638c-4a1a-87c3-136aeb54aba6"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"\:043f\"\>", ",", "\<\"\:044c\"\>", ",", "\<\"\:0439\"\>", 
+   ",", "\<\"\:044b\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:0449\"\>", 
+   ",", "\<\"\:0438\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:043c\"\>", 
+   ",", "\<\"\:044a\"\>", ",", "\<\"\:0445\"\>", ",", "\<\"\:043b\"\>", 
+   ",", "\<\"\:043d\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.8870120457683897`*^9},
+ CellLabel->"Out[20]=",ExpressionUUID->"c81df083-6140-467b-8827-cf2174832794"]
+}, Open  ]],
+
+Cell["\<\
+6. \:0420\:0430\:0437\:0440\:0430\:0431\:043e\:0442\:0430\:0442\:044c \:043c\
+\:043e\:0434\:0443\:043b\:044c \:0434\:0435\:0448\:0438\:0444\:0440\:043e\
+\:0432\:0430\:043d\:0438\:044f \:043f\:043e \:0442\:0430\:0431\:043b\:0438\
+\:0446\:0435 \:0412\:0438\:0436\:0438\:043d\:0435\:0440\:0430 \:0438 \:0440\
+\:0430\:0441\:0448\:0438\:0444\:0440\:043e\:0432\:0430\:0442\:044c \:0442\
+\:0435\:043a\:0441\:0442\:044b, \:043f\:043e\:043b\:0443\:0447\:0435\:043d\
+\:043d\:044b\:0435 \:0432 \:043f.3, 4, 5. \
+\:0420\:0435\:0437\:0443\:043b\:044c\:0442\:0430\:0442\:044b \:0448\:0438\
+\:0444\:0440\:043e\:0432\:0430\:043d\:0438\:044f \:0438 \:0434\:0435\:0448\
+\:0438\:0444\:0440\:043e\:0432\:0430\:043d\:0438\:044f \:043e\:0442\:0440\
+\:0430\:0437\:0438\:0442\:044c \:0432 \:0441\:0432\:043e\:0434\:043d\:043e\
+\:0438\:0306 \:0442\:0430\:0431\:043b\:0438\:0446\:0435.\
+\>", "Text",
+ CellChangeTimes->{
+  3.887012056351507*^9},ExpressionUUID->"4e73dd7b-331a-4c6e-b91e-\
+1def22d9d057"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"decoderVG", "[", 
+   RowBox[{"text0_", ",", "key0_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", " ", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"text", "=", "text0"}], ",", 
+      RowBox[{"key", "=", "key0"}]}], "}"}], ",", 
+    RowBox[{
+     RowBox[{"key", "=", 
+      RowBox[{"charToNum", "[", "key", "]"}]}], ";", "\n", 
+     RowBox[{"res", "=", 
+      RowBox[{"{", "}"}]}], ";", "\n", 
+     RowBox[{"alf", "=", 
+      RowBox[{"CharacterRange", "[", 
+       RowBox[{"\"\<\:0430\>\"", ",", "\"\<\:044f\>\""}], "]"}]}], ";", "\n", 
+     
+     RowBox[{"tres", "=", 
+      RowBox[{"{", "}"}]}], ";", "\n", 
+     RowBox[{"Do", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"strFromTB", "=", 
+         RowBox[{"tableVG", "\[LeftDoubleBracket]", 
+          RowBox[{"key", "\[LeftDoubleBracket]", 
+           RowBox[{"Mod", "[", 
+            RowBox[{"i", ",", 
+             RowBox[{"Length", "[", "key", "]"}], ",", "1"}], "]"}], 
+           "\[RightDoubleBracket]"}], "\[RightDoubleBracket]"}]}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"j", "=", "1"}], ";", "\[IndentingNewLine]", 
+        RowBox[{"While", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+           "strFromTB", "\[LeftDoubleBracket]", "j", 
+            "\[RightDoubleBracket]"}], "!=", " ", 
+           RowBox[{
+           "text", "\[LeftDoubleBracket]", "i", "\[RightDoubleBracket]"}]}], 
+          ",", 
+          RowBox[{"j", "++"}]}], "]"}], ";", 
+        RowBox[{"AppendTo", "[", 
+         RowBox[{"res", ",", 
+          RowBox[{
+          "alf", "\[LeftDoubleBracket]", "j", "\[RightDoubleBracket]"}]}], 
+         "]"}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "1", ",", 
+         RowBox[{"Length", "[", "text", "]"}]}], "}"}]}], "]"}], ";", "\n", 
+     RowBox[{"Grid", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+          "\"\<\:0418\:0441\:0445\:043e\:0434\:043d\:044b\:0438\:0306 \:0442\
+\:0435\:043a\:0441\:0442\>\"", ",", 
+           RowBox[{"StringJoin", "[", "text", "]"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+          "\"\<\:0417\:0430\:0448\:0438\:0444\:0440\:043e\:0432\:0430\:043d\
+\:043d\:044b\:0438\:0306 \:0442\:0435\:043a\:0441\:0442\>\"", ",", 
+           RowBox[{"StringJoin", "[", "res", "]"}]}], "}"}]}], "}"}], ",", 
+       RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]}]}], "\n", 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.8870120645635757`*^9, 3.887012081535273*^9}, {
+  3.8870121366727324`*^9, 3.887012139181767*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"e95988fe-a026-43f1-8327-1952f6d010cd"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"decoderVG", "[", 
+  RowBox[{"myVG", ",", "key"}], "]"}]], "Input",
+ CellChangeTimes->{{3.887012089033729*^9, 3.88701208903633*^9}},
+ CellLabel->"In[24]:=",ExpressionUUID->"86eb6a01-f086-43e3-95f4-f90fa7448127"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"\:0418\:0441\:0445\:043e\:0434\:043d\:044b\:0438\:0306 \:0442\:0435\
+\:043a\:0441\:0442\"\>", \
+"\<\"\:043f\:044c\:0439\:044b\:0443\:0449\:0438\:044d\:0441\:0441\:0435\:043c\
+\:044a\:0445\:043b\:043d\"\>"},
+    {"\<\"\:0417\:0430\:0448\:0438\:0444\:0440\:043e\:0432\:0430\:043d\:043d\
+\:044b\:0438\:0306 \:0442\:0435\:043a\:0441\:0442\"\>", "\<\"\:043f\:0440\
+\:0438\:043b\:0435\:0442\:0430\:044e\:0441\:0435\:0434\:044c\:043c\:043e\:0433\
+\:043e\"\>"}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{3.88701209034114*^9, 3.887012145752699*^9},
+ CellLabel->"Out[24]=",ExpressionUUID->"23d320f7-3406-4e31-b5cb-a085e303d588"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"decoderVG", "[", 
+  RowBox[{"givVG", ",", "key"}], "]"}]], "Input",
+ CellChangeTimes->{{3.887012151734172*^9, 3.88701215173729*^9}},
+ CellLabel->"In[25]:=",ExpressionUUID->"5a7ae8b3-fb24-4669-a55d-3dd4499f1c36"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"\:0418\:0441\:0445\:043e\:0434\:043d\:044b\:0438\:0306 \:0442\:0435\
+\:043a\:0441\:0442\"\>", \
+"\<\"\:043f\:044c\:0439\:044b\:0443\:0449\:0438\:044d\:0441\:0441\:0435\:043c\
+\:044a\:0445\:043b\:043d\"\>"},
+    {"\<\"\:0417\:0430\:0448\:0438\:0444\:0440\:043e\:0432\:0430\:043d\:043d\
+\:044b\:0438\:0306 \:0442\:0435\:043a\:0441\:0442\"\>", "\<\"\:043f\:0440\
+\:0438\:043b\:0435\:0442\:0430\:044e\:0441\:0435\:0434\:044c\:043c\:043e\:0433\
+\:043e\"\>"}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{3.8870121526072187`*^9},
+ CellLabel->"Out[25]=",ExpressionUUID->"bef2d8d5-cbc8-4e9c-84b4-2c18887f1679"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"decoderVG", "[", 
+  RowBox[{"alf12VG", ",", "key"}], "]"}]], "Input",
+ CellChangeTimes->{{3.887012156888255*^9, 3.8870121568914423`*^9}},
+ CellLabel->"In[26]:=",ExpressionUUID->"e7156691-40d6-44b9-9a9d-d8477b324f39"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"\:0418\:0441\:0445\:043e\:0434\:043d\:044b\:0438\:0306 \:0442\:0435\
+\:043a\:0441\:0442\"\>", \
+"\<\"\:043f\:044c\:0439\:044b\:0443\:0449\:0438\:044d\:0441\:0441\:0435\:043c\
+\:044a\:0445\:043b\:043d\"\>"},
+    {"\<\"\:0417\:0430\:0448\:0438\:0444\:0440\:043e\:0432\:0430\:043d\:043d\
+\:044b\:0438\:0306 \:0442\:0435\:043a\:0441\:0442\"\>", "\<\"\:043f\:0440\
+\:0438\:043b\:0435\:0442\:0430\:044e\:0441\:0435\:0434\:044c\:043c\:043e\:0433\
+\:043e\"\>"}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{3.887012157292479*^9},
+ CellLabel->"Out[26]=",ExpressionUUID->"a7c4b912-0aeb-4f7f-a5ad-bec253148e2f"]
+}, Open  ]],
+
+Cell["\<\
+7. \:041c\:043e\:0434\:0438\:0444\:0438\:0446\:0438\:0440\:043e\:0432\:0430\
+\:0442\:044c \:0431\:0430\:0437\:043e\:0432\:0443\:044e \:0442\:0430\:0431\
+\:043b\:0438\:0446\:0443 \:0448\:0438\:0444\:0440\:0430 \:0412\:0438\:0436\
+\:0438\:043d\:0435\:0440\:0430 \:043f\:0443\:0442\:0435\:043c \:043f\:0435\
+\:0440\:0435\:0441\:0442\:0430\:043d\:043e\:0432\:043a\:0438 \:0441\:0442\
+\:0440\:043e\:043a: \:0443\:0441\:0442\:0430\:043d\:043e\:0432\:0438\:0442\
+\:044c \:0433\:0435\:043d\:0435\:0440\:0430\:0442\:043e\:0440 \:0441\:043b\
+\:0443\:0447\:0430\:0438\:0306\:043d\:044b\:0445 \:0447\:0438\:0441\:0435\
+\:043b \:0432 \:043d\:0430\:0447\:0430\:043b\:044c\:043d\:043e\:0435 \:0441\
+\:043e\:0441\:0442\:043e\:044f\:043d\:0438\:0435, \:0441\:043e\:043e\:0442\
+\:0432\:0435\:0442\:0441\:0442\:0432\:0443\:044e\:0449\:0435\:0435 \:043d\
+\:043e\:043c\:0435\:0440\:0443 \:043f\:043e \:0441\:043f\:0438\:0441\:043a\
+\:0443 \:0432 \:0433\:0440\:0443\:043f\:043f\:0435 (SeedRandom[N]), \:043f\
+\:043e\:043b\:0443\:0447\:0438\:0442\:044c \:0442\:0430\:0431\:043b\:0438\
+\:0446\:0443 \:0437\:0430\:043c\:0435\:043d \:0441\:0442\:0440\:043e\:043a - \
+RandomSam- ple[Range[1,32]] \:0438 \:043f\:0435\:0440\:0435\:0441\:0442\:0430\
+\:0432\:0438\:0442\:044c \:0441\:0442\:0440\:043e\:043a\:0438 \:0431\:0430\
+\:0437\:043e\:0432\:043e\:0438\:0306 \:0442\:0430\:0431\:043b\:0438\:0446\
+\:044b.\
+\>", "Text",
+ CellChangeTimes->{
+  3.8870121631789913`*^9},ExpressionUUID->"f81b1204-80fe-40fd-9b09-\
+d13adb8a3110"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Grid", "[", 
+   RowBox[{
+    RowBox[{"tableVG2", "=", "tableVG"}], ",", 
+    RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SeedRandom", "[", "11", "]"}], ";"}], "\n", 
+ RowBox[{"tbReplace", "=", 
+  RowBox[{"RandomSample", "[", 
+   RowBox[{"Range", "[", 
+    RowBox[{"1", ",", "32"}], "]"}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.887012171415966*^9, 3.887012173587886*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"c62f88cd-74c1-477a-b371-e47fce65f99b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "7", ",", "31", ",", "30", ",", "32", ",", "9", ",", "23", ",", "24", ",", 
+   "26", ",", "12", ",", "16", ",", "2", ",", "29", ",", "5", ",", "27", ",", 
+   "19", ",", "14", ",", "25", ",", "8", ",", "4", ",", "28", ",", "21", ",", 
+   "13", ",", "18", ",", "17", ",", "11", ",", "10", ",", "20", ",", "22", 
+   ",", "1", ",", "3", ",", "15", ",", "6"}], "}"}]], "Output",
+ CellChangeTimes->{3.8870121754074087`*^9},
+ CellLabel->"Out[29]=",ExpressionUUID->"70aea17c-cb94-4aed-8b97-87a59a89493a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Do", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"tableVG2", "\[LeftDoubleBracket]", 
+      RowBox[{"i", ",", "All"}], "\[RightDoubleBracket]"}], "=", 
+     RowBox[{"tableVG", "\[LeftDoubleBracket]", 
+      RowBox[{
+       RowBox[{
+       "tbReplace", "\[LeftDoubleBracket]", "i", "\[RightDoubleBracket]"}], 
+       ",", "All"}], "\[RightDoubleBracket]"}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "1", ",", "32"}], "}"}]}], "]"}], 
+  " "}], "\[IndentingNewLine]", 
+ RowBox[{"Grid", "[", 
+  RowBox[{"tableVG2", ",", 
+   RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.887012180085621*^9, 3.887012183228257*^9}},
+ CellLabel->"In[30]:=",ExpressionUUID->"577890bd-3c97-4282-8893-c5959c51dcc0"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", \
+"\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\
+\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", \
+"\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\
+\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", \
+"\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\
+\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", \
+"\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>"},
+    {"\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", \
+"\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\
+\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", \
+"\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\
+\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", \
+"\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\
+\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", \
+"\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>"},
+    {"\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", \
+"\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\
+\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", \
+"\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\
+\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", \
+"\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\
+\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", \
+"\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>"},
+    {"\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", \
+"\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\
+\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", \
+"\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\
+\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", \
+"\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\
+\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", \
+"\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>"},
+    {"\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", \
+"\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\
+\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", \
+"\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\
+\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", \
+"\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\
+\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", \
+"\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>"},
+    {"\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", \
+"\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\
+\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", \
+"\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\
+\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", \
+"\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\
+\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", \
+"\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>"},
+    {"\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", \
+"\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\
+\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", \
+"\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\
+\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", \
+"\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\
+\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", \
+"\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>"},
+    {"\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", \
+"\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\
+\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", \
+"\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\
+\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", \
+"\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\
+\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", \
+"\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>"},
+    {"\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", \
+"\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\
+\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", \
+"\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\
+\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", \
+"\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\
+\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", \
+"\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>"},
+    {"\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", \
+"\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\
+\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", \
+"\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\
+\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", \
+"\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\
+\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", \
+"\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>"},
+    {"\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", \
+"\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\
+\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", \
+"\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\
+\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", \
+"\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\
+\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", \
+"\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>"},
+    {"\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", \
+"\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\
+\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", \
+"\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\
+\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", \
+"\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\
+\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", \
+"\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>"},
+    {"\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", \
+"\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\
+\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", \
+"\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\
+\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", \
+"\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\
+\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", \
+"\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>"},
+    {"\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", \
+"\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\
+\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", \
+"\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\
+\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", \
+"\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\
+\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", \
+"\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>"},
+    {"\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", \
+"\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\
+\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", \
+"\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\
+\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", \
+"\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\
+\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", \
+"\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>"},
+    {"\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", \
+"\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\
+\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", \
+"\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\
+\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", \
+"\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\
+\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", \
+"\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>"},
+    {"\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", \
+"\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\
+\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", \
+"\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\
+\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", \
+"\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\
+\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", \
+"\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>"},
+    {"\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", \
+"\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\
+\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", \
+"\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\
+\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", \
+"\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\
+\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", \
+"\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>"},
+    {"\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", \
+"\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\
+\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", \
+"\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\
+\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", \
+"\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\
+\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", \
+"\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>"},
+    {"\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", \
+"\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\
+\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", \
+"\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\
+\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", \
+"\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\
+\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", \
+"\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>"},
+    {"\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", \
+"\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\
+\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", \
+"\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\
+\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", \
+"\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\
+\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", \
+"\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>"},
+    {"\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", \
+"\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\
+\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", \
+"\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\
+\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", \
+"\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\
+\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", \
+"\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>"},
+    {"\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", \
+"\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\
+\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", \
+"\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\
+\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", \
+"\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\
+\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", \
+"\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>"},
+    {"\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", \
+"\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\
+\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", \
+"\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\
+\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", \
+"\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\
+\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", \
+"\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>"},
+    {"\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", \
+"\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\
+\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", \
+"\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\
+\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", \
+"\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\
+\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", \
+"\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>"},
+    {"\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", \
+"\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\
+\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", \
+"\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\
+\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", \
+"\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\
+\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", \
+"\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>"},
+    {"\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", \
+"\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\
+\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", \
+"\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\
+\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", \
+"\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\
+\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", \
+"\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>"},
+    {"\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", \
+"\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\
+\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", \
+"\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\
+\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", \
+"\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\
+\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", \
+"\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>"},
+    {"\<\"\:0430\"\>", "\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", \
+"\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\
+\:0438\"\>", "\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", \
+"\<\"\:043c\"\>", "\<\"\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\
+\:0440\"\>", "\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", \
+"\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\
+\:0448\"\>", "\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", \
+"\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>"},
+    {"\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", \
+"\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", "\<\"\
+\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>", \
+"\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", "\<\"\
+\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", \
+"\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", "\<\"\
+\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", \
+"\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>"},
+    {"\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", "\<\"\:0441\"\>", \
+"\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\:0445\"\>", "\<\"\
+\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", "\<\"\:0449\"\>", \
+"\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\:044d\"\>", "\<\"\
+\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", "\<\"\:0431\"\>", \
+"\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>", "\<\"\:0435\"\>", "\<\"\
+\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", "\<\"\:0439\"\>", \
+"\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\:043d\"\>"},
+    {"\<\"\:0435\"\>", "\<\"\:0436\"\>", "\<\"\:0437\"\>", "\<\"\:0438\"\>", \
+"\<\"\:0439\"\>", "\<\"\:043a\"\>", "\<\"\:043b\"\>", "\<\"\:043c\"\>", "\<\"\
+\:043d\"\>", "\<\"\:043e\"\>", "\<\"\:043f\"\>", "\<\"\:0440\"\>", \
+"\<\"\:0441\"\>", "\<\"\:0442\"\>", "\<\"\:0443\"\>", "\<\"\:0444\"\>", "\<\"\
+\:0445\"\>", "\<\"\:0446\"\>", "\<\"\:0447\"\>", "\<\"\:0448\"\>", \
+"\<\"\:0449\"\>", "\<\"\:044a\"\>", "\<\"\:044b\"\>", "\<\"\:044c\"\>", "\<\"\
+\:044d\"\>", "\<\"\:044e\"\>", "\<\"\:044f\"\>", "\<\"\:0430\"\>", \
+"\<\"\:0431\"\>", "\<\"\:0432\"\>", "\<\"\:0433\"\>", "\<\"\:0434\"\>"}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{3.8870121837173357`*^9},
+ CellLabel->"Out[31]=",ExpressionUUID->"ae7080b9-8b07-4edd-8f35-7c75de840c61"]
+}, Open  ]],
+
+Cell["\<\
+8. \:041f\:0440\:043e\:0432\:0435\:0441\:0442\:0438 \:0448\:0438\:0444\:0440\
+\:043e\:0432\:0430\:043d\:0438\:0435 \:043d\:0430 \:043a\:043b\:044e\:0447\
+\:0435 \:043f.1 \:0438 \:0441\:0440\:0430\:0432\:043d\:0438\:0442\:044c \
+\:0441 \:0440\:0435\:0437\:0443\:043b\:044c\:0442\:0430\:0442\:0430\:043c\
+\:0438 \:043f.3,4,5.\
+\>", "Text",
+ CellChangeTimes->{{3.887012192714076*^9, 
+  3.8870122024862013`*^9}},ExpressionUUID->"9e8c4c22-e44f-4543-98b9-\
+c23b17a4a518"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"toViginer", "[", 
+  RowBox[{"plaintext0", ",", "key", ",", "tableVG2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.887012203883016*^9, 3.887012203886434*^9}},
+ CellLabel->"In[32]:=",ExpressionUUID->"8639dace-0f0f-49ba-aa6d-a3d6c06f9f14"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"\:0418\:0441\:0445\:043e\:0434\:043d\:044b\:0438\:0306 \:0442\:0435\
+\:043a\:0441\:0442\"\>", \
+"\<\"\:043f\:0440\:0438\:043b\:0435\:0442\:0430\:044e\:0441\:0435\:0434\:044c\
+\:043c\:043e\:0433\:043e\"\>"},
+    {"\<\"\:0417\:0430\:0448\:0438\:0444\:0440\:043e\:0432\:0430\:043d\:043d\
+\:044b\:0438\:0306 \:0442\:0435\:043a\:0441\:0442\"\>", "\<\"\:0445\:0444\
+\:0436\:0433\:0447\:043b\:043b\:0433\:0447\:0439\:0432\:0444\:044e\:0437\:043e\
+\:0443\"\>"}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{3.887012204576858*^9},
+ CellLabel->"Out[32]=",ExpressionUUID->"b4b54033-3065-4074-8d4c-876db58f8dbc"]
+}, Open  ]],
+
+Cell["\<\
+9. \:0420\:0430\:0441\:0448\:0438\:0444\:0440\:043e\:0432\:0430\:0442\:044c \
+\:0442\:0435\:043a\:0441\:0442 \:0441 \:043d\:043e\:043c\:0435\:0440\:043e\
+\:043c 30 + Nmod12 \:0438\:0437 \:043f\:0430\:043f\:043a\:0438 CrypttextVG, \
+\:0432 \:043a\:043e\:0442\:043e\:0440\:043e\:0438\:0306 \:043a\:0430\:0436\
+\:0434\:044b\:0438\:0306 \:0442\:0435\:043a\:0441\:0442 \:0437\:0430\:0448\
+\:0438\:0444\:0440\:043e\:0432\:0430\:043d \:043d\:0430 \:043f\:0430\:0440\
+\:043e\:043b\:0435, \:043f\:0440\:0435\:0434\:0441\:0442\:0430\:0432\:043b\
+\:0435\:043d\:043d\:043e\:043c \:0432 \:0442\:0430\:0431\:043b\:0438\:0446\
+\:0435\
+\>", "Text",
+ CellChangeTimes->{{3.887012216367572*^9, 
+  3.887012217768176*^9}},ExpressionUUID->"47f64d86-7f47-47b5-a1ba-\
+14cd2bd1b504"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"crypttextVG", "=", 
+  RowBox[{
+  "Characters", "[", 
+   "\"\<\:043e\:0435\:0443\:043e\:044e\:0443\:0448\:0445\:0431\:0430\:044a\
+\:0441\:044b\:0445\:0430\:0431\:0447\:043b\:044d\:0443\:044b\:0445\:0447\:0444\
+\:0430\:0442\:0440\:0432\:0438\:0446\:0447\:0441\:0444\:043d\:0433\:0436\:0449\
+\:0435\:0446\:0440\:0442\:043e\:0442\:043e\:044c\:0433\:0441\:044d\:0432\:0442\
+\:0440\:043a\:044b\:0448\:0433\:0432\:043b\:0441\:0440\:043c\:0444\:0439\:0430\
+\:0441\:043a\:0432\:0440\:0435\:044e\:0437\:0433\:0445\:043c\:0442\:044e\:044d\
+\:044e\:0443\:0448\:0445\:044f\:0430\:0447\:043f\:0447\:0433\:044f\:0433\:0431\
+\:044c\:0442\:0435\:0440\:0431\:044e\:0448\:044c\:0430\:0431\:0442\:044f\:0439\
+\:044f\:043f\:0441\:043e\:044d\:043f\:044a\:0440\:044f\:043b\:0444\:043f\:044e\
+\:0434\:043e\:0435\:044d\:043b\:0440\:0435\:0430\:0438\:043e\:043a\:0446\:0430\
+\:044d\:0434\:0440\:0437\:043c\:044c\:0447\:0430\:044e\:044b\:0442\:0430\:0445\
+\:0444\:0430\:0435\:044d\:0440\:044e\:043d\:0437\:043c\:0442\:0431\:0441\:043e\
+\:0449\:0441\:0433\:043a\:0434\:0444\:0447\:043a\:044c\:043e\:0447\:044c\:044a\
+\:0432\:0430\:043c\:044e\:0442\:044c\:043d\:0434\:044d\:043f\:043c\:0445\:043d\
+\:043b\:043d\:0433\:044f\:044d\:0434\:044b\:043e\:043d\:0431\:0441\:0448\:0443\
+\:0430\:0446\:0435\:0449\:043a\:0435\:044b\:043a\:0431\:0440\:0435\:044e\:0446\
+\:0441\:0437\:0431\:043e\:0447\:0430\:0433\:043a\:0432\:0432\:044c\:0430\:044d\
+\:044f\:044e\:0431\:0430\:044d\:044b\:0435\:044d\:044f\:0431\:0443\:0439\:0445\
+\:0431\:0447\:0432\:043e\:0447\:043d\:044a\:0432\:0432\:0442\:0444\:043e\:0448\
+\:043a\:044f\:043f\:0443\:043e\:0438\:043b\:044a\:0444\:0430\:0444\:044d\:0436\
+\:0444\:0438\:043f\:0443\:0444\:044e\:044f\:044e\:044a\:0442\:044a\:043b\:0447\
+\:043d\:0431\:043e\:0432\:0430\:0446\:0443\:044b\:0441\:043a\:043b\:0431\:0442\
+\:044f\:0439\:0447\:044d\:043b\:0437\:0440\:043f\:044c\:043a\:043b\:0445\:044c\
+\:043e\:0444\:0430\:0442\:043a\:0444\:0448\:044c\:0441\:0432\:0438\:044e\:0448\
+\:0434\:0445\:0447\:0437\:0433\:0447\:043c\:0447\:043e\:044f\:044f\:0430\:0442\
+\:0438\:0447\:0431\:044f\:044e\:0442\:043e\:0442\:043e\:044c\:043d\:0434\:0444\
+\:0447\:043a\:044d\:0435\:044e\:0443\:0432\:044e\:044e\:043b\:0448\:0432\:044a\
+\:0435\:0433\:0440\:044b\:0432\:0431\:0435\:0449\:0435\:044e\:0445\:044c\:044f\
+\:0431\:043c\:044a\:0447\:0432\:0448\:0431\:0438\:0431\:0441\:0447\:043a\:0446\
+\:044e\:0441\:0430\:044d\:0438\:043b\:0444\:0432\:0445\:0443\:0441\:0432\:0430\
+\:043e\:0440\:0441\:043e\:0438\:0438\:0445\:043f\:044a\:0447\:0447\:044d\:0435\
+\:0438\:0440\:043b\:0438\:0442\:0435\:043e\:044d\:043f\:0440\:0441\:0449\:0443\
+\:0433\:0432\:043b\:0434\:044b\:044f\:0433\:043a\:044d\:044e\:0441\:0435\:0437\
+\:0435\:044d\:0447\:0444\:0440\:044e\:043e\:044d\:044f\:0447\:0447\:0447\:044f\
+\:0444\:0440\:043c\:043a\:044e\:0443\:043f\:0432\:044d\:043d\:0448\:0447\:0441\
+\:0438\:0430\:043f\:044c\:0435\:044f\:043e\:0449\:043d\:044e\:0440\:044a\:043f\
+\:0430\:0438\:0434\:043a\:044d\:043c\:0435\:044b\:0437\:0442\:044a\:0440\:044a\
+\:0443\:044d\:0432\:044e\:0440\:043a\:0443\:044f\:0430\:043f\:0441\:0435\:043e\
+\:0431\:0443\:0434\:0440\:044a\:0441\:043f\:043f\:044a\:044a\:044d\:044e\:044e\
+\:0430\:044b\:043c\:0441\:0442\:0441\:044f\:044d\:0440\:0433\:043a\:0441\:043d\
+\:0445\:044e\:0441\:043e\:0430\:0438\:044e\:0439\:0442\:0442\:043f\:0439\:044a\
+\:0430\:0447\:0448\:0439\:0438\:0444\:0432\:043b\:043f\:0438\:043a\:044e\:044f\
+\:044f\:043e\:0431\:0442\:043c\:0434\:0434\:043b\:0443\:0443\:0438\:0430\:0440\
+\:0435\:0444\:0440\:0448\:0433\:044e\:0432\:044a\:0445\:0440\:044d\:044d\:0437\
+\:044b\:044e\:044d\:0431\:0434\:044e\:0445\:0435\:044c\:043d\:0441\:0442\:0442\
+\:0438\:044a\:0438\:0431\:0435\:043d\:043a\:0431\:0430\:044d\:0441\:0432\:0443\
+\:043a\:0439\:0435\:0438\:0432\:0441\:0433\:043a\:0444\:0442\:043d\:0444\:0444\
+\:0442\:0448\:044d\:0445\:0438\:0430\:0442\:044d\:0440\:043e\:0433\:044f\:0447\
+\:0442\:044b\:0447\:043d\:0435\:0432\:043c\:0447\:044a\:0432\:0430\:043f\:0440\
+\:0442\:0438\:0439\:0442\:0442\:043f\:0439\:0442\:044b\:044b\:0431\:0447\:044c\
+\:044c\:0435\:0432\:0441\:044b\:043d\:0434\:0443\:0432\:0442\:0440\:043b\:0444\
+\:0442\:0431\:044e\:044a\:043e\:0446\:0438\:0447\:0446\:0444\:044e\:043d\:0447\
+\:0445\:0440\:0449\:0448\:0440\:0430\:043e\:0448\:044a\:0443\:0449\:0435\:0439\
+\:0445\:044f\:043d\:043b\:0439\:044d\:0447\:0430\:044b\:0447\:043a\:0448\:0441\
+\:044b\:043d\:0434\:0430\:0432\:043a\:0448\:0434\:044a\:0444\:0430\:044b\:0432\
+\:0441\:0442\:0435\:044d\:043d\:044d\:0442\:043a\:043f\:0448\:043b\:0444\:0441\
+\:043d\:0431\:0443\:0438\:044a\:043e\:0448\:0436\:0447\:0447\:0442\:0443\:0432\
+\:0430\:0447\:043d\:044f\:0440\:044c\:0443\:044b\:0430\:0440\:0442\:0430\:0443\
+\:044d\:0432\:044e\:0440\:043a\:0444\:0432\:044e\:0430\:0442\:0440\:044f\:043b\
+\:0447\:0442\:044c\:0443\:0443\:0438\:0430\:0444\:0440\:044a\:0431\:044a\:043e\
+\:0446\:043d\:043c\:0434\:0442\:044f\:044f\:043e\:043d\:0442\:044a\:0438\:0430\
+\:0432\:0447\:043f\:0440\:044f\:043d\:0430\:0434\:0433\:0431\:0436\:0445\:0434\
+\:044a\:0442\:0447\:0431\:0449\:0443\:0444\:0430\:044d\:0440\:0447\:0444\:0432\
+\:0435\:0432\:0443\:0442\:0442\:0442\:0437\:0431\:043e\:043f\:043d\:0441\:0440\
+\:0440\:0441\:044a\:044e\:044f\:043e\:0447\:043d\:0438\:0448\:043d\:0430\:0431\
+\:0430\:0448\:0436\:043d\:044f\:044d\:0448\:0445\:043b\:0444\:0439\:0430\:044d\
+\:0444\:0441\:0433\:0433\:044f\:0438\:0430\:0442\:044d\:0440\:0448\:0442\:0440\
+\:043d\:044c\:0440\:0431\:0435\:0441\:044f\:043d\:0430\:0444\:044f\:044d\:043b\
+\:0448\:0446\:0444\:043d\:0433\:044f\:044f\:043e\:0431\:0438\:0447\:043d\:0442\
+\:044f\:044d\:0447\:0445\:043c\:044f\:0446\:0430\:0441\:0430\:0442\:0442\:0435\
+\:0449\:0442\:0430\:044e\:044c\:044b\:0449\:0442\:0444\:0444\:044a\:044c\:0444\
+\:043d\:044d\:043e\:0446\:0437\:0442\:044c\:044d\:0431\:0430\:0430\:044e\:043d\
+\:044d\:0431\:043e\:0430\:043f\:043f\:044a\:0441\:0430\:0432\:043f\:043b\:0443\
+\:043e\:0447\:0443\:0444\:044e\:0448\:0432\:0431\:0435\:044c\:0435\:0444\:044d\
+\:044d\:0442\:043b\:0442\:044a\:0440\:0433\:0432\:043a\:0439\:0441\:043e\:044c\
+\:0443\:0444\:0442\:0442\:043e\:0430\:043e\:0440\:043a\:0434\:0430\:0444\:0442\
+\:0448\:0439\:043f\:0443\:0446\:0440\:0441\:0437\:044e\:043d\:0441\:0442\:044a\
+\:0430\:043f\:0437\:0433\:043d\:0441\:0436\:043d\:044b\:0441\:0435\:0444\:044c\
+\:0448\:043d\:044f\:0431\:0431\:0443\:0444\:0435\:0449\:0431\:0434\:044e\:044a\
+\:044c\:044a\:043e\:043e\:043f\:044a\:044d\:044d\:0432\:0448\:0434\:0441\:0440\
+\:0442\:044f\:044d\:0441\:044c\:043e\:044e\:0445\:0447\:044b\:0440\:044b\:0432\
+\:044b\:0441\:0438\:0430\:0442\:044c\:0430\:0432\:0443\:044c\:043a\:0446\:0440\
+\:0436\:0442\:044e\:043e\:0449\:0446\:0439\:0445\:044a\:043e\:0442\:0435\:0446\
+\:0443\:044e\:0444\:0444\:043b\:0440\:0435\:044e\:0447\:043d\:0441\:043a\:0442\
+\:0433\:0442\:0442\:043a\:044a\:044e\:0440\:0433\:0440\:0434\:0444\:0440\:0433\
+\:043f\:043c\:0442\:044e\:043c\:0444\:0440\:0430\:044a\:0430\:0442\:0430\:0430\
+\:0434\:0442\:0442\:043f\:0437\:0442\:0433\:043a\:043c\:043a\:0447\:0448\:0446\
+\:0437\:044e\:043d\:0437\:0437\:043d\:044d\:044d\:0441\:0448\:0442\:0438\:0442\
+\:0447\:044b\:043b\:0437\:043f\:0441\:043c\:0441\:0449\:044d\:043f\:0435\:0438\
+\:044c\:044d\:0447\:0442\:044b\:0449\:0435\:0430\:044b\:0447\:0433\:0446\:0448\
+\:0442\:0440\:0433\:0431\:0437\:043a\:044a\:044c\:0431\:043e\:044b\:044c\:0446\
+\:0443\:044c\:0440\:044e\:0443\:0431\:0442\:044f\:0444\:0430\:0444\:043f\:0432\
+\:0440\:0439\:0440\:0435\:0431\:044e\:0440\:043e\:044b\:044c\:0434\:043a\:044f\
+\:044e\:044c\:0430\:0432\:0430\:0446\:0443\:0447\:0444\:043f\:0436\:0445\:043f\
+\:044a\:043f\:0430\:0449\:044c\:044b\:0449\:0441\:0447\:043d\:0449\:044d\:043e\
+\:043a\:044d\:0435\:044b\:0443\:043a\:0445\:044a\:0431\:043b\:0441\:044e\:043a\
+\:0432\:0442\:043e\:0442\:044d\:0438\:0446\:0436\:0442\:0430\:0440\:0440\:0448\
+\:0434\:0442\:0442\:0442\:0432\:043f\:043a\:044e\:0435\:0449\:043a\:0431\:044e\
+\:0448\:0434\:0445\:0442\:043b\:0439\:0442\:0446\:0444\:043f\:0430\:0435\:0440\
+\:0446\:0434\:0440\:0441\:0438\:0432\:044c\:044d\:043a\:0443\:0445\:0440\:043e\
+\:043e\:0441\:0438\:043f\:0430\:044c\:0432\:0438\:0444\:043b\:043b\:044c\:0447\
+\:0443\:044d\:0432\:0445\:0434\:0438\:0441\:044a\:044d\:0430\:0442\:0433\:0434\
+\:0441\:0442\:043e\:044c\:044d\:0436\:0445\:0442\:044b\:0443\:044f\:0440\:0443\
+\:043e\:0441\:0438\:044e\:0431\:0433\:043f\:0436\:0442\:044e\:0436\:043f\:0443\
+\:0444\:044e\:044f\:0438\:0432\:0434\:0444\:043f\:0444\:0431\:0444\:044d\:0432\
+\:043e\:044b\:0445\:0442\:0442\:0447\:043b\:043c\:043d\:044a\:0447\:0430\:044b\
+\:043b\:043a\:044e\:043c\:0449\:043a\:0431\:044e\:044c\:0438\:044c\:0430\:0441\
+\:044d\:043e\:044d\:0444\:0445\:044e\:0447\:0441\:0447\:0433\:043f\:0436\:0442\
+\:044e\:0431\:0437\:0437\:0430\:0444\:044c\:043e\:044f\:0440\:0441\:043f\:0432\
+\:0440\:0430\:043d\:044e\:0435\:044f\:0447\:0432\:044e\:044c\:0430\:0438\:043b\
+\:0444\:0441\:0447\:044d\:043e\:0432\:044f\:043e\:044d\:0447\:0447\:044b\>\"",
+    "]"}]}]], "Input",
+ CellChangeTimes->{{3.887012225390489*^9, 3.887012280685956*^9}, {
+  3.887012448811077*^9, 3.887012540074065*^9}},
+ CellLabel->"In[49]:=",ExpressionUUID->"f8cba8e1-7e5c-48e6-a3f1-cb2b8c527a7b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"\:043e\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:0443\"\>", 
+   ",", "\<\"\:043e\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:0443\"\>", 
+   ",", "\<\"\:0448\"\>", ",", "\<\"\:0445\"\>", ",", "\<\"\:0431\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:044b\"\>", ",", "\<\"\:0445\"\>", ",", "\<\"\:0430\"\>", 
+   ",", "\<\"\:0431\"\>", ",", "\<\"\:0447\"\>", ",", "\<\"\:043b\"\>", 
+   ",", "\<\"\:044d\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:044b\"\>", 
+   ",", "\<\"\:0445\"\>", ",", "\<\"\:0447\"\>", ",", "\<\"\:0444\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:0432\"\>", ",", "\<\"\:0438\"\>", ",", "\<\"\:0446\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:0441\"\>", ",", "\<\"\:0444\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:0433\"\>", ",", "\<\"\:0436\"\>", 
+   ",", "\<\"\:0449\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:0446\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:043e\"\>", ",", "\<\"\:044c\"\>", 
+   ",", "\<\"\:0433\"\>", ",", "\<\"\:0441\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:0432\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:043a\"\>", ",", "\<\"\:044b\"\>", ",", "\<\"\:0448\"\>", 
+   ",", "\<\"\:0433\"\>", ",", "\<\"\:0432\"\>", ",", "\<\"\:043b\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:043c\"\>", 
+   ",", "\<\"\:0444\"\>", ",", "\<\"\:0439\"\>", ",", "\<\"\:0430\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:043a\"\>", ",", "\<\"\:0432\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:0437\"\>", ",", "\<\"\:0433\"\>", ",", "\<\"\:0445\"\>", 
+   ",", "\<\"\:043c\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:044d\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:0443\"\>", 
+   ",", "\<\"\:0448\"\>", ",", "\<\"\:0445\"\>", ",", "\<\"\:044f\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:0447\"\>", ",", "\<\"\:043f\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:0433\"\>", ",", "\<\"\:044f\"\>", 
+   ",", "\<\"\:0433\"\>", ",", "\<\"\:0431\"\>", ",", "\<\"\:044c\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:0431\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:0448\"\>", 
+   ",", "\<\"\:044c\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0431\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:044f\"\>", ",", "\<\"\:0439\"\>", 
+   ",", "\<\"\:044f\"\>", ",", "\<\"\:043f\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:043e\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:043f\"\>", 
+   ",", "\<\"\:044a\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:044f\"\>", 
+   ",", "\<\"\:043b\"\>", ",", "\<\"\:0444\"\>", ",", "\<\"\:043f\"\>", 
+   ",", "\<\"\:044e\"\>", ",", "\<\"\:0434\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:0435\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:043b\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:0430\"\>", 
+   ",", "\<\"\:0438\"\>", ",", "\<\"\:043e\"\>", ",", "\<\"\:043a\"\>", 
+   ",", "\<\"\:0446\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:0434\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:0437\"\>", 
+   ",", "\<\"\:043c\"\>", ",", "\<\"\:044c\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:044b\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0445\"\>", 
+   ",", "\<\"\:0444\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0435\"\>", 
+   ",", "\<\"\:044d\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:0437\"\>", ",", "\<\"\:043c\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:0431\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:043e\"\>", ",", "\<\"\:0449\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:0433\"\>", ",", "\<\"\:043a\"\>", ",", "\<\"\:0434\"\>", 
+   ",", "\<\"\:0444\"\>", ",", "\<\"\:0447\"\>", ",", "\<\"\:043a\"\>", 
+   ",", "\<\"\:044c\"\>", ",", "\<\"\:043e\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:044c\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:0432\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:043c\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:044c\"\>", ",", "\<\"\:043d\"\>", 
+   ",", "\<\"\:0434\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:043f\"\>", 
+   ",", "\<\"\:043c\"\>", ",", "\<\"\:0445\"\>", ",", "\<\"\:043d\"\>", 
+   ",", "\<\"\:043b\"\>", ",", "\<\"\:043d\"\>", ",", "\<\"\:0433\"\>", 
+   ",", "\<\"\:044f\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:0434\"\>", 
+   ",", "\<\"\:044b\"\>", ",", "\<\"\:043e\"\>", ",", "\<\"\:043d\"\>", 
+   ",", "\<\"\:0431\"\>", ",", "\<\"\:0441\"\>", ",", "\<\"\:0448\"\>", 
+   ",", "\<\"\:0443\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0446\"\>", 
+   ",", "\<\"\:0435\"\>", ",", "\<\"\:0449\"\>", ",", "\<\"\:043a\"\>", 
+   ",", "\<\"\:0435\"\>", ",", "\<\"\:044b\"\>", ",", "\<\"\:043a\"\>", 
+   ",", "\<\"\:0431\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:0435\"\>", 
+   ",", "\<\"\:044e\"\>", ",", "\<\"\:0446\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:0437\"\>", ",", "\<\"\:0431\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0433\"\>", 
+   ",", "\<\"\:043a\"\>", ",", "\<\"\:0432\"\>", ",", "\<\"\:0432\"\>", 
+   ",", "\<\"\:044c\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:044f\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:0431\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:044b\"\>", 
+   ",", "\<\"\:0435\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:044f\"\>", 
+   ",", "\<\"\:0431\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:0439\"\>", 
+   ",", "\<\"\:0445\"\>", ",", "\<\"\:0431\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:0432\"\>", ",", "\<\"\:043e\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:0432\"\>", 
+   ",", "\<\"\:0432\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:0444\"\>", 
+   ",", "\<\"\:043e\"\>", ",", "\<\"\:0448\"\>", ",", "\<\"\:043a\"\>", 
+   ",", "\<\"\:044f\"\>", ",", "\<\"\:043f\"\>", ",", "\<\"\:0443\"\>", 
+   ",", "\<\"\:043e\"\>", ",", "\<\"\:0438\"\>", ",", "\<\"\:043b\"\>", 
+   ",", "\<\"\:044a\"\>", ",", "\<\"\:0444\"\>", ",", "\<\"\:0430\"\>", 
+   ",", "\<\"\:0444\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:0436\"\>", 
+   ",", "\<\"\:0444\"\>", ",", "\<\"\:0438\"\>", ",", "\<\"\:043f\"\>", 
+   ",", "\<\"\:0443\"\>", ",", "\<\"\:0444\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:044f\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:044a\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:043b\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:043d\"\>", ",", "\<\"\:0431\"\>", 
+   ",", "\<\"\:043e\"\>", ",", "\<\"\:0432\"\>", ",", "\<\"\:0430\"\>", 
+   ",", "\<\"\:0446\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:044b\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:043a\"\>", ",", "\<\"\:043b\"\>", 
+   ",", "\<\"\:0431\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:044f\"\>", 
+   ",", "\<\"\:0439\"\>", ",", "\<\"\:0447\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:043b\"\>", ",", "\<\"\:0437\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:043f\"\>", ",", "\<\"\:044c\"\>", ",", "\<\"\:043a\"\>", 
+   ",", "\<\"\:043b\"\>", ",", "\<\"\:0445\"\>", ",", "\<\"\:044c\"\>", 
+   ",", "\<\"\:043e\"\>", ",", "\<\"\:0444\"\>", ",", "\<\"\:0430\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:043a\"\>", ",", "\<\"\:0444\"\>", 
+   ",", "\<\"\:0448\"\>", ",", "\<\"\:044c\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:0432\"\>", ",", "\<\"\:0438\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:0448\"\>", ",", "\<\"\:0434\"\>", ",", "\<\"\:0445\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:0437\"\>", ",", "\<\"\:0433\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:043c\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:043e\"\>", ",", "\<\"\:044f\"\>", ",", "\<\"\:044f\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:0438\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:0431\"\>", ",", "\<\"\:044f\"\>", 
+   ",", "\<\"\:044e\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:043e\"\>", ",", "\<\"\:044c\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:0434\"\>", ",", "\<\"\:0444\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:043a\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:0435\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:0443\"\>", 
+   ",", "\<\"\:0432\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:043b\"\>", ",", "\<\"\:0448\"\>", ",", "\<\"\:0432\"\>", 
+   ",", "\<\"\:044a\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:0433\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:044b\"\>", ",", "\<\"\:0432\"\>", 
+   ",", "\<\"\:0431\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:0449\"\>", 
+   ",", "\<\"\:0435\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:0445\"\>", 
+   ",", "\<\"\:044c\"\>", ",", "\<\"\:044f\"\>", ",", "\<\"\:0431\"\>", 
+   ",", "\<\"\:043c\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:0432\"\>", ",", "\<\"\:0448\"\>", ",", "\<\"\:0431\"\>", 
+   ",", "\<\"\:0438\"\>", ",", "\<\"\:0431\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:043a\"\>", ",", "\<\"\:0446\"\>", 
+   ",", "\<\"\:044e\"\>", ",", "\<\"\:0441\"\>", ",", "\<\"\:0430\"\>", 
+   ",", "\<\"\:044d\"\>", ",", "\<\"\:0438\"\>", ",", "\<\"\:043b\"\>", 
+   ",", "\<\"\:0444\"\>", ",", "\<\"\:0432\"\>", ",", "\<\"\:0445\"\>", 
+   ",", "\<\"\:0443\"\>", ",", "\<\"\:0441\"\>", ",", "\<\"\:0432\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:043e\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:043e\"\>", ",", "\<\"\:0438\"\>", 
+   ",", "\<\"\:0438\"\>", ",", "\<\"\:0445\"\>", ",", "\<\"\:043f\"\>", 
+   ",", "\<\"\:044a\"\>", ",", "\<\"\:0447\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:044d\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:0438\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:043b\"\>", ",", "\<\"\:0438\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:044d\"\>", ",", "\<\"\:043f\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:0449\"\>", ",", "\<\"\:0443\"\>", 
+   ",", "\<\"\:0433\"\>", ",", "\<\"\:0432\"\>", ",", "\<\"\:043b\"\>", 
+   ",", "\<\"\:0434\"\>", ",", "\<\"\:044b\"\>", ",", "\<\"\:044f\"\>", 
+   ",", "\<\"\:0433\"\>", ",", "\<\"\:043a\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:044e\"\>", ",", "\<\"\:0441\"\>", ",", "\<\"\:0435\"\>", 
+   ",", "\<\"\:0437\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:0444\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:044e\"\>", ",", "\<\"\:043e\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:044f\"\>", ",", "\<\"\:0447\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:044f\"\>", ",", "\<\"\:0444\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:043c\"\>", ",", "\<\"\:043a\"\>", 
+   ",", "\<\"\:044e\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:043f\"\>", 
+   ",", "\<\"\:0432\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:043d\"\>", 
+   ",", "\<\"\:0448\"\>", ",", "\<\"\:0447\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:0438\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:043f\"\>", 
+   ",", "\<\"\:044c\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:044f\"\>", 
+   ",", "\<\"\:043e\"\>", ",", "\<\"\:0449\"\>", ",", "\<\"\:043d\"\>", 
+   ",", "\<\"\:044e\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:044a\"\>", 
+   ",", "\<\"\:043f\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0438\"\>", 
+   ",", "\<\"\:0434\"\>", ",", "\<\"\:043a\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:043c\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:044b\"\>", 
+   ",", "\<\"\:0437\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:044a\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:0443\"\>", 
+   ",", "\<\"\:044d\"\>", ",", "\<\"\:0432\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:043a\"\>", ",", "\<\"\:0443\"\>", 
+   ",", "\<\"\:044f\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:043f\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:0431\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:0434\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:043f\"\>", ",", "\<\"\:043f\"\>", ",", "\<\"\:044a\"\>", 
+   ",", "\<\"\:044a\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:044e\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:044b\"\>", 
+   ",", "\<\"\:043c\"\>", ",", "\<\"\:0441\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:044f\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:0433\"\>", ",", "\<\"\:043a\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:043d\"\>", ",", "\<\"\:0445\"\>", 
+   ",", "\<\"\:044e\"\>", ",", "\<\"\:0441\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:0438\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:0439\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:043f\"\>", ",", "\<\"\:0439\"\>", ",", "\<\"\:044a\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:0447\"\>", ",", "\<\"\:0448\"\>", 
+   ",", "\<\"\:0439\"\>", ",", "\<\"\:0438\"\>", ",", "\<\"\:0444\"\>", 
+   ",", "\<\"\:0432\"\>", ",", "\<\"\:043b\"\>", ",", "\<\"\:043f\"\>", 
+   ",", "\<\"\:0438\"\>", ",", "\<\"\:043a\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:044f\"\>", ",", "\<\"\:044f\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:0431\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:043c\"\>", 
+   ",", "\<\"\:0434\"\>", ",", "\<\"\:0434\"\>", ",", "\<\"\:043b\"\>", 
+   ",", "\<\"\:0443\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:0438\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:0435\"\>", 
+   ",", "\<\"\:0444\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:0448\"\>", 
+   ",", "\<\"\:0433\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:0432\"\>", 
+   ",", "\<\"\:044a\"\>", ",", "\<\"\:0445\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:044d\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:0437\"\>", 
+   ",", "\<\"\:044b\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:0431\"\>", ",", "\<\"\:0434\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:0445\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:044c\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:0441\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:0438\"\>", ",", "\<\"\:044a\"\>", 
+   ",", "\<\"\:0438\"\>", ",", "\<\"\:0431\"\>", ",", "\<\"\:0435\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:043a\"\>", ",", "\<\"\:0431\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:0432\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:043a\"\>", 
+   ",", "\<\"\:0439\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:0438\"\>", 
+   ",", "\<\"\:0432\"\>", ",", "\<\"\:0441\"\>", ",", "\<\"\:0433\"\>", 
+   ",", "\<\"\:043a\"\>", ",", "\<\"\:0444\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:0444\"\>", ",", "\<\"\:0444\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:0448\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:0445\"\>", ",", "\<\"\:0438\"\>", ",", "\<\"\:0430\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:043e\"\>", ",", "\<\"\:0433\"\>", ",", "\<\"\:044f\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:044b\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:043d\"\>", ",", "\<\"\:0435\"\>", 
+   ",", "\<\"\:0432\"\>", ",", "\<\"\:043c\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:044a\"\>", ",", "\<\"\:0432\"\>", ",", "\<\"\:0430\"\>", 
+   ",", "\<\"\:043f\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:0438\"\>", ",", "\<\"\:0439\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:043f\"\>", ",", "\<\"\:0439\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:044b\"\>", ",", "\<\"\:044b\"\>", 
+   ",", "\<\"\:0431\"\>", ",", "\<\"\:0447\"\>", ",", "\<\"\:044c\"\>", 
+   ",", "\<\"\:044c\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:0432\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:044b\"\>", ",", "\<\"\:043d\"\>", 
+   ",", "\<\"\:0434\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:0432\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:043b\"\>", 
+   ",", "\<\"\:0444\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:0431\"\>", 
+   ",", "\<\"\:044e\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:0446\"\>", ",", "\<\"\:0438\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:0446\"\>", ",", "\<\"\:0444\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:0447\"\>", ",", "\<\"\:0445\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:0449\"\>", ",", "\<\"\:0448\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:0448\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:0443\"\>", 
+   ",", "\<\"\:0449\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:0439\"\>", 
+   ",", "\<\"\:0445\"\>", ",", "\<\"\:044f\"\>", ",", "\<\"\:043d\"\>", 
+   ",", "\<\"\:043b\"\>", ",", "\<\"\:0439\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:044b\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:043a\"\>", ",", "\<\"\:0448\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:044b\"\>", ",", "\<\"\:043d\"\>", 
+   ",", "\<\"\:0434\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0432\"\>", 
+   ",", "\<\"\:043a\"\>", ",", "\<\"\:0448\"\>", ",", "\<\"\:0434\"\>", 
+   ",", "\<\"\:044a\"\>", ",", "\<\"\:0444\"\>", ",", "\<\"\:0430\"\>", 
+   ",", "\<\"\:044b\"\>", ",", "\<\"\:0432\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:043a\"\>", ",", "\<\"\:043f\"\>", ",", "\<\"\:0448\"\>", 
+   ",", "\<\"\:043b\"\>", ",", "\<\"\:0444\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:0431\"\>", ",", "\<\"\:0443\"\>", 
+   ",", "\<\"\:0438\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:0448\"\>", ",", "\<\"\:0436\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:0443\"\>", 
+   ",", "\<\"\:0432\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:044f\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:044c\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:044b\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:0432\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:043a\"\>", ",", "\<\"\:0444\"\>", ",", "\<\"\:0432\"\>", 
+   ",", "\<\"\:044e\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:044f\"\>", ",", "\<\"\:043b\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:044c\"\>", 
+   ",", "\<\"\:0443\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:0438\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:0444\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:044a\"\>", ",", "\<\"\:0431\"\>", ",", "\<\"\:044a\"\>", 
+   ",", "\<\"\:043e\"\>", ",", "\<\"\:0446\"\>", ",", "\<\"\:043d\"\>", 
+   ",", "\<\"\:043c\"\>", ",", "\<\"\:0434\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:044f\"\>", ",", "\<\"\:044f\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:044a\"\>", 
+   ",", "\<\"\:0438\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0432\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:043f\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:044f\"\>", ",", "\<\"\:043d\"\>", ",", "\<\"\:0430\"\>", 
+   ",", "\<\"\:0434\"\>", ",", "\<\"\:0433\"\>", ",", "\<\"\:0431\"\>", 
+   ",", "\<\"\:0436\"\>", ",", "\<\"\:0445\"\>", ",", "\<\"\:0434\"\>", 
+   ",", "\<\"\:044a\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:0431\"\>", ",", "\<\"\:0449\"\>", ",", "\<\"\:0443\"\>", 
+   ",", "\<\"\:0444\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:0447\"\>", ",", "\<\"\:0444\"\>", 
+   ",", "\<\"\:0432\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:0432\"\>", 
+   ",", "\<\"\:0443\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:0437\"\>", ",", "\<\"\:0431\"\>", 
+   ",", "\<\"\:043e\"\>", ",", "\<\"\:043f\"\>", ",", "\<\"\:043d\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:044f\"\>", ",", "\<\"\:043e\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:0438\"\>", ",", "\<\"\:0448\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0431\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:0448\"\>", ",", "\<\"\:0436\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:044f\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:0448\"\>", ",", "\<\"\:0445\"\>", ",", "\<\"\:043b\"\>", 
+   ",", "\<\"\:0444\"\>", ",", "\<\"\:0439\"\>", ",", "\<\"\:0430\"\>", 
+   ",", "\<\"\:044d\"\>", ",", "\<\"\:0444\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:0433\"\>", ",", "\<\"\:0433\"\>", ",", "\<\"\:044f\"\>", 
+   ",", "\<\"\:0438\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:044d\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:0448\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:043d\"\>", 
+   ",", "\<\"\:044c\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:0431\"\>", 
+   ",", "\<\"\:0435\"\>", ",", "\<\"\:0441\"\>", ",", "\<\"\:044f\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0444\"\>", 
+   ",", "\<\"\:044f\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:043b\"\>", 
+   ",", "\<\"\:0448\"\>", ",", "\<\"\:0446\"\>", ",", "\<\"\:0444\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:0433\"\>", ",", "\<\"\:044f\"\>", 
+   ",", "\<\"\:044f\"\>", ",", "\<\"\:043e\"\>", ",", "\<\"\:0431\"\>", 
+   ",", "\<\"\:0438\"\>", ",", "\<\"\:0447\"\>", ",", "\<\"\:043d\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:044f\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:0445\"\>", ",", "\<\"\:043c\"\>", 
+   ",", "\<\"\:044f\"\>", ",", "\<\"\:0446\"\>", ",", "\<\"\:0430\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:0449\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:044c\"\>", ",", "\<\"\:044b\"\>", ",", "\<\"\:0449\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:0444\"\>", ",", "\<\"\:0444\"\>", 
+   ",", "\<\"\:044a\"\>", ",", "\<\"\:044c\"\>", ",", "\<\"\:0444\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:0446\"\>", ",", "\<\"\:0437\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:044c\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:0431\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:0431\"\>", 
+   ",", "\<\"\:043e\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:043f\"\>", 
+   ",", "\<\"\:043f\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:0432\"\>", ",", "\<\"\:043f\"\>", 
+   ",", "\<\"\:043b\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:0444\"\>", 
+   ",", "\<\"\:044e\"\>", ",", "\<\"\:0448\"\>", ",", "\<\"\:0432\"\>", 
+   ",", "\<\"\:0431\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:044c\"\>", 
+   ",", "\<\"\:0435\"\>", ",", "\<\"\:0444\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:044d\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:043b\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:0433\"\>", ",", "\<\"\:0432\"\>", ",", "\<\"\:043a\"\>", 
+   ",", "\<\"\:0439\"\>", ",", "\<\"\:0441\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:044c\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:0444\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:043e\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:043a\"\>", ",", "\<\"\:0434\"\>", ",", "\<\"\:0430\"\>", 
+   ",", "\<\"\:0444\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:0448\"\>", 
+   ",", "\<\"\:0439\"\>", ",", "\<\"\:043f\"\>", ",", "\<\"\:0443\"\>", 
+   ",", "\<\"\:0446\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:0437\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:043d\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:044a\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:043f\"\>", ",", "\<\"\:0437\"\>", 
+   ",", "\<\"\:0433\"\>", ",", "\<\"\:043d\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:0436\"\>", ",", "\<\"\:043d\"\>", ",", "\<\"\:044b\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:0444\"\>", 
+   ",", "\<\"\:044c\"\>", ",", "\<\"\:0448\"\>", ",", "\<\"\:043d\"\>", 
+   ",", "\<\"\:044f\"\>", ",", "\<\"\:0431\"\>", ",", "\<\"\:0431\"\>", 
+   ",", "\<\"\:0443\"\>", ",", "\<\"\:0444\"\>", ",", "\<\"\:0435\"\>", 
+   ",", "\<\"\:0449\"\>", ",", "\<\"\:0431\"\>", ",", "\<\"\:0434\"\>", 
+   ",", "\<\"\:044e\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:044c\"\>", 
+   ",", "\<\"\:044a\"\>", ",", "\<\"\:043e\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:043f\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:044d\"\>", ",", "\<\"\:0432\"\>", ",", "\<\"\:0448\"\>", 
+   ",", "\<\"\:0434\"\>", ",", "\<\"\:0441\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:044f\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:044c\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:044e\"\>", ",", "\<\"\:0445\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:044b\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:044b\"\>", 
+   ",", "\<\"\:0432\"\>", ",", "\<\"\:044b\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:0438\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:044c\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0432\"\>", 
+   ",", "\<\"\:0443\"\>", ",", "\<\"\:044c\"\>", ",", "\<\"\:043a\"\>", 
+   ",", "\<\"\:0446\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:0436\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:0449\"\>", ",", "\<\"\:0446\"\>", ",", "\<\"\:0439\"\>", 
+   ",", "\<\"\:0445\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:0446\"\>", 
+   ",", "\<\"\:0443\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:0444\"\>", 
+   ",", "\<\"\:0444\"\>", ",", "\<\"\:043b\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:0435\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:0441\"\>", ",", "\<\"\:043a\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:0433\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:043a\"\>", ",", "\<\"\:044a\"\>", 
+   ",", "\<\"\:044e\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:0433\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:0434\"\>", ",", "\<\"\:0444\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:0433\"\>", ",", "\<\"\:043f\"\>", 
+   ",", "\<\"\:043c\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:043c\"\>", ",", "\<\"\:0444\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:0430\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0430\"\>", 
+   ",", "\<\"\:0434\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:043f\"\>", ",", "\<\"\:0437\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:0433\"\>", ",", "\<\"\:043a\"\>", ",", "\<\"\:043c\"\>", 
+   ",", "\<\"\:043a\"\>", ",", "\<\"\:0447\"\>", ",", "\<\"\:0448\"\>", 
+   ",", "\<\"\:0446\"\>", ",", "\<\"\:0437\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:0437\"\>", ",", "\<\"\:0437\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:0448\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:0438\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:044b\"\>", ",", "\<\"\:043b\"\>", ",", "\<\"\:0437\"\>", 
+   ",", "\<\"\:043f\"\>", ",", "\<\"\:0441\"\>", ",", "\<\"\:043c\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:0449\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:043f\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:0438\"\>", 
+   ",", "\<\"\:044c\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:044b\"\>", ",", "\<\"\:0449\"\>", 
+   ",", "\<\"\:0435\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:044b\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:0433\"\>", ",", "\<\"\:0446\"\>", 
+   ",", "\<\"\:0448\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:0433\"\>", ",", "\<\"\:0431\"\>", ",", "\<\"\:0437\"\>", 
+   ",", "\<\"\:043a\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:044c\"\>", 
+   ",", "\<\"\:0431\"\>", ",", "\<\"\:043e\"\>", ",", "\<\"\:044b\"\>", 
+   ",", "\<\"\:044c\"\>", ",", "\<\"\:0446\"\>", ",", "\<\"\:0443\"\>", 
+   ",", "\<\"\:044c\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:0443\"\>", ",", "\<\"\:0431\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:044f\"\>", ",", "\<\"\:0444\"\>", ",", "\<\"\:0430\"\>", 
+   ",", "\<\"\:0444\"\>", ",", "\<\"\:043f\"\>", ",", "\<\"\:0432\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:0439\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:0435\"\>", ",", "\<\"\:0431\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:043e\"\>", ",", "\<\"\:044b\"\>", 
+   ",", "\<\"\:044c\"\>", ",", "\<\"\:0434\"\>", ",", "\<\"\:043a\"\>", 
+   ",", "\<\"\:044f\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:044c\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:0432\"\>", ",", "\<\"\:0430\"\>", 
+   ",", "\<\"\:0446\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:0444\"\>", ",", "\<\"\:043f\"\>", ",", "\<\"\:0436\"\>", 
+   ",", "\<\"\:0445\"\>", ",", "\<\"\:043f\"\>", ",", "\<\"\:044a\"\>", 
+   ",", "\<\"\:043f\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0449\"\>", 
+   ",", "\<\"\:044c\"\>", ",", "\<\"\:044b\"\>", ",", "\<\"\:0449\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:0447\"\>", ",", "\<\"\:043d\"\>", 
+   ",", "\<\"\:0449\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:043a\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:0435\"\>", 
+   ",", "\<\"\:044b\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:043a\"\>", 
+   ",", "\<\"\:0445\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:0431\"\>", 
+   ",", "\<\"\:043b\"\>", ",", "\<\"\:0441\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:043a\"\>", ",", "\<\"\:0432\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:043e\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:0438\"\>", ",", "\<\"\:0446\"\>", ",", "\<\"\:0436\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:0448\"\>", ",", "\<\"\:0434\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:0432\"\>", ",", "\<\"\:043f\"\>", ",", "\<\"\:043a\"\>", 
+   ",", "\<\"\:044e\"\>", ",", "\<\"\:0435\"\>", ",", "\<\"\:0449\"\>", 
+   ",", "\<\"\:043a\"\>", ",", "\<\"\:0431\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:0448\"\>", ",", "\<\"\:0434\"\>", ",", "\<\"\:0445\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:043b\"\>", ",", "\<\"\:0439\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:0446\"\>", ",", "\<\"\:0444\"\>", 
+   ",", "\<\"\:043f\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0435\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:0446\"\>", ",", "\<\"\:0434\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:0441\"\>", ",", "\<\"\:0438\"\>", 
+   ",", "\<\"\:0432\"\>", ",", "\<\"\:044c\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:043a\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:0445\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:043e\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:0438\"\>", ",", "\<\"\:043f\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:044c\"\>", ",", "\<\"\:0432\"\>", 
+   ",", "\<\"\:0438\"\>", ",", "\<\"\:0444\"\>", ",", "\<\"\:043b\"\>", 
+   ",", "\<\"\:043b\"\>", ",", "\<\"\:044c\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:0443\"\>", ",", "\<\"\:044d\"\>", ",", "\<\"\:0432\"\>", 
+   ",", "\<\"\:0445\"\>", ",", "\<\"\:0434\"\>", ",", "\<\"\:0438\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:0433\"\>", 
+   ",", "\<\"\:0434\"\>", ",", "\<\"\:0441\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:043e\"\>", ",", "\<\"\:044c\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:0436\"\>", ",", "\<\"\:0445\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:044b\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:044f\"\>", 
+   ",", "\<\"\:0440\"\>", ",", "\<\"\:0443\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:0441\"\>", ",", "\<\"\:0438\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:0431\"\>", ",", "\<\"\:0433\"\>", ",", "\<\"\:043f\"\>", 
+   ",", "\<\"\:0436\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:0436\"\>", ",", "\<\"\:043f\"\>", ",", "\<\"\:0443\"\>", 
+   ",", "\<\"\:0444\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:044f\"\>", 
+   ",", "\<\"\:0438\"\>", ",", "\<\"\:0432\"\>", ",", "\<\"\:0434\"\>", 
+   ",", "\<\"\:0444\"\>", ",", "\<\"\:043f\"\>", ",", "\<\"\:0444\"\>", 
+   ",", "\<\"\:0431\"\>", ",", "\<\"\:0444\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:0432\"\>", ",", "\<\"\:043e\"\>", ",", "\<\"\:044b\"\>", 
+   ",", "\<\"\:0445\"\>", ",", "\<\"\:0442\"\>", ",", "\<\"\:0442\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:043b\"\>", ",", "\<\"\:043c\"\>", 
+   ",", "\<\"\:043d\"\>", ",", "\<\"\:044a\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:044b\"\>", ",", "\<\"\:043b\"\>", 
+   ",", "\<\"\:043a\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:043c\"\>", 
+   ",", "\<\"\:0449\"\>", ",", "\<\"\:043a\"\>", ",", "\<\"\:0431\"\>", 
+   ",", "\<\"\:044e\"\>", ",", "\<\"\:044c\"\>", ",", "\<\"\:0438\"\>", 
+   ",", "\<\"\:044c\"\>", ",", "\<\"\:0430\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:044d\"\>", ",", "\<\"\:043e\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:0444\"\>", ",", "\<\"\:0445\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:0441\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:0433\"\>", ",", "\<\"\:043f\"\>", ",", "\<\"\:0436\"\>", 
+   ",", "\<\"\:0442\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:0431\"\>", 
+   ",", "\<\"\:0437\"\>", ",", "\<\"\:0437\"\>", ",", "\<\"\:0430\"\>", 
+   ",", "\<\"\:0444\"\>", ",", "\<\"\:044c\"\>", ",", "\<\"\:043e\"\>", 
+   ",", "\<\"\:044f\"\>", ",", "\<\"\:0440\"\>", ",", "\<\"\:0441\"\>", 
+   ",", "\<\"\:043f\"\>", ",", "\<\"\:0432\"\>", ",", "\<\"\:0440\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:043d\"\>", ",", "\<\"\:044e\"\>", 
+   ",", "\<\"\:0435\"\>", ",", "\<\"\:044f\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:0432\"\>", ",", "\<\"\:044e\"\>", ",", "\<\"\:044c\"\>", 
+   ",", "\<\"\:0430\"\>", ",", "\<\"\:0438\"\>", ",", "\<\"\:043b\"\>", 
+   ",", "\<\"\:0444\"\>", ",", "\<\"\:0441\"\>", ",", "\<\"\:0447\"\>", 
+   ",", "\<\"\:044d\"\>", ",", "\<\"\:043e\"\>", ",", "\<\"\:0432\"\>", 
+   ",", "\<\"\:044f\"\>", ",", "\<\"\:043e\"\>", ",", "\<\"\:044d\"\>", 
+   ",", "\<\"\:0447\"\>", ",", "\<\"\:0447\"\>", ",", "\<\"\:044b\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.8870122973563967`*^9, {3.8870124734212103`*^9, 3.887012540740012*^9}},
+ CellLabel->"Out[49]=",ExpressionUUID->"2d21c7a2-d5d1-4cb3-a202-50661e2ec314"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"keyWord", "=", 
+   RowBox[{"StringTake", "[", 
+    RowBox[{"\"\<\:043f\:0430\:0440\:0430\:043c\:0435\:0442\:0440\>\"", ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "8"}], "}"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"decoderVG", "[", 
+  RowBox[{"crypttextVG", ",", "keyWord"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8870125455897408`*^9, 3.887012588156382*^9}},
+ CellLabel->"In[63]:=",ExpressionUUID->"476c09c3-28bc-4acf-bf13-71a876310f5d"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"\:0418\:0441\:0445\:043e\:0434\:043d\:044b\:0438\:0306 \:0442\:0435\
+\:043a\:0441\:0442\"\>", \
+"\<\"\:043e\:0435\:0443\:043e\:044e\:0443\:0448\:0445\:0431\:0430\:044a\:0441\
+\:044b\:0445\:0430\:0431\:0447\:043b\:044d\:0443\:044b\:0445\:0447\:0444\:0430\
+\:0442\:0440\:0432\:0438\:0446\:0447\:0441\:0444\:043d\:0433\:0436\:0449\:0435\
+\:0446\:0440\:0442\:043e\:0442\:043e\:044c\:0433\:0441\:044d\:0432\:0442\:0440\
+\:043a\:044b\:0448\:0433\:0432\:043b\:0441\:0440\:043c\:0444\:0439\:0430\:0441\
+\:043a\:0432\:0440\:0435\:044e\:0437\:0433\:0445\:043c\:0442\:044e\:044d\:044e\
+\:0443\:0448\:0445\:044f\:0430\:0447\:043f\:0447\:0433\:044f\:0433\:0431\:044c\
+\:0442\:0435\:0440\:0431\:044e\:0448\:044c\:0430\:0431\:0442\:044f\:0439\:044f\
+\:043f\:0441\:043e\:044d\:043f\:044a\:0440\:044f\:043b\:0444\:043f\:044e\:0434\
+\:043e\:0435\:044d\:043b\:0440\:0435\:0430\:0438\:043e\:043a\:0446\:0430\:044d\
+\:0434\:0440\:0437\:043c\:044c\:0447\:0430\:044e\:044b\:0442\:0430\:0445\:0444\
+\:0430\:0435\:044d\:0440\:044e\:043d\:0437\:043c\:0442\:0431\:0441\:043e\:0449\
+\:0441\:0433\:043a\:0434\:0444\:0447\:043a\:044c\:043e\:0447\:044c\:044a\:0432\
+\:0430\:043c\:044e\:0442\:044c\:043d\:0434\:044d\:043f\:043c\:0445\:043d\:043b\
+\:043d\:0433\:044f\:044d\:0434\:044b\:043e\:043d\:0431\:0441\:0448\:0443\:0430\
+\:0446\:0435\:0449\:043a\:0435\:044b\:043a\:0431\:0440\:0435\:044e\:0446\:0441\
+\:0437\:0431\:043e\:0447\:0430\:0433\:043a\:0432\:0432\:044c\:0430\:044d\:044f\
+\:044e\:0431\:0430\:044d\:044b\:0435\:044d\:044f\:0431\:0443\:0439\:0445\:0431\
+\:0447\:0432\:043e\:0447\:043d\:044a\:0432\:0432\:0442\:0444\:043e\:0448\:043a\
+\:044f\:043f\:0443\:043e\:0438\:043b\:044a\:0444\:0430\:0444\:044d\:0436\:0444\
+\:0438\:043f\:0443\:0444\:044e\:044f\:044e\:044a\:0442\:044a\:043b\:0447\:043d\
+\:0431\:043e\:0432\:0430\:0446\:0443\:044b\:0441\:043a\:043b\:0431\:0442\:044f\
+\:0439\:0447\:044d\:043b\:0437\:0440\:043f\:044c\:043a\:043b\:0445\:044c\:043e\
+\:0444\:0430\:0442\:043a\:0444\:0448\:044c\:0441\:0432\:0438\:044e\:0448\:0434\
+\:0445\:0447\:0437\:0433\:0447\:043c\:0447\:043e\:044f\:044f\:0430\:0442\:0438\
+\:0447\:0431\:044f\:044e\:0442\:043e\:0442\:043e\:044c\:043d\:0434\:0444\:0447\
+\:043a\:044d\:0435\:044e\:0443\:0432\:044e\:044e\:043b\:0448\:0432\:044a\:0435\
+\:0433\:0440\:044b\:0432\:0431\:0435\:0449\:0435\:044e\:0445\:044c\:044f\:0431\
+\:043c\:044a\:0447\:0432\:0448\:0431\:0438\:0431\:0441\:0447\:043a\:0446\:044e\
+\:0441\:0430\:044d\:0438\:043b\:0444\:0432\:0445\:0443\:0441\:0432\:0430\:043e\
+\:0440\:0441\:043e\:0438\:0438\:0445\:043f\:044a\:0447\:0447\:044d\:0435\:0438\
+\:0440\:043b\:0438\:0442\:0435\:043e\:044d\:043f\:0440\:0441\:0449\:0443\:0433\
+\:0432\:043b\:0434\:044b\:044f\:0433\:043a\:044d\:044e\:0441\:0435\:0437\:0435\
+\:044d\:0447\:0444\:0440\:044e\:043e\:044d\:044f\:0447\:0447\:0447\:044f\:0444\
+\:0440\:043c\:043a\:044e\:0443\:043f\:0432\:044d\:043d\:0448\:0447\:0441\:0438\
+\:0430\:043f\:044c\:0435\:044f\:043e\:0449\:043d\:044e\:0440\:044a\:043f\:0430\
+\:0438\:0434\:043a\:044d\:043c\:0435\:044b\:0437\:0442\:044a\:0440\:044a\:0443\
+\:044d\:0432\:044e\:0440\:043a\:0443\:044f\:0430\:043f\:0441\:0435\:043e\:0431\
+\:0443\:0434\:0440\:044a\:0441\:043f\:043f\:044a\:044a\:044d\:044e\:044e\:0430\
+\:044b\:043c\:0441\:0442\:0441\:044f\:044d\:0440\:0433\:043a\:0441\:043d\:0445\
+\:044e\:0441\:043e\:0430\:0438\:044e\:0439\:0442\:0442\:043f\:0439\:044a\:0430\
+\:0447\:0448\:0439\:0438\:0444\:0432\:043b\:043f\:0438\:043a\:044e\:044f\:044f\
+\:043e\:0431\:0442\:043c\:0434\:0434\:043b\:0443\:0443\:0438\:0430\:0440\:0435\
+\:0444\:0440\:0448\:0433\:044e\:0432\:044a\:0445\:0440\:044d\:044d\:0437\:044b\
+\:044e\:044d\:0431\:0434\:044e\:0445\:0435\:044c\:043d\:0441\:0442\:0442\:0438\
+\:044a\:0438\:0431\:0435\:043d\:043a\:0431\:0430\:044d\:0441\:0432\:0443\:043a\
+\:0439\:0435\:0438\:0432\:0441\:0433\:043a\:0444\:0442\:043d\:0444\:0444\:0442\
+\:0448\:044d\:0445\:0438\:0430\:0442\:044d\:0440\:043e\:0433\:044f\:0447\:0442\
+\:044b\:0447\:043d\:0435\:0432\:043c\:0447\:044a\:0432\:0430\:043f\:0440\:0442\
+\:0438\:0439\:0442\:0442\:043f\:0439\:0442\:044b\:044b\:0431\:0447\:044c\:044c\
+\:0435\:0432\:0441\:044b\:043d\:0434\:0443\:0432\:0442\:0440\:043b\:0444\:0442\
+\:0431\:044e\:044a\:043e\:0446\:0438\:0447\:0446\:0444\:044e\:043d\:0447\:0445\
+\:0440\:0449\:0448\:0440\:0430\:043e\:0448\:044a\:0443\:0449\:0435\:0439\:0445\
+\:044f\:043d\:043b\:0439\:044d\:0447\:0430\:044b\:0447\:043a\:0448\:0441\:044b\
+\:043d\:0434\:0430\:0432\:043a\:0448\:0434\:044a\:0444\:0430\:044b\:0432\:0441\
+\:0442\:0435\:044d\:043d\:044d\:0442\:043a\:043f\:0448\:043b\:0444\:0441\:043d\
+\:0431\:0443\:0438\:044a\:043e\:0448\:0436\:0447\:0447\:0442\:0443\:0432\:0430\
+\:0447\:043d\:044f\:0440\:044c\:0443\:044b\:0430\:0440\:0442\:0430\:0443\:044d\
+\:0432\:044e\:0440\:043a\:0444\:0432\:044e\:0430\:0442\:0440\:044f\:043b\:0447\
+\:0442\:044c\:0443\:0443\:0438\:0430\:0444\:0440\:044a\:0431\:044a\:043e\:0446\
+\:043d\:043c\:0434\:0442\:044f\:044f\:043e\:043d\:0442\:044a\:0438\:0430\:0432\
+\:0447\:043f\:0440\:044f\:043d\:0430\:0434\:0433\:0431\:0436\:0445\:0434\:044a\
+\:0442\:0447\:0431\:0449\:0443\:0444\:0430\:044d\:0440\:0447\:0444\:0432\:0435\
+\:0432\:0443\:0442\:0442\:0442\:0437\:0431\:043e\:043f\:043d\:0441\:0440\:0440\
+\:0441\:044a\:044e\:044f\:043e\:0447\:043d\:0438\:0448\:043d\:0430\:0431\:0430\
+\:0448\:0436\:043d\:044f\:044d\:0448\:0445\:043b\:0444\:0439\:0430\:044d\:0444\
+\:0441\:0433\:0433\:044f\:0438\:0430\:0442\:044d\:0440\:0448\:0442\:0440\:043d\
+\:044c\:0440\:0431\:0435\:0441\:044f\:043d\:0430\:0444\:044f\:044d\:043b\:0448\
+\:0446\:0444\:043d\:0433\:044f\:044f\:043e\:0431\:0438\:0447\:043d\:0442\:044f\
+\:044d\:0447\:0445\:043c\:044f\:0446\:0430\:0441\:0430\:0442\:0442\:0435\:0449\
+\:0442\:0430\:044e\:044c\:044b\:0449\:0442\:0444\:0444\:044a\:044c\:0444\:043d\
+\:044d\:043e\:0446\:0437\:0442\:044c\:044d\:0431\:0430\:0430\:044e\:043d\:044d\
+\:0431\:043e\:0430\:043f\:043f\:044a\:0441\:0430\:0432\:043f\:043b\:0443\:043e\
+\:0447\:0443\:0444\:044e\:0448\:0432\:0431\:0435\:044c\:0435\:0444\:044d\:044d\
+\:0442\:043b\:0442\:044a\:0440\:0433\:0432\:043a\:0439\:0441\:043e\:044c\:0443\
+\:0444\:0442\:0442\:043e\:0430\:043e\:0440\:043a\:0434\:0430\:0444\:0442\:0448\
+\:0439\:043f\:0443\:0446\:0440\:0441\:0437\:044e\:043d\:0441\:0442\:044a\:0430\
+\:043f\:0437\:0433\:043d\:0441\:0436\:043d\:044b\:0441\:0435\:0444\:044c\:0448\
+\:043d\:044f\:0431\:0431\:0443\:0444\:0435\:0449\:0431\:0434\:044e\:044a\:044c\
+\:044a\:043e\:043e\:043f\:044a\:044d\:044d\:0432\:0448\:0434\:0441\:0440\:0442\
+\:044f\:044d\:0441\:044c\:043e\:044e\:0445\:0447\:044b\:0440\:044b\:0432\:044b\
+\:0441\:0438\:0430\:0442\:044c\:0430\:0432\:0443\:044c\:043a\:0446\:0440\:0436\
+\:0442\:044e\:043e\:0449\:0446\:0439\:0445\:044a\:043e\:0442\:0435\:0446\:0443\
+\:044e\:0444\:0444\:043b\:0440\:0435\:044e\:0447\:043d\:0441\:043a\:0442\:0433\
+\:0442\:0442\:043a\:044a\:044e\:0440\:0433\:0440\:0434\:0444\:0440\:0433\:043f\
+\:043c\:0442\:044e\:043c\:0444\:0440\:0430\:044a\:0430\:0442\:0430\:0430\:0434\
+\:0442\:0442\:043f\:0437\:0442\:0433\:043a\:043c\:043a\:0447\:0448\:0446\:0437\
+\:044e\:043d\:0437\:0437\:043d\:044d\:044d\:0441\:0448\:0442\:0438\:0442\:0447\
+\:044b\:043b\:0437\:043f\:0441\:043c\:0441\:0449\:044d\:043f\:0435\:0438\:044c\
+\:044d\:0447\:0442\:044b\:0449\:0435\:0430\:044b\:0447\:0433\:0446\:0448\:0442\
+\:0440\:0433\:0431\:0437\:043a\:044a\:044c\:0431\:043e\:044b\:044c\:0446\:0443\
+\:044c\:0440\:044e\:0443\:0431\:0442\:044f\:0444\:0430\:0444\:043f\:0432\:0440\
+\:0439\:0440\:0435\:0431\:044e\:0440\:043e\:044b\:044c\:0434\:043a\:044f\:044e\
+\:044c\:0430\:0432\:0430\:0446\:0443\:0447\:0444\:043f\:0436\:0445\:043f\:044a\
+\:043f\:0430\:0449\:044c\:044b\:0449\:0441\:0447\:043d\:0449\:044d\:043e\:043a\
+\:044d\:0435\:044b\:0443\:043a\:0445\:044a\:0431\:043b\:0441\:044e\:043a\:0432\
+\:0442\:043e\:0442\:044d\:0438\:0446\:0436\:0442\:0430\:0440\:0440\:0448\:0434\
+\:0442\:0442\:0442\:0432\:043f\:043a\:044e\:0435\:0449\:043a\:0431\:044e\:0448\
+\:0434\:0445\:0442\:043b\:0439\:0442\:0446\:0444\:043f\:0430\:0435\:0440\:0446\
+\:0434\:0440\:0441\:0438\:0432\:044c\:044d\:043a\:0443\:0445\:0440\:043e\:043e\
+\:0441\:0438\:043f\:0430\:044c\:0432\:0438\:0444\:043b\:043b\:044c\:0447\:0443\
+\:044d\:0432\:0445\:0434\:0438\:0441\:044a\:044d\:0430\:0442\:0433\:0434\:0441\
+\:0442\:043e\:044c\:044d\:0436\:0445\:0442\:044b\:0443\:044f\:0440\:0443\:043e\
+\:0441\:0438\:044e\:0431\:0433\:043f\:0436\:0442\:044e\:0436\:043f\:0443\:0444\
+\:044e\:044f\:0438\:0432\:0434\:0444\:043f\:0444\:0431\:0444\:044d\:0432\:043e\
+\:044b\:0445\:0442\:0442\:0447\:043b\:043c\:043d\:044a\:0447\:0430\:044b\:043b\
+\:043a\:044e\:043c\:0449\:043a\:0431\:044e\:044c\:0438\:044c\:0430\:0441\:044d\
+\:043e\:044d\:0444\:0445\:044e\:0447\:0441\:0447\:0433\:043f\:0436\:0442\:044e\
+\:0431\:0437\:0437\:0430\:0444\:044c\:043e\:044f\:0440\:0441\:043f\:0432\:0440\
+\:0430\:043d\:044e\:0435\:044f\:0447\:0432\:044e\:044c\:0430\:0438\:043b\:0444\
+\:0441\:0447\:044d\:043e\:0432\:044f\:043e\:044d\:0447\:0447\:044b\"\>"},
+    {"\<\"\:0417\:0430\:0448\:0438\:0444\:0440\:043e\:0432\:0430\:043d\:043d\
+\:044b\:0438\:0306 \:0442\:0435\:043a\:0441\:0442\"\>", "\<\"\:044f\:0435\
+\:0433\:043e\:0442\:043e\:0436\:0435\:0442\:0430\:043a\:0441\:043f\:0440\:043e\
+\:0441\:0438\:043b\:043d\:0443\:043f\:0440\:0435\:0434\:0441\:0442\:0430\:0432\
+\:044c\:0441\:0435\:0431\:0435\:043d\:0443\:0436\:043d\:0430\:0434\:0430\:0433\
+\:043e\:0432\:043e\:0440\:044e\:044f\:043d\:0443\:0442\:0430\:043a\:043f\:0443\
+\:0441\:0442\:044c\:0441\:0430\:043c\:0438\:0434\:043e\:0431\:044b\:0432\:0430\
+\:0435\:0442\:0432\:0441\:0435\:044d\:0442\:043e\:044d\:0442\:043e\:0436\:0435\
+\:0440\:0430\:0437\:043f\:043b\:044e\:043d\:0443\:0442\:044c\:0432\:0435\:0434\
+\:044c\:043c\:0438\:043d\:0430\:0441\:0442\:0443\:0434\:043d\:044f\:0432\:043e\
+\:043d\:043f\:043e\:043b\:043d\:044b\:0435\:043f\:043e\:0434\:0432\:0430\:043b\
+\:044b\:0431\:0435\:0440\:0438\:0432\:0435\:0434\:0440\:043e\:0434\:0430\:0437\
+\:0430\:0447\:0435\:0440\:043f\:044b\:0432\:0430\:0439\:043f\:043e\:0445\:043e\
+\:0440\:043e\:043d\:044b\:0437\:0430\:0441\:0432\:043e\:0439\:0441\:0447\:0435\
+\:0442\:0434\:0438\:043a\:043c\:043e\:043b\:0447\:0438\:0442\:0441\:043c\:043e\
+\:0442\:0440\:0438\:0442\:043d\:0430\:043c\:0435\:043d\:044f\:0438\:0441\:043f\
+\:043e\:0434\:043b\:043e\:0431\:044c\:044f\:0438\:0434\:0430\:0436\:0435\:043d\
+\:0435\:0443\:043b\:044b\:0431\:0430\:0435\:0442\:0441\:044f\:0447\:0442\:043e\
+\:0437\:0430\:0447\:0435\:0440\:0442\:043d\:0430\:043d\:044f\:0442\:044c\:043e\
+\:043d\:043c\:0435\:043d\:044f\:0445\:043e\:0447\:0435\:0442\:0447\:0442\:043e\
+\:043b\:0438\:0438\:0442\:0443\:0442\:0434\:043e\:043c\:0435\:043d\:044f\:0434\
+\:043e\:0448\:043b\:043e\:043f\:043e\:0434\:043e\:0436\:0434\:0438\:0433\:043e\
+\:0432\:043e\:0440\:044e\:043a\:0442\:043e\:0436\:0435\:044d\:0442\:043e\:0442\
+\:0430\:043a\:043e\:0439\:0431\:044b\:043b\:0441\:0442\:0443\:0434\:0435\:043d\
+\:044c\:0437\:0430\:043f\:0440\:0435\:0449\:0435\:043d\:043e\:0434\:0430\:0436\
+\:0435\:0432\:0438\:043d\:0441\:0442\:0438\:0442\:0443\:0442\:0435\:0438\:0437\
+\:0443\:0447\:0430\:0442\:044c\:043f\:0440\:0430\:0432\:0438\:043b\:044c\:043d\
+\:043e\:0433\:043e\:0432\:043e\:0440\:0438\:0442\:0434\:0438\:043a\:043d\:0435\
+\:0442\:043e\:0440\:043e\:043f\:043b\:0438\:0432\:043e\:0430\:0441\:0430\:043c\
+\:0432\:0441\:0435\:043d\:0430\:043c\:0435\:043d\:044f\:0441\:043c\:043e\:0442\
+\:0440\:0438\:0442\:0438\:0441\:0441\:043b\:0435\:0434\:043e\:0432\:0430\:043d\
+\:0438\:044f\:043f\:0440\:0435\:0434\:0441\:0442\:0430\:0432\:043b\:044f\:044e\
+\:0449\:0438\:0435\:043f\:043e\:0442\:0435\:043d\:0446\:0438\:0430\:043b\:044c\
+\:043d\:0443\:044e\:043e\:043f\:0430\:0441\:043d\:043e\:0441\:0442\:044c\:0434\
+\:043b\:044f\:0447\:0435\:043b\:043e\:0432\:0435\:0447\:0435\:0441\:0442\:0432\
+\:0430\:043f\:043e\:043d\:044f\:043b\:0442\:0435\:043f\:0435\:0440\:044c\:043a\
+\:0442\:043e\:044d\:0442\:043e\:043d\:0438\:0447\:0435\:0433\:043e\:044f\:043d\
+\:0435\:043f\:043e\:043d\:0438\:043c\:0430\:043b\:043f\:0440\:0438\:0448\:0435\
+\:043b\:044c\:0446\:044b\:0447\:0442\:043e\:043b\:0438\:0433\:043e\:0432\:043e\
+\:0440\:044e\:043e\:043d\:0440\:0430\:0441\:0445\:043e\:0445\:043e\:0442\:0430\
+\:043b\:0441\:044f\:043f\:043e\:0445\:043b\:043e\:043f\:0430\:043b\:043c\:0435\
+\:043d\:044f\:043f\:043e\:0440\:0443\:043a\:0435\:0438\:0433\:043e\:0432\:043e\
+\:0440\:0438\:0442\:0434\:0430\:0432\:0430\:0439\:043a\:0430\:043b\:0443\:0447\
+\:0448\:0435\:0432\:044b\:043f\:044c\:0435\:043c\:043f\:0440\:043e\:0441\:0442\
+\:0430\:044f\:0442\:044b\:0434\:0443\:0448\:0430\:0434\:0430\:0432\:0430\:0439\
+\:0433\:043e\:0432\:043e\:0440\:044e\:043d\:043e\:0437\:043b\:044e\:0441\:044c\
+\:0442\:043e\:0436\:0435\:043c\:043d\:0435\:043d\:0430\:0448\:043b\:0438\:0441\
+\:0435\:0431\:0435\:043f\:0440\:043e\:0441\:0442\:0443\:044e\:0434\:0443\:0448\
+\:0443\:0441\:0443\:043a\:0438\:043d\:044b\:0434\:0435\:0442\:0438\:044d\:0439\
+\:0433\:043e\:0432\:043e\:0440\:044e\:0433\:0443\:0442\:0430\:043b\:0438\:043d\
+\:0445\:0432\:0430\:0442\:0438\:0442\:0441\:043f\:0430\:0442\:044c\:0434\:0430\
+\:0432\:0430\:0439\:0432\:044b\:043f\:044c\:0435\:043c\:043d\:0435\:0442\:0441\
+\:043f\:0438\:0442\:0433\:0443\:0442\:0430\:043b\:0438\:043d\:043f\:043e\:043b\
+\:043e\:0436\:0438\:043b\:0441\:0432\:043e\:044e\:0447\:0435\:0440\:043d\:0443\
+\:044e\:0440\:044f\:0448\:043a\:0443\:043d\:0430\:0447\:0435\:0440\:043d\:044b\
+\:0439\:0441\:0442\:043e\:043b\:0438\:043a\:0438\:0441\:043f\:0438\:0442\:0440\
+\:0443\:043a\:0438\:0434\:043e\:043f\:043e\:043b\:0443\:0441\:0432\:0435\:0441\
+\:0438\:043b\:0432\:044b\:043f\:0438\:043b\:0438\:043c\:044b\:0441\:0434\:0438\
+\:043a\:043e\:043c\:0431\:0435\:0437\:0433\:0443\:0442\:0430\:043b\:0438\:043d\
+\:0430\:043d\:0443\:043b\:0430\:0434\:043d\:043e\:0433\:043e\:0432\:043e\:0440\
+\:044e\:043f\:0440\:043e\:0441\:0442\:0430\:044f\:044f\:0442\:0430\:043c\:0434\
+\:0443\:0448\:0430\:0438\:043b\:0438\:0441\:043b\:043e\:0436\:043d\:0430\:044f\
+\:0430\:043f\:0440\:043e\:044d\:0442\:043e\:0433\:043e\:0442\:0438\:043f\:0430\
+\:044f\:0431\:044b\:0442\:0443\:0442\:0436\:0435\:0434\:043e\:043d\:0435\:0441\
+\:043a\:0443\:0434\:0430\:0441\:043b\:0435\:0434\:0443\:0435\:0442\:0443\:0436\
+\:043d\:0430\:0447\:0442\:043e\:044f\:043d\:0435\:043b\:044e\:0431\:043b\:044e\
+\:043f\:043e\:043b\:0438\:0446\:0438\:044e\:0430\:0441\:0430\:043c\:0431\:044b\
+\:043f\:043e\:0448\:0435\:043b\:0438\:0434\:043e\:043d\:0435\:0441\:0443\:0433\
+\:0443\:0433\:043e\:0432\:043e\:0440\:0438\:0442\:0434\:0438\:043a\:0430\:0442\
+\:0435\:0431\:044f\:0431\:044b\:0432\:043f\:043e\:043b\:0438\:0446\:0438\:0438\
+\:0441\:043f\:0440\:043e\:0441\:0438\:043b\:0438\:0430\:043f\:043e\:0447\:0435\
+\:043c\:0443\:0441\:043e\:0431\:0441\:0442\:0432\:0435\:043d\:043d\:043e\:043e\
+\:043d\:044b\:0439\:0442\:0438\:043f\:0438\:043c\:0435\:043d\:043d\:043e\:043a\
+\:0432\:0430\:043c\:043e\:0431\:0440\:0430\:0442\:0438\:043b\:0441\:044f\:0430\
+\:044f\:043f\:043e\:043c\:043e\:0442\:0430\:043b\:0433\:043e\:043b\:043e\:0432\
+\:043e\:0439\:0432\:0441\:0435\:0440\:0430\:0432\:043d\:043e\:0442\:044b\:0442\
+\:043e\:043b\:0441\:0442\:044b\:0439\:0431\:043e\:0440\:043e\:0432\:0432\:0433\
+\:043e\:0440\:043e\:0434\:0435\:0442\:0440\:0435\:0442\:0438\:0439\:0433\:043e\
+\:0434\:0430\:0432\:0437\:043e\:043d\:0435\:043d\:0438\:0440\:0430\:0437\:0443\
+\:043d\:0435\:0431\:044b\:043b\:0432\:0435\:0434\:044c\:043c\:0438\:043d\:0441\
+\:0442\:0443\:0434\:0435\:043d\:044c\:0442\:043e\:043b\:044c\:043a\:043e\:0432\
+\:043a\:0438\:043d\:043e\:0432\:0438\:0434\:0435\:043b\:0430\:043f\:043e\:0441\
+\:043c\:043e\:0442\:0440\:0435\:043b\:0431\:044b\:0442\:044b\:0435\:0433\:043e\
+\:0432\:043d\:0430\:0442\:0443\:0440\:0435\:0434\:0430\:0447\:0442\:043e\:043e\
+\:043d\:0441\:0447\:0435\:043b\:043e\:0432\:0435\:043a\:043e\:043c\:0434\:0435\
+\:043b\:0430\:0435\:0442\:0442\:044b\:0431\:044b\:0442\:0443\:0442\:0436\:0435\
+\:0438\:043e\:0431\:0433\:0430\:0434\:0438\:043b\:0441\:044f\:044d\:0442\:043e\
+\:043c\:0438\:043b\:043e\:043a\:0441\:0442\:0440\:0430\:0448\:043d\:0430\:044f\
+\:0448\:0442\:0443\:043a\:0430\:0435\:0435\:0438\:0437\:0437\:043e\:043d\:044b\
+\:0432\:044b\:043d\:043e\:0441\:0438\:0442\:044c\:043d\:0435\:043b\:044c\:0437\
+\:044f\:0441\:0430\:043c\:0437\:043d\:0430\:0435\:0448\:044c\:0441\:0442\:0430\
+\:043b\:043a\:0435\:0440\:044b\:043b\:044e\:0434\:0438\:0433\:0440\:0443\:0431\
+\:044b\:0435\:0438\:043c\:0442\:043e\:043b\:044c\:043a\:043e\:043a\:0430\:043f\
+\:0443\:0441\:0442\:0443\:043f\:043e\:0434\:0430\:0432\:0430\:0439\:0434\:0430\
+\:043f\:043e\:0431\:043e\:043b\:044c\:0448\:0435\:043d\:043e\:043d\:0430\:0442\
+\:0430\:043a\:043e\:0435\:0434\:0430\:0436\:0435\:043f\:043e\:043a\:043e\:0439\
+\:043d\:044b\:0439\:0441\:043b\:0438\:0437\:043d\:044f\:043a\:043d\:0435\:043f\
+\:043e\:0448\:0435\:043b\:0431\:044b\:0441\:0442\:0435\:0440\:0432\:044f\:0442\
+\:043d\:0438\:043a\:0431\:0430\:0440\:0431\:0440\:0438\:0434\:0436\:043d\:0430\
+\:0442\:0430\:043a\:043e\:0435\:043d\:0435\:043f\:043e\:0439\:0434\:0435\:0442\
+\:044f\:0434\:0430\:0436\:0435\:043f\:0440\:0435\:0434\:0441\:0442\:0430\:0432\
+\:0438\:0442\:044c\:0441\:0435\:0431\:0435\:0431\:043e\:044e\:0441\:044c\:043a\
+\:043e\:043c\:0443\:0438\:0434\:043b\:044f\:0447\:0435\:0433\:043e\:0432\:0435\
+\:0434\:044c\:043c\:0438\:043d\:0441\:0442\:0443\:0434\:0435\:043d\:044c\:043c\
+\:043e\:0436\:0435\:0442\:043f\:043e\:043d\:0430\:0434\:043e\:0431\:0438\:0442\
+\:044c\:0441\:044f\:0447\:0442\:043e\:0436\:0433\:043e\:0432\:043e\:0440\:0438\
+\:0442\:0434\:0438\:043a\:0432\:0441\:0435\:044d\:0442\:043e\:043f\:0440\:0430\
+\:0432\:0438\:043b\:044c\:043d\:043e\:0442\:043e\:043b\:044c\:043a\:043e\:043c\
+\:043d\:0435\:043f\:043e\:043d\:0438\:043c\:0430\:0435\:0448\:044c\:043d\:0435\
+\:0445\:043e\:0447\:0435\:0442\:0441\:044f\:0447\:0442\:043e\:0431\:044b\:0432\
+\:043e\:0434\:043d\:043e\:043f\:0440\:0435\:043a\:0440\:0430\:0441\:043d\:043e\
+\:0435\:0443\:0442\:0440\:043e\:043d\:0430\:0448\:043b\:0438\:043c\:0435\:043d\
+\:044f\:0432\:043f\:043e\:0441\:0442\:0435\:043b\"\>"}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{{3.8870125434025993`*^9, 3.887012588583164*^9}},
+ CellLabel->"Out[64]=",ExpressionUUID->"41f31657-3a23-406f-bcbd-c7548da26044"]
+}, Open  ]]
+},
+WindowSize->{808, 685},
+WindowMargins->{{20, Automatic}, {Automatic, 44}},
+TaggingRules-><|"TryRealOnly" -> False|>,
+FrontEndVersion->"13.0 for Mac OS X ARM (64-bit) (February 4, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"2874d954-e337-4cd7-8656-7edc614bd108"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1034, 16, 58, "Text",ExpressionUUID->"e53d9a22-de42-4d9f-a714-f1d16abee8c3"],
+Cell[CellGroupData[{
+Cell[1617, 40, 473, 8, 52, "Input",ExpressionUUID->"95375016-8650-4245-a4b3-8effe23d9a48"],
+Cell[2093, 50, 277, 3, 34, "Output",ExpressionUUID->"dae19cbe-0ad7-47c4-b67c-4340de14b2d2"],
+Cell[2373, 55, 231, 3, 34, "Output",ExpressionUUID->"ef4d6e32-a78e-4372-9a34-ef3e6ebcbcdb"]
+}, Open  ]],
+Cell[2619, 61, 308, 6, 30, "Input",ExpressionUUID->"923e4bb2-26a7-4b7b-be2d-6fb8431b0b19"],
+Cell[CellGroupData[{
+Cell[2952, 71, 234, 4, 52, "Input",ExpressionUUID->"29dee926-f2a6-4fa0-817c-e685c6fc1e29"],
+Cell[3189, 77, 356, 7, 34, "Output",ExpressionUUID->"687bd118-e4db-46c8-ac62-38b534c821b3"],
+Cell[3548, 86, 266, 6, 34, "Output",ExpressionUUID->"a5e77e0e-4bba-4794-adfc-05e0d283599c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3851, 97, 213, 3, 30, "Input",ExpressionUUID->"cc7a3a8c-2d81-4d62-9823-03b99ac7b622"],
+Cell[4067, 102, 150, 2, 34, "Output",ExpressionUUID->"4980ae2a-d8d2-4c53-8a30-6b2d39e08c72"]
+}, Open  ]],
+Cell[4232, 107, 567, 10, 35, "Text",ExpressionUUID->"c8de9dcc-995e-42ab-9109-e194153f0879"],
+Cell[CellGroupData[{
+Cell[4824, 121, 21694, 315, 632, "Input",ExpressionUUID->"db153eca-3b23-477b-8275-0d6cb27a101b"],
+Cell[26521, 438, 19411, 264, 661, "Output",ExpressionUUID->"972bd01d-4918-4ff1-b084-b956649c4399"]
+}, Open  ]],
+Cell[45947, 705, 547, 10, 35, "Text",ExpressionUUID->"2613734c-6c40-4e35-9c8d-2a02274156f2"],
+Cell[46497, 717, 2468, 62, 226, "Input",ExpressionUUID->"b0610b0e-2ecc-414d-a8d0-609253091964"],
+Cell[CellGroupData[{
+Cell[48990, 783, 259, 4, 30, "Input",ExpressionUUID->"9aa498e6-adc7-4d7b-82b9-ec589e6cff4f"],
+Cell[49252, 789, 803, 16, 63, "Output",ExpressionUUID->"f34d4055-fd06-4fda-ba27-b62f078f47d2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[50092, 810, 372, 8, 33, "Input",ExpressionUUID->"5798bfe5-096e-492b-bb44-3320552a1215"],
+Cell[50467, 820, 586, 9, 37, "Output",ExpressionUUID->"3e28b2a7-eecb-4aa6-a32d-13c18f6438c4"]
+}, Open  ]],
+Cell[51068, 832, 1042, 19, 127, "Text",ExpressionUUID->"9a16ea78-1896-40f3-a0d3-d0383a2df647"],
+Cell[52113, 853, 3293, 86, 268, "Input",ExpressionUUID->"892cc1c3-2e17-49df-a9a2-5268c87e9d9d"],
+Cell[CellGroupData[{
+Cell[55431, 943, 242, 4, 30, "Input",ExpressionUUID->"03720dfc-e4a6-4541-a6d5-bfce94f01315"],
+Cell[55676, 949, 802, 16, 63, "Output",ExpressionUUID->"2459e5ab-1205-4c1b-9e7e-74c77a6cbb49"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[56515, 970, 351, 7, 33, "Input",ExpressionUUID->"5d818511-95fb-42fd-ae54-62809756903c"],
+Cell[56869, 979, 562, 9, 37, "Output",ExpressionUUID->"449f403a-844e-4d5f-b066-099c1eae4a40"]
+}, Open  ]],
+Cell[57446, 991, 429, 8, 35, "Text",ExpressionUUID->"55ae1276-ca17-45b4-9c97-affa5ea32a7c"],
+Cell[CellGroupData[{
+Cell[57900, 1003, 349, 7, 33, "Input",ExpressionUUID->"22e972c1-638c-4a1a-87c3-136aeb54aba6"],
+Cell[58252, 1012, 564, 9, 37, "Output",ExpressionUUID->"c81df083-6140-467b-8827-cf2174832794"]
+}, Open  ]],
+Cell[58831, 1024, 985, 16, 58, "Text",ExpressionUUID->"4e73dd7b-331a-4c6e-b91e-1def22d9d057"],
+Cell[59819, 1042, 2671, 69, 249, "Input",ExpressionUUID->"e95988fe-a026-43f1-8327-1952f6d010cd"],
+Cell[CellGroupData[{
+Cell[62515, 1115, 234, 4, 30, "Input",ExpressionUUID->"86eb6a01-f086-43e3-95f4-f90fa7448127"],
+Cell[62752, 1121, 824, 16, 63, "Output",ExpressionUUID->"23d320f7-3406-4e31-b5cb-a085e303d588"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[63613, 1142, 235, 4, 30, "Input",ExpressionUUID->"5a7ae8b3-fb24-4669-a55d-3dd4499f1c36"],
+Cell[63851, 1148, 805, 16, 63, "Output",ExpressionUUID->"bef2d8d5-cbc8-4e9c-84b4-2c18887f1679"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[64693, 1169, 240, 4, 30, "Input",ExpressionUUID->"e7156691-40d6-44b9-9a9d-d8477b324f39"],
+Cell[64936, 1175, 803, 16, 63, "Output",ExpressionUUID->"a7c4b912-0aeb-4f7f-a5ad-bec253148e2f"]
+}, Open  ]],
+Cell[65754, 1194, 1506, 23, 81, "Text",ExpressionUUID->"f81b1204-80fe-40fd-9b09-d13adb8a3110"],
+Cell[CellGroupData[{
+Cell[67285, 1221, 546, 14, 73, "Input",ExpressionUUID->"c62f88cd-74c1-477a-b371-e47fce65f99b"],
+Cell[67834, 1237, 538, 9, 56, "Output",ExpressionUUID->"70aea17c-cb94-4aed-8b97-87a59a89493a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[68409, 1251, 765, 19, 52, "Input",ExpressionUUID->"577890bd-3c97-4282-8893-c5959c51dcc0"],
+Cell[69177, 1272, 19413, 264, 661, "Output",ExpressionUUID->"ae7080b9-8b07-4edd-8f35-7c75de840c61"]
+}, Open  ]],
+Cell[88605, 1539, 475, 9, 35, "Text",ExpressionUUID->"9e8c4c22-e44f-4543-98b9-c23b17a4a518"],
+Cell[CellGroupData[{
+Cell[89105, 1552, 258, 4, 30, "Input",ExpressionUUID->"8639dace-0f0f-49ba-aa6d-a3d6c06f9f14"],
+Cell[89366, 1558, 803, 16, 63, "Output",ExpressionUUID->"b4b54033-3065-4074-8d4c-876db58f8dbc"]
+}, Open  ]],
+Cell[90184, 1577, 768, 13, 58, "Text",ExpressionUUID->"47f64d86-7f47-47b5-a1ba-14cd2bd1b504"],
+Cell[CellGroupData[{
+Cell[90977, 1594, 9168, 118, 434, "Input",ExpressionUUID->"f8cba8e1-7e5c-48e6-a3f1-cb2b8c527a7b"],
+Cell[100148, 1714, 35266, 485, 1026, "Output",ExpressionUUID->"2d21c7a2-d5d1-4cb3-a202-50661e2ec314"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[135451, 2204, 495, 10, 52, "Input",ExpressionUUID->"476c09c3-28bc-4acf-bf13-71a876310f5d"],
+Cell[135949, 2216, 18353, 234, 1014, "Output",ExpressionUUID->"41f31657-3a23-406f-bcbd-c7548da26044"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

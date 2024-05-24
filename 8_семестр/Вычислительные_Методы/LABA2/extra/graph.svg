@@ -1,0 +1,173 @@
+<svg viewBox="960 427.5 670 682.5" width="512" height="512" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<style>.vertex { font-family: Consolas } .edge { font-family: Consolas } .text { font-family: Consolas }</style>
+    <path d="M 1310 490L 1102.30712890625 576.5386962890625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1102.30712890625 576.5386962890625) rotate(157.3801350519596)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1190 540) rotate(-22.61986494804043)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1310 490L 1251.86279296875 562.6715087890625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1251.86279296875 562.6715087890625) rotate(128.6598082540901)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1270 540) rotate(-51.34019174590992)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1310 490L 1368.13720703125 562.6715087890625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1368.13720703125 562.6715087890625) rotate(51.340191745909905)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1350 540) rotate(51.34019174590992)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1310 490L 1498.1427001953125 575.5194091796875" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1498.1427001953125 575.5194091796875) rotate(24.443954780416536)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1420 540) rotate(24.44395478041655)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1070 590L 1011.86279296875 662.6715087890625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1011.86279296875 662.6715087890625) rotate(128.6598082540901)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1030 640) rotate(-51.34019174590992)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1070 590L 1128.13720703125 662.6715087890625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1128.13720703125 662.6715087890625) rotate(51.340191745909905)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1110 640) rotate(51.34019174590992)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 990 690L 1048.13720703125 762.6715087890625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1048.13720703125 762.6715087890625) rotate(51.340191745909905)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1030 740) rotate(51.34019174590992)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1150 690L 1091.86279296875 762.6715087890625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1091.86279296875 762.6715087890625) rotate(128.6598082540901)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1110 740) rotate(-51.34019174590992)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1230 590L 1171.86279296875 662.6715087890625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1171.86279296875 662.6715087890625) rotate(128.6598082540901)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1190 640) rotate(-51.34019174590992)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1230 590L 1288.13720703125 662.6715087890625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1288.13720703125 662.6715087890625) rotate(51.340191745909905)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1270 640) rotate(51.34019174590992)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1390 590L 1331.86279296875 662.6715087890625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1331.86279296875 662.6715087890625) rotate(128.6598082540901)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1350 640) rotate(-51.34019174590992)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1390 590L 1439.9301147460938 661.3287353515625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1439.9301147460938 661.3287353515625) rotate(55.007979801441344)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1425 640) rotate(55.007979801441344)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1530 590L 1480.0698852539062 661.3287353515625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1480.0698852539062 661.3287353515625) rotate(124.99202019855869)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1495 640) rotate(-55.007979801441344)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1530 590L 1579.9301147460938 661.3287353515625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1579.9301147460938 661.3287353515625) rotate(55.007979801441344)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1565 640) rotate(55.007979801441344)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1310 690L 1251.86279296875 762.6715087890625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1251.86279296875 762.6715087890625) rotate(128.6598082540901)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1270 740) rotate(-51.34019174590992)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1460 690L 1410.0698852539062 761.3287353515625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1410.0698852539062 761.3287353515625) rotate(124.99202019855869)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1425 740) rotate(-55.007979801441344)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1600 690L 1550.0698852539062 761.3287353515625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1550.0698852539062 761.3287353515625) rotate(124.99202019855869)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1565 740) rotate(-55.007979801441344)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1460 690L 1509.9301147460938 761.3287353515625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1509.9301147460938 761.3287353515625) rotate(55.007979801441344)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1495 740) rotate(55.007979801441344)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1390 790L 1439.9301147460938 861.3287353515625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1439.9301147460938 861.3287353515625) rotate(55.007979801441344)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1425 840) rotate(55.007979801441344)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1530 790L 1480.0698852539062 861.3287353515625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1480.0698852539062 861.3287353515625) rotate(124.99202019855869)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1495 840) rotate(-55.007979801441344)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1390 790L 1331.86279296875 862.6715087890625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1331.86279296875 862.6715087890625) rotate(128.6598082540901)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1350 840) rotate(-51.34019174590992)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1230 790L 1288.13720703125 862.6715087890625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1288.13720703125 862.6715087890625) rotate(51.340191745909905)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1270 840) rotate(51.34019174590992)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1460 890L 1410.0698852539062 961.3287353515625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1410.0698852539062 961.3287353515625) rotate(124.99202019855869)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1425 940) rotate(-55.007979801441344)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1310 890L 1368.13720703125 962.6715087890625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1368.13720703125 962.6715087890625) rotate(51.340191745909905)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1350 940) rotate(51.34019174590992)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1310 890L 1251.86279296875 962.6715087890625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1251.86279296875 962.6715087890625) rotate(128.6598082540901)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1270 940) rotate(-51.34019174590992)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1070 790L 1128.13720703125 862.6715087890625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1128.13720703125 862.6715087890625) rotate(51.340191745909905)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1110 840) rotate(51.34019174590992)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1230 790L 1171.86279296875 862.6715087890625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1171.86279296875 862.6715087890625) rotate(128.6598082540901)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1190 840) rotate(-51.34019174590992)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1150 890L 1208.13720703125 962.6715087890625" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1208.13720703125 962.6715087890625) rotate(51.340191745909905)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1190 940) rotate(51.34019174590992)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1230 990L 1286.74560546875 1053.8388061523438" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1286.74560546875 1053.8388061523438) rotate(48.3664606634298)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1270 1035) rotate(48.366460663429805)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <path d="M 1390 990L 1333.25439453125 1053.8388061523438" fill="none" stroke="#000000" stroke-width="2"></path>
+    <path transform="translate(1333.25439453125 1053.8388061523438) rotate(131.63353933657018)" d="M-1, -5 L 14 0 L -1, 5 z" fill="#000000"></path>
+    <text class="edge" transform="translate(1350 1035) rotate(-48.366460663429805)" fill="#000000" x="0" y="-5" dominant-baseline="text-bottom" text-anchor="middle" font-size="18px">1</text>
+    <circle cx="1310" cy="490" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1310" y="490" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">1</text>
+    <circle cx="1070" cy="590" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1070" y="590" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">2</text>
+    <circle cx="1230" cy="590" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1230" y="590" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">3</text>
+    <circle cx="1390" cy="590" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1390" y="590" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">4</text>
+    <circle cx="1530" cy="590" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1530" y="590" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">5</text>
+    <circle cx="990" cy="690" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="990" y="690" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">6</text>
+    <circle cx="1150" cy="690" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1150" y="690" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">7</text>
+    <circle cx="1310" cy="690" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1310" y="690" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">8</text>
+    <circle cx="1460" cy="690" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1460" y="690" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">9</text>
+    <circle cx="1600" cy="690" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1600" y="690" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">10</text>
+    <circle cx="1070" cy="790" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1070" y="790" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">11</text>
+    <circle cx="1230" cy="790" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1230" y="790" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">12</text>
+    <circle cx="1390" cy="790" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1390" y="790" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">13</text>
+    <circle cx="1530" cy="790" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1530" y="790" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">14</text>
+    <circle cx="1150" cy="890" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1150" y="890" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">15</text>
+    <circle cx="1310" cy="890" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1310" y="890" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">16</text>
+    <circle cx="1460" cy="890" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1460" y="890" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">17</text>
+    <circle cx="1230" cy="990" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1230" y="990" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">18</text>
+    <circle cx="1390" cy="990" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1390" y="990" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">19</text>
+    <circle cx="1310" cy="1080" r="20" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <text class="vertex" x="1310" y="1080" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">20</text>
+    <rect x="1300" y="437.5" width="20" height="25" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+    <text class="text" x="1310" y="450" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">1</text>
+    <rect x="1060" y="537.5" width="20" height="25" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+    <text class="text" x="1070" y="550" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">1</text>
+    <rect x="1220" y="537.5" width="20" height="25" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+    <text class="text" x="1230" y="550" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">3</text>
+    <rect x="1380" y="537.5" width="20" height="25" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+    <text class="text" x="1390" y="550" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">3</text>
+    <rect x="1520" y="537.5" width="20" height="25" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+    <text class="text" x="1530" y="550" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">5</text>
+    <rect x="980" y="637.5" width="20" height="25" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+    <text class="text" x="990" y="650" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">3</text>
+    <rect x="1140" y="637.5" width="20" height="25" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+    <text class="text" x="1150" y="650" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">1</text>
+    <rect x="1300" y="637.5" width="20" height="25" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+    <text class="text" x="1310" y="650" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">3</text>
+    <rect x="1450" y="637.5" width="20" height="25" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+    <text class="text" x="1460" y="650" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">6</text>
+    <rect x="1590" y="637.5" width="20" height="25" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+    <text class="text" x="1600" y="650" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">2</text>
+    <rect x="1520" y="737.5" width="20" height="25" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+    <text class="text" x="1530" y="750" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">3</text>
+    <rect x="1380" y="737.5" width="20" height="25" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+    <text class="text" x="1390" y="750" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">1</text>
+    <rect x="1220" y="737.5" width="20" height="25" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+    <text class="text" x="1230" y="750" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">6</text>
+    <rect x="1060" y="737.5" width="20" height="25" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+    <text class="text" x="1070" y="750" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">1</text>
+    <rect x="1140" y="837.5" width="20" height="25" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+    <text class="text" x="1150" y="850" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">4</text>
+    <rect x="1300" y="837.5" width="20" height="25" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+    <text class="text" x="1310" y="850" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">6</text>
+    <rect x="1450" y="837.5" width="20" height="25" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+    <text class="text" x="1460" y="850" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">2</text>
+    <rect x="1380" y="937.5" width="20" height="25" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+    <text class="text" x="1390" y="950" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">2</text>
+    <rect x="1220" y="937.5" width="20" height="25" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+    <text class="text" x="1230" y="950" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">2</text>
+    <rect x="1300" y="1027.5" width="20" height="25" fill="#ffffff" stroke="#ffffff" stroke-width="1.5"/>
+    <text class="text" x="1310" y="1040" dominant-baseline="middle" text-anchor="middle" fill="#000000" font-size="18px">5</text>
+</svg>

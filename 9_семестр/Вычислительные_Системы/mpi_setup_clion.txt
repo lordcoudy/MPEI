@@ -1,0 +1,30 @@
+Build Tools:
+
+Program: /usr/bin/clang++
+
+Arguments: -I/opt/homebrew/Cellar/open-mpi/4.1.5/include -L/opt/homebrew/Cellar/open-mpi/4.1.5/lib -L/opt/homebrew/opt/libevent/lib -std=c++11 -lmpi /Users/milord/Documents/STUDY/9_sem/ВС/Lab1/main.cpp -o /Users/milord/Documents/STUDY/9_sem/ВС/Lab1/main.o
+
+Working Directory: /usr/bin
+
+
+Run Configuration:
+
+Executable: /opt/homebrew/bin/mpirun
+
+Arguments: -np 4 /Users/milord/Documents/STUDY/9_sem/ВС/Lab1/main.o
+
+Working Directory: /usr/bin
+
+
+CMakeLists:
+
+cmake_minimum_required(VERSION 3.26)
+project(Lab1)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+# Add the -O2 optimization flag
+add_compile_options(-O2)
+
+add_executable(Lab1 main.cpp)

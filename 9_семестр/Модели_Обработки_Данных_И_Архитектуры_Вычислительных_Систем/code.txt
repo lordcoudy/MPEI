@@ -1,0 +1,33 @@
+code = (BRAN, INCR, BRAN, STOP)
+type command = record
+	COP : code;
+	OP1, OP2, OP3 : natural;
+	end;
+RM : array [1..N] of natural;
+IM : array [1..N] of command;
+CR : command;
+
+begin
+	IP := 0;
+	repeat
+	CR := IM[IP];
+	case CR.COP of
+		ZERO:
+		begin
+			RM[CR.OP1] := 0;
+			IP := IP + 1;
+		end;
+		INCR:
+		begin
+			RM[CR.OP1] := RM[CR.OP1] + 1;
+			IP := IP + 1;
+		end;
+		BRAN:
+		begin
+			if (RM[CR.OP1] = RM[CR.OP2]) then IP := IP + CR.OP3 else IP := IP + 1;
+		end;
+		STOP:
+			break;
+	until false;
+	
+END.
