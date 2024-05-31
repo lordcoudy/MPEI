@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Refund</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.1/dist/web3.min.js"></script>
+</head>
+<body>
+    <h1>Metro Refund</h1>
+    <label for="ticketPrice">Ticket Price:</label>
+    <input type="number" id="ticketPrice" min="1" step="1" value="10">
+    <button onclick="buyTicket()">Buy Ticket</button>
+    <button onclick="refundTicket()">Refund Ticket</button>
+    <button onclick="useTicket()">Use Ticket</button>
+    <button onclick="checkDelay()">Check Delay</button>
+
+    <script>
+        // Получаем экземпляр web3
+        const web3 = new Web3('http://194.59.40.99:8545/');
+
+        // Устанавливаем соединение с сетью
+        web3.eth.net.isListening().then(function(isListening) {
+            if (isListening) {
+                console.log('Успешное соединение с тестовой сетью Ethereum');
+            } else {
+                console.log('Неудача при подключении к тестовой сети Ethereum');
+            }
+        });
+
+        const contractAddress = "0x406AB5033423Dcb6391Ac9eEEad73294FA82Cfbc";
+        const ABI = [
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_price",
+				"type": "uint256"
+			}
+		],
+		"name": "buyTicket",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "refundTicket",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_refundDelay",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "passenger",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "price",
+				"type": "uint256"
+			}
+		],
+		"name": "TicketPurchased",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "passenger",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "refundAmount",
+				"type": "uint256"
+			}
+		],
+		"name": "TicketRefunded",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "useTicket",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "withdrawUnused",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "canRefund",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "contractBalance",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "refundDelay",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "tickets",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "purchaseTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "used",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+];
+
+        var contract = new web3.eth.Contract(ABI, contractAddress);
+
+        var accountAddress = '0x540d7E428D5207B30EE03F2551Cbb5751D3c7569';
+        var privateKey = "7a41e7f474d0c2dd1921aedc677c1a3e343fd2290d76a888dfac042ca4fd0579";
+
+        const account = web3.eth.accounts.privateKeyToAccount(privateKey);
+
+        async function buyTicket() {
+            const ticketPrice = web3.utils.toWei(document.getElementById('ticketPrice').value, 'ether');
+            const senderAddress = account.address;
+            const nonce = await web3.eth.getTransactionCount(senderAddress);
+            const chainId = await web3.eth.getChainId();
+
+            const transaction = {
+                from: senderAddress,
+                value: ticketPrice,
+                gas: 400000,
+                gasPrice: web3.utils.toWei('100', 'gwei'),
+                nonce: nonce,
+                chainId: chainId,
+                to: contractAddress,
+                data: contract.methods.buyTicket().encodeABI()
+            };
+
+            const signedTxn = await web3.eth.accounts.signTransaction(transaction, privateKey);
+            const txHash = await web3.eth.sendSignedTransaction(signedTxn.rawTransaction);
+            console.log(txHash);
+            alert('Билет успешно приобретен!');
+        }
+
+        async function refundTicket() {
+            const senderAddress = account.address;
+            const nonce = await web3.eth.getTransactionCount(senderAddress);
+            const chainId = await web3.eth.getChainId();
+
+            const transaction = {
+                from: senderAddress,
+                value: 0,
+                gas: 400000,
+                gasPrice: web3.utils.toWei('100', 'gwei'),
+                nonce: nonce,
+                chainId: chainId,
+                to: contractAddress,
+                data: contract.methods.refundTicket().encodeABI()
+            };
+
+            const signedTxn = await web3.eth.accounts.signTransaction(transaction, privateKey);
+            const txHash = await web3.eth.sendSignedTransaction(signedTxn.rawTransaction);
+            console.log(txHash);
+            alert('Возврат средств запрошен!');
+        }
+
+        async function useTicket() {
+            const senderAddress = account.address;
+            const nonce = await web3.eth.getTransactionCount(senderAddress);
+            const chainId = await web3.eth.getChainId();
+
+            const transaction = {
+                from: senderAddress,
+                value: 0,
+                gas: 400000,
+                gasPrice: web3.utils.toWei('100', 'gwei'),
+                nonce: nonce,
+                chainId: chainId,
+                to: contractAddress,
+                data: contract.methods.useTicket().encodeABI()
+            };
+
+            const signedTxn = await web3.eth.accounts.signTransaction(transaction, privateKey);
+            const txHash = await web3.eth.sendSignedTransaction(signedTxn.rawTransaction);
+            console.log(txHash);
+            alert('Билет использован!');
+        }
+
+        async function checkDelay() {
+            // Здесь вы можете добавить код для проверки задержки
+            alert('Проверка задержки выполнена.');
+        }
+    </script>
+</body>
+</html>
+
+
+==================================================================================================
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract TrainTicketContract {
+    struct Ticket {
+        uint256 purchaseTime;
+        uint256 price;
+        bool used;
+    }
+
+    mapping(address => Ticket) public tickets;
+    uint256 public refundDelay; // Время в секундах, после которого можно вернуть деньги за билет
+    address public owner;
+
+    event TicketPurchased(address indexed passenger, uint256 indexed price);
+    event TicketRefunded(address indexed passenger, uint256 indexed refundAmount);
+
+    constructor(uint256 _refundDelay) {
+        refundDelay = _refundDelay;
+        owner = msg.sender;
+    }
+
+  // Функция для покупки билета
+    function buyTicket(uint256 _price) public payable {
+        require(_price > 0, "Invalid ticket price");
+        require(msg.value == _price, "Exact Ether value required");
+        require(tickets[msg.sender].purchaseTime == 0, "Ticket already purchased");
+
+        tickets[msg.sender] = Ticket({
+            purchaseTime: block.timestamp,
+            price: _price,
+            used: false
+        });
+
+        emit TicketPurchased(msg.sender, _price);
+    }
+    
+    // Функция для использования билета
+    function useTicket() public {
+        require(tickets[msg.sender].purchaseTime != 0, "No ticket purchased");
+        require(!tickets[msg.sender].used, "Ticket already used");
+
+        tickets[msg.sender].used = true;
+    }
+
+    // Функция для возврата средств, если билет не использовался
+    function refundTicket() public {
+        Ticket storage ticket = tickets[msg.sender];
+        require(ticket.purchaseTime != 0, "No ticket purchased");
+        require(!ticket.used, "Ticket already used");
+        require(block.timestamp - ticket.purchaseTime >= refundDelay, "Refund delay not passed");
+
+        uint256 refundAmount = ticket.price;
+        ticket.price = 0; // Обнуляем стоимость билета, чтобы предотвратить повторную выдачу
+
+        // Возвращаем Ether на счет покупателя
+        payable(msg.sender).transfer(refundAmount);
+
+        emit TicketRefunded(msg.sender, refundAmount);
+    }
+
+    // Функция для проверки возможности возврата средств
+    function canRefund() public view returns (bool) {
+        Ticket storage ticket = tickets[msg.sender];
+        return (ticket.purchaseTime != 0 && !ticket.used && block.timestamp - ticket.purchaseTime >= refundDelay);
+    }
+
+    // Модификатор для ограничения доступа только владельцу контракта
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Only the contract owner can call this function");
+        _;
+    }
+
+
+    // Функция для вывода неиспользованных средств владельцу контракта
+    function withdrawUnused(uint256 amount) public onlyOwner {
+        require(amount <= address(this).balance, "Insufficient balance");
+        payable(owner).transfer(amount);
+    }
+
+    // Функция для проверки баланса контракта
+    function contractBalance() public view returns (uint256) {
+        return address(this).balance;
+    }
+}
