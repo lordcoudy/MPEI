@@ -1,0 +1,277 @@
+А-07м-23, Балашов Савва
+Номер в группе 2 -> Вариант 1
+
+Задание 1
+Напишите программу, которая находит максимальную 
+последовательность последовательных равных элементов в массиве. 
+Например: {1, 1, 2, 3, 2, 2, 2, 1} -> {2, 2, 2}  (Java)
+Файл MaxSequence.java:
+package javaPackage;
+import java.util.Arrays;
+
+public class MaxSequence 
+{
+    public static int[] findMaxSequence(int[] arr) 
+    {
+        int maxLength = 1;
+        int currentLength = 1;
+        int startIndex = 0;
+        int endIndex = 0;
+
+        for (int i = 1; i < arr.length; i++) 
+        {
+            if (arr[i] == arr[i - 1]) 
+            {
+                currentLength++;
+            } 
+            else 
+            {
+                if (currentLength > maxLength) 
+                {
+                    maxLength = currentLength;
+                    endIndex = i - 1;
+                    startIndex = endIndex - maxLength + 1;
+                }
+                currentLength = 1;
+            }
+        }
+
+        if (currentLength > maxLength) 
+        {
+            maxLength = currentLength;
+            endIndex = arr.length - 1;
+            startIndex = endIndex - maxLength + 1;
+        }
+
+        return Arrays.copyOfRange(arr, startIndex, endIndex + 1);
+    }
+}
+
+Файл Main.java:
+package javaPackage;
+import java.util.Arrays;
+
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+	    int[] arr = {1, 1, 2, 3, 2, 2, 2, 1};
+	    int[] maxSequence = MaxSequence.findMaxSequence(arr);
+		System.out.println(Arrays.toString(maxSequence));
+	}
+}
+------------------------------------------------
+Задание 2
+Разработать класс для работы и представления рациональных чисел. 
+Создать объекты этого класса и проверить работу (Kotlin)
+
+Файл Main.kt:
+fun findSubarraySum(nums: IntArray, S: Int): List<Int> 
+{
+    val map = mutableMapOf<Int, Int>()
+    var sum = 0
+
+    for (i in nums.indices) 
+    {
+        sum += nums[i]
+        if (sum == S) return listOf(0, i)
+        if (map.containsKey(sum - S)) 
+        {
+            return listOf(map[sum - S]!! + 1, i)
+        }
+        map[sum] = i
+    }
+
+    return emptyList()
+}
+
+fun main() 
+{
+	val n = 20
+    val numArr = IntArray(n)
+    for (i in 0..<n)
+        numArr[i] = Random.nextInt(0, 10)
+    for (x in numArr)
+        print("$x ")
+    println()
+    println("Введите S")
+    val diapason = findSubarraySum(numArr, readln().toInt())
+    if (diapason.isEmpty())
+        println("Отрезок не найден")
+    else 
+    {
+        for (i in diapason[0]..diapason[1]) 
+        {
+            print(numArr[i])
+            print(" ")
+        }
+        println()
+    }
+}
+
+Задание 3
+Создайте класс Product для представления товаров в магазине с полями, 
+такими как название, цена и количество на складе. Создайте коллекцию для 
+хранения объектов Product и реализуйте функции для добавления товаров, 
+учета продаж, расчета общей стоимости товаров и поиска товаров по 
+различным параметрам с помощью лямбда-выражения. (Java)
+
+Файл: Product.java:
+package javaPackage;
+
+public class Product 
+{
+    private String name;
+    private double price;
+    private int quantity;
+
+    public Product(String name, double price, int quantity) 
+    {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+    }
+    public String getName() 
+    {
+        return name;
+    }
+    public void setName(String name) 
+    {
+        this.name = name;
+    }
+    public double getPrice() 
+    {
+        return price;
+    }
+    public void setPrice(double price) 
+    {
+        this.price = price;
+    }
+    public int getQuantity() 
+    {
+        return quantity;
+    }
+    public void setQuantity(int quantity) 
+    {
+        this.quantity = quantity;
+    }
+}
+
+Файл ProductManager.java:
+package javaPackage;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Predicate;
+
+public class ProductManager 
+{
+    private List<Product> products = new ArrayList<>();
+
+    public void addProduct(Product product) 
+    {
+        products.add(product);
+    }
+
+    public void sellProduct(String name, int quantity) 
+    {
+        for (Product product : products) 
+        {
+            if (product.getName().equals(name)) 
+            {
+                if (product.getQuantity() >= quantity) 
+                {
+                    product.setQuantity(product.getQuantity() - quantity);
+                    break;
+                } 
+                else 
+                {
+                    System.out.println("Недостаточно товара на складе.");
+                }
+            }
+        }
+    }
+
+    public double getTotalCost() 
+    {
+        double total = 0;
+        for (Product product : products) 
+        {
+            total += product.getPrice() * product.getQuantity();
+        }
+        return total;
+    }
+
+    public List<Product> findProducts(Predicate<Product> predicate) 
+    {
+        List<Product> result = new ArrayList<>();
+        for (Product product : products) 
+        {
+            if (predicate.test(product)) 
+            {
+                result.add(product);
+            }
+        }
+        return result;
+    }
+}
+
+Файл Main.java:
+package javaPackage;
+
+import java.util.List;
+
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+    	ProductManager manager = new ProductManager();
+
+        Product product1 = new Product("Телефон",
+                20000, 10);
+        Product product2 = new Product("Ноутбук", 50000, 5);
+        manager.addProduct(product1);
+        manager.addProduct(product2);
+
+        manager.sellProduct("Телефон", 5);
+
+        List<Product> expensiveProducts = manager.findProducts(p -> p.getPrice() > 30000);
+        expensiveProducts.forEach(product3 -> {System.out.print(product3.getName());});
+        System.out.println();
+
+        System.out.println("Общая стоимость: " + manager.getTotalCost());
+    }
+}
+
+Задание 4
+У вас есть список книг с названиями, авторами и годами выпуска. 
+Используйте лямбда-выражения, чтобы отфильтровать книги, 
+опубликованные после определенного года, и отсортировать их по авторам 
+(Kotlin).
+Файл Main.kt:
+package kotlinPackage
+
+data class Book(val title: String, val author: String, val year: Int)
+
+fun searchBooksAfterYear()
+{
+    val books = listOf(
+        Book("Книга 1", "Автор 1", 2001),
+        Book("Книга 2", "Автор 2", 2004),
+        Book("Книга 3", "Автор 3", 2004),
+        Book("Книга 4", "Автор 4", 2000),
+        Book("Книга 5", "Автор 5", 1999),
+        Book("Книга 6", "Автор 6", 2003),
+        Book("Книга 7", "Автор 1", 2012)
+    )
+    println("Введите параметр фильтрации: год")
+    val yearToFilter = readln().toInt()
+    val filteredBooks = books.filter { it.year > yearToFilter }
+    val sortedBooks = filteredBooks.sortedBy { it.author }
+    println("Книги, опубликованные после $yearToFilter, отсортированные по авторам:")
+    sortedBooks.forEach { println(it) }
+}
+
+fun main(){
+	searchBooksAfterYear()
+}

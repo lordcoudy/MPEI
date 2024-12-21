@@ -1,0 +1,44 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.milord.km3_1.VisitorViewModel" />
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <RadioGroup
+            android:id="@+id/viewOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/fullData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Полные данные" />
+
+            <RadioButton
+                android:id="@+id/nameAndAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Имя и возраст" />
+
+            <RadioButton
+                android:id="@+id/nameAndWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Имя и вес" />
+        </RadioGroup>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</layout>
