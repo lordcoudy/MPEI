@@ -1,0 +1,38 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="visitor"
+            type="com.milord.km3_1.Visitor" />
+        <variable
+            name="viewOption"
+            type="com.milord.km3_1.VisitorAdapter.ViewOption" />
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/fullData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="@{viewOption == ViewOption.FULL_DATA ? View.VISIBLE : View.GONE}"
+            android:text='@{visitor.firstName + " " + visitor.lastName + ", " + visitor.height + " см, " + visitor.weight + " кг, " + visitor.birthYear}' />
+
+        <TextView
+            android:id="@+id/nameAndAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="@{viewOption == ViewOption.NAME_AND_AGE ? View.VISIBLE : View.GONE}"
+            android:text='@{visitor.firstName + " " + visitor.lastName + ", " + (2023 - visitor.birthYear) + " лет"}' />
+
+        <TextView
+            android:id="@+id/nameAndWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="@{viewOption == ViewOption.NAME_AND_WEIGHT ? View.VISIBLE : View.GONE}"
+            android:text='@{visitor.firstName + " " + visitor.lastName + ", " + visitor.weight + " кг"}' />
+    </LinearLayout>
+</layout>

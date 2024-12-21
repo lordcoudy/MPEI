@@ -1,0 +1,273 @@
+Вариант 1
+Задача 1
+Расписание конференц-зала представляет собой список событий в формате [дата и время начала; дата и время окончания; название мероприятия]. Написать методы для добавления события и быстрой проверки, доступен ли зал в заданный интервал [дата и время начала; дата и время окончания]. (Kotlin)
+
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+
+data class Event(val start: LocalDateTime, val end: LocalDateTime, val title: String)
+
+class ConferenceRoom {
+    private val events: MutableList<Event> = mutableListOf()
+
+    fun addEvent(start: LocalDateTime, end: LocalDateTime, title: String): Boolean {
+        if (isAvailable(start, end)) {
+            events.add(Event(start, end, title))
+            return true
+        }
+        return false
+    }
+    
+    fun isAvailable(start: LocalDateTime, end: LocalDateTime): Boolean {
+        return events.none { 
+          event -> (start.isBefore(event.end) && end.isAfter(event.start))       
+        }
+    }
+
+    fun getEvents(): List<Event> {
+        return events
+    }
+
+    fun printEvents() {
+        val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
+        for (event in events) {
+            println("${event.title}: ${event.start.format(formatter)} - ${event.end.format(formatter)}")
+            
+        }
+    }
+}
+
+fun main() {
+    val conferenceRoom = ConferenceRoom()
+    val dateFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
+    val event1Start = LocalDateTime.parse("2023-10-10 10:00", dateFormat)
+    val event1End = LocalDateTime.parse("2023-10-10 12:00", dateFormat)
+    val event2Start = LocalDateTime.parse("2023-10-10 13:00", dateFormat)
+    val event2End = LocalDateTime.parse("2023-10-10 14:00", dateFormat)
+    println(
+      "Adding Event 1: ${conferenceRoom.addEvent(event1Start, event1End, "Meeting 1")}"
+    )
+    println(
+      "Adding Event 2: ${conferenceRoom.addEvent(event2Start, event2End, "Meeting 2")}"
+    )
+    val checkStart = LocalDateTime.parse("2023-10-10 11:00", dateFormat)
+    val checkEnd = LocalDateTime.parse("2023-10-10 13:00", dateFormat)
+    println(
+      "Is available from ${checkStart.format(dateFormat)} to ${checkEnd.format(dateFormat)}: ${conferenceRoom.isAvailable(checkStart, checkEnd)}"
+    )
+    conferenceRoom.printEvents()
+}
+--------------------------------
+Задача 2
+Написать приложение на Android Studio  для регистрации посетителей мероприятия, в котором отображает экран для  ввода информации о посетителе: фио, возраст, время прихода, email. Есть кнопка «Далее» и «Завершить регистрацию». При нажатии на кнопку «Далее» поля очищаются для ввода данных о новом посетителе. При нажатии на кнопку «Завершить регистрацию» отображаются данных обо всех зарегистрированных посетителях. В программе использовать класс «Посетитель» и коллекцию объектов этого класса (Java или Kotlin)
+
+activity_main.xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAEA40"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/surname_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ваша фамилия:"
+        android:textAlignment="center" />
+    <EditText
+        android:id="@+id/et_1"
+        android:layout_width="270sp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/name_et"
+            android:layout_width="139sp"
+            android:layout_height="wrap_content"
+            android:text="Ваше имя:"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/et_2"
+            android:layout_width="270sp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/middlename_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ваше отчество:"
+            android:textAlignment="center" />
+        <EditText
+            android:id="@+id/et_3"
+            android:layout_width="270sp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/age_et"
+            android:layout_width="139sp"
+            android:layout_height="wrap_content"
+            android:text="Ваш возраст:"
+            android:textAlignment="center" />
+        <EditText
+            android:id="@+id/et_4"
+            android:layout_width="270sp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/time_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Время прихода:"
+            android:textAlignment="center" />
+        <EditText
+            android:id="@+id/et_5"
+            android:layout_width="270sp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/mail_et"
+            android:layout_width="139sp"
+            android:layout_height="wrap_content"
+            android:text="Ваш email:"
+            android:textAlignment="center" />
+        <EditText
+            android:id="@+id/et_6"
+            android:layout_width="270sp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/continue_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Далее"
+            android:onClick="continue"/>
+        <Button
+            android:id="@+id/stop_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Завершить регистрацию"
+            android:onClick="stop"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"/>
+</LinearLayout>
+
+Visitor.java
+package com.example.kr2var12;
+
+public class Visitor{
+    String surname;
+    String name;
+    String middlename;
+    int age;
+    String time;
+    String email;
+
+    public Visitor(String surname, String name, String middlename, int age, String time, String email){
+        this.surname = surname;
+        this.name = name;
+        this.middlename = middlename;
+        this.age = age;
+        this.time = time;
+        this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "Visitor{" +"surname='" + surname + '\'' +", name='"
+                + name + '\'' +", middlename='" + middlename + '\'' +", age=" + age +
+                ", time='" + time + '\'' +", email='" + email + '\'' +'}';
+    }
+}
+
+MainActivity.java
+public class MainActivity extends AppCompatActivity {
+
+    private AppBarConfiguration appBarConfiguration;
+    private ActivityMainBinding binding;
+    ArrayList<Visitor> visitors = new ArrayList<Visitor>();
+    String name, surname, middlename, time, email;
+    int age;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        EditText surname_et = findViewById(R.id.surname_et);
+        surname_et.setEnabled(false);
+        EditText name_et = findViewById(R.id.name_et);
+        name_et.setEnabled(false);
+        EditText middlename_et = findViewById(R.id.middlename_et);
+        middlename_et.setEnabled(false);
+        EditText age_et = findViewById(R.id.age_et);
+        age_et.setEnabled(false);
+        EditText time_et = findViewById(R.id.time_et);
+        time_et.setEnabled(false);
+        EditText mail_et = findViewById(R.id.mail_et);
+        mail_et.setEnabled(false);
+    }
+
+    public void continue(View view) {
+        EditText et_1 = findViewById(R.id.et_1);
+        EditText et_2 = findViewById(R.id.et_2);
+        EditText et_3 = findViewById(R.id.et_3);
+        EditText et_4 = findViewById(R.id.et_4);
+        EditText et_5 = findViewById(R.id.et_5);
+        EditText et_6 = findViewById(R.id.et_6);
+        Visitor v1 = new Visitor(et_1.getText().toString(), et_2.getText().toString(), et_3.getText().toString(), Integer.parseInt(et_4.getText().toString()), et_5.getText().toString(), et_6.getText().toString());
+        visitors.add(v1);
+        et_1.setText("");et_2.setText("");et_3.setText("");et_4.setText("");et_5.setText("");et_6.setText("");
+    }
+
+    @SuppressLint("SetTextI18n")
+    public void stop(View view) {
+        TextView output = findViewById(R.id.textView);
+        for (Visitor visitor : visitors) {
+
+            output.setText(output.getText() + "\n" + visitor.toString());
+        }
+
+    }
+}

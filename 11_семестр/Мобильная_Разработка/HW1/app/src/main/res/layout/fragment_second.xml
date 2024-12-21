@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioAllData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Все данные" />
+
+        <RadioButton
+            android:id="@+id/radioNameAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Имя, фамилия, возраст" />
+
+        <RadioButton
+            android:id="@+id/radioNameWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Имя, фамилия, вес" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/visitorList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10sp"
+        android:text="Вернуться" />
+</LinearLayout>
